@@ -1,7 +1,7 @@
 {
-    "navbar": {
-        "resume": "Resumé",
-        "linkedin": "LinkedIn",
-        "hire": "Najmi mě"
-    }
+	"navbar": {
+		"resume": "Resumé",
+		"linkedin": "LinkedIn",
+		"hire": "Najmi mě"
+	}
 }

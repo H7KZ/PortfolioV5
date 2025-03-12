@@ -1,14 +1,17 @@
 <script lang="ts">
-    interface Props {
-        link?: string;
-        target?: string;
-        children: () => any;
-    }
-    let { link, target, children }: Props = $props();
+	import type { Snippet } from 'svelte';
+
+	interface Props {
+		link?: string;
+		target?: string;
+		children: Snippet<[]>;
+	}
+
+	let { link, target, children }: Props = $props();
 </script>
 
-<a href={link} target={target}>
-    <button class="px-6 py-1.5 border-[1.5px] border-primary rounded-full cursor-pointer hover:bg-primary">
-        {@render children()}
-    </button>
+<a href={link} {target}>
+	<button class="border-primary cursor-pointer rounded-full border-[1.5px] px-6 py-1.5 transition-all hover:bg-[#ffffff18]">
+		{@render children()}
+	</button>
 </a>
