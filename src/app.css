@@ -1,10 +1,19 @@
 @import 'tailwindcss';
 
-@theme {
+:root {
 	--font-dmsans: 'DM Sans', sans-serif;
 
 	--color-primary: #ffffff;
 	--color-secondary: #a4a4a4;
+	--color-background: #131313;
+}
+
+@theme {
+	--font-dmsans: var(--font-dmsans);
+
+	--color-primary: var(--color-primary);
+	--color-secondary: var(--color-secondary);
+	--color-background: var(--color-background);
 }
 
 h1,
@@ -23,7 +32,7 @@ button {
 /* Firefox */
 * {
 	scrollbar-width: auto;
-	scrollbar-color: #272727 #121212;
+	scrollbar-color: #272727 var(--color-background);
 }
 
 /* Chrome, Edge, and Safari */
@@ -32,11 +41,11 @@ button {
 }
 
 *::-webkit-scrollbar-track {
-	background: #121212;
+	background: var(--color-background);
 }
 
 *::-webkit-scrollbar-thumb {
-	background-color: #121212;
+	background-color: var(--color-secondary);
 	border-radius: 20px;
 	border: 2px solid #272727;
 }
@@ -46,7 +55,7 @@ html {
 }
 
 .background {
-	background: #121212;
+	background: var(--color-background);
 	background-image: url('/images/tile.svg');
 	background-size: repeat;
 	background-position: center top;

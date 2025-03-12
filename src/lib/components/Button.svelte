@@ -11,7 +11,7 @@
 </script>
 
 <a href={link} {target}>
-	<button class="border-primary cursor-pointer rounded-full border-[1.5px] px-6 py-1.5 transition-all hover:bg-[#ffffff18]">
+	<button class="border-primary cursor-pointer rounded-full border-[1.5px] px-6 py-1.25 transition-all hover:bg-[#ffffff18]">
 		{@render children()}
 	</button>
 </a>
