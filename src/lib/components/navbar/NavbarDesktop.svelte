@@ -1,6 +1,8 @@
 <script lang="ts">
-	import { _ } from 'svelte-i18n';
+	import { _, locale, locales } from 'svelte-i18n';
 	import Button from '$lib/components/Button.svelte';
+	import Dropdown from '../Dropdown.svelte';
+	import Icon from '@iconify/svelte';
 </script>
 
 <div class="flex w-full items-center justify-center px-8 pt-10 pb-2">
@@ -21,9 +23,18 @@
 					{$_('navbar.hire')}
 				</p>
 			</Button>
-			<div>
-				<img src="/icons/language.svg" alt="Lang" class="h-6 w-6" />
-			</div>
+			<Dropdown autoOpen width={3} align="center">
+				<Icon icon="ion:language-outline" class="h-7.5 w-7.5" />
+				{#snippet items()}
+					<div class="flex flex-col items-center justify-center gap-4 py-3">
+						{#each $locales as local}
+							<button onclick={() => locale.set(local)} class="flex cursor-pointer items-center justify-center">
+								<Icon icon="circle-flags:{local}" class="h-7 w-7" />
+							</button>
+						{/each}
+					</div>
+				{/snippet}
+			</Dropdown>
 		</div>
 	</div>
 </div>

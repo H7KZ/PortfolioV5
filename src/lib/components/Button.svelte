@@ -10,8 +10,14 @@
 	let { link, target, children }: Props = $props();
 </script>
 
-<a href={link} {target}>
+{#if link}
+	<a href={link} {target}>
+		<button class="border-primary cursor-pointer rounded-full border-[1.5px] px-6 py-1.25 transition-all hover:bg-[#ffffff18]">
+			{@render children()}
+		</button>
+	</a>
+{:else}
 	<button class="border-primary cursor-pointer rounded-full border-[1.5px] px-6 py-1.25 transition-all hover:bg-[#ffffff18]">
 		{@render children()}
 	</button>
-</a>
+{/if}

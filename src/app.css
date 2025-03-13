@@ -6,14 +6,19 @@
 	--color-primary: #ffffff;
 	--color-secondary: #a4a4a4;
 	--color-background: #131313;
+	--color-background-light: #1d1d1d;
 }
 
 @theme {
+	--breakpoint-2xs: 320px;
+	--breakpoint-xs: 480px;
+
 	--font-dmsans: var(--font-dmsans);
 
 	--color-primary: var(--color-primary);
 	--color-secondary: var(--color-secondary);
 	--color-background: var(--color-background);
+	--color-background-light: var(--color-background-light);
 }
 
 h1,
