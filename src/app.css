@@ -3,10 +3,7 @@
 :root {
 	--font-dmsans: 'DM Sans', sans-serif;
 
-	--color-primary: #ffffff;
-	--color-secondary: #a4a4a4;
 	--color-background: #131313;
-	--color-background-light: #1d1d1d;
 }
 
 @theme {
@@ -15,22 +12,20 @@
 
 	--font-dmsans: var(--font-dmsans);
 
-	--color-primary: var(--color-primary);
-	--color-secondary: var(--color-secondary);
 	--color-background: var(--color-background);
-	--color-background-light: var(--color-background-light);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a,
-button {
-	@apply font-dmsans text-primary;
+@layer components {
+	* {
+		@apply font-dmsans text-white;
+	}
+}
+
+.background {
+	background: var(--color-background);
+	background-image: url('/images/tile.svg');
+	background-size: repeat;
+	background-position: center top;
 }
 
 /* ===== Scrollbar CSS ===== */
@@ -57,11 +52,4 @@ button {
 
 html {
 	scroll-behavior: smooth;
-}
-
-.background {
-	background: var(--color-background);
-	background-image: url('/images/tile.svg');
-	background-size: repeat;
-	background-position: center top;
 }

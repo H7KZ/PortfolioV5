@@ -33,7 +33,7 @@
 	</button>
 
 	<div
-		class="absolute top-full"
+		class="absolute top-full z-50"
 		class:invisible={!isOpen}
 		class:opacity-0={!isOpen}
 		class:left-0={align === 'left'}
@@ -43,7 +43,7 @@
 		style="width: {width}rem;"
 	>
 		<div class="h-2 w-full"></div>
-		<div class="bg-background-light rounded-lg">
+		<div class="rounded-lg bg-neutral-900">
 			{@render items?.()}
 		</div>
 	</div>
