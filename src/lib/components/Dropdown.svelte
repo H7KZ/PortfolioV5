@@ -43,7 +43,7 @@
 		style="width: {width}rem;"
 	>
 		<div class="h-2 w-full"></div>
-		<div class="rounded-lg bg-neutral-900">
+		<div class="rounded-lg bg-neutral-800">
 			{@render items?.()}
 		</div>
 	</div>

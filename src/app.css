@@ -16,7 +16,8 @@
 }
 
 @layer components {
-	* {
+	html,
+	body {
 		@apply font-dmsans text-white;
 	}
 }
