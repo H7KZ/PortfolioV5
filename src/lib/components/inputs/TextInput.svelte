@@ -1,18 +1,21 @@
 <script lang="ts">
 	import type { Component } from 'svelte';
+	import type { FullAutoFill } from 'svelte/elements';
 
 	interface Props {
 		value: string;
 		label?: string;
+		autocomplete?: FullAutoFill;
 		placeholder?: string;
 		Icon?: Component;
 		required?: boolean;
 		readonly?: boolean;
+		disabled?: boolean;
 		oninput?: (e: Event & { currentTarget: EventTarget & HTMLInputElement }) => void;
 		error?: string;
 	}
 
-	let { value = $bindable(''), label, placeholder, Icon, required, readonly, oninput, error }: Props = $props();
+	let { value = $bindable(''), label, autocomplete, placeholder, Icon, required, readonly, disabled, oninput, error }: Props = $props();
 </script>
 
 <div class="flex w-full flex-col gap-0.5">
@@ -27,9 +30,11 @@
 			class="h-10 w-full rounded-md border-[1.5px] border-neutral-500 bg-[#ffffff05] p-2 pl-3.5 text-base text-white placeholder:text-neutral-500"
 			class:pl-11.5={Icon}
 			bind:value
+			{autocomplete}
 			{placeholder}
 			{required}
 			{readonly}
+			{disabled}
 			{oninput}
 		/>
 		{#if Icon}

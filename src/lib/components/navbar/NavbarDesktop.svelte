@@ -40,9 +40,3 @@
 		</div>
 	</div>
 </div>
-
-<style scoped>
-	div :global(.tabler--language svg g path) {
-		stroke-width: 1.5px !important;
-	}
-</style>
