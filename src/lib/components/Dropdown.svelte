@@ -12,30 +12,30 @@
 
 	let { autoOpen = false, width = 8, align = 'left', children, items }: Props = $props();
 
-	let isOpen = $state(false);
+	let isOpened = $state(false);
 
-	export { isOpen };
+	export { isOpened };
 </script>
 
 <div
 	class="relative"
-	onmouseover={() => autoOpen && (isOpen = true)}
-	onmouseleave={() => autoOpen && (isOpen = false)}
-	onfocus={() => autoOpen && (isOpen = true)}
-	onblur={() => autoOpen && (isOpen = false)}
-	use:clickOutside={() => (isOpen = false)}
-	use:tapOutside={() => (isOpen = false)}
+	onmouseover={() => autoOpen && (isOpened = true)}
+	onmouseleave={() => autoOpen && (isOpened = false)}
+	onfocus={() => autoOpen && (isOpened = true)}
+	onblur={() => autoOpen && (isOpened = false)}
+	use:clickOutside={() => (isOpened = false)}
+	use:tapOutside={() => (isOpened = false)}
 	role="menu"
 	tabindex="0"
 >
-	<button onclick={() => (isOpen = !isOpen)} class="flex cursor-pointer items-center justify-center gap-2">
+	<button onclick={() => (isOpened = !isOpened)} class="flex cursor-pointer items-center justify-center gap-2">
 		{@render children()}
 	</button>
 
 	<div
 		class="absolute top-full z-50"
-		class:invisible={!isOpen}
-		class:opacity-0={!isOpen}
+		class:invisible={!isOpened}
+		class:opacity-0={!isOpened}
 		class:left-0={align === 'left'}
 		class:left-[50%]={align === 'center'}
 		class:translate-x-[-50%]={align === 'center'}
