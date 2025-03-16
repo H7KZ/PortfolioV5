@@ -1,4 +1,5 @@
 <script lang="ts">
+	import DateInput from '$lib/components/inputs/DateInput.svelte';
 	import FileInput from '$lib/components/inputs/FileInput.svelte';
 	import SelectInput from '$lib/components/inputs/SelectInput.svelte';
 	import SliderInput from '$lib/components/inputs/SliderInput.svelte';
@@ -11,6 +12,7 @@
 	let fileInputValue = $state('');
 	let sliderInputValue = $state(2500);
 	let selectInputValue = $state('');
+	let dateInputValue = $state('');
 </script>
 
 <div class="flex w-full items-center justify-center px-8">
@@ -48,6 +50,8 @@
 				label="Project type"
 				Icon={TablerCalendarWeek}
 			/>
+			<div class="h-12"></div>
+			<DateInput bind:value={dateInputValue} label="Deadline" placeholder="Enter deadline" Icon={TablerCalendarWeek} required error="Dead is required" />
 		</div>
 	</div>
 </div>

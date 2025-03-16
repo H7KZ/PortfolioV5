@@ -29,8 +29,8 @@
 	<div class="relative w-full">
 		<select
 			id="select-input"
-			class="h-10 w-full cursor-pointer rounded-md border-[1.5px] border-neutral-500 bg-[#ffffff05] p-2 pl-3 text-base"
-			class:pl-10.5={Icon}
+			class="h-10 w-full cursor-pointer rounded-md border-[1.5px] border-neutral-500 bg-[#ffffff05] p-2 px-3 text-base"
+			class:px-10.5={Icon}
 			class:text-neutral-500={value === ''}
 			bind:value
 			{autocomplete}
@@ -61,7 +61,7 @@
 		<div>
 			<IconamoonArrowUp
 				class="
-					absolute top-1/2 right-3 h-7 w-7 -translate-y-1/2 text-neutral-400 transition-all
+					absolute top-1/2 right-2.5 h-7 w-7 -translate-y-1/2 text-neutral-400 transition-all
 					{isOpened ? 'rotate-180' : ''}
 				"
 			/>
