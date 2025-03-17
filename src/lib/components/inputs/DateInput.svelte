@@ -4,6 +4,7 @@
 
 	interface Props {
 		value: string;
+		type?: 'date' | 'time' | 'datetime-local';
 		date?: boolean;
 		time?: boolean;
 		label?: string;
@@ -17,20 +18,20 @@
 		error?: string;
 	}
 
-	let { value = $bindable(''), date = true, time = false, label, autocomplete, placeholder, Icon, required, readonly, disabled, oninput, error }: Props = $props();
+	let { value = $bindable(''), type = 'date', date = true, time = false, label, autocomplete, placeholder, Icon, required, readonly, disabled, oninput, error }: Props = $props();
 
 	let inputElement: HTMLInputElement;
 
 	function onInputFocus() {
-		if (!inputElement.value) inputElement.type = date ? (time ? 'datetime-local' : 'date') : 'time'
+		if (!inputElement.value) inputElement.type = type;
 
-		inputElement.showPicker()
+		inputElement.showPicker();
 	}
 
 	function onInputBlur() {
-		if (inputElement.value) return
+		if (inputElement.value) return;
 
-		inputElement.type = 'text'
+		inputElement.type = 'text';
 	}
 </script>
 
@@ -43,7 +44,7 @@
 		<input
 			bind:this={inputElement}
 			id="date-input"
-			type={value ? (date ? (time ? 'datetime-local' : 'date') : 'time') : 'text'}
+			type={value ? type : 'text'}
 			class="h-10 w-full rounded-md border-[1.5px] border-neutral-500 bg-[#ffffff05] p-2 pl-3.5 text-base text-white placeholder:text-neutral-500"
 			class:pl-11.5={Icon}
 			bind:value

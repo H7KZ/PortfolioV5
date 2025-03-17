@@ -1,10 +1,12 @@
 <script lang="ts">
+	import BoldButton from '$lib/components/BoldButton.svelte';
 	import DateInput from '$lib/components/inputs/DateInput.svelte';
 	import FileInput from '$lib/components/inputs/FileInput.svelte';
 	import SelectInput from '$lib/components/inputs/SelectInput.svelte';
 	import SliderInput from '$lib/components/inputs/SliderInput.svelte';
 	import TextAreaInput from '$lib/components/inputs/TextAreaInput.svelte';
 	import TextInput from '$lib/components/inputs/TextInput.svelte';
+	import MynaUiSend from '$lib/icons/MynaUISend.svelte';
 	import TablerCalendarWeek from '$lib/icons/TablerCalendarWeek.svelte';
 
 	let textInputValue = $state('');
@@ -52,6 +54,8 @@
 			/>
 			<div class="h-12"></div>
 			<DateInput bind:value={dateInputValue} label="Deadline" placeholder="Enter deadline" Icon={TablerCalendarWeek} required error="Dead is required" />
+			<div class="h-12"></div>
+			<BoldButton Icon={MynaUiSend}>SEND</BoldButton>
 		</div>
 	</div>
 </div>
