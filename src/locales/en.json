@@ -3,5 +3,41 @@
 		"resume": "Resumé",
 		"linkedin": "LinkedIn",
 		"hire": "Hire me"
+	},
+
+	"contact": {
+		"fillForm": "Fill out Form",
+		"fillFormDescription": "Got a project in mind? Fill out the form, and I’ll get back to you soon!",
+
+		"form": {
+			"fullName": "Your full name",
+			"fullNamePlaceholder": "John Doe",
+			"email": "Email address",
+			"emailPlaceholder": "mock.company@gmail.com",
+			"company": "Company name",
+			"companyPlaceholder": "Mock Company",
+			"message": "Message & File attachment",
+			"messagePlaceholder": "Describe your project...",
+			"budget": "Expected budget",
+			"projectType": "Project type",
+			"projects": {
+				"none": "Select or leave blank",
+				"website": "Website",
+				"webapp": "Web Application",
+				"mobileapp": "Mobile Application",
+				"other": "Other"
+			},
+			"deadline": "Expected deadline",
+			"priority": "Priority",
+			"priorities": {
+				"none": "Select or leave blank",
+				"low": "Low",
+				"medium": "Medium",
+				"high": "High",
+				"urgent": "Urgent",
+				"asap": "ASAP (Budget is not a concern)"
+			},
+			"send": "Send"
+		}
 	}
 }

@@ -3,5 +3,41 @@
 		"resume": "Životopis",
 		"linkedin": "LinkedIn",
 		"hire": "Najmi mě"
+	},
+
+	"contact": {
+		"fillForm": "Vyplňte formulář",
+		"fillFormDescription": "Máte na mysli nějaký projekt? Vyplňte formulář a já se vám brzy ozvu!",
+
+		"form": {
+			"fullName": "Vaše celé jméno",
+			"fullNamePlaceholder": "Jan Novák",
+			"email": "Emailová adresa",
+			"emailPlaceholder": "prikladny@email.com",
+			"company": "Název společnosti",
+			"companyPlaceholder": "Příkladná společnost",
+			"message": "Zpráva & Přiložení souboru",
+			"messagePlaceholder": "Popište svůj projekt...",
+			"budget": "Očekávaný rozpočet",
+			"projectType": "Typ projektu",
+			"projects": {
+				"none": "Vyberte nebo nechte prázdné",
+				"website": "Webová stránka",
+				"webapp": "Webová aplikace",
+				"mobileapp": "Mobilní aplikace",
+				"other": "Jiné"
+			},
+			"deadline": "Očekávaný termín",
+			"priority": "Priorita",
+			"priorities": {
+				"none": "Vyberte nebo nechte prázdné",
+				"low": "Nízká",
+				"medium": "Střední",
+				"high": "Vysoká",
+				"urgent": "Naléhavá",
+				"asap": "Co nejdříve (Rozpočet není problém)"
+			},
+			"send": "Odeslat"
+		}
 	}
 }
