@@ -2,6 +2,7 @@
 	import type { Component, Snippet } from 'svelte';
 
 	interface Props {
+		type?: 'button' | 'submit' | 'reset';
 		link?: string;
 		target?: string;
 		Icon?: Component;
@@ -9,17 +10,17 @@
 		children: Snippet<[]>;
 	}
 
-	let { link, target, Icon, onclick, children }: Props = $props();
+	let { type = 'button', link, target, Icon, onclick, children }: Props = $props();
 </script>
 
 {#if link}
 	<a href={link} {target} {onclick}>
-		<button class="cursor-pointer rounded-full px-6 py-1.25 transition-all hover:bg-[#ffffff18]">
+		<button {type} class="cursor-pointer rounded-full px-6 py-1.25 transition-all hover:bg-[#ffffff18]">
 			{@render children()}
 		</button>
 	</a>
 {:else}
-	<button class="group flex h-10 cursor-pointer flex-row items-center justify-center transition-all" {onclick}>
+	<button {type} class="group flex h-10 cursor-pointer flex-row items-center justify-center transition-all" {onclick}>
 		<div class="text-background flex h-full items-center justify-center rounded-full bg-neutral-200 px-4 text-center text-xl font-bold transition-all group-hover:bg-white">
 			{@render children()}
 		</div>

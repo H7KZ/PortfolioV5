@@ -1,7 +1,7 @@
 <script lang="ts">
 	import BoldButton from '$lib/components/BoldButton.svelte';
 	import DateInput from '$lib/components/inputs/DateInput.svelte';
-	import FileInput from '$lib/components/inputs/FileInput.svelte';
+	// import FileInput from '$lib/components/inputs/FileInput.svelte';
 	import SelectInput from '$lib/components/inputs/SelectInput.svelte';
 	import SliderInput from '$lib/components/inputs/SliderInput.svelte';
 	import TextAreaInput from '$lib/components/inputs/TextAreaInput.svelte';
@@ -9,13 +9,14 @@
 	import MynaUiSend from '$lib/icons/MynaUISend.svelte';
 	import TablerCalendarWeek from '$lib/icons/TablerCalendarWeek.svelte';
 	import { _ } from 'svelte-i18n';
+	import PocketBase from 'pocketbase';
 
 	let form = $state({
 		fullName: '',
 		email: '',
 		company: '',
 		message: '',
-		file: '',
+		// file: new File([], ''),
 		budget: 2500,
 		projectType: '',
 		deadline: '',
@@ -27,15 +28,31 @@
 		email: '',
 		company: '',
 		message: '',
-		file: '',
+		// file: '',
 		budget: '',
 		projectType: '',
 		deadline: '',
 		priority: ''
 	});
 
-	function handleSubmit() {
+	async function handleSubmit(e: MouseEvent) {
+		e.preventDefault();
+
 		console.log(form);
+
+		const pb = new PocketBase('https://api.jankominek.com');
+
+		await pb.collection('forms').create({
+			fullName: form.fullName,
+			email: form.email,
+			company: form.company,
+			message: form.message,
+			// file: new File([form.file], form.file.name),
+			budget: form.budget,
+			projectType: form.projectType,
+			deadline: form.deadline,
+			priority: form.priority
+		});
 	}
 </script>
 
@@ -50,7 +67,7 @@
 					{$_('contact.fillFormDescription')}
 				</p>
 			</div>
-			<div class="flex w-full flex-col gap-3">
+			<form class="flex w-full flex-col gap-3">
 				<div class="flex w-full flex-row gap-8">
 					<TextInput bind:value={form.fullName} label={$_('contact.form.fullName')} placeholder={$_('contact.form.fullNamePlaceholder')} required error={error.fullName} />
 					<TextInput bind:value={form.email} label={$_('contact.form.email')} placeholder={$_('contact.form.emailPlaceholder')} required error={error.email} />
@@ -58,9 +75,9 @@
 				</div>
 				<div class="relative">
 					<TextAreaInput bind:value={form.message} height={14} label={$_('contact.form.message')} placeholder={$_('contact.form.messagePlaceholder')} required error={error.message} />
-					<div class="absolute right-3.5 bottom-9.5">
+					<!-- <div class="absolute right-3.5 bottom-9.5">
 						<FileInput bind:value={form.file} />
-					</div>
+					</div> -->
 				</div>
 				<SliderInput
 					bind:value={form.budget}
@@ -107,11 +124,11 @@
 					</div>
 				</div>
 				<div class="mt-4 flex w-full justify-end">
-					<BoldButton Icon={MynaUiSend} onclick={handleSubmit}>
+					<BoldButton Icon={MynaUiSend} type="submit" onclick={handleSubmit}>
 						{$_('contact.form.send')}
 					</BoldButton>
 				</div>
-			</div>
+			</form>
 			<!-- <TextInput bind:value={textInputValue} label="Name" placeholder="Enter your name" Icon={TablerCalendarWeek} required error="Name is required" />
 			<TextAreaInput bind:value={textAreaInputValue} label="Message" placeholder="Textarea" required error="Message is reauered" />
 			<FileInput bind:value={fileInputValue} />

@@ -5,10 +5,10 @@
 	import filesIconsComponents from '$lib/utils/filesIconsComponents';
 
 	interface Props {
-		value: string;
+		value: File;
 	}
 
-	let { value = $bindable('') }: Props = $props();
+	let { value = $bindable(new File([], '')) }: Props = $props();
 
 	let extension = $state('');
 
@@ -16,8 +16,8 @@
 		const file = (e.target as HTMLInputElement).files?.[0];
 		if (file) {
 			const reader = new FileReader();
-			reader.onload = (e) => {
-				value = e.target?.result as string;
+			reader.onload = () => {
+				value = file;
 				extension = file.name.split('.').pop() ?? '';
 			};
 			reader.readAsDataURL(file);
@@ -25,14 +25,14 @@
 	}
 
 	function clearInput() {
-		value = '';
+		value = new File([], '');
 		extension = '';
 	}
 </script>
 
 <div class="flex w-full flex-col">
 	<div class="relative flex h-9 w-9 items-center justify-center">
-		{#if !value}
+		{#if !value.name}
 			<label for="file-input">
 				<TablerFilePlus class="h-9 w-9 cursor-pointer transition-all hover:text-neutral-400" />
 			</label>
