@@ -3,6 +3,7 @@
 	import type { FullAutoFill } from 'svelte/elements';
 
 	interface Props {
+		id?: string;
 		value: string;
 		type?: 'date' | 'time' | 'datetime-local';
 		date?: boolean;
@@ -19,6 +20,7 @@
 	}
 
 	let {
+		id = crypto.randomUUID(),
 		value = $bindable(''),
 		type = 'date',
 		date = true,
@@ -50,16 +52,16 @@
 </script>
 
 <div class="flex w-full flex-col gap-0.5">
-	<label for="date-input" class="text-sm font-normal text-neutral-300">
+	<label for={id} class="text-sm font-normal text-neutral-300">
 		{label}
 		{required ? '*' : ''}
 	</label>
 	<div class="relative w-full">
 		<input
 			bind:this={inputElement}
-			id="date-input"
+			{id}
 			type={value || !placeholder ? type : 'text'}
-			class="h-10 w-full rounded-md border-[1.5px] border-neutral-500 bg-[#ffffff05] p-2 pl-3.5 text-base text-white placeholder:text-neutral-500"
+			class="h-10 w-full rounded-md border-[1.5px] border-neutral-500 bg-[#ffffff03] p-2 pl-3.5 text-base text-white placeholder:text-neutral-500"
 			class:pl-11.5={Icon}
 			bind:value
 			{autocomplete}

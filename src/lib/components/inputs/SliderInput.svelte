@@ -1,5 +1,6 @@
 <script lang="ts">
 	interface Props {
+		id?: string;
 		value: number;
 		valueLabel?: (value: number) => string;
 		min: number;
@@ -15,16 +16,31 @@
 		error?: string;
 	}
 
-	let { max, value = $bindable(max / 2), valueLabel, min, minLabel, maxLabel, step, label, required, readonly, disabled, oninput, error }: Props = $props();
+	let {
+		id = crypto.randomUUID(),
+		max,
+		value = $bindable(max / 2),
+		valueLabel,
+		min,
+		minLabel,
+		maxLabel,
+		step,
+		label,
+		required,
+		readonly,
+		disabled,
+		oninput,
+		error
+	}: Props = $props();
 </script>
 
 <div class="flex w-full flex-col gap-0.5">
-	<label for="slider-input" class="text-sm font-normal text-neutral-300">
+	<label for={id} class="text-sm font-normal text-neutral-300">
 		{label}
 		{required ? '*' : ''}
 	</label>
 	<input
-		id="slider-input"
+		{id}
 		type="range"
 		class="my-3 h-1 w-full cursor-pointer rounded-full bg-neutral-800 accent-white outline-none"
 		bind:value

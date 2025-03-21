@@ -4,9 +4,9 @@
 	import type { FullAutoFill } from 'svelte/elements';
 
 	interface Props {
+		id?: string;
 		value: string;
-		options: { value: string; label: string; disabled?: boolean }[];
-		selected?: string;
+		options: { value: string; label: string; selected?: boolean; disabled?: boolean }[];
 		label?: string;
 		autocomplete?: FullAutoFill;
 		Icon?: Component;
@@ -16,20 +16,20 @@
 		error?: string;
 	}
 
-	let { value = $bindable(''), options, selected, label, autocomplete, Icon, required, disabled, oninput, error }: Props = $props();
+	let { id = crypto.randomUUID(), value = $bindable(''), options, label, autocomplete, Icon, required, disabled, oninput, error }: Props = $props();
 
 	let isOpened = $state(false);
 </script>
 
 <div class="flex w-full flex-col gap-0.5">
-	<label for="select-input" class="text-sm font-normal text-neutral-300">
+	<label for={id} class="text-sm font-normal text-neutral-300">
 		{label}
 		{required ? '*' : ''}
 	</label>
 	<div class="relative w-full">
 		<select
-			id="select-input"
-			class="h-10 w-full cursor-pointer rounded-md border-[1.5px] border-neutral-500 bg-[#ffffff05] p-2 px-3 text-base"
+			{id}
+			class="h-10 w-full cursor-pointer rounded-md border-[1.5px] border-neutral-500 bg-[#ffffff03] p-2 px-3 text-base"
 			class:px-10.5={Icon}
 			class:text-neutral-500={value === ''}
 			bind:value
@@ -43,7 +43,7 @@
 			{#each options as option}
 				<option
 					value={option.value}
-					selected={selected === option.value}
+					selected={option.selected}
 					disabled={option.disabled}
 					class="bg-neutral-900 text-base"
 					class:text-white={option.value !== ''}
@@ -60,10 +60,7 @@
 		{/if}
 		<div>
 			<IconamoonArrowUp
-				class="
-					absolute top-1/2 right-2.5 h-7 w-7 -translate-y-1/2 text-neutral-400 transition-all
-					{isOpened ? 'rotate-180' : ''}
-				"
+				class="pointer-events-none absolute top-1/2 right-2.5 h-7 w-7 -translate-y-1/2 text-neutral-400 transition-all {isOpened ? 'rotate-180' : ''}"
 			/>
 		</div>
 	</div>

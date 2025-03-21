@@ -5,10 +5,11 @@
 	import filesIconsComponents from '$lib/utils/filesIconsComponents';
 
 	interface Props {
+		id?: string;
 		value: File;
 	}
 
-	let { value = $bindable(new File([], '')) }: Props = $props();
+	let { id = crypto.randomUUID(), value = $bindable(new File([], '')) }: Props = $props();
 
 	let extension = $state('');
 
@@ -33,7 +34,7 @@
 <div class="flex w-full flex-col">
 	<div class="relative flex h-9 w-9 items-center justify-center">
 		{#if !value.name}
-			<label for="file-input">
+			<label for={id}>
 				<TablerFilePlus class="h-9 w-9 cursor-pointer transition-all hover:text-neutral-400" />
 			</label>
 		{:else}
@@ -45,5 +46,5 @@
 			</button>
 		{/if}
 	</div>
-	<input id="file-input" type="file" class="absolute hidden h-0 w-0 opacity-0" oninput={onFileInput} />
+	<input {id} type="file" class="absolute hidden h-0 w-0 opacity-0" oninput={onFileInput} />
 </div>

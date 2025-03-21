@@ -2,6 +2,7 @@
 	import type { FullAutoFill } from 'svelte/elements';
 
 	interface Props {
+		id?: string;
 		value: string;
 		label?: string;
 		resize?: 'none' | 'both' | 'horizontal' | 'vertical';
@@ -17,6 +18,7 @@
 	}
 
 	let {
+		id = crypto.randomUUID(),
 		value = $bindable(''),
 		label,
 		resize = 'none',
@@ -33,13 +35,13 @@
 </script>
 
 <div class="flex w-full flex-col gap-0.5">
-	<label for="textarea-input" class="text-sm font-normal text-neutral-300">
+	<label for={id} class="text-sm font-normal text-neutral-300">
 		{label}
 		{required ? '*' : ''}
 	</label>
 	<textarea
-		id="textarea-input"
-		class="w-full rounded-md border-[1.5px] border-neutral-500 bg-[#ffffff05] p-2 pl-3.5 text-sm text-white placeholder:text-neutral-500"
+		{id}
+		class="w-full rounded-md border-[1.5px] border-neutral-500 bg-[#ffffff03] p-2 pl-3.5 text-sm text-white placeholder:text-neutral-500"
 		style="height: {height}rem"
 		class:resize-none={resize === 'none'}
 		class:resize-both={resize === 'both'}

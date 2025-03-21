@@ -37,7 +37,8 @@
 				"urgent": "Naléhavá",
 				"asap": "Co nejdříve (Rozpočet není problém)"
 			},
-			"send": "ODESLAT",
+			"send": "Odeslat",
+
 			"errors": {
 				"fullName": {
 					"invalid_type": "Jméno musí být text.",
@@ -70,11 +71,74 @@
 				"priority": {
 					"invalid_type": "Priorita musí být text.",
 					"too_small": "Musíte zadat prioritu."
-				}
-			}
+				},
+				"api": "Něco se pokazilo. Zkuste to za chvíli znovu."
+			},
+
+			"success": "Vaše zpráva byla úspěšně odeslána!"
 		},
 
 		"bookACall": "Rezervujte hovor",
-		"bookACallDescription": "Chcete přeskočit diskusi o tom, co se děje? Pojďme si popovídat! Objednejte si telefonát a probereme vaše potřeby."
+		"bookACallDescription": "Chcete přeskočit diskusi o tom, co se děje? Pojďme si popovídat! Objednejte si telefonát a probereme vaše potřeby.",
+
+		"calendar": {
+			"jankominek": "Jan Komínek",
+			"30minCall": "30 min Schůzka",
+			"meeting": "Typ schůzky",
+			"meetings": {
+				"consultation": "Konzultace",
+				"discovery": "Objednávka",
+				"followup": "Follow-up",
+				"interview": "Pohovor",
+				"other": "Jiné"
+			},
+			"timezone": "Časové pásmo",
+			"confirm": "Potvrdit",
+
+			"months": {
+				"1": "Leden",
+				"2": "Únor",
+				"3": "Březen",
+				"4": "Duben",
+				"5": "Květen",
+				"6": "Červen",
+				"7": "Červenec",
+				"8": "Srpen",
+				"9": "Září",
+				"10": "Říjen",
+				"11": "Listopad",
+				"12": "Prosinec"
+			},
+
+			"week": {
+				"1": "Po",
+				"2": "Út",
+				"3": "St",
+				"4": "Čt",
+				"5": "Pá",
+				"6": "So",
+				"7": "Ne"
+			},
+
+			"errors": {
+				"meeting": {
+					"invalid_type": "Typ schůzky musí být text.",
+					"too_small": "Musíte určit typ schůzky."
+				},
+				"timezone": {
+					"invalid_type": "Časové pásmo musí být text.",
+					"too_small": "Musíte určit časové pásmo."
+				},
+				"datetime": {
+					"invalid_type": "Datum musí být platné.",
+					"invalid_date": "Zadejte platné datum.",
+					"already_booked": "Tento časový slot je již obsazen."
+				},
+				"duration": {
+					"invalid_type": "Doba trvání musí být číslo.",
+					"too_small": "Doba trvání musí být minimálně 15 minut."
+				}
+			}
+		}
 	}
 }

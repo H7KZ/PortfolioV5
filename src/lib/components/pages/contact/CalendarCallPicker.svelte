@@ -1,84 +1,71 @@
 <script lang="ts">
-	import BoldButton from '$lib/components/BoldButton.svelte';
-	import TextInput from '$lib/components/inputs/TextInput.svelte';
-	import { _ } from 'svelte-i18n';
-	import PocketBase from 'pocketbase';
-	import { z } from 'zod';
 	import { onMount } from 'svelte';
 
-	interface Call {
-		meeting: string;
-		timezone: string;
-		datetime: string;
-		lengthInMinutes: number;
-	}
+	onMount(() => {
+		(function (C, A, L) {
+			let p = function (a: { (): void; q: any }, ar: IArguments | string[]) {
+				a.q.push(ar);
+			};
 
-	const pb = new PocketBase('https://api.jankominek.com');
+			let d = C.document;
 
-	let calls: Call[] = [];
+			C.Cal =
+				C.Cal ||
+				function () {
+					let cal = C.Cal;
+					let ar = arguments;
 
-	onMount(async () => {
-		const apiCalls = await pb.collection('calls').getFullList({
-			filter: `datetime >= "${new Date().toISOString().replace('T', ' ')}"`,
-			sort: 'datetime'
+					if (!cal.loaded) {
+						cal.ns = {};
+						cal.q = cal.q || [];
+						d.head.appendChild(d.createElement('script')).src = A;
+						cal.loaded = true;
+					}
+
+					if (ar[0] === L) {
+						const api = function () {
+							p(api, arguments);
+						} as any;
+
+						const namespace = ar[1];
+						api.q = api.q || [];
+
+						if (typeof namespace === 'string') {
+							cal.ns[namespace] = cal.ns[namespace] || api;
+							p(cal.ns[namespace], ar);
+							p(cal, ['initNamespace', namespace]);
+						} else p(cal, ar);
+
+						return;
+					}
+
+					p(cal, ar);
+				};
+		})(window, 'https://app.cal.com/embed/embed.js', 'init');
+
+		window.Cal('init', '30min', { origin: 'https://cal.com' });
+
+		window.Cal.ns['30min']('inline', {
+			elementOrSelector: '#my-cal-inline',
+			config: { layout: 'month_view', theme: 'dark' },
+			calLink: 'jankominek/30min'
 		});
 
-		calls = apiCalls.map((c) => ({
-			meeting: c.meeting,
-			timezone: c.timezone,
-			datetime: c.datetime,
-			lengthInMinutes: c.lengthInMinutes
-		}));
-
-		console.log(calls);
-	});
-
-	let call = $state({
-		meeting: '',
-		timezone: '',
-		datetime: '',
-		lengthInMinutes: 0
-	});
-
-	let error = $state({
-		meeting: '',
-		timezone: '',
-		datetime: '',
-		lengthInMinutes: ''
-	});
-
-	const callSchema = z.object({
-		meeting: z.string().nonempty(),
-		timezone: z.string().nonempty(),
-		datetime: z.date(),
-		lengthInMinutes: z.number().min(15)
-	});
-
-	async function handleSubmit(e: MouseEvent) {
-		e.preventDefault();
-
-		const validationResult = callSchema.safeParse({
-			meeting: call.meeting,
-			timezone: call.timezone,
-			datetime: new Date(call.datetime),
-			lengthInMinutes: call.lengthInMinutes
+		window.Cal.ns['30min']('ui', {
+			theme: 'dark',
+			cssVarsPerTheme: { light: { 'cal-brand': '#161616' }, dark: { 'cal-brand': '#ffffff' } },
+			hideEventTypeDetails: false,
+			layout: 'month_view'
 		});
-
-		if (!validationResult.success) {
-			const errors = validationResult.error.errors;
-			errors.forEach((e) => {
-				const key = e.path.find((p) => Object.keys(call).includes(p.toString())) as keyof typeof call;
-				const message = $_(`contact.form.errors.${key}.${e.code}`);
-				error[key] = message;
-			});
-			return;
-		}
-
-		await pb.collection('calls').create({
-			meeting: call.meeting,
-			timezone: call.timezone,
-			datetime: new Date(call.datetime),
-			lengthInMinutes: call.lengthInMinutes
-		});
-	}
+	});
 </script>
+
+<div class="h-full w-full max-w-[980px] !overflow-hidden" id="my-cal-inline"></div>
+
+<style scoped>
+	@media (min-width: 848px) {
+		#my-cal-inline {
+			height: 490px !important;
+		}
+	}
+</style>

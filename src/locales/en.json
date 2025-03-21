@@ -9,6 +9,8 @@
 		"fillForm": "Fill out Form",
 		"fillFormDescription": "Got a project in mind? Fill out the form, and I’ll get back to you soon!",
 
+		"orBookACall": "Or <u>Book a Call</u>",
+
 		"form": {
 			"fullName": "Your full name",
 			"fullNamePlaceholder": "John Doe",
@@ -37,7 +39,8 @@
 				"urgent": "Urgent",
 				"asap": "ASAP (Budget is not a concern)"
 			},
-			"send": "SEND",
+			"send": "Send",
+
 			"errors": {
 				"fullName": {
 					"invalid_type": "Name must be text.",
@@ -70,11 +73,74 @@
 				"priority": {
 					"invalid_type": "Priority must be text.",
 					"too_small": "You must specify a priority."
-				}
-			}
+				},
+				"api": "An error occurred while sending the message. Please try again later."
+			},
+
+			"success": "Your message has been sent successfully!"
 		},
 
 		"bookACall": "Book a Call",
-		"bookACallDescription": "Want to skip the back-and-forth? Let’s chat! Book a call, and we’ll go over your needs."
+		"bookACallDescription": "Want to skip the back-and-forth? Let’s chat! Book a call, and we’ll go over your needs.",
+
+		"calendar": {
+			"jankominek": "Jan Komínek",
+			"30minCall": "30 min Meeting",
+			"meeting": "Meeting type",
+			"meetings": {
+				"consultation": "Consultation",
+				"discovery": "Discovery Call",
+				"followup": "Follow-up",
+				"interview": "Interview",
+				"other": "Other"
+			},
+			"timezone": "Timezone",
+			"confirm": "Confirm",
+
+			"months": {
+				"1": "January",
+				"2": "February",
+				"3": "March",
+				"4": "April",
+				"5": "May",
+				"6": "June",
+				"7": "July",
+				"8": "August",
+				"9": "September",
+				"10": "October",
+				"11": "November",
+				"12": "December"
+			},
+
+			"week": {
+				"1": "Mon",
+				"2": "Tue",
+				"3": "Wed",
+				"4": "Thu",
+				"5": "Fri",
+				"6": "Sat",
+				"7": "Sun"
+			},
+
+			"errors": {
+				"meeting": {
+					"invalid_type": "Meeting type must be text.",
+					"too_small": "You must specify a meeting type."
+				},
+				"timezone": {
+					"invalid_type": "Timezone must be text.",
+					"too_small": "You must specify a timezone."
+				},
+				"datetime": {
+					"invalid_type": "Date must be valid.",
+					"invalid_date": "Enter a valid date.",
+					"already_booked": "This time slot is already booked."
+				},
+				"duration": {
+					"invalid_type": "Duration must be a number.",
+					"too_small": "Duration must be at least 15 minutes."
+				}
+			}
+		}
 	}
 }

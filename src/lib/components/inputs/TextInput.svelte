@@ -3,6 +3,7 @@
 	import type { FullAutoFill } from 'svelte/elements';
 
 	interface Props {
+		id?: string;
 		value: string;
 		label?: string;
 		autocomplete?: FullAutoFill;
@@ -15,19 +16,31 @@
 		error?: string;
 	}
 
-	let { value = $bindable(''), label, autocomplete, placeholder, Icon, required, readonly, disabled, oninput, error }: Props = $props();
+	let {
+		id = crypto.randomUUID(),
+		value = $bindable(''),
+		label,
+		autocomplete,
+		placeholder,
+		Icon,
+		required,
+		readonly,
+		disabled,
+		oninput,
+		error
+	}: Props = $props();
 </script>
 
 <div class="flex w-full flex-col gap-0.5">
-	<label for="text-input" class="text-sm font-normal text-neutral-300">
+	<label for={id} class="text-sm font-normal text-neutral-300">
 		{label}
 		{required ? '*' : ''}
 	</label>
 	<div class="relative w-full">
 		<input
-			id="text-input"
+			{id}
 			type="text"
-			class="h-10 w-full rounded-md border-[1.5px] border-neutral-500 bg-[#ffffff05] p-2 pl-3.5 text-base text-white placeholder:text-neutral-500"
+			class="h-10 w-full rounded-md border-[1.5px] border-neutral-500 bg-[#ffffff03] p-2 pl-3.5 text-base text-white placeholder:text-neutral-500"
 			class:pl-11.5={Icon}
 			bind:value
 			{autocomplete}
