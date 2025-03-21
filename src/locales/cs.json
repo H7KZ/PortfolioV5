@@ -37,7 +37,44 @@
 				"urgent": "Naléhavá",
 				"asap": "Co nejdříve (Rozpočet není problém)"
 			},
-			"send": "ODESLAT"
-		}
+			"send": "ODESLAT",
+			"errors": {
+				"fullName": {
+					"invalid_type": "Jméno musí být text.",
+					"too_small": "Jméno nesmí být prázdné."
+				},
+				"email": {
+					"invalid_type": "E-mail musí být text.",
+					"invalid_string": "Zadejte platný e-mail.",
+					"too_small": "E-mail nesmí být prázdný."
+				},
+				"company": {
+					"invalid_type": "Název společnosti musí být text."
+				},
+				"message": {
+					"invalid_type": "Zpráva musí být text.",
+					"too_small": "Zpráva nesmí být prázdná."
+				},
+				"budget": {
+					"invalid_type": "Rozpočet musí být číslo.",
+					"too_small": "Minimální rozpočet je 1000."
+				},
+				"projectType": {
+					"invalid_type": "Typ projektu musí být text.",
+					"too_small": "Musíte vyplnit typ projektu."
+				},
+				"deadline": {
+					"invalid_type": "Datum musí být platné.",
+					"invalid_date": "Zadejte platné datum."
+				},
+				"priority": {
+					"invalid_type": "Priorita musí být text.",
+					"too_small": "Musíte zadat prioritu."
+				}
+			}
+		},
+
+		"bookACall": "Rezervujte hovor",
+		"bookACallDescription": "Chcete přeskočit diskusi o tom, co se děje? Pojďme si popovídat! Objednejte si telefonát a probereme vaše potřeby."
 	}
 }

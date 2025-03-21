@@ -21,10 +21,14 @@
 	</a>
 {:else}
 	<button {type} class="group flex h-10 cursor-pointer flex-row items-center justify-center transition-all" {onclick}>
-		<div class="text-background flex h-full items-center justify-center rounded-full bg-neutral-200 px-4 text-center text-xl font-bold transition-all group-hover:bg-white">
+		<div
+			class="text-background flex h-full items-center justify-center rounded-full bg-neutral-200 px-4 text-center text-xl font-bold transition-all group-hover:bg-white"
+		>
 			{@render children()}
 		</div>
-		<div class="text-background flex h-full w-10 -translate-x-0.75 transform items-center justify-center rounded-full bg-neutral-200 text-center font-bold transition-all group-hover:bg-white">
+		<div
+			class="text-background flex h-full w-10 -translate-x-0.75 transform items-center justify-center rounded-full bg-neutral-200 text-center font-bold transition-all group-hover:bg-white"
+		>
 			{#if Icon}
 				<Icon class="text-background h-6 w-6" />
 			{/if}

@@ -37,7 +37,44 @@
 				"urgent": "Urgent",
 				"asap": "ASAP (Budget is not a concern)"
 			},
-			"send": "SEND"
-		}
+			"send": "SEND",
+			"errors": {
+				"fullName": {
+					"invalid_type": "Name must be text.",
+					"too_small": "Name must not be empty."
+				},
+				"email": {
+					"invalid_type": "Email must be text.",
+					"invalid_string": "Enter a valid email.",
+					"too_small": "Email must not be empty."
+				},
+				"company": {
+					"invalid_type": "Company name must be text."
+				},
+				"message": {
+					"invalid_type": "Message must be text.",
+					"too_small": "Message must not be empty."
+				},
+				"budget": {
+					"invalid_type": "Budget must be a number.",
+					"too_small": "Minimum budget is 1000."
+				},
+				"projectType": {
+					"invalid_type": "Project type must be text.",
+					"too_small": "You must fill in the project type."
+				},
+				"deadline": {
+					"invalid_type": "Date must be valid.",
+					"invalid_date": "Enter a valid date."
+				},
+				"priority": {
+					"invalid_type": "Priority must be text.",
+					"too_small": "You must specify a priority."
+				}
+			}
+		},
+
+		"bookACall": "Book a Call",
+		"bookACallDescription": "Want to skip the back-and-forth? Let’s chat! Book a call, and we’ll go over your needs."
 	}
 }

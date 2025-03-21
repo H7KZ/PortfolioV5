@@ -1,5 +1,6 @@
 <script lang="ts">
 	import BoldButton from '$lib/components/BoldButton.svelte';
+	import Button from '$lib/components/Button.svelte';
 	import DateInput from '$lib/components/inputs/DateInput.svelte';
 	import FileInput from '$lib/components/inputs/FileInput.svelte';
 	import SelectInput from '$lib/components/inputs/SelectInput.svelte';
@@ -11,7 +12,7 @@
 
 	let textInputValue = $state('');
 	let textAreaInputValue = $state('');
-	let fileInputValue = $state('');
+	let fileInputValue = $state(new File([], ''));
 	let sliderInputValue = $state(2500);
 	let selectInputValue = $state('');
 	let dateInputValue = $state('');
@@ -48,6 +49,7 @@
 				Icon={TablerCalendarWeek}
 			/>
 			<DateInput bind:value={dateInputValue} label="Deadline" placeholder="Enter deadline" Icon={TablerCalendarWeek} required error="Dead is required" />
+			<Button>SEND</Button>
 			<BoldButton Icon={MynaUiSend}>SEND</BoldButton>
 		</div>
 	</div>

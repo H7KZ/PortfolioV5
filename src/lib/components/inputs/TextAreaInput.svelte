@@ -16,7 +16,20 @@
 		error?: string;
 	}
 
-	let { value = $bindable(''), label, resize = 'none', height = 8, maxlength, autocomplete, placeholder, required, readonly, disabled, oninput, error }: Props = $props();
+	let {
+		value = $bindable(''),
+		label,
+		resize = 'none',
+		height = 8,
+		maxlength,
+		autocomplete,
+		placeholder,
+		required,
+		readonly,
+		disabled,
+		oninput,
+		error
+	}: Props = $props();
 </script>
 
 <div class="flex w-full flex-col gap-0.5">

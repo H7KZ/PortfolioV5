@@ -18,7 +18,21 @@
 		error?: string;
 	}
 
-	let { value = $bindable(''), type = 'date', date = true, time = false, label, autocomplete, placeholder, Icon, required, readonly, disabled, oninput, error }: Props = $props();
+	let {
+		value = $bindable(''),
+		type = 'date',
+		date = true,
+		time = false,
+		label,
+		autocomplete,
+		placeholder,
+		Icon,
+		required,
+		readonly,
+		disabled,
+		oninput,
+		error
+	}: Props = $props();
 
 	let inputElement: HTMLInputElement;
 
