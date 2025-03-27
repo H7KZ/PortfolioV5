@@ -15,7 +15,7 @@
 	});
 </script>
 
-<main>
+<main class="h-full min-h-screen w-full">
 	<nav>
 		<Navbar />
 	</nav>

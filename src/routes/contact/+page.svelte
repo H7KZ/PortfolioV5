@@ -17,14 +17,14 @@
 				</p>
 				<div class="mt-6 hidden items-center gap-4 lg:flex">
 					<LongArrow class="h-10" />
-					<p class="text-sm">
+					<a href="#calendar" class="text-sm">
 						{@html $_('contact.orBookACall')}
-					</p>
+					</a>
 				</div>
 			</div>
 			<ContactForm />
 		</div>
-		<div class="flex flex-col gap-8 xl:flex-row xl:justify-between xl:gap-20">
+		<div class="flex flex-col gap-8 xl:flex-row xl:justify-between xl:gap-20" id="calendar">
 			<div class="flex w-full shrink-0 flex-col gap-4 xl:w-64">
 				<h2 class="text-5xl font-normal">
 					{$_('contact.bookACall')}

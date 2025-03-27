@@ -1,4 +1,52 @@
 {
+	"errors": {
+		"300": "Požadovaný zdroj má více možností. Vyberte si vhodnou.",
+		"301": "Zdroj byl přesunut na novou adresu URL. Aktualizujte si záložky.",
+		"302": "Zdroj byl dočasně přesunut. Zkuste to později nebo sledujte přesměrování.",
+		"307": "Zdroj byl dočasně přesunut na jinou adresu URL.",
+		"308": "Zdroj byl trvale přesunut na jinou adresu URL.",
+		"400": "Požadavek byl neplatný. Zkontrolujte vstup a zkuste to znovu.",
+		"401": "Pro přístup k tomuto zdroji se musíte přihlásit.",
+		"402": "Přístup je omezen na platící uživatele.",
+		"403": "Nemáte oprávnění k přístupu k tomuto zdroji.",
+		"404": "Požadovaný zdroj nebyl nalezen. Zkontrolujte adresu URL.",
+		"405": "Použitá HTTP metoda není pro tento zdroj povolena.",
+		"406": "Požadovaný zdroj není dostupný v požadovaném formátu.",
+		"407": "Je vyžadováno ověření u proxy serveru.",
+		"408": "Server trval příliš dlouho na odpověď. Zkuste to později.",
+		"409": "Došlo ke konfliktu v požadavku. Zkontrolujte duplicitní akce.",
+		"410": "Zdroj již není dostupný a nebude znovu k dispozici.",
+		"411": "Požadavek musí obsahovat platnou hlavičku Content-Length.",
+		"412": "Jedna nebo více podmínek v hlavičce požadavku nebyly splněny.",
+		"413": "Velikost požadavku překračuje povolený limit.",
+		"414": "Požadovaná adresa URL je příliš dlouhá.",
+		"415": "Požadavek obsahuje nepodporovaný typ média.",
+		"416": "Požadovaný rozsah je neplatný nebo není dostupný.",
+		"417": "Server nemůže splnit očekávání uvedená v požadavku.",
+		"418": "Toto je žertovná odpověď indikující neplatný požadavek.",
+		"421": "Požadavek byl odeslán na server, který nemůže poskytnout platnou odpověď.",
+		"422": "Požadavek byl správně formátován, ale nemohl být zpracován.",
+		"423": "Zdroj je uzamčen a nelze jej upravit.",
+		"424": "Selhalo závislé volání, což způsobilo neúspěch tohoto požadavku.",
+		"425": "Požadavek byl odeslán příliš brzy a měl by být zopakován později.",
+		"426": "Klient musí upgradovat na jiný protokol pro přístup k tomuto zdroji.",
+		"428": "Požadavek musí obsahovat specifické předpoklady.",
+		"429": "Bylo provedeno příliš mnoho požadavků v krátkém čase. Zkuste to později.",
+		"431": "Hlavičky požadavku jsou příliš velké pro zpracování.",
+		"451": "Zdroj je blokován z právních důvodů.",
+		"500": "Na naší straně se něco pokazilo. Zkuste to později.",
+		"501": "Server nepodporuje požadovanou funkci.",
+		"502": "Byla přijata neplatná odpověď od nadřazeného serveru. Zkuste to později.",
+		"503": "Server je dočasně nedostupný. Zkuste to později.",
+		"504": "Server trval příliš dlouho na odpověď. Zkuste to později.",
+		"505": "Server nepodporuje požadovanou verzi HTTP.",
+		"506": "Server narazil na konfigurační chybu.",
+		"507": "Server nemá dostatek úložného prostoru.",
+		"508": "Požadavek způsobil nekonečnou smyčku.",
+		"510": "Požadavek vyžaduje další rozšíření.",
+		"511": "Pro přístup k síti je vyžadováno ověření."
+	},
+
 	"navbar": {
 		"resume": "Životopis",
 		"linkedin": "LinkedIn",
@@ -8,6 +56,8 @@
 	"contact": {
 		"fillForm": "Vyplňte formulář",
 		"fillFormDescription": "Máte na mysli nějaký projekt? Vyplňte formulář a já se vám brzy ozvu!",
+
+		"orBookACall": "Nebo si <u>Zarezervujte hovor</u>",
 
 		"form": {
 			"fullName": "Vaše celé jméno",
@@ -19,6 +69,9 @@
 			"message": "Zpráva & Přiložení souboru",
 			"messagePlaceholder": "Popište svůj projekt...",
 			"budget": "Očekávaný rozpočet",
+
+			"advanced": "Další informace",
+
 			"projectType": "Typ projektu",
 			"projects": {
 				"none": "Vyberte nebo nechte prázdné",

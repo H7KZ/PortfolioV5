@@ -58,9 +58,11 @@
 				<Icon class="h-6 w-6 text-neutral-400" />
 			</div>
 		{/if}
-		<IconamoonArrowUp
-			class="pointer-events-none absolute top-1/2 right-2.5 h-7 w-7 -translate-y-1/2 text-neutral-400 transition-all {isOpened ? 'rotate-180' : ''}"
-		/>
+		<div>
+			<IconamoonArrowUp
+				class="pointer-events-none absolute top-1/2 right-2.5 h-7 w-7 -translate-y-1/2 text-neutral-400 transition-all {isOpened ? 'rotate-180' : ''}"
+			/>
+		</div>
 	</div>
 	<p class="mt-0.5 h-4 text-xs text-red-400">
 		{error}

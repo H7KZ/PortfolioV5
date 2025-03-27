@@ -28,7 +28,7 @@
 	role="menu"
 	tabindex="0"
 >
-	<button onclick={() => (isOpened = !isOpened)} class="flex cursor-pointer items-center justify-center gap-2">
+	<button type="button" onclick={() => (isOpened = !isOpened)} class="flex cursor-pointer items-center justify-center gap-2">
 		{@render children()}
 	</button>
 

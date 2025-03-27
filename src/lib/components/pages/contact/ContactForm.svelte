@@ -10,6 +10,7 @@
 	import { _ } from 'svelte-i18n';
 	import PocketBase from 'pocketbase';
 	import { z } from 'zod';
+	import Accordition from '$lib/components/Accordition.svelte';
 
 	const pb = new PocketBase('https://api.jankominek.com');
 
@@ -20,6 +21,7 @@
 		message: '',
 		budget: 2500,
 		projectType: '',
+		features: [],
 		deadline: '',
 		priority: ''
 	});
@@ -31,6 +33,7 @@
 		message: '',
 		budget: '',
 		projectType: '',
+		features: '',
 		deadline: '',
 		priority: '',
 		api: ''
@@ -45,6 +48,7 @@
 		message: z.string().nonempty(),
 		budget: z.number().min(1000),
 		projectType: z.string().nonempty(),
+		features: z.array(z.string()),
 		deadline: z.date().nullable(),
 		priority: z.string().nonempty()
 	});
@@ -59,6 +63,7 @@
 			message: form.message,
 			budget: form.budget,
 			projectType: form.projectType,
+			features: form.features,
 			deadline: form.deadline ? new Date(form.deadline) : null,
 			priority: form.priority
 		});
@@ -81,6 +86,7 @@
 				message: form.message,
 				budget: form.budget,
 				projectType: form.projectType,
+				features: form.features.join(', '),
 				deadline: form.deadline ? new Date(form.deadline) : null,
 				priority: form.priority
 			});
@@ -98,6 +104,7 @@
 			message: '',
 			budget: 2500,
 			projectType: '',
+			features: [],
 			deadline: '',
 			priority: ''
 		};
@@ -109,6 +116,7 @@
 			message: '',
 			budget: '',
 			projectType: '',
+			features: '',
 			deadline: '',
 			priority: '',
 			api: ''
@@ -168,47 +176,49 @@
 		error={error.budget}
 		oninput={() => (error.budget = '')}
 	/>
-	<div class="flex w-full flex-col gap-3 xl:flex-row xl:gap-8">
-		<SelectInput
-			bind:value={form.projectType}
-			options={[
-				{ value: '', label: $_('contact.form.projects.none'), selected: true },
-				{ value: 'website', label: $_('contact.form.projects.website') },
-				{ value: 'webapp', label: $_('contact.form.projects.webapp') },
-				{ value: 'mobileapp', label: $_('contact.form.projects.mobileapp') },
-				{ value: 'other', label: $_('contact.form.projects.other') }
-			]}
-			label={$_('contact.form.projectType')}
-			error={error.projectType}
-		/>
-		<div class="flex w-full flex-col gap-3 sm:flex-row sm:gap-8">
-			<div class="w-full xl:w-52 xl:shrink-0">
-				<DateInput
-					bind:value={form.deadline}
-					label={$_('contact.form.deadline')}
-					Icon={TablerCalendarWeek}
-					error={error.deadline}
-					oninput={() => (error.deadline = '')}
-				/>
-			</div>
-			<div class="w-full xl:w-72 xl:shrink-0">
-				<SelectInput
-					bind:value={form.priority}
-					options={[
-						{ value: '', label: $_('contact.form.priorities.none'), selected: true },
-						{ value: 'low', label: $_('contact.form.priorities.low') },
-						{ value: 'medium', label: $_('contact.form.priorities.medium') },
-						{ value: 'high', label: $_('contact.form.priorities.high') },
-						{ value: 'urgent', label: $_('contact.form.priorities.urgent') },
-						{ value: 'asap', label: $_('contact.form.priorities.asap') }
-					]}
-					label={$_('contact.form.priority')}
-					error={error.priority}
-					oninput={() => (error.priority = '')}
-				/>
+	<Accordition title={$_('contact.form.advanced')}>
+		<div class="flex w-full flex-col gap-3 xl:flex-row xl:gap-8">
+			<SelectInput
+				bind:value={form.projectType}
+				options={[
+					{ value: '', label: $_('contact.form.projects.none'), selected: true },
+					{ value: 'website', label: $_('contact.form.projects.website') },
+					{ value: 'webapp', label: $_('contact.form.projects.webapp') },
+					{ value: 'mobileapp', label: $_('contact.form.projects.mobileapp') },
+					{ value: 'other', label: $_('contact.form.projects.other') }
+				]}
+				label={$_('contact.form.projectType')}
+				error={error.projectType}
+			/>
+			<div class="flex w-full flex-col gap-3 sm:flex-row sm:gap-8">
+				<div class="w-full xl:w-52 xl:shrink-0">
+					<DateInput
+						bind:value={form.deadline}
+						label={$_('contact.form.deadline')}
+						Icon={TablerCalendarWeek}
+						error={error.deadline}
+						oninput={() => (error.deadline = '')}
+					/>
+				</div>
+				<div class="w-full xl:w-72 xl:shrink-0">
+					<SelectInput
+						bind:value={form.priority}
+						options={[
+							{ value: '', label: $_('contact.form.priorities.none'), selected: true },
+							{ value: 'low', label: $_('contact.form.priorities.low') },
+							{ value: 'medium', label: $_('contact.form.priorities.medium') },
+							{ value: 'high', label: $_('contact.form.priorities.high') },
+							{ value: 'urgent', label: $_('contact.form.priorities.urgent') },
+							{ value: 'asap', label: $_('contact.form.priorities.asap') }
+						]}
+						label={$_('contact.form.priority')}
+						error={error.priority}
+						oninput={() => (error.priority = '')}
+					/>
+				</div>
 			</div>
 		</div>
-	</div>
+	</Accordition>
 	<div class="mt-4 flex w-full flex-col items-end gap-4">
 		<BoldButton Icon={MynaUiSend} type="submit" onclick={handleSubmit}>
 			{$_('contact.form.send')}
