@@ -11,6 +11,7 @@
 	import PocketBase from 'pocketbase';
 	import { z } from 'zod';
 	import Accordition from '$lib/components/Accordition.svelte';
+	import MultiSelectInput from '$lib/components/inputs/MultiSelectInput.svelte';
 
 	const pb = new PocketBase('https://api.jankominek.com');
 
@@ -21,7 +22,7 @@
 		message: '',
 		budget: 2500,
 		projectType: '',
-		features: [],
+		features: [] as string[],
 		deadline: '',
 		priority: ''
 	});
@@ -177,44 +178,67 @@
 		oninput={() => (error.budget = '')}
 	/>
 	<Accordition title={$_('contact.form.advanced')}>
-		<div class="flex w-full flex-col gap-3 xl:flex-row xl:gap-8">
-			<SelectInput
-				bind:value={form.projectType}
-				options={[
-					{ value: '', label: $_('contact.form.projects.none'), selected: true },
-					{ value: 'website', label: $_('contact.form.projects.website') },
-					{ value: 'webapp', label: $_('contact.form.projects.webapp') },
-					{ value: 'mobileapp', label: $_('contact.form.projects.mobileapp') },
-					{ value: 'other', label: $_('contact.form.projects.other') }
-				]}
-				label={$_('contact.form.projectType')}
-				error={error.projectType}
-			/>
-			<div class="flex w-full flex-col gap-3 sm:flex-row sm:gap-8">
-				<div class="w-full xl:w-52 xl:shrink-0">
-					<DateInput
-						bind:value={form.deadline}
-						label={$_('contact.form.deadline')}
-						Icon={TablerCalendarWeek}
-						error={error.deadline}
-						oninput={() => (error.deadline = '')}
+		<div class="flex w-full flex-col gap-3">
+			<div class="flex w-full flex-col gap-3 xl:flex-row xl:gap-8">
+				<div class="w-full xl:max-w-1/2">
+					<SelectInput
+						bind:value={form.projectType}
+						options={[
+							{ value: '', label: $_('contact.form.projects.none') },
+							{ value: 'website', label: $_('contact.form.projects.website') },
+							{ value: 'webapp', label: $_('contact.form.projects.webapp') },
+							{ value: 'mobileapp', label: $_('contact.form.projects.mobileapp') },
+							{ value: 'other', label: $_('contact.form.projects.other') }
+						]}
+						label={$_('contact.form.projectType')}
+						selected={form.projectType}
+						error={error.projectType}
 					/>
 				</div>
-				<div class="w-full xl:w-72 xl:shrink-0">
-					<SelectInput
-						bind:value={form.priority}
+				<div class="w-full xl:max-w-1/2">
+					<MultiSelectInput
+						bind:value={form.features}
 						options={[
-							{ value: '', label: $_('contact.form.priorities.none'), selected: true },
-							{ value: 'low', label: $_('contact.form.priorities.low') },
-							{ value: 'medium', label: $_('contact.form.priorities.medium') },
-							{ value: 'high', label: $_('contact.form.priorities.high') },
-							{ value: 'urgent', label: $_('contact.form.priorities.urgent') },
-							{ value: 'asap', label: $_('contact.form.priorities.asap') }
+							{ value: 'ecommerce', label: $_('contact.form.features.ecommerce') },
+							{ value: 'blog', label: $_('contact.form.features.blog') },
+							{ value: 'portfolio', label: $_('contact.form.features.portfolio') },
+							{ value: 'other', label: $_('contact.form.features.other') }
 						]}
-						label={$_('contact.form.priority')}
-						error={error.priority}
-						oninput={() => (error.priority = '')}
+						label={$_('contact.form.feature')}
+						error={error.features}
+						oninput={() => (error.features = '')}
+						placeholder={$_('contact.form.featurePlaceholder')}
 					/>
+				</div>
+			</div>
+			<div class="flex w-full flex-col gap-3 xl:flex-row xl:gap-8">
+				<div class="flex w-full flex-col gap-3 sm:flex-row sm:gap-8">
+					<div class="w-full xl:w-52 xl:shrink-0">
+						<DateInput
+							bind:value={form.deadline}
+							label={$_('contact.form.deadline')}
+							Icon={TablerCalendarWeek}
+							error={error.deadline}
+							oninput={() => (error.deadline = '')}
+						/>
+					</div>
+					<div class="w-full xl:w-72 xl:shrink-0">
+						<SelectInput
+							bind:value={form.priority}
+							options={[
+								{ value: '', label: $_('contact.form.priorities.none') },
+								{ value: 'low', label: $_('contact.form.priorities.low') },
+								{ value: 'medium', label: $_('contact.form.priorities.medium') },
+								{ value: 'high', label: $_('contact.form.priorities.high') },
+								{ value: 'urgent', label: $_('contact.form.priorities.urgent') },
+								{ value: 'asap', label: $_('contact.form.priorities.asap') }
+							]}
+							label={$_('contact.form.priority')}
+							selected={form.priority}
+							error={error.priority}
+							oninput={() => (error.priority = '')}
+						/>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -80,6 +80,14 @@
 				"mobileapp": "Mobile Application",
 				"other": "Other"
 			},
+			"feature": "Features",
+			"featurePlaceholder": "List of features",
+			"features": {
+				"ecommerce": "E-commerce",
+				"blog": "Blog",
+				"portfolio": "Portfolio",
+				"other": "Other"
+			},
 			"deadline": "Expected deadline",
 			"priority": "Priority",
 			"priorities": {

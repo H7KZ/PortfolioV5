@@ -80,6 +80,14 @@
 				"mobileapp": "Mobilní aplikace",
 				"other": "Jiné"
 			},
+			"feature": "Funkce",
+			"featurePlaceholder": "Seznam funkcí",
+			"features": {
+				"ecommerce": "E-commerce",
+				"blog": "Blog",
+				"portfolio": "Portfolio",
+				"other": "Jiné"
+			},
 			"deadline": "Očekávaný termín",
 			"priority": "Priorita",
 			"priorities": {
