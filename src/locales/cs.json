@@ -50,7 +50,14 @@
 	"navbar": {
 		"resume": "Životopis",
 		"linkedin": "LinkedIn",
+		"blog": "Blog",
 		"hire": "Najměte mě"
+	},
+
+	"resume": {
+		"jankominek": "Jan Komínek",
+		"quickSummaryLabel": "Rychlý přehled",
+		"quickSummary": "Jsem fullstack inženýr se specializací na frontendový vývoj se znalostmi v jazycích SvelteKit, VueJS, ReactJS, TailwindCSS a TypeScript. Na backendu pracuji s Node.js, ExpressJS, AdonisJS, MongoDB a PostgreSQL a vytvářím škálovatelné a efektivní aplikace. Díky vzdělání v oblasti kybernetické bezpečnosti a probíhajícímu studiu na Vysoké škole ekonomie a podnikání přináším do vývoje softwaru komplexní technický a obchodní pohled. Mé zkušenosti zahrnují práci na volné noze, ve startupech i ve firmách, kde jsem vedl inovativní projekty a podílel se na jejich realizaci. Jsem nadšenec do moderních webových technologií, řešení problémů a uživatelsky přívětivých aplikací a daří se mi ve spolupráci, která posouvá hranice možného."
 	},
 
 	"contact": {

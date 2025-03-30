@@ -24,6 +24,9 @@
 						<a href="https://www.linkedin.com/in/jan-kominek" target="_blank" class="xs:text-base text-sm hover:underline">
 							{$_('navbar.linkedin')}
 						</a>
+						<a href="/blog" class="xs:text-base text-base hover:underline">
+							{$_('navbar.blog')}
+						</a>
 						<Button link="/contact">
 							<p class="xs:text-base text-sm">
 								{$_('navbar.hire')}

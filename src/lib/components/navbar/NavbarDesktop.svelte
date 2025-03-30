@@ -20,6 +20,9 @@
 			<a href="https://www.linkedin.com/in/jan-kominek" target="_blank" class="text-base hover:underline lg:text-lg">
 				{$_('navbar.linkedin')}
 			</a>
+			<a href="/blog" class="text-base hover:underline lg:text-lg">
+				{$_('navbar.blog')}
+			</a>
 			<Button link="/contact">
 				<p class="text-base lg:text-lg">
 					{$_('navbar.hire')}

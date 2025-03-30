@@ -50,7 +50,14 @@
 	"navbar": {
 		"resume": "Resumé",
 		"linkedin": "LinkedIn",
+		"blog": "Blog",
 		"hire": "Hire me"
+	},
+
+	"resume": {
+		"jankominek": "Jan Komínek",
+		"quickSummaryLabel": "Quick summary",
+		"quickSummary": "I am a Fullstack Engineer specializing in frontend development with expertise in SvelteKit, VueJS, ReactJS, TailwindCSS, and TypeScript. On the backend, I work with Node.js, ExpressJS, AdonisJS, MongoDB, and PostgreSQL to build scalable and efficient applications. With a background in cybersecurity and ongoing studies at the University of Economics and Business, I bring a well-rounded technical and business perspective to software development. My experience spans freelance, startup, and corporate environments, where I have led and contributed to innovative projects. Passionate about modern web technologies, problem-solving, and user-friendly applications, I thrive in collaborative environments that push the boundaries of what's possible."
 	},
 
 	"contact": {
