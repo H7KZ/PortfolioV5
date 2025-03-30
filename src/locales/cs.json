@@ -50,7 +50,7 @@
 	"navbar": {
 		"resume": "Životopis",
 		"linkedin": "LinkedIn",
-		"hire": "Najmi mě"
+		"hire": "Najměte mě"
 	},
 
 	"contact": {
@@ -62,12 +62,16 @@
 		"form": {
 			"fullName": "Vaše celé jméno",
 			"fullNamePlaceholder": "Jan Novák",
+
 			"email": "Emailová adresa",
 			"emailPlaceholder": "prikladny@email.com",
+
 			"company": "Název společnosti",
 			"companyPlaceholder": "Příkladná společnost",
-			"message": "Zpráva & Přiložení souboru",
+
+			"message": "Zpráva",
 			"messagePlaceholder": "Popište svůj projekt...",
+
 			"budget": "Očekávaný rozpočet",
 
 			"advanced": "Další informace",
@@ -76,19 +80,119 @@
 			"projects": {
 				"none": "Vyberte nebo nechte prázdné",
 				"website": "Webová stránka",
-				"webapp": "Webová aplikace",
-				"mobileapp": "Mobilní aplikace",
-				"other": "Jiné"
+				"webApp": "Webová aplikace",
+				"ecommerce": "E-commerce",
+				"saas": "SaaS",
+				"api": "Vývoj API",
+				"mobileApp": "Mobilní aplikace (webová)",
+				"desktopApp": "Desktopová aplikace (webová)",
+				"admin": "Admin panel",
+				"landingPage": "Landing page",
+				"other": "Jiné (popište v zprávě)"
 			},
+
 			"feature": "Funkce",
 			"featurePlaceholder": "Seznam funkcí",
 			"features": {
-				"ecommerce": "E-commerce",
-				"blog": "Blog",
-				"portfolio": "Portfolio",
-				"other": "Jiné"
+				"auth": "Uživatelská autentizace (přihlášení/registrace, OAuth)",
+				"admin": "Admin panel",
+				"payment": "Integrace plateb (Stripe, PayPal atd.)",
+				"database": "Databáze a CRUD operace",
+				"files": "Nahrávání a ukládání souborů",
+				"notifications": "Oznámení (e-mail, SMS, push)",
+				"realtime": "Funkce v reálném čase (WebSockets, živé aktualizace)",
+				"i18n": "Vícejazyčná podpora",
+				"analytics": "Analytika a reporty",
+				"seo": "SEO optimalizace",
+				"customAPI": "Vývoj vlastního API",
+				"thirdParty": "Integrace třetích stran",
+				"responsive": "Responzivní design",
+				"other": "Jiné (popište v zprávě)"
 			},
+
+			"technology": "Technologické preference",
+			"technologyPlaceholder": "Seznam technologií",
+			"technologies": {
+				"wordpress": "WordPress",
+				"vuejs": "Vue.js",
+				"reactjs": "React.js",
+				"svelte": "Svelte",
+				"tailwind": "Tailwind CSS",
+				"nodejs": "Node.js",
+				"typescript": "TypeScript",
+				"sql": "SQL (MySQL, PostgreSQL)",
+				"nosql": "NoSQL (MongoDB, Firebase)",
+				"graphql": "GraphQL",
+				"cache": "Caching (Redis, Memcached)",
+				"docker": "Docker",
+				"aws": "AWS (S3, EC2, Lambda)",
+				"gcp": "Google Cloud Platform",
+				"azure": "Microsoft Azure",
+				"vps": "VPS (DigitalOcean, Linode)",
+				"restAPI": "REST API",
+				"websocket": "WebSocket",
+				"other": "Jiné (popište v zprávě)"
+			},
+
+			"asset": "Projektové zdroje",
+			"assetPlaceholder": "Seznam projektových zdrojů",
+			"assets": {
+				"design": "Design/Wireframes",
+				"codebase": "Existující kódová základna",
+				"database": "Existující databáze",
+				"branding": "Branding/Loga",
+				"documentation": "Dokumentace",
+				"domain": "Doménové jméno",
+				"hosting": "Hosting",
+				"other": "Jiné (popište v zprávě)"
+			},
+
+			"audience": "Cílová skupina",
+			"audiencePlaceholder": "Seznam cílových skupin",
+			"audiences": {
+				"public": "Veřejnost",
+				"b2b": "Business to Business (B2B)",
+				"b2c": "Business to Consumer (B2C)",
+				"startup": "Startupy a podnikatelé",
+				"internal": "Interní použití (intranet)",
+				"enterprise": "Podniková řešení",
+				"nonprofit": "Neziskové organizace",
+				"developer": "Vývojáři a technické uživatele",
+				"other": "Jiné (popište v zprávě)"
+			},
+
+			"hosting": "Hosting",
+			"hostings": {
+				"none": "Vyberte nebo nechte prázdné",
+				"client": "Klient se postará o hosting",
+				"need": "Potřebuji nastavit hosting a nasazení",
+				"server": "Pomoc s konfigurací serveru/ cloudu",
+				"other": "Jiné (popište v zprávě)"
+			},
+
+			"support": "Podpora a údržba",
+			"supports": {
+				"none": "Vyberte nebo nechte prázdné",
+				"onetime": "Jednorázový vývoj",
+				"ongoing": "Průběžná podpora a údržba",
+				"training": "Školení a dokumentace",
+				"consultation": "Konzultace a strategie",
+				"updates": "Opravy chyb a aktualizace podle potřeby",
+				"other": "Jiné (popište v zprávě)"
+			},
+
+			"legal": "Právní úvahy",
+			"legalPlaceholder": "Seznam právních úvah",
+			"legals": {
+				"nda": "Vyžaduje se NDA (smlouva o mlčenlivosti)",
+				"contract": "Vlastní smlouva",
+				"standard": "Standardní smlouva pro freelancery",
+				"gdpr": "Soulad s GDPR",
+				"other": "Jiné (popište v zprávě)"
+			},
+
 			"deadline": "Očekávaný termín",
+
 			"priority": "Priorita",
 			"priorities": {
 				"none": "Vyberte nebo nechte prázdné",
@@ -105,34 +209,77 @@
 					"invalid_type": "Jméno musí být text.",
 					"too_small": "Jméno nesmí být prázdné."
 				},
+
 				"email": {
 					"invalid_type": "E-mail musí být text.",
 					"invalid_string": "Zadejte platný e-mail.",
 					"too_small": "E-mail nesmí být prázdný."
 				},
+
 				"company": {
 					"invalid_type": "Název společnosti musí být text."
 				},
+
 				"message": {
 					"invalid_type": "Zpráva musí být text.",
 					"too_small": "Zpráva nesmí být prázdná."
 				},
+
 				"budget": {
 					"invalid_type": "Rozpočet musí být číslo.",
 					"too_small": "Minimální rozpočet je 1000."
 				},
+
 				"projectType": {
 					"invalid_type": "Typ projektu musí být text.",
 					"too_small": "Musíte vyplnit typ projektu."
 				},
+
+				"features": {
+					"invalid_type": "Funkce musí být text.",
+					"too_small": "Musíte vyplnit funkce."
+				},
+
+				"technologies": {
+					"invalid_type": "Technologie musí být text.",
+					"too_small": "Musíte vyplnit technologie."
+				},
+
+				"assest": {
+					"invalid_type": "Zdroje musí být text.",
+					"too_small": "Musíte vyplnit zdroje."
+				},
+
+				"audiences": {
+					"invalid_type": "Cílová skupina musí být text.",
+					"too_small": "Musíte vyplnit cílovou skupinu."
+				},
+
+				"hosting": {
+					"invalid_type": "Hosting musí být text.",
+					"too_small": "Musíte vyplnit hosting."
+				},
+
+				"support": {
+					"invalid_type": "Podpora musí být text.",
+					"too_small": "Musíte vyplnit podporu."
+				},
+
+				"legals": {
+					"invalid_type": "Právní úvahy musí být text.",
+					"too_small": "Musíte vyplnit právní úvahy."
+				},
+
 				"deadline": {
 					"invalid_type": "Datum musí být platné.",
 					"invalid_date": "Zadejte platné datum."
 				},
+
 				"priority": {
 					"invalid_type": "Priorita musí být text.",
 					"too_small": "Musíte zadat prioritu."
 				},
+
 				"api": "Něco se pokazilo. Zkuste to za chvíli znovu."
 			},
 
@@ -145,6 +292,7 @@
 		"calendar": {
 			"jankominek": "Jan Komínek",
 			"30minCall": "30 min Schůzka",
+
 			"meeting": "Typ schůzky",
 			"meetings": {
 				"consultation": "Konzultace",
@@ -153,7 +301,9 @@
 				"interview": "Pohovor",
 				"other": "Jiné"
 			},
+
 			"timezone": "Časové pásmo",
+
 			"confirm": "Potvrdit",
 
 			"months": {
@@ -186,15 +336,18 @@
 					"invalid_type": "Typ schůzky musí být text.",
 					"too_small": "Musíte určit typ schůzky."
 				},
+
 				"timezone": {
 					"invalid_type": "Časové pásmo musí být text.",
 					"too_small": "Musíte určit časové pásmo."
 				},
+
 				"datetime": {
 					"invalid_type": "Datum musí být platné.",
 					"invalid_date": "Zadejte platné datum.",
 					"already_booked": "Tento časový slot je již obsazen."
 				},
+
 				"duration": {
 					"invalid_type": "Doba trvání musí být číslo.",
 					"too_small": "Doba trvání musí být minimálně 15 minut."

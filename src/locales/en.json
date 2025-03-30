@@ -62,12 +62,16 @@
 		"form": {
 			"fullName": "Your full name",
 			"fullNamePlaceholder": "John Doe",
+
 			"email": "Email address",
 			"emailPlaceholder": "mock.company@gmail.com",
+
 			"company": "Company name",
 			"companyPlaceholder": "Mock Company",
-			"message": "Message & File attachment",
+
+			"message": "Message",
 			"messagePlaceholder": "Describe your project...",
+
 			"budget": "Expected budget",
 
 			"advanced": "More information",
@@ -76,28 +80,129 @@
 			"projects": {
 				"none": "Select or leave blank",
 				"website": "Website",
-				"webapp": "Web Application",
-				"mobileapp": "Mobile Application",
-				"other": "Other"
+				"webApp": "Web App",
+				"ecommerce": "E-commerce",
+				"saas": "SaaS",
+				"api": "API Development",
+				"mobileApp": "Mobile App (Web-based)",
+				"desktopApp": "Desktop App (Web-based)",
+				"admin": "Dashboard/Admin Panel",
+				"landingPage": "Landing Page",
+				"other": "Other (Describe in Message)"
 			},
+
 			"feature": "Features",
 			"featurePlaceholder": "List of features",
 			"features": {
-				"ecommerce": "E-commerce",
-				"blog": "Blog",
-				"portfolio": "Portfolio",
-				"other": "Other"
+				"auth": "User Authentication (Login/Signup, OAuth)",
+				"admin": "Admin Panel",
+				"payment": "Payment Integration (Stripe, PayPal, etc.)",
+				"database": "Database & CRUD Operations",
+				"files": "File Uploads & Storage",
+				"notifications": "Notifications (Email, SMS, Push)",
+				"realtime": "Real-time Features (WebSockets, Live Updates)",
+				"i18n": "Multi-language Support",
+				"analytics": "Analytics & Reporting",
+				"seo": "SEO Optimization",
+				"customAPI": "Custom API Development",
+				"thirdParty": "Third-party API Integration",
+				"responsive": "Responsive Design",
+				"other": "Other (Describe in Message)"
 			},
+
+			"technology": "Technology preferences",
+			"technologyPlaceholder": "List of technologies",
+			"technologies": {
+				"wordpress": "WordPress",
+				"vuejs": "Vue.js",
+				"reactjs": "React.js",
+				"svelte": "Svelte",
+				"tailwind": "Tailwind CSS",
+				"nodejs": "Node.js",
+				"typescript": "TypeScript",
+				"sql": "SQL (MySQL, PostgreSQL)",
+				"nosql": "NoSQL (MongoDB, Firebase)",
+				"graphql": "GraphQL",
+				"cache": "Caching (Redis, Memcached)",
+				"docker": "Docker",
+				"aws": "AWS (S3, EC2, Lambda)",
+				"gcp": "Google Cloud Platform",
+				"azure": "Microsoft Azure",
+				"vps": "VPS (DigitalOcean, Linode)",
+				"restAPI": "REST API",
+				"websocket": "WebSocket",
+				"other": "Other (Describe in Message)"
+			},
+
+			"asset": "Assets",
+			"assetPlaceholder": "List of assets",
+			"assets": {
+				"design": "Design/Wireframes",
+				"codebase": "Existing Codebase",
+				"database": "Existing Database",
+				"branding": "Branding/Logos",
+				"documentation": "Documentation",
+				"domain": "Domain Name",
+				"hosting": "Hosting",
+				"other": "Other (Describe in Message)"
+			},
+
+			"audience": "Target audience",
+			"audiencePlaceholder": "List of target audiences",
+			"audiences": {
+				"public": "General Public",
+				"b2b": "Business to Business (B2B)",
+				"b2c": "Business to Consumer (B2C)",
+				"startup": "Startups & Entrepreneurs",
+				"internal": "Internal Use (Intranet)",
+				"enterprise": "Enterprise Solutions",
+				"nonprofit": "Non-profit Organizations",
+				"developer": "Developers & Tech Users",
+				"other": "Other (Describe in Message)"
+			},
+
+			"hosting": "Hosting",
+			"hostings": {
+				"none": "Select or leave blank",
+				"client": "Client Will Handle Hosting",
+				"need": "Need Hosting Setup & Deployment",
+				"server": "Help with Server/Cloud Configuration",
+				"other": "Other (Describe in Message)"
+			},
+
+			"support": "Support & Maintenance",
+			"supports": {
+				"none": "Select or leave blank",
+				"onetime": "One-time Development Only",
+				"ongoing": "Ongoing Support & Maintenance",
+				"training": "Training & Documentation",
+				"consultation": "Consultation & Strategy",
+				"updates": "Bug Fixes & Updates as Needed",
+				"other": "Other (Describe in Message)"
+			},
+
+			"legal": "Legal Considerations",
+			"legalPlaceholder": "List of legal considerations",
+			"legals": {
+				"nda": "NDA Required (Non-Disclosure Agreement)",
+				"contract": "Custom Contract",
+				"standard": "Standard Freelance Agreement",
+				"gdpr": "GDPR Compliance",
+				"other": "Other (Describe in Message)"
+			},
+
 			"deadline": "Expected deadline",
+
 			"priority": "Priority",
 			"priorities": {
 				"none": "Select or leave blank",
-				"low": "Low",
-				"medium": "Medium",
-				"high": "High",
-				"urgent": "Urgent",
+				"low": "Low (Nice to Have)",
+				"medium": "Medium (Standard Timeline)",
+				"high": "High (Time-Sensitive)",
+				"critical": "Critical (Urgent)",
 				"asap": "ASAP (Budget is not a concern)"
 			},
+
 			"send": "Send",
 
 			"errors": {
@@ -105,34 +210,77 @@
 					"invalid_type": "Name must be text.",
 					"too_small": "Name must not be empty."
 				},
+
 				"email": {
 					"invalid_type": "Email must be text.",
 					"invalid_string": "Enter a valid email.",
 					"too_small": "Email must not be empty."
 				},
+
 				"company": {
 					"invalid_type": "Company name must be text."
 				},
+
 				"message": {
 					"invalid_type": "Message must be text.",
 					"too_small": "Message must not be empty."
 				},
+
 				"budget": {
 					"invalid_type": "Budget must be a number.",
 					"too_small": "Minimum budget is 1000."
 				},
+
 				"projectType": {
 					"invalid_type": "Project type must be text.",
 					"too_small": "You must fill in the project type."
 				},
+
+				"features": {
+					"invalid_type": "Feature must be text.",
+					"too_small": "You must fill in the feature."
+				},
+
+				"technologies": {
+					"invalid_type": "Technology must be text.",
+					"too_small": "You must fill in the technology."
+				},
+
+				"assets": {
+					"invalid_type": "Asset must be text.",
+					"too_small": "You must fill in the asset."
+				},
+
+				"audiences": {
+					"invalid_type": "Audience must be text.",
+					"too_small": "You must fill in the audience."
+				},
+
+				"hosting": {
+					"invalid_type": "Hosting must be text.",
+					"too_small": "You must fill in the hosting."
+				},
+
+				"support": {
+					"invalid_type": "Support must be text.",
+					"too_small": "You must fill in the support."
+				},
+
+				"legals": {
+					"invalid_type": "Legal must be text.",
+					"too_small": "You must fill in the legal."
+				},
+
 				"deadline": {
 					"invalid_type": "Date must be valid.",
 					"invalid_date": "Enter a valid date."
 				},
+
 				"priority": {
 					"invalid_type": "Priority must be text.",
 					"too_small": "You must specify a priority."
 				},
+
 				"api": "An error occurred while sending the message. Please try again later."
 			},
 
@@ -145,6 +293,7 @@
 		"calendar": {
 			"jankominek": "Jan Komínek",
 			"30minCall": "30 min Meeting",
+
 			"meeting": "Meeting type",
 			"meetings": {
 				"consultation": "Consultation",
@@ -153,7 +302,9 @@
 				"interview": "Interview",
 				"other": "Other"
 			},
+
 			"timezone": "Timezone",
+
 			"confirm": "Confirm",
 
 			"months": {
@@ -186,15 +337,18 @@
 					"invalid_type": "Meeting type must be text.",
 					"too_small": "You must specify a meeting type."
 				},
+
 				"timezone": {
 					"invalid_type": "Timezone must be text.",
 					"too_small": "You must specify a timezone."
 				},
+
 				"datetime": {
 					"invalid_type": "Date must be valid.",
 					"invalid_date": "Enter a valid date.",
 					"already_booked": "This time slot is already booked."
 				},
+
 				"duration": {
 					"invalid_type": "Duration must be a number.",
 					"too_small": "Duration must be at least 15 minutes."

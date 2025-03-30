@@ -15,6 +15,7 @@
 		id?: string;
 		value: string[];
 		options: Option[];
+		height?: number;
 		label?: string;
 		Icon?: Component;
 		required?: boolean;
@@ -24,7 +25,7 @@
 		placeholder?: string;
 	}
 
-	let { id = crypto.randomUUID(), value = $bindable([]), options, label, Icon, required, disabled, oninput, error, placeholder }: Props = $props();
+	let { id = crypto.randomUUID(), value = $bindable([]), options, height, label, Icon, required, disabled, oninput, error, placeholder }: Props = $props();
 
 	let isOpened = $state(false);
 
@@ -54,16 +55,17 @@
 		<div
 			role="button"
 			tabindex="0"
-			class="flex h-10 w-full cursor-pointer items-center justify-between rounded-md border-[1.5px] border-neutral-500 bg-[#ffffff03] p-2 px-3 text-base"
+			class="flex h-10 w-full cursor-pointer items-center justify-between overflow-hidden rounded-md border-[1.5px] border-neutral-500 bg-[#ffffff03] p-2 px-3 text-xs"
 			class:px-10.5={Icon}
+			class:!text-base={value.length === 0}
 			class:text-neutral-500={value.length === 0}
 			onclick={() => (isOpened = !isOpened)}
 			onkeydown={(e) => e.key === 'Enter' && (isOpened = !isOpened)}
 		>
-			<span class="truncate">
+			<p>
 				{getLabel()}
-			</span>
-			<IconamoonArrowUp class="h-7 w-7 text-neutral-400 transition-all {isOpened ? 'rotate-180' : ''}" />
+			</p>
+			<IconamoonArrowUp class="h-7 w-7 shrink-0 text-neutral-400 transition-all {isOpened ? 'rotate-180' : ''}" />
 		</div>
 
 		{#if Icon}
@@ -75,6 +77,7 @@
 		{#if isOpened}
 			<div
 				class="absolute z-50 mt-1 w-full overflow-x-hidden rounded-md border-[1.5px] border-neutral-500 bg-neutral-900"
+				style="max-height: {height}rem; overflow-y: auto;"
 				onblur={() => (isOpened = false)}
 			>
 				{#each options as option}

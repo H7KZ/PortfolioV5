@@ -13,6 +13,7 @@
 		id?: string;
 		value: string;
 		options: Option[];
+		height?: number;
 		label?: string;
 		selected?: string;
 		Icon?: Component;
@@ -23,7 +24,20 @@
 		placeholder?: string;
 	}
 
-	let { id = crypto.randomUUID(), value = $bindable(''), options, label, selected, Icon, required, disabled, oninput, error, placeholder }: Props = $props();
+	let {
+		id = crypto.randomUUID(),
+		value = $bindable(''),
+		options,
+		height,
+		label,
+		selected,
+		Icon,
+		required,
+		disabled,
+		oninput,
+		error,
+		placeholder
+	}: Props = $props();
 
 	$effect(() => {
 		if (selected) {
@@ -70,9 +84,9 @@
 			onclick={() => (isOpened = !isOpened)}
 			onkeydown={(e) => e.key === 'Enter' && (isOpened = !isOpened)}
 		>
-			<span class="truncate">
+			<p class="truncate">
 				{getLabel()}
-			</span>
+			</p>
 			<IconamoonArrowUp class="h-7 w-7 text-neutral-400 transition-all {isOpened ? 'rotate-180' : ''}" />
 		</div>
 
@@ -83,7 +97,11 @@
 		{/if}
 
 		{#if isOpened}
-			<div class="absolute z-50 mt-1 w-full rounded-md border-[1.5px] border-neutral-500 bg-neutral-900" onblur={() => (isOpened = false)}>
+			<div
+				class="absolute z-50 mt-1 w-full rounded-md border-[1.5px] border-neutral-500 bg-neutral-900"
+				style="max-height: {height}rem; overflow-y: auto;"
+				onblur={() => (isOpened = false)}
+			>
 				{#each options as option}
 					<div
 						role="option"

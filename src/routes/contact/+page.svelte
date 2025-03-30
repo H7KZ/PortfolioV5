@@ -7,7 +7,7 @@
 
 <div class="flex w-full items-center justify-center px-8">
 	<div class="flex w-full max-w-[1440px] flex-col gap-32 py-32">
-		<div class="flex flex-col gap-8 lg:flex-row lg:justify-between lg:gap-20">
+		<div class="flex w-full flex-col gap-8 lg:flex-row lg:justify-between lg:gap-20">
 			<div class="flex w-full shrink-0 flex-col gap-4 lg:w-64">
 				<h2 class="text-5xl font-normal">
 					{$_('contact.fillForm')}
@@ -24,7 +24,7 @@
 			</div>
 			<ContactForm />
 		</div>
-		<div class="flex flex-col gap-8 xl:flex-row xl:justify-between xl:gap-20" id="calendar">
+		<div class="flex w-full flex-col gap-8 xl:flex-row xl:justify-between xl:gap-20" id="calendar">
 			<div class="flex w-full shrink-0 flex-col gap-4 xl:w-64">
 				<h2 class="text-5xl font-normal">
 					{$_('contact.bookACall')}
