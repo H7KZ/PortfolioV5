@@ -57,7 +57,92 @@
 	"resume": {
 		"jankominek": "Jan Komínek",
 		"quickSummaryLabel": "Rychlý přehled",
-		"quickSummary": "Jsem fullstack inženýr se specializací na frontendový vývoj se znalostmi v jazycích SvelteKit, VueJS, ReactJS, TailwindCSS a TypeScript. Na backendu pracuji s Node.js, ExpressJS, AdonisJS, MongoDB a PostgreSQL a vytvářím škálovatelné a efektivní aplikace. Díky vzdělání v oblasti kybernetické bezpečnosti a probíhajícímu studiu na Vysoké škole ekonomie a podnikání přináším do vývoje softwaru komplexní technický a obchodní pohled. Mé zkušenosti zahrnují práci na volné noze, ve startupech i ve firmách, kde jsem vedl inovativní projekty a podílel se na jejich realizaci. Jsem nadšenec do moderních webových technologií, řešení problémů a uživatelsky přívětivých aplikací a daří se mi ve spolupráci, která posouvá hranice možného."
+		"quickSummary": "Jsem fullstack inženýr se specializací na frontendový vývoj se znalostmi v jazycích SvelteKit, VueJS, ReactJS, TailwindCSS a TypeScript. Na backendu pracuji s Node.js, ExpressJS, AdonisJS, MongoDB a PostgreSQL a vytvářím škálovatelné a efektivní aplikace. Díky vzdělání v oblasti kybernetické bezpečnosti a probíhajícímu studiu na Vysoké škole ekonomie a podnikání přináším do vývoje softwaru komplexní technický a obchodní pohled. Mé zkušenosti zahrnují práci na volné noze, ve startupech i ve firmách, kde jsem vedl inovativní projekty a podílel se na jejich realizaci. Jsem nadšenec do moderních webových technologií, řešení problémů a uživatelsky přívětivých aplikací a daří se mi ve spolupráci, která posouvá hranice možného.",
+
+		"aboutLabel": "About",
+		"about": [
+			"Jsem fullstack inženýr se sídlem v Praze, který se specializuje na frontendový vývoj a zároveň má rozsáhlé zkušenosti s backendovými technologiemi. Moje práce se točí kolem vytváření škálovatelných, efektivních a uživatelsky orientovaných aplikací s využitím frameworků jako SvelteKit, VueJS, ReactJS, TailwindCSS a TypeScript pro bezproblémová frontendová řešení. Na backendu využívám nástroje jako Node.js, ExpressJS, AdonisJS, MongoDB a PostgreSQL k vytváření robustních a škálovatelných systémů.",
+			"V současné době studuji obor Aplikovaná informatika na Vysoké škole ekonomie a podnikání, kde jsem díky poznávání různých oborů mimo technologie získal všestranný rozhled. Studium mi pomohlo prohloubit znalosti marketingu, managementu, designu UX, ekonomie a analýzy dat pomocí nástrojů, jako je Microsoft Power BI. Tento multidisciplinární základ mi umožňuje přistupovat k projektům nejen z technického hlediska, ale také s vědomím obchodních potřeb a uživatelského zážitku.",
+			"Moje profesní cesta zahrnuje zkušenosti frontendového vývojáře, fullstack webového vývojáře a IT podpory, stejně jako práci na volné noze, která zdokonalila mé schopnosti řešit problémy a přizpůsobivost. Kromě technických znalostí přináším i myšlení zaměřené na uživatele a spojuji své zkušenosti z oblasti kybernetické bezpečnosti s vášní pro udržení náskoku v rychle se vyvíjejícím technologickém prostředí.",
+			"Daří se mi v prostředí, kde se spolupracuje a kde kreativita a inovace jsou hnacím motorem pokroku. Ať už jde o návrh intuitivního rozhraní, optimalizaci výkonu backendu nebo řešení složitých problémů, snažím se přinášet působivá a praktická řešení."
+		],
+
+		"experienceLabel": "Zkušenosti",
+		"experience": [
+			{
+				"company": "Intedat",
+				"position": "Fullstack Engineer, od září 2024"
+			},
+			{
+				"company": "IONT tech",
+				"position": "Fullstack Engineer, od srpna 2023 do září 2024"
+			},
+			{
+				"company": "Letní škola vývoje počítačových her",
+				"position": "Lektor a organizátor, červenec 2022/2023/2024"
+			},
+			{
+				"company": "rodinný podnik KMK",
+				"pozice": "IT podpora, červen 2020 až únor 2024"
+			},
+			{
+				"company": "Precismo",
+				"pozice": "Fullstack Web Developer, leden 2023 až listopad 2023"
+			},
+			{
+				"company": "Haxagon",
+				"position": "Frontend Developer, říjen 2022 až červenec 2023"
+			}
+		],
+
+		"educationLabel": "Vzdělávání",
+		"education": [
+			{
+				"school": "Vysoká Škola Ekonomická v Praze - Bakalář",
+				"degree": "Aplikovaná Informatika, od září 2024"
+			},
+			{
+				"school": "Smíchovská Středí Průmyslová Škola a Gymnázium - Maturitní zkouška",
+				"degree": "Kybernetická bezpečnost, od září 2020 do května 2024"
+			}
+		],
+
+		"toolsLabel": "Nástroje a technologie",
+		"tools": [
+			"SvelteKit",
+			"!VueJS",
+			"ReactJS",
+			"!TailwindCSS",
+			"!TypeScript",
+			"!Node.js",
+			"ExpressJS",
+			"AdonisJS",
+			"!MongoDB",
+			"PostgreSQL",
+			"!Docker",
+			"Kubernetes",
+			"Redis",
+			"Elasticsearch",
+			"!CI/CD",
+			"DigitalOcean",
+			"DevOps",
+			"!Figma",
+			"Microsoft Power BI",
+			"User Interface Design",
+			"User Experience (UX)",
+			"Agile Methodologies",
+			"Networking",
+			"Network Security",
+			"System Administration",
+			"Bash",
+			"!Git",
+			"Jira",
+			"!REST",
+			"Docker Swarm",
+			"!Fastify",
+			"Nuxt.js",
+			"Microservices"
+		]
 	},
 
 	"contact": {

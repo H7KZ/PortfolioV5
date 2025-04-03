@@ -60,28 +60,89 @@
 		"quickSummary": "I am a Fullstack Engineer specializing in frontend development with expertise in SvelteKit, VueJS, ReactJS, TailwindCSS, and TypeScript. On the backend, I work with Node.js, ExpressJS, AdonisJS, MongoDB, and PostgreSQL to build scalable and efficient applications. With a background in cybersecurity and ongoing studies at the University of Economics and Business, I bring a well-rounded technical and business perspective to software development. My experience spans freelance, startup, and corporate environments, where I have led and contributed to innovative projects. Passionate about modern web technologies, problem-solving, and user-friendly applications, I thrive in collaborative environments that push the boundaries of what's possible.",
 
 		"aboutLabel": "About",
-		"about": {
-			"1": "I am a dedicated Fullstack Engineer based in Prague, specializing in frontend development while maintaining extensive experience in backend technologies. My work revolves around crafting scalable, efficient, and user-centric applications, leveraging frameworks like SvelteKit, VueJS, ReactJS, TailwindCSS, and TypeScript for seamless frontend solutions. On the backend, I utilize tools such as Node.js, ExpressJS, AdonisJS, MongoDB, and PostgreSQL to build robust and scalable systems.",
-			"2": "Currently, I am pursuing a degree in Applied Computer Science at the University of Economics and Business, where I have gained a well-rounded perspective by exploring diverse fields beyond technology. My studies have enhanced my understanding of marketing, management, UX design, economics, and data analysis using tools like Microsoft Power BI. This multidisciplinary foundation allows me to approach projects not only from a technical perspective but also with an awareness of business needs and user experience.",
-			"3": "My professional journey includes experience as a Frontend Developer, Fullstack Web Developer, and IT Support, as well as freelance work that honed my problem-solving skills and adaptability. Beyond technical expertise, I bring a user-focused mindset, combining my background in cybersecurity with a passion for staying ahead of the curve in the fast-evolving tech landscape.",
-			"4": "I thrive in collaborative environments where creativity and innovation drive progress. Whether it’s designing an intuitive interface, optimizing backend performance, or addressing complex challenges, I am committed to delivering impactful and practical solutions."
-		},
+		"about": [
+			"I am a dedicated Fullstack Engineer based in Prague, specializing in frontend development while maintaining extensive experience in backend technologies. My work revolves around crafting scalable, efficient, and user-centric applications, leveraging frameworks like SvelteKit, VueJS, ReactJS, TailwindCSS, and TypeScript for seamless frontend solutions. On the backend, I utilize tools such as Node.js, ExpressJS, AdonisJS, MongoDB, and PostgreSQL to build robust and scalable systems.",
+			"Currently, I am pursuing a degree in Applied Computer Science at the University of Economics and Business, where I have gained a well-rounded perspective by exploring diverse fields beyond technology. My studies have enhanced my understanding of marketing, management, UX design, economics, and data analysis using tools like Microsoft Power BI. This multidisciplinary foundation allows me to approach projects not only from a technical perspective but also with an awareness of business needs and user experience.",
+			"My professional journey includes experience as a Frontend Developer, Fullstack Web Developer, and IT Support, as well as freelance work that honed my problem-solving skills and adaptability. Beyond technical expertise, I bring a user-focused mindset, combining my background in cybersecurity with a passion for staying ahead of the curve in the fast-evolving tech landscape.",
+			"I thrive in collaborative environments where creativity and innovation drive progress. Whether it’s designing an intuitive interface, optimizing backend performance, or addressing complex challenges, I am committed to delivering impactful and practical solutions."
+		],
 
 		"experienceLabel": "Experience",
-		"experience": {
-			"1": {
+		"experience": [
+			{
 				"company": "Intedat",
 				"position": "Fullstack Engineer, ongoing since Sep 2024"
 			},
-			"2": {
-				"company": "Startup",
-				"position": "Fullstack Engineer"
+			{
+				"company": "IONT tech",
+				"position": "Fullstack Engineer, Aug 2023 to Sep 2024"
 			},
-			"3": {
-				"company": "Corporate",
-				"position": "Software Developer Intern"
+			{
+				"company": "Summer School of Computer Game Development",
+				"position": "Teacher & Organizer, Jul 2022/2023/2024"
+			},
+			{
+				"company": "KMK family business",
+				"position": "IT Support, Jun 2020 to Feb 2024"
+			},
+			{
+				"company": "Precismo",
+				"position": "Fullstack Web Developer, Jan 2023 to Nov 2023"
+			},
+			{
+				"company": "Haxagon",
+				"position": "Frontend Developer, Oct 2022 to Jul 2023"
 			}
-		}
+		],
+
+		"educationLabel": "Education",
+		"education": [
+			{
+				"school": "Prague University of Economics and Business – Bachelor's degree",
+				"degree": "Applied Computer Science, ongoing since Sep 2024"
+			},
+			{
+				"school": "Smichov Secondary Technical School and Gymnasium – High School Diploma",
+				"degree": "Cyber/Computer Forensics and Counterterrorism, Sep 2020 to May 2024"
+			}
+		],
+
+		"toolsLabel": "Tools & Technologies",
+		"tools": [
+			"SvelteKit",
+			"!VueJS",
+			"ReactJS",
+			"!TailwindCSS",
+			"!TypeScript",
+			"!Node.js",
+			"ExpressJS",
+			"AdonisJS",
+			"!MongoDB",
+			"PostgreSQL",
+			"!Docker",
+			"Kubernetes",
+			"Redis",
+			"Elasticsearch",
+			"!CI/CD",
+			"DigitalOcean",
+			"DevOps",
+			"!Figma",
+			"Microsoft Power BI",
+			"User Interface Design",
+			"User Experience (UX)",
+			"Agile Methodologies",
+			"Networking",
+			"Network Security",
+			"System Administration",
+			"Bash",
+			"!Git",
+			"Jira",
+			"!REST",
+			"Docker Swarm",
+			"!Fastify",
+			"Nuxt.js",
+			"Microservices"
+		]
 	},
 
 	"contact": {

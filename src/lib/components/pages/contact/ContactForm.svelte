@@ -8,30 +8,12 @@
 	import MynaUiSend from '$lib/icons/MynaUISend.svelte';
 	import TablerCalendarWeek from '$lib/icons/TablerCalendarWeek.svelte';
 	import { _ } from 'svelte-i18n';
-	import PocketBase from 'pocketbase';
-	import { z } from 'zod';
 	import Accordition from '$lib/components/Accordition.svelte';
 	import MultiSelectInput from '$lib/components/inputs/MultiSelectInput.svelte';
+	import { getInitialContactForm } from '$lib/interfaces/ContactFormInterface';
+	import { validateContactForm } from '$lib/validations/ContactFormValidation';
 
-	const pb = new PocketBase('https://api.jankominek.com');
-
-	let form = $state({
-		fullName: '',
-		email: '',
-		company: '',
-		message: '',
-		budget: 2500,
-		projectType: '',
-		features: [] as string[],
-		technologies: [] as string[],
-		assets: [] as string[],
-		audiences: [] as string[],
-		hosting: '',
-		support: '',
-		legals: [] as string[],
-		deadline: '',
-		priority: ''
-	});
+	let form = $state(getInitialContactForm());
 
 	let error = $state({
 		fullName: '',
@@ -54,44 +36,10 @@
 
 	let success = $state('');
 
-	const formSchema = z.object({
-		fullName: z.string().nonempty(),
-		email: z.string().email().nonempty(),
-		company: z.string(),
-		message: z.string().nonempty(),
-		budget: z.number().min(1000),
-		projectType: z.string().nonempty(),
-		features: z.array(z.string()),
-		technologies: z.array(z.string()),
-		assets: z.array(z.string()),
-		audiences: z.array(z.string()),
-		hosting: z.string(),
-		support: z.string(),
-		legals: z.array(z.string()),
-		deadline: z.date().nullable(),
-		priority: z.string().nonempty()
-	});
-
 	async function handleSubmit(e: MouseEvent) {
 		e.preventDefault();
 
-		const validationResult = formSchema.safeParse({
-			fullName: form.fullName,
-			email: form.email,
-			company: form.company,
-			message: form.message,
-			budget: form.budget,
-			projectType: form.projectType,
-			features: form.features,
-			technologies: form.technologies,
-			assets: form.assets,
-			audiences: form.audiences,
-			hosting: form.hosting,
-			support: form.support,
-			legals: form.legals,
-			deadline: form.deadline ? new Date(form.deadline) : null,
-			priority: form.priority
-		});
+		const validationResult = validateContactForm(form);
 
 		if (!validationResult.success) {
 			const errors = validationResult.error.errors;
@@ -104,22 +52,12 @@
 		}
 
 		try {
-			await pb.collection('forms').create({
-				fullName: form.fullName,
-				email: form.email,
-				company: form.company,
-				message: form.message,
-				budget: form.budget,
-				projectType: form.projectType,
-				features: form.features.join(', '),
-				technologies: form.technologies.join(', '),
-				assets: form.assets.join(', '),
-				audiences: form.audiences.join(', '),
-				hosting: form.hosting,
-				support: form.support,
-				legals: form.legals.join(', '),
-				deadline: form.deadline ? new Date(form.deadline) : null,
-				priority: form.priority
+			await fetch('api/forms', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify(form)
 			});
 		} catch (e) {
 			error.api = $_('contact.form.errors.api');
@@ -128,42 +66,15 @@
 
 		success = $_('contact.form.success');
 
-		form = {
-			fullName: '',
-			email: '',
-			company: '',
-			message: '',
-			budget: 2500,
-			projectType: '',
-			features: [],
-			technologies: [],
-			assets: [],
-			audiences: [],
-			hosting: '',
-			support: '',
-			legals: [],
-			deadline: '',
-			priority: ''
-		};
+		form = getInitialContactForm();
 
-		error = {
-			fullName: '',
-			email: '',
-			company: '',
-			message: '',
-			budget: '',
-			projectType: '',
-			features: '',
-			technologies: '',
-			assets: '',
-			audiences: '',
-			hosting: '',
-			support: '',
-			legals: '',
-			deadline: '',
-			priority: '',
-			api: ''
-		};
+		error = Object.keys(error).reduce(
+			(acc, key) => {
+				acc[key as keyof typeof error] = '';
+				return acc;
+			},
+			{} as typeof error
+		);
 	}
 </script>
 
