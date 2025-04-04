@@ -84,7 +84,7 @@
 	</div>
 	<div class="h-[1.5px] w-full bg-neutral-800"></div>
 	<div class="bg-background flex w-full flex-col items-center justify-center">
-		<div class="flex w-full max-w-[1440px] flex-col gap-32 px-8 py-24 min-[1440px]:px-2">
+		<div class="flex w-full max-w-[1440px] flex-col gap-32 px-8 pt-24 pb-32 min-[1440px]:px-2">
 			<div class="flex w-full flex-col gap-4 md:flex-row md:gap-8">
 				<h2 class="xs:text-3xl w-full shrink-0 text-2xl font-normal md:w-1/3">
 					{$_('resume.toolsLabel')}
