@@ -1,8 +1,9 @@
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
-	import ContactForm from '$lib/components/pages/contact/ContactForm.svelte';
-	import CalendarCallPicker from '$lib/components/pages/contact/CalendarCallPicker.svelte';
+	import ContactForm from '$lib/components/ContactForm.svelte';
+	import CalendarCallPicker from '$lib/components/CalendarCallPicker.svelte';
 	import LongArrow from '$lib/icons/LongArrow.svelte';
+	import ContactFooter from '$lib/components/ContactFooter.svelte';
 </script>
 
 <div class="flex w-full items-center justify-center px-8">
@@ -35,5 +36,6 @@
 			</div>
 			<CalendarCallPicker />
 		</div>
+		<ContactFooter />
 	</div>
 </div>

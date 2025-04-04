@@ -447,5 +447,14 @@
 				}
 			}
 		}
+	},
+
+	"footer": {
+		"contactMe": "Contact me",
+
+		"email": "Email",
+		"linkedin": "LinkedIn",
+		"form": "Contact form",
+		"calendar": "Book a call"
 	}
 }

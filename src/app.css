@@ -29,6 +29,12 @@
 	background-position: center top;
 }
 
+.bg-special-gradient {
+	background:
+		linear-gradient(to right top, rgba(57, 149, 255, 0.05), transparent), linear-gradient(to right bottom, rgba(115, 64, 255, 0.04), transparent),
+		linear-gradient(to right bottom, rgba(35, 35, 35, 1) 0%, rgba(29, 29, 29, 1) 33%, rgba(22, 22, 22, 1) 100%);
+}
+
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {

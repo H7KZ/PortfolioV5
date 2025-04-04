@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { _, json } from 'svelte-i18n';
+	import ContactFooter from '$lib/components/ContactFooter.svelte';
 </script>
 
 <div class="flex w-full flex-col items-center justify-center">
@@ -97,6 +98,11 @@
 					{/each}
 				</div>
 			</div>
+		</div>
+	</div>
+	<div class="flex w-full items-center justify-center px-8">
+		<div class="w-full max-w-[1440px] pt-16 pb-32">
+			<ContactFooter />
 		</div>
 	</div>
 </div>

@@ -446,5 +446,14 @@
 				}
 			}
 		}
+	},
+
+	"footer": {
+		"contactMe": "Kontaktujte mě",
+
+		"email": "E-mail",
+		"linkedin": "LinkedIn",
+		"form": "Formulář",
+		"calendar": "Hovor"
 	}
 }

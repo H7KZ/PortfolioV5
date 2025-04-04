@@ -75,6 +75,8 @@
 			},
 			{} as typeof error
 		);
+
+		setTimeout((success = ''), 8000);
 	}
 </script>
 
