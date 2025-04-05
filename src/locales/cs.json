@@ -54,6 +54,20 @@
 		"hire": "Najměte mě"
 	},
 
+	"home": {
+		"explore": "Prozkoumejte mé portfolio",
+		"projects": {
+			"tags": {
+				"personal": "Osobní",
+				"work": "Pracovní",
+				"paas": "PaaS",
+				"design": "Design",
+				"fullstack": "Fullstack",
+				"frontend": "Frontend"
+			}
+		}
+	},
+
 	"resume": {
 		"jankominek": "Jan Komínek",
 		"quickSummaryLabel": "Rychlý přehled",

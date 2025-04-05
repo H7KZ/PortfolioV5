@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@plugin '@tailwindcss/typography';
 
 :root {
 	--font-dmsans: 'DM Sans', sans-serif;

@@ -54,6 +54,20 @@
 		"hire": "Hire me"
 	},
 
+	"home": {
+		"explore": "Explore my portfolio",
+		"projects": {
+			"tags": {
+				"personal": "Personal",
+				"work": "Work",
+				"paas": "PaaS",
+				"design": "Design",
+				"fullstack": "Fullstack",
+				"frontend": "Frontend"
+			}
+		}
+	},
+
 	"resume": {
 		"jankominek": "Jan Komínek",
 		"quickSummaryLabel": "Quick summary",
