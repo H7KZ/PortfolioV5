@@ -34,10 +34,14 @@
 		<article class="flex min-h-screen w-full justify-center">
 			<div
 				class="
-                    prose prose-neutral
+                    prose
+                    prose-neutral
                     prose-invert prose-code:!bg-neutral-800 prose-pre:!bg-neutral-800
-                    w-full
-                    !max-w-[1080px]
+					prose-h1:font-normal prose-h2:font-normal
+					prose-h3:font-normal prose-h4:font-normal
+					prose-h5:font-normal prose-h6:font-normal
+					prose-p:font-light prose-p:text-neutral-100
+					w-full !max-w-[1080px]
                 "
 			>
 				<data.content ok={'fgf'} />
