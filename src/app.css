@@ -3,6 +3,7 @@
 
 :root {
 	--font-dmsans: 'DM Sans', sans-serif;
+	--font-robotomono: 'Roboto Mono', monospace;
 
 	--color-background: #131313;
 }
@@ -12,6 +13,7 @@
 	--breakpoint-xs: 480px;
 
 	--font-dmsans: var(--font-dmsans);
+	--font-robotomono: var(--font-robotomono);
 
 	--color-background: var(--color-background);
 }

@@ -55,17 +55,7 @@
 	},
 
 	"home": {
-		"explore": "Prozkoumejte mé portfolio",
-		"projects": {
-			"tags": {
-				"personal": "Osobní",
-				"work": "Pracovní",
-				"paas": "PaaS",
-				"design": "Design",
-				"fullstack": "Fullstack",
-				"frontend": "Frontend"
-			}
-		}
+		"explore": "Prozkoumejte mé portfolio"
 	},
 
 	"resume": {

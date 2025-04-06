@@ -1,11 +1,13 @@
 import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
 
-export const load: PageLoad = async ({ params }) => {
+export const load: PageLoad = async ({ params, url }) => {
 	try {
-		const post = await import(`/src/projects/${params.slug}.md`);
+		const post = await import(`../../../projects/${params.slug}/${url.searchParams.get('locale') ?? 'en'}.md`);
 
 		return {
+			slug: params.slug,
+			locale: url.searchParams.get('locale') ?? 'en',
 			meta: post.metadata,
 			content: post.default
 		};

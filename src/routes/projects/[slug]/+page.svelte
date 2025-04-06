@@ -1,7 +1,26 @@
 <script lang="ts">
+	import { browser } from '$app/environment';
+	import { goto } from '$app/navigation';
 	import ContactFooter from '$lib/components/ContactFooter.svelte';
+	import { onDestroy, onMount } from 'svelte';
+	import { _, locale } from 'svelte-i18n';
+	import type { Unsubscriber } from 'svelte/store';
 
 	let { data } = $props();
+
+	let subscriber: Unsubscriber | null = null;
+
+	onMount(() => {
+		subscriber = locale.subscribe(async (value) => {
+			if (value === data.locale) return;
+
+			if (browser) await goto(`/projects/${data.slug}?locale=${value}`, { invalidateAll: true });
+		});
+	});
+
+	onDestroy(() => {
+		subscriber?.();
+	});
 </script>
 
 <svelte:head>
@@ -21,7 +40,7 @@
                     !max-w-[1080px]
                 "
 			>
-				<data.content />
+				<data.content ok={'fgf'} />
 			</div>
 		</article>
 		<ContactFooter />

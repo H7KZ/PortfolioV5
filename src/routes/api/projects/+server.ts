@@ -1,14 +1,24 @@
 import type { Project } from '$lib/types';
 import { json, type RequestHandler } from '@sveltejs/kit';
 
-export const GET: RequestHandler = async () => {
+export const GET: RequestHandler = async ({ url }) => {
+	const locale = url.searchParams.get('locale') ?? 'en';
+
 	let projects: Project[] = [];
 
-	const paths = import.meta.glob('/src/projects/*.md', { eager: true });
+	let paths = import.meta.glob(`../../../projects/**/*.md`, { eager: true });
+
+	paths = Object.fromEntries(
+		Object.entries(paths).filter(([path]) => {
+			const fileLocale = path.split('/').at(-1)?.replace('.md', '');
+
+			if (fileLocale === locale) return true;
+		})
+	);
 
 	for (const path in paths) {
 		const file = paths[path];
-		const slug = path.split('/').at(-1)?.replace('.md', '');
+		const slug = path.split('/').at(-2);
 
 		if (file && typeof file === 'object' && 'metadata' in file && slug) {
 			const metadata = file.metadata as Omit<Project, 'slug'>;

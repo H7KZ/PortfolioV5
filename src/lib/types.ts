@@ -2,6 +2,6 @@ export type Project = {
 	slug: string;
 	date: string;
 	title: string;
-	image: string;
+	thumbnail: string;
 	tags: string[];
 };
