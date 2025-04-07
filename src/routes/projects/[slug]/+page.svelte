@@ -30,7 +30,7 @@
 </svelte:head>
 
 <div class="flex w-full items-center justify-center px-8">
-	<div class="flex w-full max-w-[1440px] flex-col gap-24 pt-16 pb-32">
+	<div class="flex w-full max-w-[90rem] flex-col gap-24 pt-16 pb-32">
 		<article class="flex min-h-screen w-full justify-center">
 			<div
 				class="
@@ -41,7 +41,7 @@
 					prose-h3:font-normal prose-h4:font-normal
 					prose-h5:font-normal prose-h6:font-normal
 					prose-p:font-light prose-p:text-neutral-100
-					w-full !max-w-[1080px]
+					w-full !max-w-[67.5rem]
                 "
 			>
 				<data.content ok={'fgf'} />

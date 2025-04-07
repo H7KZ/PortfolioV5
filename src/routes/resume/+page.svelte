@@ -4,7 +4,7 @@
 </script>
 
 <div class="flex w-full flex-col items-center justify-center">
-	<div class="flex w-full max-w-[1440px] flex-col gap-32 px-8 pt-16 pb-32 min-[1440px]:px-2">
+	<div class="flex w-full max-w-[90rem] flex-col gap-32 px-8 pt-16 pb-32 min-[90rem]:px-2">
 		<div class="flex w-full justify-between gap-20">
 			<img src="/images/resume_profile.png" alt="Resumé profile" class="hidden h-full lg:block lg:w-80 xl:w-md" />
 			<div class="flex w-full flex-col gap-12">
@@ -23,7 +23,7 @@
 		</div>
 	</div>
 	<div class="bg-background flex w-full flex-col items-center justify-center">
-		<div class="flex w-full max-w-[1440px] flex-col gap-32 px-8 py-24 min-[1440px]:px-2">
+		<div class="flex w-full max-w-[90rem] flex-col gap-32 px-8 py-24 min-[90rem]:px-2">
 			<div class="flex w-full flex-col gap-4 md:flex-row md:gap-8">
 				<h2 class="xs:text-3xl w-full shrink-0 text-2xl font-normal md:w-1/3">
 					{$_('resume.aboutLabel')}
@@ -40,7 +40,7 @@
 	</div>
 	<div class="h-[1.5px] w-full bg-neutral-800"></div>
 	<div class="bg-background flex w-full flex-col items-center justify-center">
-		<div class="flex w-full max-w-[1440px] flex-col gap-32 px-8 py-16 min-[1440px]:px-2">
+		<div class="flex w-full max-w-[90rem] flex-col gap-32 px-8 py-16 min-[90rem]:px-2">
 			<div class="flex w-full flex-col gap-4 md:flex-row md:gap-8">
 				<h2 class="xs:text-3xl w-full shrink-0 text-2xl font-normal md:w-1/3">
 					{$_('resume.experienceLabel')}
@@ -62,7 +62,7 @@
 	</div>
 	<div class="h-[1.5px] w-full bg-neutral-800"></div>
 	<div class="bg-background flex w-full flex-col items-center justify-center">
-		<div class="flex w-full max-w-[1440px] flex-col gap-32 px-8 py-16 min-[1440px]:px-2">
+		<div class="flex w-full max-w-[90rem] flex-col gap-32 px-8 py-16 min-[90rem]:px-2">
 			<div class="flex w-full flex-col gap-4 md:flex-row md:gap-8">
 				<h2 class="xs:text-3xl w-full shrink-0 text-2xl font-normal md:w-1/3">
 					{$_('resume.educationLabel')}
@@ -84,7 +84,7 @@
 	</div>
 	<div class="h-[1.5px] w-full bg-neutral-800"></div>
 	<div class="bg-background flex w-full flex-col items-center justify-center">
-		<div class="flex w-full max-w-[1440px] flex-col gap-32 px-8 pt-24 pb-32 min-[1440px]:px-2">
+		<div class="flex w-full max-w-[90rem] flex-col gap-32 px-8 pt-24 pb-32 min-[90rem]:px-2">
 			<div class="flex w-full flex-col gap-4 md:flex-row md:gap-8">
 				<h2 class="xs:text-3xl w-full shrink-0 text-2xl font-normal md:w-1/3">
 					{$_('resume.toolsLabel')}
@@ -101,7 +101,7 @@
 		</div>
 	</div>
 	<div class="flex w-full items-center justify-center px-8">
-		<div class="w-full max-w-[1440px] pt-16 pb-32">
+		<div class="w-full max-w-[90rem] pt-16 pb-32">
 			<ContactFooter />
 		</div>
 	</div>

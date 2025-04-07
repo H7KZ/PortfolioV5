@@ -10,4 +10,4 @@
 	});
 </script>
 
-<div class="h-full w-full max-w-[1040px] !overflow-hidden" id="cal"></div>
+<div class="h-full w-full max-w-[65rem] !overflow-hidden" id="cal"></div>

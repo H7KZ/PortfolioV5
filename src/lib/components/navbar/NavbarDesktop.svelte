@@ -8,7 +8,7 @@
 </script>
 
 <div class="flex w-full items-center justify-center px-8 pt-10 pb-2">
-	<div class="flex w-full max-w-[1440px] items-center justify-between">
+	<div class="flex w-full max-w-[90rem] items-center justify-between">
 		<a href="/">
 			<Logo class="h-12 w-12 lg:h-14 lg:w-14" />
 		</a>

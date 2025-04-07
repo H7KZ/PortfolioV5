@@ -55,6 +55,17 @@
 	},
 
 	"home": {
+		"fullstack": "Fullstack Engineer",
+		"freelance": "Freelance",
+		"prague": "Prague, CZ",
+
+		"motto": "Exceptional developer with 4+ years industry experience",
+
+		"jankominek": "Jan Komínek",
+
+		"available": "Available For Work",
+		"bookACall": "Book a Call",
+
 		"explore": "Explore my portfolio"
 	},
 
