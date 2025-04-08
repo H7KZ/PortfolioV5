@@ -16,7 +16,7 @@ tags:
     </div>
     <div>
         <h3 class="!m-0 !mb-1 !font-semibold">Client</h3>
-        <p class="!m-0">Pangolin Software s.r.o.</p>
+        <p class="!m-0">Osobní</p>
     </div>
     <div>
         <h3 class="!m-0 !mb-1 !font-semibold">Category</h3>
