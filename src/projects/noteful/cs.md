@@ -11,15 +11,15 @@ tags:
 
 <div class="bg-neutral-900 flex flex-wrap gap-y-8 gap-x-20 justify-between px-8 py-6 rounded-lg xs:px-24">
     <div>
-        <h3 class="!m-0 !mb-1 !font-semibold">Project</h3>
+        <h3 class="!m-0 !mb-1 !font-semibold">Projekt</h3>
         <p class="!m-0">{title}</p>
     </div>
     <div>
-        <h3 class="!m-0 !mb-1 !font-semibold">Client</h3>
+        <h3 class="!m-0 !mb-1 !font-semibold">Klient</h3>
         <p class="!m-0">Osobní</p>
     </div>
     <div>
-        <h3 class="!m-0 !mb-1 !font-semibold">Category</h3>
+        <h3 class="!m-0 !mb-1 !font-semibold">Kategorie</h3>
         <p class="!m-0">Frontend</p>
     </div>
 </div>
