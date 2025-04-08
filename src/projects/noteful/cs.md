@@ -20,7 +20,7 @@ tags:
     </div>
     <div>
         <h3 class="!m-0 !mb-1 !font-semibold">Kategorie</h3>
-        <p class="!m-0">Frontend</p>
+        <p class="!m-0">Design</p>
     </div>
 </div>
 
