@@ -1,14 +1,14 @@
 ---
 date: '2024-10-25'
 title: IONT info
-thumbnail: /images/projects/iont_info/thumbnail.png
+thumbnail: /images/projects/iont_info/thumbnail.webp
 tags:
     - Pracovní
     - Mobilní ovladač
     - Fullstack
 ---
 
-<img src="/images/projects/iont_info/landing.png" alt={title} class="w-full h-80 object-cover mb-4 rounded-lg" />
+<img src="/images/projects/iont_info/landing.webp" alt={title} class="w-full h-80 object-cover mb-4 rounded-lg" />
 
 <div class="bg-neutral-900 flex flex-wrap gap-y-8 gap-x-20 justify-between px-8 py-6 rounded-lg xs:px-24">
     <div>
@@ -38,7 +38,7 @@ Pro zajištění škálovatelnosti a spolehlivosti byl systém nasazen pomocí *
 Klíčovou součástí projektu byla **úzká spolupráce s firmware týmem**, což zajistilo bezproblémovou komunikaci mezi ovládacím panelem a fyzickými nabíječkami. Dále byly nasazeny nástroje pro **správu Linux serverů**, **CI/CD pipeline** a **DevOps postupy**, které zefektivnily nasazení a údržbu systému. Výsledkem je výkonné cloudové řešení schopné efektivně spravovat rozsáhlé sítě EV nabíječek.
 
 <div class="flex justify-center items-center mb-16">
-    <img src="/images/projects/iont_info/phones.png" alt={title} class="w-9/10 object-cover" />
+    <img src="/images/projects/iont_info/phones.webp" alt={title} class="w-9/10 object-cover" />
 </div>
 
 # Funkce & Přínosy

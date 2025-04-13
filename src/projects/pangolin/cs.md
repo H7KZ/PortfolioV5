@@ -1,14 +1,14 @@
 ---
 date: '2023-12-25'
 title: Pangolin
-thumbnail: /images/projects/pangolin/thumbnail.png
+thumbnail: /images/projects/pangolin/thumbnail.webp
 tags:
     - Work
     - Interactive Dashboard
     - Frontend
 ---
 
-<img src="/images/projects/pangolin/thumbnail.png" alt={title} class="w-full h-80 object-cover mb-4 rounded-lg" />
+<img src="/images/projects/pangolin/thumbnail.webp" alt={title} class="w-full h-80 object-cover mb-4 rounded-lg" />
 
 <div class="bg-neutral-900 flex flex-wrap gap-y-8 gap-x-20 justify-between px-8 py-6 rounded-lg xs:px-24">
     <div>

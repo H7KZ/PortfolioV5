@@ -60,7 +60,7 @@
 					</div>
 				</div>
 			</div>
-			<img src="/images/profile.png" alt="Profile" class="w-full max-w-[24rem] pt-16 lg:max-w-[30rem] lg:pt-0 lg:pr-2 xl:max-w-[38rem]" />
+			<img src="/images/profile.webp" alt="Profile" class="w-full max-w-[24rem] pt-16 lg:max-w-[30rem] lg:pt-0 lg:pr-2 xl:max-w-[38rem]" />
 		</div>
 
 		<div class="mb-64 flex w-full flex-col gap-8">

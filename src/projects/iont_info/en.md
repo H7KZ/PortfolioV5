@@ -1,14 +1,14 @@
 ---
 date: '2024-10-25'
 title: IONT info
-thumbnail: /images/projects/iont_info/thumbnail.png
+thumbnail: /images/projects/iont_info/thumbnail.webp
 tags:
     - Work
     - Mobile Controller
     - Fullstack
 ---
 
-<img src="/images/projects/iont_info/landing.png" alt={title} class="w-full h-80 object-cover mb-4 rounded-lg" />
+<img src="/images/projects/iont_info/landing.webp" alt={title} class="w-full h-80 object-cover mb-4 rounded-lg" />
 
 <div class="bg-neutral-900 flex flex-wrap gap-y-8 gap-x-20 justify-between px-8 py-6 rounded-lg xs:px-24">
     <div>
@@ -38,7 +38,7 @@ To ensure scalability and reliability, the system was deployed using **Docker Sw
 A key part of the project was the **close collaboration with the firmware team**, ensuring seamless communication between the control panel and the physical chargers. Additionally, **Linux server administration**, **CI/CD pipelines**, and **DevOps best practices** were implemented to streamline deployment and maintenance. This resulted in a high-performance, cloud-based solution capable of handling large-scale EV charger networks efficiently.
 
 <div class="flex justify-center items-center mb-16">
-    <img src="/images/projects/iont_info/phones.png" alt={title} class="w-9/10 object-cover" />
+    <img src="/images/projects/iont_info/phones.webp" alt={title} class="w-9/10 object-cover" />
 </div>
 
 # Features & Contributions

@@ -6,7 +6,7 @@
 <div class="flex w-full flex-col items-center justify-center">
 	<div class="flex w-full max-w-[90rem] flex-col gap-32 px-8 pt-16 pb-32 min-[90rem]:px-2">
 		<div class="flex w-full justify-between gap-20">
-			<img src="/images/resume_profile.png" alt="Resumé profile" class="hidden h-full lg:block lg:w-80 xl:w-md" />
+			<img src="/images/resume_profile.webp" alt="Resumé profile" class="hidden h-full lg:block lg:w-80 xl:w-md" />
 			<div class="flex w-full flex-col gap-12">
 				<h2 class="xs:text-6xl text-5xl font-normal">
 					{$_('resume.jankominek')}

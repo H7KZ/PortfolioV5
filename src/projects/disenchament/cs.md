@@ -1,14 +1,14 @@
 ---
 date: '2024-12-25'
 title: Disenchantment
-thumbnail: /images/projects/disenchantment/thumbnail.png
+thumbnail: /images/projects/disenchantment/thumbnail.webp
 tags:
     - Osobní
     - Minecraft Mechaniky
     - Java
 ---
 
-<img src="/images/projects/disenchantment/anvil.png" alt={title} class="w-full h-56 object-cover mb-4 rounded-lg shadow-lg" />
+<img src="/images/projects/disenchantment/anvil.webp" alt={title} class="w-full h-56 object-cover mb-4 rounded-lg shadow-lg" />
 
 <div class="bg-neutral-900 flex flex-wrap gap-y-8 gap-x-20 justify-between px-8 py-6 rounded-lg xs:px-24">
     <div>

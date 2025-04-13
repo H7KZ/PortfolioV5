@@ -1,14 +1,14 @@
 ---
 date: '2024-08-25'
 title: IONT admin
-thumbnail: /images/projects/iont_admin/thumbnail.png
+thumbnail: /images/projects/iont_admin/thumbnail.webp
 tags:
     - Pracovní
     - Lokální Admin Panel
     - Fullstack
 ---
 
-<img src="/images/projects/iont_admin/thumbnail.png" alt={title} class="w-full h-80 object-cover mb-4 rounded-lg" />
+<img src="/images/projects/iont_admin/thumbnail.webp" alt={title} class="w-full h-80 object-cover mb-4 rounded-lg" />
 
 <div class="bg-neutral-900 flex flex-wrap gap-y-8 gap-x-20 justify-between px-8 py-6 rounded-lg xs:px-24">
     <div>

@@ -1,14 +1,14 @@
 ---
 date: '2024-09-25'
 title: Portfolio v4
-thumbnail: /images/projects/portfolio_v4/thumbnail.png
+thumbnail: /images/projects/portfolio_v4/thumbnail.webp
 tags:
     - Personal
     - Design
     - Frontend
 ---
 
-<img src="/images/projects/portfolio_v4/thumbnail.png" alt={title} class="w-full h-80 object-cover mb-4 rounded-lg" />
+<img src="/images/projects/portfolio_v4/thumbnail.webp" alt={title} class="w-full h-80 object-cover mb-4 rounded-lg" />
 
 <div class="bg-neutral-900 flex flex-wrap gap-y-8 gap-x-20 justify-between px-8 py-6 rounded-lg xs:px-24">
     <div>
