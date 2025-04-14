@@ -5,9 +5,9 @@
 	import { onDestroy, onMount } from 'svelte';
 	import { _, locale } from 'svelte-i18n';
 	import type { Unsubscriber } from 'svelte/store';
-	import type { ProjectData } from './+page';
+	import type { PostData } from './+page';
 
-	let { data }: { data: ProjectData } = $props();
+	let { data }: { data: PostData } = $props();
 
 	let subscriber: Unsubscriber | null = null;
 
@@ -15,7 +15,7 @@
 		subscriber = locale.subscribe(async (value) => {
 			if (value === data.locale) return;
 
-			if (browser) await goto(`/projects/${data.slug}?locale=${value}`, { invalidateAll: true });
+			if (browser) await goto(`/blog/${data.slug}?locale=${value}`, { invalidateAll: true });
 		});
 	});
 
