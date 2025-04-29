@@ -11,7 +11,7 @@ export interface PostData {
 
 export const load: PageLoad = async ({ params }): Promise<PostData> => {
 	try {
-		const post = await import(`../../../posts/${params.slug}.md`);
+		const post = await import(`../../../recipes/${params.slug}.md`);
 
 		return {
 			slug: params.slug,

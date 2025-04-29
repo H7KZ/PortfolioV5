@@ -11,12 +11,14 @@ export interface ProjectData {
 }
 
 export const load: PageLoad = async ({ params, url }): Promise<ProjectData> => {
+	const locale = url.searchParams.get('locale') ?? 'en';
+
 	try {
-		const post = await import(`../../../projects/${params.slug}/${url.searchParams.get('locale') ?? 'en'}.md`);
+		const post = await import(`../../../projects/${params.slug}/${locale}.md`);
 
 		return {
 			slug: params.slug,
-			locale: url.searchParams.get('locale') ?? 'en',
+			locale: locale,
 			meta: post.metadata,
 			content: post.default
 		};
