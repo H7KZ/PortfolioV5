@@ -72,18 +72,22 @@
 	"resume": {
 		"jankominek": "Jan Komínek",
 		"quickSummaryLabel": "Quick summary",
-		"quickSummary": "I am a Fullstack Engineer specializing in frontend development with expertise in SvelteKit, VueJS, ReactJS, TailwindCSS, and TypeScript. On the backend, I work with Node.js, ExpressJS, AdonisJS, MongoDB, and PostgreSQL to build scalable and efficient applications. With a background in cybersecurity and ongoing studies at the University of Economics and Business, I bring a well-rounded technical and business perspective to software development. My experience spans freelance, startup, and corporate environments, where I have led and contributed to innovative projects. Passionate about modern web technologies, problem-solving, and user-friendly applications, I thrive in collaborative environments that push the boundaries of what's possible.",
+		"quickSummary": "I am a Fullstack Engineer with a strong focus on frontend development, currently working across both freelance and company projects. In my freelance role, I serve as a Senior Frontend Engineer, collaborating closely with backend teams to build technically advanced, cloud-integrated applications using VueJS, TailwindCSS, and AWS. At the same time, I contribute as a Fullstack Engineer on backend-heavy systems, leveraging Node.js, ExpressJS, AdonisJS, MongoDB, and PostgreSQL to create scalable, reliable solutions. With a background in cybersecurity and ongoing studies at the Prague University of Economics and Business, I bring a well-rounded perspective that bridges deep technical expertise with a solid understanding of business and user experience. My experience spans freelance, startup, and corporate environments, where I have consistently led and contributed to innovative, user-centric projects.",
 
 		"aboutLabel": "About",
 		"about": [
-			"I am a dedicated Fullstack Engineer based in Prague, specializing in frontend development while maintaining extensive experience in backend technologies. My work revolves around crafting scalable, efficient, and user-centric applications, leveraging frameworks like SvelteKit, VueJS, ReactJS, TailwindCSS, and TypeScript for seamless frontend solutions. On the backend, I utilize tools such as Node.js, ExpressJS, AdonisJS, MongoDB, and PostgreSQL to build robust and scalable systems.",
-			"Currently, I am pursuing a degree in Applied Computer Science at the University of Economics and Business, where I have gained a well-rounded perspective by exploring diverse fields beyond technology. My studies have enhanced my understanding of marketing, management, UX design, economics, and data analysis using tools like Microsoft Power BI. This multidisciplinary foundation allows me to approach projects not only from a technical perspective but also with an awareness of business needs and user experience.",
-			"My professional journey includes experience as a Frontend Developer, Fullstack Web Developer, and IT Support, as well as freelance work that honed my problem-solving skills and adaptability. Beyond technical expertise, I bring a user-focused mindset, combining my background in cybersecurity with a passion for staying ahead of the curve in the fast-evolving tech landscape.",
-			"I thrive in collaborative environments where creativity and innovation drive progress. Whether it’s designing an intuitive interface, optimizing backend performance, or addressing complex challenges, I am committed to delivering impactful and practical solutions."
+			"I am a dedicated Fullstack Engineer based in Prague, specializing in modern frontend development while maintaining solid experience across backend technologies. Currently, I work as a freelance Senior Frontend Engineer on highly technical applications using VueJS, TailwindCSS, and AWS, closely collaborating with backend teams to deliver seamless, performant interfaces. Alongside this, I contribute as a Fullstack Engineer in a company setting, building robust systems with Node.js, ExpressJS, AdonisJS, MongoDB, and PostgreSQL.",
+			"My academic background in Applied Computer Science at the Prague University of Economics and Business has broadened my skill set beyond pure development. I’ve gained knowledge in marketing, UX design, economics, management, and data analytics with tools like Microsoft Power BI—enabling me to approach projects from both technical and business standpoints.",
+			"Professionally, I’ve taken on roles ranging from IT Support to Frontend and Fullstack Development across diverse environments. These experiences have sharpened my problem-solving abilities and adaptability, especially in freelance and cross-functional team settings. I also bring a foundation in cybersecurity, further strengthening my focus on building secure and dependable systems.",
+			"Driven by a passion for clean code, modern frameworks, and meaningful digital experiences, I thrive in collaborative environments that value innovation, precision, and user-centered design. Whether it’s architecting a scalable backend, crafting an elegant UI, or navigating complex challenges, I’m committed to delivering practical and impactful software solutions."
 		],
 
 		"experienceLabel": "Experience",
 		"experience": [
+			{
+				"company": "CORAC Engineering",
+				"position": "Senior Frontend Engineer, ongoing since April 2025"
+			},
 			{
 				"company": "Intedat",
 				"position": "Fullstack Engineer, ongoing since Sep 2024"
@@ -146,6 +150,7 @@
 			"User Interface Design",
 			"User Experience (UX)",
 			"Agile Methodologies",
+			"!AWS",
 			"Networking",
 			"Network Security",
 			"System Administration",

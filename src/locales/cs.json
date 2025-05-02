@@ -72,18 +72,22 @@
 	"resume": {
 		"jankominek": "Jan Komínek",
 		"quickSummaryLabel": "Rychlý přehled",
-		"quickSummary": "Jsem fullstack inženýr se specializací na frontendový vývoj se znalostmi v jazycích SvelteKit, VueJS, ReactJS, TailwindCSS a TypeScript. Na backendu pracuji s Node.js, ExpressJS, AdonisJS, MongoDB a PostgreSQL a vytvářím škálovatelné a efektivní aplikace. Díky vzdělání v oblasti kybernetické bezpečnosti a probíhajícímu studiu na Vysoké škole ekonomie a podnikání přináším do vývoje softwaru komplexní technický a obchodní pohled. Mé zkušenosti zahrnují práci na volné noze, ve startupech i ve firmách, kde jsem vedl inovativní projekty a podílel se na jejich realizaci. Jsem nadšenec do moderních webových technologií, řešení problémů a uživatelsky přívětivých aplikací a daří se mi ve spolupráci, která posouvá hranice možného.",
+		"quickSummary": "Jsem fullstack inženýr se zaměřením na frontendový vývoj, v současné době pracuji na volné noze i na firemních projektech. Na volné noze pracuji jako senior frontendový inženýr a úzce spolupracuji s backendovými týmy na tvorbě technicky pokročilých aplikací integrovaných do cloudu pomocí VueJS, TailwindCSS a AWS. Zároveň se jako Fullstack Engineer podílím na backendově náročných systémech, kde využívám Node.js, ExpressJS, AdonisJS, MongoDB a PostgreSQL k vytváření škálovatelných a spolehlivých řešení. Díky zkušenostem s kybernetickou bezpečností a pokračujícímu studiu na Vysoké škole ekonomické v Praze přináším všestranný pohled, který spojuje hluboké technické znalosti s důkladným porozuměním podnikání a uživatelské zkušenosti. Mé zkušenosti zahrnují nezávislé pracovníky, startupy i firemní prostředí, kde jsem důsledně vedl a přispíval k inovativním projektům zaměřeným na uživatele.",
 
 		"aboutLabel": "About",
 		"about": [
-			"Jsem fullstack inženýr se sídlem v Praze, který se specializuje na frontendový vývoj a zároveň má rozsáhlé zkušenosti s backendovými technologiemi. Moje práce se točí kolem vytváření škálovatelných, efektivních a uživatelsky orientovaných aplikací s využitím frameworků jako SvelteKit, VueJS, ReactJS, TailwindCSS a TypeScript pro bezproblémová frontendová řešení. Na backendu využívám nástroje jako Node.js, ExpressJS, AdonisJS, MongoDB a PostgreSQL k vytváření robustních a škálovatelných systémů.",
-			"V současné době studuji obor Aplikovaná informatika na Vysoké škole ekonomie a podnikání, kde jsem díky poznávání různých oborů mimo technologie získal všestranný rozhled. Studium mi pomohlo prohloubit znalosti marketingu, managementu, designu UX, ekonomie a analýzy dat pomocí nástrojů, jako je Microsoft Power BI. Tento multidisciplinární základ mi umožňuje přistupovat k projektům nejen z technického hlediska, ale také s vědomím obchodních potřeb a uživatelského zážitku.",
-			"Moje profesní cesta zahrnuje zkušenosti frontendového vývojáře, fullstack webového vývojáře a IT podpory, stejně jako práci na volné noze, která zdokonalila mé schopnosti řešit problémy a přizpůsobivost. Kromě technických znalostí přináším i myšlení zaměřené na uživatele a spojuji své zkušenosti z oblasti kybernetické bezpečnosti s vášní pro udržení náskoku v rychle se vyvíjejícím technologickém prostředí.",
-			"Daří se mi v prostředí, kde se spolupracuje a kde kreativita a inovace jsou hnacím motorem pokroku. Ať už jde o návrh intuitivního rozhraní, optimalizaci výkonu backendu nebo řešení složitých problémů, snažím se přinášet působivá a praktická řešení."
+			"Jsem fullstack inženýr se sídlem v Praze, který se specializuje na moderní frontendový vývoj a zároveň má solidní zkušenosti s backendovými technologiemi. V současné době pracuji na volné noze jako Senior Frontend Engineer na vysoce technických aplikacích využívajících VueJS, TailwindCSS a AWS, přičemž úzce spolupracuji s backendovými týmy, abychom mohli dodávat bezproblémová a výkonná rozhraní. Vedle toho přispívám jako Fullstack Engineer ve firemním prostředí a vytvářím robustní systémy s Node.js, ExpressJS, AdonisJS, MongoDB a PostgreSQL.",
+			"Moje akademické vzdělání v oboru Aplikovaná informatika na Vysoké škole ekonomické v Praze rozšířilo můj soubor dovedností nad rámec čistého vývoje. Získal jsem znalosti v oblasti marketingu, UX designu, ekonomiky, managementu a datové analýzy s nástroji jako Microsoft Power BI - což mi umožňuje přistupovat k projektům jak z technického, tak obchodního hlediska.",
+			"Profesně jsem zastával role od IT podpory po frontendový a fullstack vývoj v různých prostředích. Tyto zkušenosti zdokonalily mé schopnosti řešit problémy a přizpůsobivost, zejména na volné noze a v rámci multifunkčních týmů. Přináším také základy v oblasti kybernetické bezpečnosti, což dále posiluje mé zaměření na budování bezpečných a spolehlivých systémů.",
+			"Hnán vášní pro čistý kód, moderní frameworky a smysluplné digitální zážitky, daří se mi ve spolupracujícím prostředí, které oceňuje inovace, preciznost a design zaměřený na uživatele. Ať už jde o architekturu škálovatelného backendu, tvorbu elegantního uživatelského rozhraní nebo řešení složitých problémů, snažím se poskytovat praktická a působivá softwarová řešení."
 		],
 
 		"experienceLabel": "Zkušenosti",
 		"experience": [
+			{
+				"company": "CORAC Engineering",
+				"position": "Senior Frontend Engineer, od dubna 2025"
+			},
 			{
 				"company": "Intedat",
 				"position": "Fullstack Engineer, od září 2024"
@@ -146,6 +150,7 @@
 			"User Interface Design",
 			"User Experience (UX)",
 			"Agile Methodologies",
+			"!AWS",
 			"Networking",
 			"Network Security",
 			"System Administration",
