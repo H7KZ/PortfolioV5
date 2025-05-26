@@ -3,7 +3,7 @@ date: '2025-02-21'
 title: Traefik with Cloudflare inside Docker, simplified.
 summary: Set up Traefik with Cloudflare DNS & automatic HTTPS using Docker, API tokens, and secure middleware in a few easy steps.
 author: Jan Komínek
-thumbnail: null
+thumbnail: /images/posts/traefik_with_cloudflare_inside_docker_simplified/thumbnail.webp
 tags:
     - Traefik
     - Cloudlfare
