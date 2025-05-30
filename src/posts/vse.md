@@ -305,19 +305,24 @@ tags:
 
 - kredity: **3**
 - kritéria: **průběžný test** + **závěrečný test** + **ústní zkouška**
-- hodnocení: TBD
-- náročnost: TBD
+- hodnocení: **dobře** (**3**), 63 b.
+- náročnost: **8/10**
 
 #### Osobní hodnocení
 
-- TBD
+- Zajímavý předmět, dá vám nějaké zajímavé znalosti, ale reálná aplikace pro informatiky je minimální
+- Na cvičení doporučuji paní Kaňkovou, je skvělá, vysvětlí
+- Na přednášky paní Ligocká nebyla špatná, ale musíte si dělat zápisky (prezentace v insisu jsou většinou bez textu, abyste chodili na přednášky)
+- Na průběžák a závěrečák se nadrťte, potrřebujete alespoň 50% úspěšnost z obou testů dohromady a ty body vám pak hodně usnadní ústní zkoušku
+- Na ústní zkoušku jsem schytal slovenku, které nebylo vůbec rozumět, odpověděl jsem na mojí otázku v plné výši, nic jsem nevynechal a začala mě grilovat, nikdy víc s touhle zkoušící (tu nechcete, Gabriele Koľveková), normálně si přinesla přesýpací hodiny a vy musíme mluvit po celou dobu těch hodin, nikdo mi to neřekl, ani ona, tak jsme tam na sebe jak kreténi zíraly, bez komentáře, tuhle nechcete
 
 #### Materiály, které jsem použil
 
 - <a href="https://kominekjan.notion.site/1-Test-1a69140b569480a9989ee37de3f0e338" target="_blank">Vzorce k průběžnému testu</a>
 - <a href="https://kominekjan.notion.site/2-Test-1ef9140b569480db897ffa4cce823f75" target="_blank">Vzorce k závěrečnému testu</a>
-- <a href="/files/posts/vse/3mi204/makro-ke-zkousce.pdf" target="_blank">Makroekonomie I ke zkoušce</a>
-- <a href="/files/posts/vse/3mi204/Makroekonomie-priprava.pdf" target="_blank">Makroekonomie I příprava (zkrácený opáčko)</a>
+- <a href="/files/posts/vse/3mi204/makro-jankominek.pdf" target="_blank">Makroekonomie I otázky moje 2025</a>
+- <a href="/files/posts/vse/3mi204/makro-ke-zkousce.pdf" target="_blank">Makroekonomie I otázky všeborec 2019</a>
+- <a href="/files/posts/vse/3mi204/Makroekonomie-priprava.pdf" target="_blank">Makroekonomie I příprava 2025 (zkrácený opáčko)</a>
 - Prezentace z přednášek
 
 <br />
