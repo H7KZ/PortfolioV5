@@ -80,7 +80,7 @@
 
 							<div class="flex items-center gap-2">
 								{#each project.tags as tag}
-									<p class="text-sm text-neutral-400">{tag}</p>
+									<p class="text-sm text-neutral-400">{@html tag}</p>
 									<p class="text-sm text-neutral-400 last:hidden">/</p>
 								{/each}
 							</div>

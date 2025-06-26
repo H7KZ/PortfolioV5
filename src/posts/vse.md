@@ -1,12 +1,11 @@
 ---
 date: '2027-06-30'
 title: Vysoká Škola Ekonomická, Aplikovaná Informatika - Studium
-summary: Vysoká Škola Ekonomická, Aplikovaná Informatika - Studium
 author: Jan Komínek
 thumbnail: /images/posts/vse/thumbnail.webp
 tags:
     - VŠE
-    - stu*dying*
+    - stu<i>dying</i>
 ---
 
 # Vysoká Škola Ekonomická, Aplikovaná Informatika - Studium
@@ -51,6 +50,16 @@ tags:
     - [Základy odborné práce (4SA111)](#zaklady-odborne-prace-4sa111)
     - [Angličtina pro ekonomická studia 2 (2AJ212)](#anglictina-pro-ekonomicka-studia-2-2aj212)
     - [Beachvolejbal (TVSBEA)](#beachvolejbal-tvsbea)
+3. [Zimní semestr 2025/26 (3. semestr)](#zs-25-26)
+    - [Účetnictví I. (1FU201)](#ucetnictvi-i-1fu201)
+    - [Strategická analýza pro informatiky a statistiky (3SG201)](#strategicka-analyza-pro-informatiky-a-statistiky-3sg201)
+    - [Softwarové inženýrství (4IT115)](#softwarove-inzenyrstvi-4it115)
+    - [Programování v Javě (4IT101)](#programovani-v-jave-4it101)
+    - [XML - Teorie a praxe značkovacích jazyků (4IZ238)](#xml-teorie-a-praxe-znackovacich-jazyku-4iz238)
+    - [Pokročilé on-line nástroje pro analýzu a zpracování informací (4SA230)](#pokrocile-on-line-nastroje-pro-analyzu-a-zpracovani-informaci-4sa230)
+    - [Informace pro business (v angličtině) (4SA260)](#informace-pro-business-v-anglictine-4sa260)
+    - [Příprava na CAE 1 (C1) (2AJ305)](#priprava-na-cae-1-c1-2aj305)
+    - [Tenis (TVSTEN)](#tenis-tvsten)
 
 <br />
 <br />
@@ -282,12 +291,18 @@ tags:
 
 - kredity: **5**
 - kritéria: **průběžný test** + **závěrečný test** + **ústní zkouška**
-- hodnocení: TBD
-- náročnost: TBD
+- hodnocení: **velmi dobře** (**2**), 80 b.
+- náročnost: **8/10**
 
 #### Osobní hodnocení
 
-- TBD
+- Záživnější předmět než makroekonomie, ale stále to byla bolest
+- Zajímavý předmět, dá vám nějaké zajímavé znalosti, ale reálná aplikace pro informatiky je minimální
+- Na cvičení doporučuji paní Kaňkovou, je skvělá, vysvětlí
+- Na přednášky paní Ligocká nebyla špatná, ale musíte si dělat zápisky (prezentace v insisu jsou většinou bez textu, abyste chodili na přednášky)
+- Na průběžák se doporučuji připravit, hlavně si projděte příklady z cvičebnice (vzorce a různé tvary zadání)
+- Závěrečný test je v pohodě, ale doporučuji zase se dostatečně připravit, dostanene pak dostatek bodů na ústní zkoušku (lépe se na vás dívají a lépe projdete)
+- Na ústní záleží koho schytáte a v jaké náladě, měl jsem štěstí a v pohodě, paní Koľveková se vyspala dobře a byla v pohodě, na makroekonomii mě vymáchala, protože se jí chtělo
 
 #### Materiály, které jsem použil
 
@@ -310,9 +325,8 @@ tags:
 
 #### Osobní hodnocení
 
-- Zajímavý předmět, dá vám nějaké zajímavé znalosti, ale reálná aplikace pro informatiky je minimální
-- Na cvičení doporučuji paní Kaňkovou, je skvělá, vysvětlí
-- Na přednášky paní Ligocká nebyla špatná, ale musíte si dělat zápisky (prezentace v insisu jsou většinou bez textu, abyste chodili na přednášky)
+- Méně zábavný předmět než mikroekonomie (stále bolest)
+- Paní Džbánková není špatná, občas skáče z tématu na téma, ale dá se to s ní dát (klidně i doporučuji)
 - Na průběžák a závěrečák se nadrťte, potrřebujete alespoň 50% úspěšnost z obou testů dohromady a ty body vám pak hodně usnadní ústní zkoušku
 - Na ústní zkoušku jsem schytal slovenku, které nebylo vůbec rozumět, odpověděl jsem na mojí otázku v plné výši, nic jsem nevynechal a začala mě grilovat, nikdy víc s touhle zkoušící (tu nechcete, Gabriele Koľveková), normálně si přinesla přesýpací hodiny a vy musíme mluvit po celou dobu těch hodin, nikdo mi to neřekl, ani ona, tak jsme tam na sebe jak kreténi zíraly, bez komentáře, tuhle nechcete
 
@@ -333,12 +347,15 @@ tags:
 
 - kredity: **6**
 - kritéria: **průběžné úkoly** + **závěrečný test** + **praktický test** + **seminární práce**
-- hodnocení: TBD
-- náročnost: TBD
+- hodnocení: **výborně** (**1**), 91 b.
+- náročnost: **3/10**
 
 #### Osobní hodnocení
 
-- TBD
+- Jestli umíte něco z IT, tak to máte v kapse
+- Semestrálka je v pohodě, dostal jsem 22b z 20
+- Závěrečný test je taky v pohodě, otázky jsou na testeru
+- Praktický je taky free, ale doporučuji se připravit, abyste věděli, co dělat
 
 #### Materiály, které jsem použil
 
@@ -353,12 +370,15 @@ tags:
 
 - kredity: **6**
 - kritéria: **průběžný test** + **závěrečný test** + **seminární práce**
-- hodnocení: TBD
-- náročnost: TBD
+- hodnocení: **výborně** (**1**), 99 b.
+- náročnost: **2/10**
 
 #### Osobní hodnocení
 
-- TBD
+- Pro člověka co umí databáze, předmět je mega na klid
+- Průběžák je zadarmo, ale udělejte si certifikáty za pár přidaných bodů k testu, nic tim nezkazíte, máte je rychle
+- Závěrečák dáte z otázek co jsem přinul tady dole, dal jsem 39b ze 40
+- Pokud se na semestrálku nevykašlete a dáte si s ní práci, tak máte i těch 40b (dal jsem to levou zadní)
 
 #### Materiály, které jsem použil
 
@@ -374,7 +394,7 @@ tags:
 - kredity: **6**
 - kritéria: **aktivita na cvičeních** + **závěrečný test**
 - hodnocení: **výborně** (**1**), 104 b.
-- náročnost: -5/10
+- náročnost: **-5/10**
 
 #### Osobní hodnocení
 
@@ -457,3 +477,191 @@ tags:
 - Doporučuji pana Bárta
 - Tohle byla větší zábava než fitness
 - Příjemní lidi, skvělá atmosféra
+
+<br />
+<br />
+
+<div id="zs-25-26"></div>
+
+## Zimní semestr 2025/26 (3. semestr)
+
+### Předměty
+
+- Účetnictví I. (**1FU201**)
+- Strategická analýza pro informatiky a statistiky (**3SG201**)
+- Softwarové inženýrství (**4IT115**)
+- Programování v Javě (**4IT101**)
+- XML - Teorie a praxe značkovacích jazyků (**4IZ238**)
+- Pokročilé on-line nástroje pro analýzu a zpracování informací (**4SA230**)
+- Informace pro business (v angličtině) (**4SA260**)
+- Příprava na CAE 1 (C1) (**2AJ305**)
+- Tenis (**TVSTEN**)
+
+> Celkem 39 kreditů + **TVSTEN** (tělesná výchova) bez kreditů
+
+<br />
+
+<div id="ucetnictvi-i-1fu201"></div>
+
+### Účetnictví I. (1FU201)
+
+- kredity: **6**
+- kritéria: **průběžný test** + **závěrečný test** + **aktivita** + **případová studie**
+- hodnocení: TBD
+- náročnost: TBD
+
+#### Osobní hodnocení
+
+- TBD
+
+#### Materiály, které jsem použil
+
+- TBD
+
+<br />
+
+<div id="strategicka-analyza-pro-informatiky-a-statistiky-3sg201"></div>
+
+### Strategická analýza pro informatiky a statistiky (3SG201)
+
+- kredity: **5**
+- kritéria: **závěrečný test** + **obhajoba** + **aktivita**
+- hodnocení: TBD
+- náročnost: TBD
+
+#### Osobní hodnocení
+
+- TBD
+
+#### Materiály, které jsem použil
+
+- TBD
+
+<br />
+
+<div id="softwarove-inzenyrstvi-4it115"></div>
+
+### Softwarové inženýrství (4IT115)
+
+- kredity: **6**
+- kritéria: **průběžné kvízy** + **závěrečný test** + **seminární práce** + **aktivita**
+- hodnocení: TBD
+- náročnost: TBD
+
+#### Osobní hodnocení
+
+- TBD
+
+#### Materiály, které jsem použil
+
+- TBD
+
+<br />
+
+<div id="programovani-v-jave-4it101"></div>
+
+### Programování v Javě (4IT101)
+
+- kredity: **7**
+- kritéria: **průběžné úkoly** + **závěrečný test** + **seminární práce**
+- hodnocení: TBD
+- náročnost: TBD
+
+#### Osobní hodnocení
+
+- TBD
+
+#### Materiály, které jsem použil
+
+- TBD
+
+<br />
+
+<div id="xml-teorie-a-praxe-znackovacich-jazyku-4iz238"></div>
+
+### XML - Teorie a praxe značkovacích jazyků (4IZ238)
+
+- kredity: **6**
+- kritéria: **závěrečný test** + **seminární práce** + **aktivita**
+- hodnocení: TBD
+- náročnost: TBD
+
+#### Osobní hodnocení
+
+- TBD
+
+#### Materiály, které jsem použil
+
+- TBD
+
+<br />
+
+<div id="pokrocile-on-line-nastroje-pro-analyzu-a-zpracovani-informaci-4sa230"></div>
+
+### Pokročilé on-line nástroje pro analýzu a zpracování informací (4SA230)
+
+- kredity: **3**
+- kritéria: **průběžné úkoly** + **závěrečný test** + **seminární práce** + **obhajoba**
+- hodnocení: TBD
+- náročnost: TBD
+
+#### Osobní hodnocení
+
+- TBD
+
+#### Materiály, které jsem použil
+
+- TBD
+
+<br />
+
+<div id="informace-pro-business-v-anglictine-4sa260"></div>
+
+### Informace pro business (v angličtině) (4SA260)
+
+- kredity: **3**
+- kritéria: **průběžné úkoly** + **závěrečný test**
+- hodnocení: TBD
+- náročnost: TBD
+
+#### Osobní hodnocení
+
+- TBD
+
+#### Materiály, které jsem použil
+
+- TBD
+
+<br />
+
+<div id="priprava-na-cae-1-c1-2aj305"></div>
+
+### Příprava na CAE 1 (C1) (2AJ305)
+
+- kredity: **3**
+- kritéria: **průběžné testy** + **aktivita**
+- hodnocení: TBD
+- náročnost: TBD
+
+#### Osobní hodnocení
+
+- TBD
+
+#### Materiály, které jsem použil
+
+- TBD
+
+<br />
+
+<div id="tenis-tvsten"></div>
+
+### Tenis (TVSTEN)
+
+- kredity: **0**
+- kritéria: **docházka**
+- hodnocení: TBD
+- náročnost: TBD
+
+#### Osobní hodnocení
+
+- TBD

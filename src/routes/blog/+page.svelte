@@ -33,7 +33,7 @@
 							<div class="flex w-full items-center justify-between gap-1 pt-2">
 								<div class="flex items-center gap-2">
 									{#each post.tags as tag}
-										<p class="text-sm text-neutral-400">{tag}</p>
+										<p class="text-sm text-neutral-400">{@html tag}</p>
 										<p class="text-sm text-neutral-400 last:hidden">/</p>
 									{/each}
 								</div>

@@ -12,7 +12,7 @@ const config = defineMDSveXConfig({
 		highlighter: async (code, lang = 'text') => {
 			const highlighter = await createHighlighter({
 				themes: ['poimandres'],
-				langs: ['json', 'yaml']
+				langs: ['json', 'yaml', 'csharp']
 			});
 			await highlighter.loadLanguage('javascript', 'typescript');
 			const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme: 'poimandres' }));
