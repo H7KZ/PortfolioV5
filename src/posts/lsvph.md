@@ -12,6 +12,7 @@ tags:
 
 - [Základy programování v C\#](./lsvph/csharp)
 - [Základy 2D grafiky](./lsvph/2d)
+- [Základy 3D grafiky](./lsvph/3d)
 - [Základy Unity](./lsvph/unity)
 
 ---
