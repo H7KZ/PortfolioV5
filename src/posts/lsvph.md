@@ -9,8 +9,14 @@ tags:
 ---
 
 # Letní Škola Vývoje počítačových Her
- 
- ## Rozvrh
 
- ![Rozvrh 1](/images/posts/lsvph/1.png)
- ![Rozvrh 2](/images/posts/lsvph/2.png)
+- [Základy programování v C\#](./lsvph/csharp)
+- [Základy 2D grafiky](./lsvph/2d)
+- [Základy Unity](./lsvph/unity)
+
+---
+
+## Rozvrh
+
+![Rozvrh 1](/images/posts/lsvph/1.png)
+![Rozvrh 2](/images/posts/lsvph/2.png)

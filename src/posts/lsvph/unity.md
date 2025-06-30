@@ -8,141 +8,173 @@ tags:
     - SSPŠ
 ---
 
-# Vstup do herního světa: Tvoříme v Unity
+# Vstup do herního světa: Tvoříme v Unity 🚀
 
-> Vítejte v Unity! V předchozím kurzu jste se naučili jazyk C#. Teď je čas tento jazyk použít k tomu, abychom rozpohybovali objekty a vytvořili naši první jednoduchou 3D hru
+> Vítejte v Unity! V předchozím kurzu jste se naučili jazyk C#. Teď je čas tento jazyk použít k tomu, abychom rozpohybovali objekty a vytvořili naši první jednoduchou 3D hru. Unity je jako obrovské digitální hřiště a C# je jazyk, kterým dáváte hračkám pravidla
 
-> Cíl: Pochopit, jak funguje Unity editor, naučit se základní stavební kameny každé hry a na konci si vytvořit a spustit vlastní funkční hru
+> **Cíl:** Pochopit, jak funguje Unity editor, naučit se základní stavební kameny každé hry a na konci si vytvořit a spustit vlastní funkční hru
 
-## Obsah
+---
 
-1. [Velká myšlenka Unity: Vše je GameObject s komponentami](#1-velka-myslenka-unity-vse-je-gameobject-s-komponentami)
+## Základní myšlenka Unity: GameObject a Komponenty 🧱
 
-<br />
+Toto je nejdůležitější princip v celém Unity. Jakmile ho pochopíte, vše ostatní do sebe zapadne
 
-<div id="1-velka-myslenka-unity-vse-je-gameobject-s-komponentami"></div>
+- **GameObject**: Představte si to jako prázdný kontejner, "věc" ve vaší hře. Může to být hráč, nepřítel, zeď, světlo, kamera... cokoliv. Sám o sobě ale **nic neumí a není vidět**. Je to jen prázdná schránka s názvem a pozicí
 
-## 1. Velká myšlenka Unity: Vše je GameObject s komponentami
+- **Komponenta (Component)**: Jsou to "stavební bloky" chování a vlastností, které dáváte na GameObjects. Chcete, aby prázdná schránka něco dělala? Dejte jí komponentu!
+    - **Transform**: Tuto komponentu má každý GameObject automaticky a nejde ji odebrat. Určuje jeho **pozici, rotaci a velikost** (scale) ve světě
+    - **Mesh Renderer & Mesh Filter**: Chcete, aby byl objekt vidět? `Mesh Filter` mu dává tvar (např. kostka, koule) a `Mesh Renderer` mu dává materiál (barvu, texturu)
+    - **Rigidbody**: Chcete, aby reagoval na **fyziku** (gravitaci, síly, kolize)? Dejte mu komponentu `Rigidbody`
+    - **Collider**: Chcete, aby měl fyzický tvar pro detekci srážek? Dejte mu `Collider` (např. `Box Collider`, `Sphere Collider`, `Capsule Collider`)
+    - **Audio Source**: Chcete, aby vydával zvuk? Dejte mu `Audio Source`
+    - **Váš C\# Skript**: Chcete, aby měl **vlastní logiku** (pohyboval se podle hráče, ztrácel životy)? Napište skript a přidejte ho jako komponentu!
 
-**Toto je nejdůležitější princip, který musíte pochopit:**
+**Analogie:** GameObject je nahý člověk. Komponenty jsou jeho oblečení, nástroje a mozek. `Mesh Renderer` jsou jeho šaty, `Rigidbody` mu dává kostru a svaly pro interakci se světem a váš C\# skript je jeho mozek, který řídí, co má dělat
 
-- **GameObject**: Představte si to jako prázdný kontejner, "věc" ve vaší hře. Může to být hráč, nepřítel, zeď, světlo, kamera... cokoliv. Sám o sobě ale nic neumí
+---
 
-- **Komponenta** (Component): Jsou to "stavební bloky", které dáváte na GameObjects, aby získaly vlastnosti a schopnosti
-    - Chcete, aby objekt měl pozici v prostoru? Dejte mu komponentu Transform. (Tuto má každý GameObject automaticky)
-    - Chcete, aby byl vidět? Dejte mu komponenty Mesh Filter (tvar) a Mesh Renderer (materiál/barva)
-    - Chcete, aby reagoval na fyziku (gravitaci, kolize)? Dejte mu komponentu Rigidbody
-    - Chcete, aby měl tvar pro kolize? Dejte mu Collider (např. Box Collider, Sphere Collider)
-    - Chcete, aby měl vlastní chování? Dejte mu váš C# skript!
+## Průzkum Unity Editoru: Vaše dílna 🔧
 
-- **Analogie**: GameObject je auto. Jeho komponenty jsou motor, kola, karoserie a volant. Každá komponenta má svůj specifický úkol
+Když otevřete Unity, uvidíte několik klíčových oken, mezi kterými budete neustále přepínat
 
-<br />
+- **Scene View (Scéna)**: Vaše 3D dílna. Zde vizuálně skládáte herní svět, pohybujete s objekty, kamerou a světly
+- **Game View (Hra)**: Pohled z herní kamery. Přesně takto uvidí hru finální hráč. Spouští se tlačítkem **► (Play)**. Během běhu hry můžete stále měnit hodnoty, ale pozor – **všechny změny provedené v Play módu se po jeho vypnutí vrátí zpět\!**
+- **Hierarchy (Hierarchie)**: Textový seznam všech GameObjects, které máte aktuálně ve scéně. Můžete zde objekty vnořovat do sebe a vytvářet tak vztahy rodič-dítě (např. zbraň je dítětem postavy hráče)
+- **Project (Projekt)**: Vaše knihovna. Zde jsou uloženy **všechny soubory** vaší hry – 3D modely, textury, materiály, zvuky a hlavně vaše C\# skripty. Cokoliv chcete ve hře použít, musíte to nejdříve mít v tomto okně
+- **Inspector (Inspektor)**: Nejdůležitější okno\! Když kliknete na jakýkoliv GameObject (v Hierarchy nebo ve Scene), Inspector vám ukáže **všechny jeho komponenty** a umožní vám měnit jejich nastavení (např. pozici v `Transform`, barvu v `Mesh Renderer`, rychlost ve vašem skriptu...)
 
-<div id="2-pruzkum-unity-editoru"></div>
+---
 
-## 2. Průzkum Unity Editoru
+## C# skripty v Unity: Srdce vaší hry ❤️
 
-**Když otevřete Unity, uvidíte několik klíčových oken:**
-
-- **Scene View** (Scéna): Vaše dílna. Zde skládáte a pohybujete s objekty ve 3D prostoru
-
-- **Game View** (Hra): Pohled z herní kamery. Takto uvidí hru finální hráč. Spouští se tlačítkem ► (Play)
-
-- **Hierarchy** (Hierarchie): Seznam všech GameObjects, které máte aktuálně ve scéně
-
-- **Project** (Projekt): Všechny soubory vaší hry – skripty, modely, textury, zvuky. Je to vaše "knihovna" všech dílů
-
-- **Inspector** (Inspektor): Nejdůležitější okno! Když kliknete na jakýkoliv GameObject (v Hierarchy nebo ve Scene), Inspector vám ukáže všechny jeho komponenty a umožní vám měnit jejich nastavení (např. pozici, barvu, rychlost ve vašem skriptu...)
-
-<br />
-
-<div id="3-c-skripty-v-unity-monobehaviour"></div>
-
-## 3. C# skripty v Unity: MonoBehaviour
-
-> Váš C# skript je jen další komponenta. Aby Unity rozumělo vašemu kódu, musí vaše třída dědit od speciální Unity třídy MonoBehaviour
+Váš C# skript je jen další komponenta. Aby Unity rozumělo vašemu kódu a mohlo ho spouštět, musí vaše třída "dědit" (přebírat vlastnosti) od speciální Unity třídy `MonoBehaviour`
 
 ```csharp
-using UnityEngine; // Musíme používat knihovnu Unity
+using UnityEngine; // Musíme používat knihovnu Unity pro přístup k třídám jako MonoBehaviour
 
 // Naše třída PlayerController DĚDÍ od MonoBehaviour.
 // Díky tomu ji můžeme přetáhnout na GameObject v editoru.
 public class PlayerController : MonoBehaviour
 {
-    // Cokoliv, co zde označíte jako 'public', se objeví v Inspektoru!
+    // Cokoliv, co zde označíte jako 'public', se objeví v Inspektoru jako políčko!
+    // Můžete tak měnit hodnoty bez nutnosti přepisovat kód.
     public float speed = 10.0f;
+
+    // Pro-tip: Pokud chcete proměnnou vidět v Inspektoru, ale nechcete,
+    // aby k ní mohly přistupovat jiné skripty, použijte [SerializeField]
+    [SerializeField]
+    private int health = 100;
+
+
+    // --- Unity "Lifecycle" Metody ---
+
+    // Metoda Awake() se volá úplně jako první (i před Startem).
+    // Používá se pro inicializaci, která musí proběhnout před vším ostatním.
+    void Awake()
+    {
+        // Příklad: Najdi si hlavní kameru a ulož si ji do proměnné.
+    }
 
     // Metoda Start() se zavolá JEDNOU na začátku, když je objekt aktivován.
     // Ideální pro nastavení počátečních hodnot.
     void Start()
     {
         Debug.Log("Hráč byl vytvořen!");
+        // Nastav pozici na začátek
+        transform.position = new Vector3(0, 1, 0);
     }
 
     // Metoda Update() se volá KAŽDÝ SNÍMEK (frame).
-    // Zde se odehrává veškerá herní logika v reálném čase (pohyb, střelba...).
+    // Zde se odehrává většina herní logiky (čtení vstupu, jednoduchý pohyb...).
+    // Rychlost volání závisí na výkonu počítače.
     void Update()
     {
-        // Příklad pohybu - toto budeme psát v hodině
+        // Příklad čtení vstupu - viz dále
     }
-}
-```
 
-**Klíčové metody MonoBehaviour:**
-
-- **Start()**: Volá se jednou při startu.
-
-- **Update()**: Volá se každý snímek.
-
-- **OnCollisionEnter(Collision collision)**: Volá se, když se dva objekty s Rigidbody a Collider fyzicky srazí
-
-- **OnTriggerEnter(Collider other)**: Volá se, když jeden objekt vstoupí do "spouštěcí zóny" (Trigger) jiného objektu. Kolize není fyzická, objekty projdou skrz sebe
-
-<br />
-
-<div id="4-prefaby-vase-osobni-sablony"></div>
-
-## 4. Prefaby: Vaše osobní šablony
-
-> Prefab je uložený GameObject se všemi jeho komponentami. Můžete si vytvořit perfektního nepřítele nebo minci, uložit si ho jako Prefab a pak ho ve hře vytvářet (instanciovat) kolikrát chcete. Když změníte Prefab, změní se všechny jeho kopie ve hře. Je to extrémně mocný nástroj
-
-<br />
-
-<div id="5-jak-cist-vstup-od-hrace"></div>
-
-## 5. Jak číst vstup od hráče?
-
-- V metodě Update() můžeme snadno zjistit, jestli hráč mačká nějakou klávesu
-
-```csharp
-void Update()
-{
-    if (Input.GetKey(KeyCode.W))
+    // Metoda FixedUpdate() se volá ve fixních časových intervalech, nezávisle na snímcích.
+    // ZDE by se měla odehrávat veškerá FYZIKÁLNÍ logika (přidávání sil k Rigidbody).
+    // Zajišťuje stabilitu fyzikální simulace.
+    void FixedUpdate()
     {
-        // Pohyb dopředu
-        // transform je odkaz na Transform komponentu objektu, na kterém je tento skript
-        transform.Translate(Vector3.forward * speed * Time.deltaTime);
+        // Příklad: GetComponent<Rigidbody>().AddForce(...)
     }
 }
 ```
 
-- **Vector3.forward**: Vektor směřující dopředu (0, 0, 1)
+---
 
-- **Time.deltaTime**: Čas, který uplynul od posledního snímku. Je extrémně důležité násobit pohyb touto hodnotou! Zajišťuje, že pohyb bude stejně rychlý na pomalých i rychlých počítačích
+## Fyzika v Unity: Jak dát světu pravidla 🌍
 
-<br />
+Unity má robustní fyzikální engine, který za vás řeší spoustu složitých věcí. Stačí ho správně používat
 
-<div id="6-export-hotove-hry-build"></div>
+- **Rigidbody**: Jakmile objektu dáte tuto komponentu, přebírá nad ním kontrolu fyzikální engine. Začne na něj působit gravitace a můžete na něj aplikovat síly
+- **Collider**: Definuje fyzický tvar objektu pro detekci kolizí. **Musí být na objektu, aby Rigidbody vědělo, s čím se má srazit.** Tvar collideru by měl co nejlépe (ale jednoduše) odpovídat viditelnému tvaru objektu
+- **Kolize vs. Trigger (Spouštěč)**: Toto je klíčový rozdíl!
+    - **Kolize (Collision)**: Standardní chování. Dva objekty s `Rigidbody` a `Collider` do sebe narazí a odrazí se jako v reálném světě. K detekci slouží metoda `void OnCollisionEnter(Collision col) { ... }`
+    - **Trigger**: Pokud na `Collideru` zaškrtnete políčko **`Is Trigger`**, objekt ztratí svou "hmotnost" a ostatní objekty jím mohou procházet. Stále ale dokáže detekovat, že jím něco prošlo. Ideální pro sbírání mincí, checkpointy, nebo detekční zóny. K detekci slouží metoda `void OnTriggerEnter(Collider other) { ... }`
 
-## 6. Export hotové hry (Build)
+| Událost     | Typ       | Metoda v C\#                      | Příklad použití                     |
+| :---------- | :-------- | :-------------------------------- | :---------------------------------- |
+| **Srážka**  | Fyzická   | `OnCollisionEnter(Collision col)` | Kulečníková koule narazí do jiné.   |
+| **Průchod** | Nefyzická | `OnTriggerEnter(Collider other)`  | Hráč projde skrz minci a sebere ji. |
 
-1. Až bude hra hotová, můžeme ji "zabalit" do spustitelného souboru (.exe pro Windows)
+---
 
-2. Jděte do File -> Build Settings
+## Prefaby: Vaše osobní šablony 📦
 
-3. Přidejte otevřenou scénu (Add Open Scenes)
+Prefab je uložený GameObject se všemi jeho komponentami a nastaveními. Je to extrémně mocný nástroj
 
-4. Zvolte platformu (PC, Mac & Linux Standalone)
+**Jak to funguje:**
 
-5. Klikněte na Build a vyberte složku, kam se má hra uložit
+1.  Ve scéně si vytvoříte a dokonale nastavíte nějaký objekt (např. nepřítele s modelem, skriptem pro AI, životy, colliderem...)
+2.  Tento objekt přetáhnete z okna `Hierarchy` do okna `Project`. Tím se vytvoří **Prefab**
+3.  Teď můžete tento Prefab "naklonovat" do scény kolikrát chcete
+4.  **Kouzlo:** Když změníte původní Prefab (např. zvýšíte nepříteli životy), **změní se všechny jeho kopie** (instance) ve hře!
+
+**K čemu se to hodí?** K vytváření nepřátel, střel, mincí, překážek – čehokoliv, co se ve hře opakuje. Ve skriptu pak můžete tyto prefaby vytvářet za běhu hry pomocí funkce `Instantiate(mujPrefab);`
+
+---
+
+## Klíčové koncepty a třídy, které musíte znát
+
+- **Input**: Statická třída pro čtení vstupu od hráče.
+    - `Input.GetKey(KeyCode.W)`: Vrací `true`, dokud je klávesa W držena
+    - `Input.GetKeyDown(KeyCode.Space)`: Vrací `true` jen v tom snímku, kdy byla mezerník stisknuta
+    - `Input.GetAxis("Horizontal")`: Lepší způsob pro pohyb. Vrací hodnotu od -1 do 1 podle stisku kláves A/D nebo šipek. Hodnoty jsou definovány v `Edit -> Project Settings -> Input Manager`
+
+- **Vector3 / Vector2**: Struktury reprezentující bod nebo směr ve 3D/2D prostoru (složky x, y, z)
+    - `Vector3.forward` je zkratka pro `new Vector3(0, 0, 1)`
+    - `Vector3.up` je `new Vector3(0, 1, 0)`
+    - `transform.position` je typu `Vector3`
+
+- **Time**: Statická třída pro práci s časem
+    - `Time.deltaTime`: Čas, který uplynul od posledního snímku. **Je extrémně důležité násobit jakýkoliv pohyb v `Update` touto hodnotou!** Zajišťuje, že pohyb bude stejně rychlý na pomalých i rychlých počítačích (pohyb za sekundu, ne pohyb za snímek)
+    - `Time.time`: Celkový čas v sekundách od spuštění hry
+
+- **GetComponent\<T\>()**: Metoda, kterou získáte odkaz na jinou komponentu na **stejném** GameObjectu
+    - `Rigidbody rb = GetComponent<Rigidbody>();`
+    - `rb.AddForce(Vector3.up * 10);`
+
+---
+
+## Export hotové hry (Build) 🎮
+
+Až bude hra hotová, můžete ji "zabalit" do spustitelného souboru (.exe pro Windows), který můžete poslat kamarádům
+
+1.  Jděte do menu **File -> Build Settings**
+2.  Klikněte na **Add Open Scenes**, aby se do buildu přidala vaše aktuální scéna
+3.  Zvolte cílovou platformu (např. **PC, Mac & Linux Standalone**)
+4.  Klikněte na **Build** a vyberte složku, kam se má hra uložit
+5.  Unity hru zkompiluje a vytvoří spustitelný soubor. Hotovo!
+
+---
+
+## Kam dál? Zdroje pro další studium 📚
+
+Svět Unity je obrovský. Zde je pár míst, kde se můžete učit dál:
+
+- **[Unity Learn](https://learn.unity.com/)**: Oficiální výuková platforma od Unity. Najdete zde spoustu kurzů od začátečníků po experty, často i s hotovými projekty
+- **[Unity Documentation](https://docs.unity3d.com/Manual/index.html)**: Oficiální manuál a dokumentace. Kdykoliv si nebudete vědět rady s nějakou komponentou nebo funkcí, zde najdete odpověď
+- **[Brackeys (YouTube)](https://www.youtube.com/c/Brackeys)**: Ačkoliv již netvoří nová videa o Unity, jeho kanál je zlatý důl skvělých a srozumitelných tutoriálů na všechna možná témata

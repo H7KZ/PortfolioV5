@@ -11,11 +11,14 @@ const config = defineMDSveXConfig({
 	highlight: {
 		highlighter: async (code, lang = 'text') => {
 			const highlighter = await createHighlighter({
-				themes: ['poimandres'],
-				langs: ['json', 'yaml', 'csharp']
+				themes: ['monokai'],
+				langs: ['javascript', 'typescript', 'json', 'yaml', 'csharp']
 			});
-			await highlighter.loadLanguage('javascript', 'typescript');
-			const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme: 'poimandres' }));
+
+			await highlighter.loadLanguage('javascript', 'typescript', 'json', 'yaml', 'csharp');
+
+			const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme: 'monokai' }));
+
 			return `{@html \`${html}\` }`;
 		}
 	}

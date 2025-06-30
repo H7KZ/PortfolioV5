@@ -23,6 +23,9 @@
 					prose-h1:font-semibold prose-h2:font-normal
 					prose-h3:font-normal prose-h4:font-normal
 					prose-h5:font-normal prose-h6:font-normal
+					prose-h1:text-5xl prose-h2:text-4xl
+					prose-h3:text-3xl prose-h4:text-2xl
+					prose-h5:text-xl prose-h6:text-lg
 					prose-p:font-light prose-p:text-neutral-100
 					w-full !max-w-[67.5rem]
                 "
