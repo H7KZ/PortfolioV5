@@ -4,6 +4,7 @@ title: LŠVPH - Materiály
 author: Jan Komínek
 thumbnail: /images/posts/lsvph/thumbnail.webp
 tags:
+    - CZ
     - LŠVPH
     - SSPŠ
 ---

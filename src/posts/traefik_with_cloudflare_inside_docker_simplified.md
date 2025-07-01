@@ -4,6 +4,7 @@ title: Traefik with Cloudflare inside Docker, simplified.
 author: Jan Komínek
 thumbnail: /images/posts/traefik_with_cloudflare_inside_docker_simplified/thumbnail.webp
 tags:
+    - EN
     - Traefik
     - Cloudlfare
     - Docker

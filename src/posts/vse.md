@@ -4,8 +4,9 @@ title: Vysoká Škola Ekonomická, Aplikovaná Informatika - Studium
 author: Jan Komínek
 thumbnail: /images/posts/vse/thumbnail.webp
 tags:
+    - CZ
     - VŠE
-    - stu<i>dying</i>
+    - Bc.
 ---
 
 # Vysoká Škola Ekonomická, Aplikovaná Informatika - Studium
