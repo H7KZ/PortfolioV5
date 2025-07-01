@@ -22,3 +22,7 @@ tags:
 
 ![Rozvrh 1](/images/posts/lsvph/1.png)
 ![Rozvrh 2](/images/posts/lsvph/2.png)
+
+## Jídelníček
+
+![Food](/images/posts/lsvph/food.png)
