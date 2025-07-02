@@ -66,8 +66,6 @@
 
 		success = $_('contact.form.success');
 
-		form = getInitialContactForm();
-
 		error = Object.keys(error).reduce(
 			(acc, key) => {
 				acc[key as keyof typeof error] = '';
@@ -76,7 +74,10 @@
 			{} as typeof error
 		);
 
-		setTimeout((success = ''), 8000);
+		setTimeout(() =>{
+			success = '';
+			form = getInitialContactForm();
+		}, 20000);
 	}
 </script>
 

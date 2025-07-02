@@ -56,7 +56,7 @@
 				</div>
 			</div>
 			<div class="flex flex-wrap items-center gap-2">
-				<a href="to:contact@jankominek.com" class="hover:underline">
+				<a href="mailto:contact@jankominek.com" class="hover:underline">
 					{$_('footer.email')}
 				</a>
 				<p>–</p>
