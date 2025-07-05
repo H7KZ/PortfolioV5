@@ -8,7 +8,11 @@ export const GET: RequestHandler = async () => {
 
 	for (const path in paths) {
 		const file = paths[path];
-		const slug = path.split('/').at(-1)?.replace('.md', '');
+		const fileName = path.split('/').at(-1);
+
+		if (!fileName || fileName.startsWith('_')) continue;
+
+		const slug = fileName.replace('.md', '');
 
 		if (file && typeof file === 'object' && 'metadata' in file && slug) {
 			const metadata = file.metadata as Omit<Post, 'slug'>;

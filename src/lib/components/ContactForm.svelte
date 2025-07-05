@@ -74,7 +74,7 @@
 			{} as typeof error
 		);
 
-		setTimeout(() =>{
+		setTimeout(() => {
 			success = '';
 			form = getInitialContactForm();
 		}, 20000);
