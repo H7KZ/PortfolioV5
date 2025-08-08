@@ -1,0 +1,27 @@
+Vyborna prace, Agentko Mango.
+
+Fragment K byl uspesne overen. Syndikat je zmaten, ale nespi. Musime postupovat rychleji. Dalsi fragment klice je zakodovan v odlehlem komunikacnim uzlu.
+
+Za vasi vynikajici praci vam predavame prvni dil finalniho klice. Ulozte ho na bezpecne misto.
+
+Fragment finalniho klice c. 1: ejyq
+
+
+
+
+
+Druhy fragment: Sifra rozcesti
+
+Vas dalsi cil je rozcesti v obci Micov.
+
+Na turistickem rozcestniku najdete nekolik cilu. Vasim ukolem je secist VSECHNY kilometrove udaje uvedene na cedulich. Vysledna suma je desifrovaci klic. Nazveme ho S.
+
+Tento klic S urcuje posun v prastare sifrovaci metode zname jako „Cesarova sifra“.
+
+Samotnou zasifrovanou depesi, ktera skryva dalsi instrukce, najdete na tomto zabezpecenem odkazu:
+
+jankominek.com/fragment/2.txt
+
+Pouzijte klic S k desifrovani zpravy. Nenechte se zmast, Syndikat mohl do zpravy vlozit falesne znaky nebo mezery. Duverujte jen pismenum.
+
+Cas se krati. Hodne stesti.
