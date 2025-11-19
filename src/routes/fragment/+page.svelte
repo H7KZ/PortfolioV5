@@ -12,21 +12,15 @@
 		console.log('Form submitted:', form);
 		e.preventDefault();
 
-		if (form.code !== '211') return
+		if (form.code !== '211') return;
 
 		await goto('/fragment/1.txt');
 	}
 </script>
 
-<div class="flex w-full pt-32 flex-col justify-center items-center gap-3">
-	<div class="w-full max-w-xs px-4 flex flex-col gap-8">
-		<TextInput
-			bind:value={form.code}
-			label="Ověřovací kód"
-			required
-		/>
-		<Button onclick={handleSubmit}>
-			Odemknout
-		</Button>
+<div class="flex w-full flex-col items-center justify-center gap-3 pt-32">
+	<div class="flex w-full max-w-xs flex-col gap-8 px-4">
+		<TextInput bind:value={form.code} label="Ověřovací kód" required />
+		<Button onclick={handleSubmit}>Odemknout</Button>
 	</div>
 </div>

@@ -11,7 +11,13 @@ export interface ProjectData {
 }
 
 export const load: PageLoad = async ({ params, url }): Promise<ProjectData> => {
-	const locale = url.searchParams.get('locale') ?? 'en';
+	const localeParam = url.searchParams.get('locale') ?? 'en';
+
+	let match = localeParam.match(/^[a-z]+(?=[-_])/i);
+
+	if (!match) match = localeParam.match(/^[a-z]+/i);
+
+	const locale = match ? match[0].toLowerCase() : 'en';
 
 	try {
 		const post = await import(`../../../projects/${params.slug}/${locale}.md`);

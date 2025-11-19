@@ -20,7 +20,7 @@ tags:
         <p class="!m-0">Osobní</p>
     </div>
     <div>
-        <h3 class="!m-0 !mb-1 !font-semibold">Kategirue</h3>
+        <h3 class="!m-0 !mb-1 !font-semibold">Kategorie</h3>
         <p class="!m-0">Minecraft Plugin</p>
     </div>
 </div>

@@ -12,7 +12,7 @@ export const GET: RequestHandler = async ({ url }) => {
 
 	let projects: Project[] = [];
 
-	let paths = import.meta.glob(`../../../projects/**/*.md`, { eager: true });
+	let paths = import.meta.glob('../../../projects/**/*.md', { eager: true });
 
 	paths = Object.fromEntries(
 		Object.entries(paths).filter(([path]) => {

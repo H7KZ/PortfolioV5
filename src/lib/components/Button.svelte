@@ -13,7 +13,7 @@
 </script>
 
 {#snippet Button()}
-	<button type={type} {onclick} class="cursor-pointer rounded-full border-[1.5px] border-white px-6 py-1.25 transition-all hover:bg-[#ffffff18]">
+	<button {type} {onclick} class="cursor-pointer rounded-full border-[1.5px] border-white px-6 py-1.25 transition-all hover:bg-[#ffffff18]">
 		{@render children()}
 	</button>
 {/snippet}
