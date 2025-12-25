@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="https://jankominek.com/xml/4iz238/katalog-deskovych-her"
+    elementFormDefault="qualified">
+    
+    <xs:simpleType name="obrazekSouborType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value=".+\.(png|jpg|jpeg)"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="anoNeType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ano"/>
+            <xs:enumeration value="ne"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="rokVydaniType">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1700"/>
+            <xs:maxInclusive value="2999"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="hraciPocetType">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="99"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="dobaHodnotaType">
+        <xs:restriction base="xs:decimal">
+            <xs:minExclusive value="0"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="hodnoceniRozsahType">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0.0"/>
+            <xs:maxInclusive value="10.0"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="cenaHodnotaType">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="obtiznostEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Lehká"/>
+            <xs:enumeration value="Střední"/>
+            <xs:enumeration value="Těžká"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="jednotkaDobyEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="min"/>
+            <xs:enumeration value="hod"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="menaEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="CZK"/>
+            <xs:enumeration value="EUR"/>
+            <xs:enumeration value="USD"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="jazykEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="CS"/>
+            <xs:enumeration value="EN"/>
+            <xs:enumeration value="DE"/>
+            <xs:enumeration value="FR"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="zemeEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="CZ"/>
+            <xs:enumeration value="DE"/>
+            <xs:enumeration value="US"/>
+            <xs:enumeration value="FR"/>
+            <xs:enumeration value="PL"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="komponentEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Karty"/>
+            <xs:enumeration value="Desky"/>
+            <xs:enumeration value="Figurky"/>
+            <xs:enumeration value="Ostatní"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+</xs:schema>

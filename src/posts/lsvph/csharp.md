@@ -10,11 +10,13 @@ tags:
 
 # Základy programování v C\#
 
-Vítejte u základů programovacího jazyka C#. Tyto materiály vás provedou od úplných začátků až po tvorbu jednoduchých programů.
+Vítejte u základů programovacího jazyka C#. Tyto materiály vás provedou od úplných začátků až po tvorbu jednoduchých
+programů.
 
 Pro další studium můžete využít oficiální skripta SSPŠ:
 
-> **<a href="https://skripta.ssps.cz" target="_blank" rel="noopener noreferrer">Skripta SSPŠ - Programování</a>** (Hledejte sekci "Programování")
+> **<a href="https://skripta.ssps.cz" target="_blank" rel="noopener noreferrer">Skripta SSPŠ - Programování</a>** (
+> Hledejte sekci "Programování")
 
 ---
 
@@ -26,17 +28,23 @@ C# (vyslovuje se "sí šarp") je moderní a všestranný programovací jazyk
 
 - Je to **víceúčelový, objektově orientovaný** programovací jazyk
 - Byl vytvořen společností **Microsoft** a představen v roce 2000
-- Je velmi podobný jiným moderním jazykům, jako je Java. Pokud se naučíte C\#, bude pro vás snazší pochopit i další jazyky
-- Patří do rodiny jazyků odvozených od C, což znamená, že jeho syntaxe (způsob psaní kódu) je podobná jazykům C, C++ nebo Java, ale liší se například od Pythonu
+- Je velmi podobný jiným moderním jazykům, jako je Java. Pokud se naučíte C\#, bude pro vás snazší pochopit i další
+  jazyky
+- Patří do rodiny jazyků odvozených od C, což znamená, že jeho syntaxe (způsob psaní kódu) je podobná jazykům C, C++
+  nebo Java, ale liší se například od Pythonu
 
 ### Struktura souboru
 
-Každý C# soubor má základní strukturu, kterou prozatím nemusíme detailně řešit, stačí vědět, co jednotlivé části zhruba dělají
+Každý C# soubor má základní strukturu, kterou prozatím nemusíme detailně řešit, stačí vědět, co jednotlivé části zhruba
+dělají
 
-- `using` - Na začátku souboru říkáme, jaké **knihovny** (předpřipravené sady nástrojů) chceme používat. Například `using System;` nám zpřístupní základní funkce jako `Console.WriteLine`
+- `using` - Na začátku souboru říkáme, jaké **knihovny** (předpřipravené sady nástrojů) chceme používat. Například
+  `using System;` nám zpřístupní základní funkce jako `Console.WriteLine`
 - `namespace`, `class` - Toto jsou organizační bloky kódu. Prozatím je **nebudeme řešit**
-- `Main()` - Toto je **hlavní metoda** a startovní bod našeho programu. Většinu našeho kódu budeme psát právě sem, mezi složené závorky `{}` této metody
-- `// komentář` - Text, který začíná dvěma lomítky, je **komentář**. Počítač ho úplně ignoruje a slouží pouze pro poznámky programátora
+- `Main()` - Toto je **hlavní metoda** a startovní bod našeho programu. Většinu našeho kódu budeme psát právě sem, mezi
+  složené závorky `{}` této metody
+- `// komentář` - Text, který začíná dvěma lomítky, je **komentář**. Počítač ho úplně ignoruje a slouží pouze pro
+  poznámky programátora
 
 ### Výpis do konzole: "Hello, World!"
 
@@ -47,7 +55,8 @@ Nejzákladnější operací je výpis textu na obrazovku (do konzole)
 
 ### Datové typy
 
-Proměnná je v podstatě "krabička" v paměti počítače, která má jméno a můžeme do ní uložit nějakou hodnotu. Každá proměnná musí mít určený **datový typ**, který říká, jaký druh dat v ní bude uložen
+Proměnná je v podstatě "krabička" v paměti počítače, která má jméno a můžeme do ní uložit nějakou hodnotu. Každá
+proměnná musí mít určený **datový typ**, který říká, jaký druh dat v ní bude uložen
 
 - `string` - Slouží pro ukládání textu (řetězců). Text se vždy píše do uvozovek
     - `string jmeno = "Pepa";`
@@ -57,7 +66,8 @@ Proměnná je v podstatě "krabička" v paměti počítače, která má jméno a
     - `long pocetHvezd = 1000000000000;`
 - `double` - Pro desetinná čísla. Je to nejběžnější typ pro desetinná čísla
     - `double teplota = 23.7;`
-- `float` - Méně přesné desetinné číslo. Často se používá v herním vývoji (např. v Unity). Hodnota musí končit písmenem `f`
+- `float` - Méně přesné desetinné číslo. Často se používá v herním vývoji (např. v Unity). Hodnota musí končit písmenem
+  `f`
     - `float rychlost = 15.5f;`
 - `decimal` - Extrémně přesné desetinné číslo, vhodné pro finanční výpočty. Hodnota musí končit písmenem `m`
     - `decimal cena = 99.99m;`
@@ -123,13 +133,16 @@ Console.WriteLine(citat); // Vypíše: Mistr řekl: "Učte se C#."
 
 Aby byl náš program interaktivní, potřebujeme od uživatele načítat data
 
-- `Console.ReadLine()` - Přečte celý řádek, který uživatel napíše a potvrdí Enterem. **Vždy vrací datový typ `string`\!**
+- `Console.ReadLine()` - Přečte celý řádek, který uživatel napíše a potvrdí Enterem. **Vždy vrací datový typ `string`\!
+  **
 
-Když se pokusíte načíst text pomocí `Console.ReadLine()` a uložit ho přímo do číselné proměnné (třeba `int`), narazíte na problém. Text `"18"` není to samé co číslo `18`. Proto musíme provést **konverzi** (převod) datových typů
+Když se pokusíte načíst text pomocí `Console.ReadLine()` a uložit ho přímo do číselné proměnné (třeba `int`), narazíte
+na problém. Text `"18"` není to samé co číslo `18`. Proto musíme provést **konverzi** (převod) datových typů
 
 ### Konverze mezi typy
 
-- `int.Parse(text)` - Převede `string` na `int`. Pokud text není platné číslo, program spadne s chybou. Toto je nejčastější způsob
+- `int.Parse(text)` - Převede `string` na `int`. Pokud text není platné číslo, program spadne s chybou. Toto je
+  nejčastější způsob
 - `Convert.ToInt32(hodnota)` - Univerzálnější metoda pro převod z různých typů na 32bitový `int`
 - `promenna.ToString()` - Převede téměř jakoukoliv proměnnou (např. číslo) na `string`
 
@@ -152,7 +165,8 @@ Console.WriteLine($"Za rok ti bude {vekJakoCislo + 1} let.");
 
 Podmínky nám umožňují spouštět části kódu pouze tehdy, když je splněn nějaký předpoklad
 
-Základní syntaxe je `if (podmínka) { ... }`. Kód uvnitř složených závorek se provede pouze v případě, že je `podmínka` vyhodnocena jako `true`
+Základní syntaxe je `if (podmínka) { ... }`. Kód uvnitř složených závorek se provede pouze v případě, že je `podmínka`
+vyhodnocena jako `true`
 
 #### Porovnávací operátory
 
@@ -165,7 +179,8 @@ Základní syntaxe je `if (podmínka) { ... }`. Kód uvnitř složených závore
 
 ##### Příklad s chybou logiky
 
-Následující kód nefunguje podle očekávání. Pokud `a` je 1, první podmínka ho změní na 2. Poté se hned kontroluje druhá podmínka, která je teď taky pravdivá, a ta ho změní zpátky na 1
+Následující kód nefunguje podle očekávání. Pokud `a` je 1, první podmínka ho změní na 2. Poté se hned kontroluje druhá
+podmínka, která je teď taky pravdivá, a ta ho změní zpátky na 1
 
 ```csharp
 int a = 1;
@@ -180,7 +195,8 @@ Console.WriteLine(a); // Vypíše 1
 
 ##### Řešení pomocí `if / else`
 
-Konstrukce `else` říká, co se má stát, pokud podmínka `if` **nebyla** splněna. Tím zajistíme, že se provede vždy jen jedna z větví
+Konstrukce `else` říká, co se má stát, pokud podmínka `if` **nebyla** splněna. Tím zajistíme, že se provede vždy jen
+jedna z větví
 
 ```csharp
 int a = 1;
@@ -196,7 +212,8 @@ Můžeme řetězit i více podmínek pomocí `if / else if / else`
 
 ### Bezpečné parsování s `TryParse`
 
-Co když uživatel nezadá číslo, ale nějaký nesmysl? `int.Parse()` spadne. Bezpečnější je `int.TryParse()`, která se pokusí o převod a vrátí `bool`, jestli se to povedlo
+Co když uživatel nezadá číslo, ale nějaký nesmysl? `int.Parse()` spadne. Bezpečnější je `int.TryParse()`, která se
+pokusí o převod a vrátí `bool`, jestli se to povedlo
 
 ```csharp
 int cislo;
@@ -215,7 +232,8 @@ else
 
 ### `Switch`
 
-Pokud potřebujete otestovat jednu proměnnou na mnoho různých hodnot, místo dlouhého řetězce `if-else if` je přehlednější použít `switch`
+Pokud potřebujete otestovat jednu proměnnou na mnoho různých hodnot, místo dlouhého řetězce `if-else if` je přehlednější
+použít `switch`
 
 - `case` definuje jednu z možných hodnot
 - `break` je nutné k ukončení daného `case`, aby kód "nepropadl" do dalšího
@@ -279,7 +297,8 @@ else
 
 #### Cvičení: Kalkulačka
 
-Vytvořte kalkulačku. Program se zeptá na první číslo, operátor (+, -, \*, /) a druhé číslo. Pomocí `switch` vypočítejte a zobrazte výsledek
+Vytvořte kalkulačku. Program se zeptá na první číslo, operátor (+, -, \*, /) a druhé číslo. Pomocí `switch` vypočítejte
+a zobrazte výsledek
 
 <details>
 <summary><strong>Řešení</strong></summary>
@@ -335,7 +354,8 @@ Cykly (smyčky) slouží k opakovanému provádění bloku kódu
 
 ### `while` cyklus
 
-Cyklus `while` opakuje kód, **dokud je jeho podmínka pravdivá (`true`)**. Podmínka se kontroluje na začátku každého opakování
+Cyklus `while` opakuje kód, **dokud je jeho podmínka pravdivá (`true`)**. Podmínka se kontroluje na začátku každého
+opakování
 
 ```csharp
 int cislo = 0;
@@ -355,7 +375,9 @@ while (cislo <= 5)
 
 ### `do-while` cyklus
 
-Tento cyklus je podobný `while`, ale s jedním klíčovým rozdílem: **kód se provede vždy alespoň jednou** a teprve poté se zkontroluje podmínka. Je ideální pro případy, kdy potřebujeme načíst vstup od uživatele a opakovat to, dokud nezadá správnou hodnotu
+Tento cyklus je podobný `while`, ale s jedním klíčovým rozdílem: **kód se provede vždy alespoň jednou** a teprve poté se
+zkontroluje podmínka. Je ideální pro případy, kdy potřebujeme načíst vstup od uživatele a opakovat to, dokud nezadá
+správnou hodnotu
 
 ```csharp
 int cislo;
@@ -372,9 +394,9 @@ Console.WriteLine($"Zadal jsi číslo {cislo}.");
 
 Nejčastěji používaný cyklus, pokud předem víme, kolikrát se má něco opakovat. Má tři části oddělené středníkem:
 
-1.  **Inicializace:** Vytvoření a nastavení počítací proměnné (např. `int i = 0`). Spustí se jen jednou na začátku
-2.  **Podmínka:** Kontroluje se před každým opakováním (např. `i < 5`). Pokud je `false`, cyklus končí
-3.  **Inkremetace:** Co se má stát po každém opakování (např. `i++`)
+1. **Inicializace:** Vytvoření a nastavení počítací proměnné (např. `int i = 0`). Spustí se jen jednou na začátku
+2. **Podmínka:** Kontroluje se před každým opakováním (např. `i < 5`). Pokud je `false`, cyklus končí
+3. **Inkremetace:** Co se má stát po každém opakování (např. `i++`)
 
 <!-- end list -->
 
@@ -437,7 +459,9 @@ for (int i = 0; i < 5; i++)
 
 #### Cvičení: Cookie Clicker
 
-Vytvořte jednoduchou hru. Program bude v cyklu čekat na stisknutí jakékoliv klávesy. Za každé stisknutí se hráči přičte jedna sušenka. Aktuální počet sušenek se neustále vypisuje. Jakmile počet dosáhne 20, program vypíše výherní hlášku a skončí
+Vytvořte jednoduchou hru. Program bude v cyklu čekat na stisknutí jakékoliv klávesy. Za každé stisknutí se hráči přičte
+jedna sušenka. Aktuální počet sušenek se neustále vypisuje. Jakmile počet dosáhne 20, program vypíše výherní hlášku a
+skončí
 
 <details>
 <summary><strong>Řešení</strong></summary>
@@ -468,7 +492,8 @@ while (true) // Nekonečný cyklus, který ukončíme pomocí break
 
 ## Pole a Listy
 
-Když potřebujeme uložit více hodnot stejného typu (např. všechny známky ze školy), je nepraktické vytvářet spoustu proměnných `znamka1`, `znamka2` atd. Místo toho použijeme kolekce, jako jsou pole a listy
+Když potřebujeme uložit více hodnot stejného typu (např. všechny známky ze školy), je nepraktické vytvářet spoustu
+proměnných `znamka1`, `znamka2` atd. Místo toho použijeme kolekce, jako jsou pole a listy
 
 ### Pole (Array)
 
@@ -494,7 +519,8 @@ K zjištění délky pole slouží vlastnost `.Length`
 
 ### `foreach` cyklus
 
-Pro procházení všech prvků v poli (nebo jiné kolekci) je ideální cyklus `foreach`. Je jednodušší a bezpečnější než `for`, protože se nemusíte starat o indexy
+Pro procházení všech prvků v poli (nebo jiné kolekci) je ideální cyklus `foreach`. Je jednodušší a bezpečnější než
+`for`, protože se nemusíte starat o indexy
 
 ```csharp
 string[] jmena = new string[] { "Adam", "Bára", "Cyril" };
@@ -507,7 +533,8 @@ foreach (string jmeno in jmena)
 
 ### List
 
-List je modernější a flexibilnější verze pole. Jeho hlavní výhodou je, že má **dynamickou velikost** - můžete za běhu programu přidávat a odebírat prvky
+List je modernější a flexibilnější verze pole. Jeho hlavní výhodou je, že má **dynamickou velikost** - můžete za běhu
+programu přidávat a odebírat prvky
 
 #### Syntaxe
 
@@ -539,7 +566,8 @@ Console.WriteLine($"Počet známek: {znamky.Count}");
 
 #### Cvičení: Průměr známek
 
-Vytvořte program, který se bude v cyklu ptát na zadání známky. Zadané známky bude ukládat do `Listu`. Pokud uživatel místo známky napíše "konec", cyklus se ukončí a program vypočítá a vypíše průměr všech zadaných známek
+Vytvořte program, který se bude v cyklu ptát na zadání známky. Zadané známky bude ukládat do `Listu`. Pokud uživatel
+místo známky napíše "konec", cyklus se ukončí a program vypočítá a vypíše průměr všech zadaných známek
 
 <details>
 <summary><strong>Řešení</strong></summary>
@@ -588,7 +616,8 @@ else
 
 ## Metody
 
-Metody jsou samostatné bloky kódu, které provádějí určitou operaci. Hlavní výhodou je, že můžeme kód napsat jednou a pak ho volat (používat) z různých míst v programu, kolikrát chceme. Tím se vyhýbáme opakování kódu a zpřehledňujeme program
+Metody jsou samostatné bloky kódu, které provádějí určitou operaci. Hlavní výhodou je, že můžeme kód napsat jednou a pak
+ho volat (používat) z různých míst v programu, kolikrát chceme. Tím se vyhýbáme opakování kódu a zpřehledňujeme program
 
 ### Struktura metody
 
@@ -641,7 +670,8 @@ Metoda může mít více parametrů, které se oddělují čárkou: `SectiCisla(
 
 #### Cvičení 1: Padding
 
-Vytvořte metodu `PridejPadding`, která jako parametr vezme `string` a vrátí nový `string`, ke kterému budou na začátku i na konci přidány 3 mezery
+Vytvořte metodu `PridejPadding`, která jako parametr vezme `string` a vrátí nový `string`, ke kterému budou na začátku i
+na konci přidány 3 mezery
 
 <details>
 <summary><strong>Řešení</strong></summary>
@@ -695,14 +725,19 @@ Console.WriteLine($"'{sPaddingem}'"); // Vypíše '     adam     '
 
 ## Třídy a objekty
 
-Zatím jsme pracovali se základními datovými typy (`int`, `string` atd.). Často ale potřebujeme pracovat se složitějšími entitami, které mají více vlastností a schopností. Například `Člověk` má jméno, věk, a může se třeba představit. K tomuto účelu slouží **třídy**
+Zatím jsme pracovali se základními datovými typy (`int`, `string` atd.). Často ale potřebujeme pracovat se složitějšími
+entitami, které mají více vlastností a schopností. Například `Člověk` má jméno, věk, a může se třeba představit. K
+tomuto účelu slouží **třídy**
 
-- **Třída (class):** Je jako **šablona** nebo "blueprint", která popisuje, jaké vlastnosti (proměnné) a schopnosti (metody) bude mít nějaký objekt
-- **Objekt (object):** Je konkrétní **instance** (výskyt) vytvořená podle šablony třídy. Můžeme mít třídu `Auto`, ale objekty budou `mojeCerveneFerrari` a `sousedovaModraSkodovka`
+- **Třída (class):** Je jako **šablona** nebo "blueprint", která popisuje, jaké vlastnosti (proměnné) a schopnosti (
+  metody) bude mít nějaký objekt
+- **Objekt (object):** Je konkrétní **instance** (výskyt) vytvořená podle šablony třídy. Můžeme mít třídu `Auto`, ale
+  objekty budou `mojeCerveneFerrari` a `sousedovaModraSkodovka`
 
 ### Vytvoření a použití třídy
 
-Třídu definujeme pomocí klíčového slova `class`. Z ní pak v metodě `Main` (nebo jinde) vytváříme objekty pomocí klíčového slova `new`
+Třídu definujeme pomocí klíčového slova `class`. Z ní pak v metodě `Main` (nebo jinde) vytváříme objekty pomocí
+klíčového slova `new`
 
 ```csharp
 // Třídu definujeme mimo metodu Main
@@ -743,7 +778,8 @@ class Program
 
 ### Konstruktor
 
-Konstruktor je speciální metoda, která se **zavolá automaticky při vytváření nového objektu** (`new Clovek()`). Slouží k počátečnímu nastavení vlastností. Jmenuje se stejně jako třída
+Konstruktor je speciální metoda, která se **zavolá automaticky při vytváření nového objektu** (`new Clovek()`). Slouží k
+počátečnímu nastavení vlastností. Jmenuje se stejně jako třída
 
 ```csharp
 public class Clovek
@@ -792,7 +828,8 @@ static void Main(string[] args)
 
 #### Cvičení 1: Nákupní košík
 
-Máme třídu `Produkt` s názvem a cenou. Vytvořte list několika produktů a napište kód, který vypočítá a vypíše průměrnou cenu všech produktů v seznamu
+Máme třídu `Produkt` s názvem a cenou. Vytvořte list několika produktů a napište kód, který vypočítá a vypíše průměrnou
+cenu všech produktů v seznamu
 
 **Startovní kód:**
 
@@ -846,9 +883,10 @@ if (produkty.Count > 0)
 
 Máte seznam drahokamů. Každý drahokam má název, váhu v gramech, cenu za 1 kg čistého kamene a procentuální čistotu
 
-1.  Doplňte metodu `CelkovaCena()` ve třídě `Drahokam`. Cena se vypočítá jako: `(váha v kg * cena za kg) * (čistota / 100.0)`.
-2.  V `Main` metodě projděte seznam všech drahokamů a najděte ten, který má nejvyšší celkovou cenu.
-3.  Vypište informace o nejdražším drahokamu pomocí jeho metody `ToString()`.
+1. Doplňte metodu `CelkovaCena()` ve třídě `Drahokam`. Cena se vypočítá jako:
+   `(váha v kg * cena za kg) * (čistota / 100.0)`.
+2. V `Main` metodě projděte seznam všech drahokamů a najděte ten, který má nejvyšší celkovou cenu.
+3. Vypište informace o nejdražším drahokamu pomocí jeho metody `ToString()`.
 
 **Startovní kód:**
 

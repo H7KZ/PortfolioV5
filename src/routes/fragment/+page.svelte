@@ -2,7 +2,6 @@
 	import { goto } from '$app/navigation';
 	import Button from '$lib/components/Button.svelte';
 	import TextInput from '$lib/components/inputs/TextInput.svelte';
-	import { _ } from 'svelte-i18n';
 
 	let form = $state({
 		code: ''

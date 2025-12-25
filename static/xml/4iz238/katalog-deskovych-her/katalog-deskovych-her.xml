@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<katalog
+    xmlns="https://jankominek.com/xml/4iz238/katalog-deskovych-her"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://jankominek.com/xml/4iz238/katalog-deskovych-her katalog-deskovych-her.xsd">
+
+    <hra id="1">
+        <nazvy>
+            <nazev_original>Die Siedler von Catan</nazev_original>
+            <nazev jazyk="CS">Osadníci z Katanu</nazev>
+        </nazvy>
+        <obrazky>
+            <obrazek hlavni="ano">img/catan/krabice.png</obrazek>
+            <obrazek>img/catan/mapa.png</obrazek>
+        </obrazky>
+        <autori>
+            <autor>Klaus Teuber</autor>
+        </autori>
+        <vydavatelstvi>
+            <vydavatel zeme="CZ">Albi</vydavatel>
+            <vydavatel zeme="DE">Franckh-Kosmos Verlags-GmbH &amp; Co.</vydavatel>
+        </vydavatelstvi>
+        <rok_vydani>1995</rok_vydani>
+        <popis jazyk="CS">Hráči se ujímají rolí osadníků na nově objeveném ostrově Katan. Budováním
+            osad, měst a cest získávají suroviny, se kterými obchodují, aby jako první dosáhli 10
+            vítězných bodů.</popis>
+
+        <obtiznost>Střední</obtiznost>
+        <doporuceny_vek>10</doporuceny_vek>
+
+        <hraci>
+            <min>3</min>
+            <max>4</max>
+        </hraci>
+
+        <herni_doba jednotka="hod">
+            <min>1</min>
+            <max>1.5</max>
+        </herni_doba>
+
+        <kategorie_seznam>
+            <kategorie>Strategická</kategorie>
+            <kategorie>Rodinná</kategorie>
+            <kategorie>Obchodovací</kategorie>
+        </kategorie_seznam>
+
+        <mechaniky_seznam>
+            <mechanika>Obchodování</mechanika>
+            <mechanika>Stavění sítě</mechanika>
+            <mechanika>Házení kostkou</mechanika>
+            <mechanika>Modulární herní plán</mechanika>
+        </mechaniky_seznam>
+
+        <hodnoceni>
+            <body zdroj="Vlastní">10.0</body>
+            <body zdroj="BGG">7.1</body>
+        </hodnoceni>
+
+        <komponenty_seznam>
+            <komponent typ="Karty" pocet="95">Karty surovin</komponent>
+            <komponent typ="Karty" pocet="25">Karty vývoje</komponent>
+            <komponent typ="Desky" pocet="6">Hranice moře</komponent>
+            <komponent typ="Desky" pocet="19">Šestiúhelníkové díly krajiny</komponent>
+            <komponent typ="Figurky" pocet="96">Herní figurky (města, vesnice, cesty)</komponent>
+        </komponenty_seznam>
+
+        <cena mena="CZK">1099</cena>
+    </hra>
+
+    <hra id="2">
+        <nazvy>
+            <nazev_original>Carcassonne</nazev_original>
+            <nazev jazyk="CS">Carcassonne</nazev>
+        </nazvy>
+        <obrazky>
+            <obrazek hlavni="ano">img/carcassonne/krabice.png</obrazek>
+        </obrazky>
+        <autori>
+            <autor>Klaus-Jürgen Wrede</autor>
+        </autori>
+        <vydavatelstvi>
+            <vydavatel zeme="CZ">MindOK</vydavatel>
+            <vydavatel zeme="DE">Hans im Glück</vydavatel>
+        </vydavatelstvi>
+        <rok_vydani>2000</rok_vydani>
+        <popis jazyk="CS">Hráči postupně přikládají kartičky krajiny a vytvářejí tak cesty, města,
+            louky a kláštery. Obsazováním těchto útvarů svými figurkami (Meeples) získávají
+            body.</popis>
+
+        <obtiznost>Lehká</obtiznost>
+        <doporuceny_vek>7</doporuceny_vek>
+
+        <hraci>
+            <min>2</min>
+            <max>5</max>
+        </hraci>
+
+        <herni_doba jednotka="min">
+            <min>30</min>
+            <max>45</max>
+        </herni_doba>
+
+        <kategorie_seznam>
+            <kategorie>Rodinná</kategorie>
+            <kategorie>Pokládání dílků</kategorie>
+        </kategorie_seznam>
+
+        <mechaniky_seznam>
+            <mechanika>Pokládání dílků (Tile Placement)</mechanika>
+            <mechanika>Ovládání území (Area Control)</mechanika>
+        </mechaniky_seznam>
+
+        <hodnoceni>
+            <body zdroj="Vlastní">8.5</body>
+            <body zdroj="BGG">7.4</body>
+        </hodnoceni>
+
+        <komponenty_seznam>
+            <komponent typ="Desky" pocet="72">Čtvercové kartičky krajiny</komponent>
+            <komponent typ="Figurky" pocet="40">Dřevěné figurky "Meeples"</komponent>
+            <komponent typ="Desky" pocet="1">Počítadlo bodů</komponent>
+        </komponenty_seznam>
+
+        <cena mena="CZK">599</cena>
+    </hra>
+
+    <hra id="3">
+        <nazvy>
+            <nazev_original>Codenames</nazev_original>
+            <nazev jazyk="CS">Krycí jména</nazev>
+        </nazvy>
+        <obrazky>
+            <obrazek hlavni="ano">img/codenames/krabice.png</obrazek>
+        </obrazky>
+        <autori>
+            <autor>Vlaada Chvátil</autor>
+        </autori>
+        <vydavatelstvi>
+            <vydavatel zeme="CZ">CGE</vydavatel>
+        </vydavatelstvi>
+        <rok_vydani>2015</rok_vydani>
+        <popis jazyk="CS">Týmová asociační párty hra. Dva hlavní špióni se snaží jednoslovnými
+            nápovědami navést své týmy k odhalení všech správných karet (agentů) na stole.</popis>
+
+        <obtiznost>Lehká</obtiznost>
+        <doporuceny_vek>10</doporuceny_vek>
+
+        <hraci>
+            <min>2</min>
+            <max>8</max>
+        </hraci>
+
+        <herni_doba jednotka="min">
+            <min>15</min>
+            <max>20</max>
+        </herni_doba>
+
+        <kategorie_seznam>
+            <kategorie>Párty</kategorie>
+            <kategorie>Slovní</kategorie>
+            <kategorie>Dedukční</kategorie>
+        </kategorie_seznam>
+
+        <mechaniky_seznam>
+            <mechanika>Asociace</mechanika>
+            <mechanika>Týmová hra</mechanika>
+            <mechanika>Dedukce</mechanika>
+        </mechaniky_seznam>
+
+        <hodnoceni>
+            <body zdroj="Vlastní">9.0</body>
+            <body zdroj="BGG">7.6</body>
+        </hodnoceni>
+
+        <komponenty_seznam>
+            <komponent typ="Karty" pocet="200">Karty se slovy</komponent>
+            <komponent typ="Karty" pocet="40">Karty klíče</komponent>
+            <komponent typ="Karty" pocet="16">Karty agentů</komponent>
+            <komponent typ="Ostatní" pocet="1">Přesýpací hodiny</komponent>
+        </komponenty_seznam>
+
+        <cena mena="CZK">499</cena>
+    </hra>
+
+    <hra id="4">
+        <nazvy>
+            <nazev_original>Ticket to Ride: Europe</nazev_original>
+            <nazev jazyk="CS">Jízdenky, prosím! Evropa</nazev>
+        </nazvy>
+        <obrazky>
+            <obrazek hlavni="ano">img/ticket/krabice.png</obrazek>
+        </obrazky>
+        <autori>
+            <autor>Alan R. Moon</autor>
+        </autori>
+        <vydavatelstvi>
+            <vydavatel zeme="CZ">Albi</vydavatel>
+            <vydavatel zeme="US">Days of Wonder</vydavatel>
+        </vydavatelstvi>
+        <rok_vydani>2005</rok_vydani>
+        <popis jazyk="CS">Hráči sbírají karty barevných vagónů, aby mohli obsazovat železniční tratě
+            napříč Evropou. Body získávají za propojení měst určených tajnými kartami úkolů.</popis>
+
+        <obtiznost>Lehká</obtiznost>
+        <doporuceny_vek>8</doporuceny_vek>
+
+        <hraci>
+            <min>2</min>
+            <max>5</max>
+        </hraci>
+
+        <herni_doba jednotka="min">
+            <min>45</min>
+            <max>75</max>
+        </herni_doba>
+
+        <kategorie_seznam>
+            <kategorie>Rodinná</kategorie>
+            <kategorie>Strategická</kategorie>
+        </kategorie_seznam>
+
+        <mechaniky_seznam>
+            <mechanika>Sbírání sad (Set Collection)</mechanika>
+            <mechanika>Stavění sítě</mechanika>
+            <mechanika>Správa karet</mechanika>
+        </mechaniky_seznam>
+
+        <hodnoceni>
+            <body zdroj="Vlastní">8.5</body>
+            <body zdroj="BGG">7.5</body>
+        </hodnoceni>
+
+        <komponenty_seznam>
+            <komponent typ="Desky" pocet="1">Herní plán mapy Evropy</komponent>
+            <komponent typ="Figurky" pocet="240">Barevné vagónky a nádraží</komponent>
+            <komponent typ="Karty" pocet="156">Herní karty</komponent>
+        </komponenty_seznam>
+
+        <cena mena="CZK">1199</cena>
+    </hra>
+
+    <hra id="5">
+        <nazvy>
+            <nazev_original>7 Wonders Duel</nazev_original>
+            <nazev jazyk="CS">7 divů světa: Duel</nazev>
+        </nazvy>
+        <obrazky>
+            <obrazek hlavni="ano">img/7wonders_duel/krabice.png</obrazek>
+            <obrazek>img/7wonders_duel/karty.png</obrazek>
+        </obrazky>
+        <autori>
+            <autor>Antoine Bauza</autor>
+            <autor>Bruno Cathala</autor>
+        </autori>
+        <vydavatelstvi>
+            <vydavatel zeme="CZ">REBEL.cz</vydavatel>
+            <vydavatel zeme="FR">Repos Production</vydavatel>
+        </vydavatelstvi>
+        <rok_vydani>2015</rok_vydani>
+        <popis jazyk="CS">Strategická karetní hra výhradně pro dva hráče. Hráči budují svou
+            civilizaci získáváním karet z pyramidy. Vítězství lze dosáhnout vojenskou, vědeckou nebo
+            kulturní převahou.</popis>
+
+        <obtiznost>Střední</obtiznost>
+        <doporuceny_vek>10</doporuceny_vek>
+
+        <hraci>
+            <min>2</min>
+            <max>2</max>
+        </hraci>
+
+        <herni_doba jednotka="min">
+            <min>30</min>
+            <max>45</max>
+        </herni_doba>
+
+        <kategorie_seznam>
+            <kategorie>Strategická</kategorie>
+            <kategorie>Karetní</kategorie>
+            <kategorie>Pro dva</kategorie>
+        </kategorie_seznam>
+
+        <mechaniky_seznam>
+            <mechanika>Draftování karet</mechanika>
+            <mechanika>Sbírání sad</mechanika>
+        </mechaniky_seznam>
+
+        <hodnoceni>
+            <body zdroj="Vlastní">9.5</body>
+            <body zdroj="BGG">8.1</body>
+        </hodnoceni>
+
+        <komponenty_seznam>
+            <komponent typ="Desky" pocet="1">Herní deska konfliktu</komponent>
+            <komponent typ="Karty" pocet="73">Karty věků a cechů</komponent>
+            <komponent typ="Karty" pocet="12">Karty divů světa</komponent>
+            <komponent typ="Desky" pocet="31">Mince</komponent>
+        </komponenty_seznam>
+
+        <cena mena="CZK">599</cena>
+    </hra>
+
+    <hra id="6">
+        <nazvy>
+            <nazev_original>Dune: Imperium</nazev_original>
+            <nazev jazyk="CS">Duna: Impérium</nazev>
+        </nazvy>
+        <obrazky>
+            <obrazek hlavni="ano">img/dune/krabice.png</obrazek>
+        </obrazky>
+        <autori>
+            <autor>Paul Dennen</autor>
+        </autori>
+        <vydavatelstvi>
+            <vydavatel zeme="CZ">REBEL.cz</vydavatel>
+            <vydavatel zeme="US">Dire Wolf</vydavatel>
+        </vydavatelstvi>
+        <rok_vydani>2020</rok_vydani>
+        <popis jazyk="CS">Komplexní strategická hra kombinující mechanismy deck-buildingu a
+            worker-placementu. Hráči představují vůdce velkorodů ve vesmíru Duny a bojují o kontrolu
+            nad kořením.</popis>
+
+        <obtiznost>Těžká</obtiznost>
+        <doporuceny_vek>14</doporuceny_vek>
+
+        <hraci>
+            <min>1</min>
+            <max>4</max>
+        </hraci>
+
+        <herni_doba jednotka="hod">
+            <min>1.5</min>
+            <max>2.5</max>
+        </herni_doba>
+
+        <kategorie_seznam>
+            <kategorie>Strategická</kategorie>
+            <kategorie>Sci-Fi</kategorie>
+            <kategorie>Deck-building</kategorie>
+        </kategorie_seznam>
+
+        <mechaniky_seznam>
+            <mechanika>Umísťování dělníků</mechanika>
+            <mechanika>Tvorba balíčku</mechanika>
+            <mechanika>Ovládání území</mechanika>
+        </mechaniky_seznam>
+
+        <hodnoceni>
+            <body zdroj="Vlastní">9.0</body>
+            <body zdroj="BGG">8.3</body>
+        </hodnoceni>
+
+        <komponenty_seznam>
+            <komponent typ="Desky" pocet="1">Herní plán</komponent>
+            <komponent typ="Karty" pocet="131">Karty (Impéria, intrik)</komponent>
+            <komponent typ="Figurky" pocet="82">Agenti a suroviny</komponent>
+        </komponenty_seznam>
+
+        <cena mena="CZK">1399</cena>
+    </hra>
+
+    <hra id="7">
+        <nazvy>
+            <nazev_original>Wingspan</nazev_original>
+            <nazev jazyk="CS">Na křídlech</nazev>
+        </nazvy>
+        <obrazky>
+            <obrazek hlavni="ano">img/wingspan/krabice.png</obrazek>
+        </obrazky>
+        <autori>
+            <autor>Elizabeth Hargrave</autor>
+        </autori>
+        <vydavatelstvi>
+            <vydavatel zeme="CZ">MindOK</vydavatel>
+            <vydavatel zeme="US">Stonemaier Games</vydavatel>
+        </vydavatelstvi>
+        <rok_vydani>2019</rok_vydani>
+        <popis jazyk="CS">Jste nadšení ornitologové a pozorovatelé ptactva. Snažíte se přilákat ty
+            nejzajímavější ptáky do své přírodní rezervace. Každý pták umožňuje spuštění řetězce
+            silných schopností.</popis>
+
+        <obtiznost>Střední</obtiznost>
+        <doporuceny_vek>10</doporuceny_vek>
+
+        <hraci>
+            <min>1</min>
+            <max>5</max>
+        </hraci>
+
+        <herni_doba jednotka="min">
+            <min>40</min>
+            <max>70</max>
+        </herni_doba>
+
+        <kategorie_seznam>
+            <kategorie>Rodinná</kategorie>
+            <kategorie>Karetní</kategorie>
+            <kategorie>Přírodní</kategorie>
+        </kategorie_seznam>
+
+        <mechaniky_seznam>
+            <mechanika>Engine Building</mechanika>
+            <mechanika>Sbírání sad</mechanika>
+            <mechanika>Správa ruky</mechanika>
+        </mechaniky_seznam>
+
+        <hodnoceni>
+            <body zdroj="Vlastní">9.2</body>
+            <body zdroj="BGG">8.1</body>
+        </hodnoceni>
+
+        <komponenty_seznam>
+            <komponent typ="Desky" pocet="5">Desky hráčů</komponent>
+            <komponent typ="Ostatní" pocet="1">Krmítko (věž na kostky)</komponent>
+            <komponent typ="Karty" pocet="170">Karty ptáků</komponent>
+            <komponent typ="Figurky" pocet="75">Vajíčka</komponent>
+            <komponent typ="Ostatní" pocet="40">Dřevěné kostky potravy</komponent>
+        </komponenty_seznam>
+
+        <cena mena="CZK">1299</cena>
+    </hra>
+
+    <hra id="8">
+        <nazvy>
+            <nazev_original>Azul</nazev_original>
+            <nazev jazyk="CS">Azul</nazev>
+        </nazvy>
+        <obrazky>
+            <obrazek hlavni="ano">img/azul/krabice.png</obrazek>
+        </obrazky>
+        <autori>
+            <autor>Michael Kiesling</autor>
+        </autori>
+        <vydavatelstvi>
+            <vydavatel zeme="CZ">MindOK</vydavatel>
+            <vydavatel zeme="DE">Plan B Games</vydavatel>
+        </vydavatelstvi>
+        <rok_vydani>2017</rok_vydani>
+        <popis jazyk="CS">Hráči se vžívají do rolí mistrů obkladačů, kteří mají za úkol vyzdobit
+            stěny královského paláce v Evoře. Krásná abstraktní hra s jednoduchými pravidly, ale
+            hlubokou strategií.</popis>
+
+        <obtiznost>Lehká</obtiznost>
+        <doporuceny_vek>8</doporuceny_vek>
+
+        <hraci>
+            <min>2</min>
+            <max>4</max>
+        </hraci>
+
+        <herni_doba jednotka="min">
+            <min>30</min>
+            <max>45</max>
+        </herni_doba>
+
+        <kategorie_seznam>
+            <kategorie>Rodinná</kategorie>
+            <kategorie>Abstraktní</kategorie>
+        </kategorie_seznam>
+
+        <mechaniky_seznam>
+            <mechanika>Draftování</mechanika>
+            <mechanika>Pokládání dílků</mechanika>
+            <mechanika>Vytváření vzorů</mechanika>
+        </mechaniky_seznam>
+
+        <hodnoceni>
+            <body zdroj="Vlastní">8.8</body>
+            <body zdroj="BGG">7.8</body>
+        </hodnoceni>
+
+        <komponenty_seznam>
+            <komponent typ="Figurky" pocet="100">Pryskyřicové dílky (5 barev)</komponent>
+            <komponent typ="Desky" pocet="4">Herní plány hráčů</komponent>
+            <komponent typ="Desky" pocet="9">Kruhové výlohy</komponent>
+            <komponent typ="Ostatní" pocet="1">Plátěný sáček</komponent>
+        </komponenty_seznam>
+
+        <cena mena="CZK">949</cena>
+    </hra>
+
+</katalog>

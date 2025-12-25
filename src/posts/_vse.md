@@ -14,7 +14,9 @@ tags:
 > Ahoj, tady je článek o mém studiu na Vysoké Škole Ekonomické, obor Aplikovaná Informatika.
 > Najdete zde informace o mém studijním plánu a předmětech, které jsem absolvoval (Hodnocení předmětů + tipy)
 
-- Pokud máte nějaké dotazy ohledně studia, neváhejte mi napsat na <a href="http://discord.com/users/466867931821637632" target="_blank">Discord</a> nebo na <a href="https://www.instagram.com/jan_kominek" target="_blank">Instagram</a>
+- Pokud máte nějaké dotazy ohledně studia, neváhejte mi napsat
+  na <a href="http://discord.com/users/466867931821637632" target="_blank">Discord</a> nebo
+  na <a href="https://www.instagram.com/jan_kominek" target="_blank">Instagram</a>
 
 ## Vysvětlení stupnic
 
@@ -98,13 +100,16 @@ tags:
 - Jako student, který má matematiku v oblibě a jde mu sama od sebe, jsem si tento předmět užil
 - Nečekejte ale, že se naučíte něco praktického do života. Jde čistě o matiku bez reálné aplikace
 - Předmět je dobře zpracovaný a pokud nezaspíte na průběžném testu a závěrečném, měli byste projít bez problémů
-- Doporučuji se připravit na ústní zkoušku a nevykašlat se na ní, ptají se vás na definice a vzorce (také záleží na zkoušícím, většina profesorů má své oblíbené otázky)
+- Doporučuji se připravit na ústní zkoušku a nevykašlat se na ní, ptají se vás na definice a vzorce (také záleží na
+  zkoušícím, většina profesorů má své oblíbené otázky)
 - Na cvičení jsem měl paní Olšákovou, zlatíčko, vysvětlí, ale občas jede hrozně rychle :D
-- Na zkoušku pokud budete mít štěstí, tak paní Sýkorová je snad nejlepší, úplné zlatíčko. Hodná, milá, usměvavá. Matika jí baví a studentům pomáhá
+- Na zkoušku pokud budete mít štěstí, tak paní Sýkorová je snad nejlepší, úplné zlatíčko. Hodná, milá, usměvavá. Matika
+  jí baví a studentům pomáhá
 
 #### Materiály, které jsem použil
 
-- <a href="/files/posts/vse/4mm106/Oblibene-definice-ucitelu-LS-2018-2019.pdf" target="_blank">Oblíbené definice učitelů LS 2018/2019</a>
+- <a href="/files/posts/vse/4mm106/Oblibene-definice-ucitelu-LS-2018-2019.pdf" target="_blank">Oblíbené definice učitelů
+  LS 2018/2019</a>
 - <a href="/files/posts/vse/4mm106/Vsechny-definice-LS-2018-2019.pdf" target="_blank">Všechny definice LS 2018/2019</a>
 
 <br />
@@ -218,12 +223,14 @@ tags:
 - Povinná účast na cvičeních (70%)
 - Dělejte aktivity v moodlu (jsou jednoduché a přidají vám body - doporučuji)
 - Argumenty a prezentace jsou v pohodě, pokud umíte anglicky
-- Závěrečný test je jednoduchý, ale doporučuji si projít mockup testy na moodlu a seznámit se s typy otázek (ať vás nic nepřekvapí)
+- Závěrečný test je jednoduchý, ale doporučuji si projít mockup testy na moodlu a seznámit se s typy otázek (ať vás nic
+  nepřekvapí)
 - Na cvičení doporučuji paní Kocianovou, je fajn a má dobrý přístup ke studentům
 
 #### Materiály, které jsem použil
 
-- <a href="/files/posts/vse/2aj211/New-English-for-Business-and-Economics-SB-2021.pdf" target="_blank">New English for Business and Economics SB 2021</a>
+- <a href="/files/posts/vse/2aj211/New-English-for-Business-and-Economics-SB-2021.pdf" target="_blank">New English for
+  Business and Economics SB 2021</a>
 - Moodle
 
 <br />
@@ -243,7 +250,8 @@ tags:
 - Je to jen práce s WordPressem a sociálními sítěmi (Pokud to umíte, jsou to kredity zadarmo)
 - Na cvičení choďte, je tam povinná účast a přidává body
 - Prezentace a esej jsou dobrovolné, ale doporučuji je udělat (osobně jsem dělal jen prezentace a stačilo to)
-- Seminární práce je na téma, které si zvolíte, ale doporučuji se držet témat, která jsou blízká předmětu (učitel vám vysvětli)
+- Seminární práce je na téma, které si zvolíte, ale doporučuji se držet témat, která jsou blízká předmětu (učitel vám
+  vysvětli)
 - Dobrý je pan Nafchi
 
 <br />
@@ -300,16 +308,20 @@ tags:
 - Záživnější předmět než makroekonomie, ale stále to byla bolest
 - Zajímavý předmět, dá vám nějaké zajímavé znalosti, ale reálná aplikace pro informatiky je minimální
 - Na cvičení doporučuji paní Kaňkovou, je skvělá, vysvětlí
-- Na přednášky paní Ligocká nebyla špatná, ale musíte si dělat zápisky (prezentace v insisu jsou většinou bez textu, abyste chodili na přednášky)
+- Na přednášky paní Ligocká nebyla špatná, ale musíte si dělat zápisky (prezentace v insisu jsou většinou bez textu,
+  abyste chodili na přednášky)
 - Na průběžák se doporučuji připravit, hlavně si projděte příklady z cvičebnice (vzorce a různé tvary zadání)
-- Závěrečný test je v pohodě, ale doporučuji zase se dostatečně připravit, dostanene pak dostatek bodů na ústní zkoušku (lépe se na vás dívají a lépe projdete)
-- Na ústní záleží koho schytáte a v jaké náladě, měl jsem štěstí a v pohodě, paní Koľveková se vyspala dobře a byla v pohodě, na makroekonomii mě vymáchala, protože se jí chtělo
+- Závěrečný test je v pohodě, ale doporučuji zase se dostatečně připravit, dostanene pak dostatek bodů na ústní
+  zkoušku (lépe se na vás dívají a lépe projdete)
+- Na ústní záleží koho schytáte a v jaké náladě, měl jsem štěstí a v pohodě, paní Koľveková se vyspala dobře a byla v
+  pohodě, na makroekonomii mě vymáchala, protože se jí chtělo
 
 #### Materiály, které jsem použil
 
 - <a href="/files/posts/vse/3mi202/mikro-cvicebnice.pdf" target="_blank">Mikroekonomie I cvičebnice</a>
 - <a href="/files/posts/vse/3mi202/3MI202-otazky.pdf" target="_blank">3MI202 otázky</a>
-- <a href="/files/posts/vse/3mi202/Mikroekonomie-priprava.pdf" target="_blank">Mikroekonomie I příprava (zkrácený opáčko)</a>
+- <a href="/files/posts/vse/3mi202/Mikroekonomie-priprava.pdf" target="_blank">Mikroekonomie I příprava (zkrácený
+  opáčko)</a>
 - Prezentace z přednášek
 - Zápisky ze cvičení
 
@@ -328,16 +340,23 @@ tags:
 
 - Méně zábavný předmět než mikroekonomie (stále bolest)
 - Paní Džbánková není špatná, občas skáče z tématu na téma, ale dá se to s ní dát (klidně i doporučuji)
-- Na průběžák a závěrečák se nadrťte, potrřebujete alespoň 50% úspěšnost z obou testů dohromady a ty body vám pak hodně usnadní ústní zkoušku
-- Na ústní zkoušku jsem schytal slovenku, které nebylo vůbec rozumět, odpověděl jsem na mojí otázku v plné výši, nic jsem nevynechal a začala mě grilovat, nikdy víc s touhle zkoušící (tu nechcete, Gabriele Koľveková), normálně si přinesla přesýpací hodiny a vy musíme mluvit po celou dobu těch hodin, nikdo mi to neřekl, ani ona, tak jsme tam na sebe jak kreténi zíraly, bez komentáře, tuhle nechcete
+- Na průběžák a závěrečák se nadrťte, potrřebujete alespoň 50% úspěšnost z obou testů dohromady a ty body vám pak hodně
+  usnadní ústní zkoušku
+- Na ústní zkoušku jsem schytal slovenku, které nebylo vůbec rozumět, odpověděl jsem na mojí otázku v plné výši, nic
+  jsem nevynechal a začala mě grilovat, nikdy víc s touhle zkoušící (tu nechcete, Gabriele Koľveková), normálně si
+  přinesla přesýpací hodiny a vy musíme mluvit po celou dobu těch hodin, nikdo mi to neřekl, ani ona, tak jsme tam na
+  sebe jak kreténi zíraly, bez komentáře, tuhle nechcete
 
 #### Materiály, které jsem použil
 
-- <a href="https://kominekjan.notion.site/1-Test-1a69140b569480a9989ee37de3f0e338" target="_blank">Vzorce k průběžnému testu</a>
-- <a href="https://kominekjan.notion.site/2-Test-1ef9140b569480db897ffa4cce823f75" target="_blank">Vzorce k závěrečnému testu</a>
+- <a href="https://kominekjan.notion.site/1-Test-1a69140b569480a9989ee37de3f0e338" target="_blank">Vzorce k průběžnému
+  testu</a>
+- <a href="https://kominekjan.notion.site/2-Test-1ef9140b569480db897ffa4cce823f75" target="_blank">Vzorce k závěrečnému
+  testu</a>
 - <a href="/files/posts/vse/3mi204/makro-jankominek.pdf" target="_blank">Makroekonomie I otázky moje 2025</a>
 - <a href="/files/posts/vse/3mi204/makro-ke-zkousce.pdf" target="_blank">Makroekonomie I otázky všeborec 2019</a>
-- <a href="/files/posts/vse/3mi204/Makroekonomie-priprava.pdf" target="_blank">Makroekonomie I příprava 2025 (zkrácený opáčko)</a>
+- <a href="/files/posts/vse/3mi204/Makroekonomie-priprava.pdf" target="_blank">Makroekonomie I příprava 2025 (zkrácený
+  opáčko)</a>
 - Prezentace z přednášek
 
 <br />
@@ -427,7 +446,8 @@ tags:
 - Seminární práce je na téma, které si zvolíte (více vysvětlí na začátku semestru)
 - Závěrečná prezentace je spíše formální, ale doporučuji si ji připravit, protože vám to přidá body
 - Velice doporučuji pana Sudzinu, mega frajer, dává skoro plný počet bodů vždycky
-- Na paní Radvákovou se připravte, má nějaké dotazy (hlavně na váš poster a na obecné pojmy), chce vás tzv. "pogrilovat", ale dělá si z toho jen srandu, pokud máte úsměv na tváři, tak vás nechá projít
+- Na paní Radvákovou se připravte, má nějaké dotazy (hlavně na váš poster a na obecné pojmy), chce vás tzv. "
+  pogrilovat", ale dělá si z toho jen srandu, pokud máte úsměv na tváři, tak vás nechá projít
 
 #### Materiály, které jsem použil
 
@@ -450,13 +470,15 @@ tags:
 - Na testu a na zkoušce potřebujete alespoň 60% úspěšnost! Bacha!
 - Aktivity v moodlu jsou jednoduché, ale doporučuji je dělat, přidají vám body
 - Report je easy, ale naučte se ho, přidá vám až 10 bodů
-- Závěrečný test je omnohem těžší (nejtěžší kritérium z tohoto předmětu!), doporučuji si projít otázky na moodlu (pozor, v moodlu ty otázky jsou o dost lehčí než v testu!)
+- Závěrečný test je omnohem těžší (nejtěžší kritérium z tohoto předmětu!), doporučuji si projít otázky na moodlu (pozor,
+  v moodlu ty otázky jsou o dost lehčí než v testu!)
 - Ústní zkouška je v pohodě, nepodceňujte ji, víc se hodnotí co umíte o tématech než jak mluvíte
 - Na cvičení doporučuji pana Glanvilla, mega borec, vždy pomůže
 
 #### Materiály, které jsem použil
 
-- <a href="/files/posts/vse/2aj211/New-English-for-Business-and-Economics-SB-2021.pdf" target="_blank">New English for Business and Economics SB 2021</a>
+- <a href="/files/posts/vse/2aj211/New-English-for-Business-and-Economics-SB-2021.pdf" target="_blank">New English for
+  Business and Economics SB 2021</a>
 - <a href="/files/posts/vse/2aj212/2AJ211-exam-questions.pdf" target="_blank">2AJ211 exam questions</a>
 - <a href="/files/posts/vse/2aj212/2AJ212-exam-questions.pdf" target="_blank">2AJ212 exam questions</a>
 - Moodle

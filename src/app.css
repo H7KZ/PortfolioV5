@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+
 @plugin '@tailwindcss/typography';
 
 :root {
@@ -8,6 +9,7 @@
 	--color-background: #131313;
 
 	/* ==== Markdown ==== */
+
 	code::before {
 		content: '';
 	}

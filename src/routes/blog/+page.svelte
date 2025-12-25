@@ -1,7 +1,6 @@
 <script lang="ts">
 	import ContactFooter from '$lib/components/ContactFooter.svelte';
 	import type { Post } from '$lib/types';
-	import { _ } from 'svelte-i18n';
 
 	let posts: Post[] = $state([]);
 
@@ -38,7 +37,8 @@
 									{/each}
 								</div>
 								<p class="font-robotomono text-sm text-neutral-400">
-									{new Date(post.date).getUTCDate()}/{new Date(post.date).getUTCMonth()}/{new Date(post.date).getUTCFullYear()}
+									{new Date(post.date).getUTCDate()}/{new Date(post.date).getUTCMonth()}
+									/{new Date(post.date).getUTCFullYear()}
 								</p>
 							</div>
 						</div>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="https://jankominek.com/xml/4iz238/katalog-deskovych-her"
+    xmlns="https://jankominek.com/xml/4iz238/katalog-deskovych-her"
+    xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+    elementFormDefault="qualified">
+    
+    <xs:include schemaLocation="katalog-deskovych-her-typy.xsd"/>
+    
+    <xs:element name="katalog" type="katalogType">
+        <xs:key name="hraIdKey">
+            <xs:selector xpath="hra"/>
+            <xs:field xpath="@id"/>
+        </xs:key>
+    </xs:element>
+    
+    <xs:complexType name="katalogType">
+        <xs:sequence>
+            <xs:element name="hra" type="hraType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="hraType">
+        <xs:annotation>
+            <xs:appinfo>
+                <sch:ns prefix="k" uri="https://jankominek.com/xml/4iz238/katalog-deskovych-her"/>
+                
+                <sch:pattern>
+                    <sch:rule context="k:hraci">
+                        <sch:assert test="k:min &lt;= k:max">
+                            Minimální počet hráčů nesmí být větší než maximální.
+                        </sch:assert>
+                    </sch:rule>
+                </sch:pattern>
+            </xs:appinfo>
+        </xs:annotation>
+        
+        <xs:sequence>
+            <xs:element name="nazvy" type="nazvyType"/>
+            <xs:element name="obrazky" type="obrazkyType"/>
+            <xs:element name="autori" type="autoriType"/>
+            <xs:element name="vydavatelstvi" type="vydavatelstviType"/>
+            <xs:element name="rok_vydani" type="rokVydaniType"/>
+            <xs:element name="popis" type="popisType"/>
+            <xs:element name="obtiznost" type="obtiznostEnum"/>
+            <xs:element name="doporuceny_vek" type="xs:positiveInteger"/>
+            <xs:element name="hraci" type="rozsahType"/>
+            <xs:element name="herni_doba" type="herniDobaType"/>
+            <xs:element name="kategorie_seznam" type="kategorieSeznamType"/>
+            <xs:element name="mechaniky_seznam" type="mechanikySeznamType"/>
+            <xs:element name="hodnoceni" type="hodnoceniType"/>
+            <xs:element name="komponenty_seznam" type="komponentySeznamType"/>
+            <xs:element name="cena" type="cenaType"/>
+        </xs:sequence>
+        
+        <xs:attribute name="id" type="xs:integer" use="required"/>
+    </xs:complexType>
+    
+    <xs:complexType name="nazvyType">
+        <xs:sequence>
+            <xs:element name="nazev_original" type="xs:string"/>
+            <xs:element name="nazev" type="nazevLokalizovanyType"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="nazevLokalizovanyType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="jazyk" type="jazykEnum" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    
+    <xs:complexType name="obrazkyType">
+        <xs:sequence>
+            <xs:element name="obrazek" type="obrazekType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="obrazekType">
+        <xs:simpleContent>
+            <xs:extension base="obrazekSouborType">
+                <xs:attribute name="hlavni" type="anoNeType" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    
+    <xs:complexType name="autoriType">
+        <xs:sequence>
+            <xs:element name="autor" type="xs:string" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="vydavatelstviType">
+        <xs:sequence>
+            <xs:element name="vydavatel" type="vydavatelType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="vydavatelType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="zeme" type="zemeEnum" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    
+    <xs:complexType name="popisType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="jazyk" type="jazykEnum" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    
+    <xs:complexType name="rozsahType">
+        <xs:sequence>
+            <xs:element name="min" type="hraciPocetType"/>
+            <xs:element name="max" type="hraciPocetType"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="herniDobaType">
+        <xs:sequence>
+            <xs:element name="min" type="dobaHodnotaType"/>
+            <xs:element name="max" type="dobaHodnotaType"/>
+        </xs:sequence>
+        <xs:attribute name="jednotka" type="jednotkaDobyEnum" use="required"/>
+    </xs:complexType>
+    
+    <xs:complexType name="kategorieSeznamType">
+        <xs:sequence>
+            <xs:element name="kategorie" type="xs:string" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="mechanikySeznamType">
+        <xs:sequence>
+            <xs:element name="mechanika" type="xs:string" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="hodnoceniType">
+        <xs:sequence>
+            <xs:element name="body" type="bodyType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="bodyType">
+        <xs:simpleContent>
+            <xs:extension base="hodnoceniRozsahType">
+                <xs:attribute name="zdroj" type="xs:string" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    
+    <xs:complexType name="komponentySeznamType">
+        <xs:sequence>
+            <xs:element name="komponent" type="komponentType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="komponentType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="typ" type="komponentEnum" use="required"/>
+                <xs:attribute name="pocet" type="xs:integer" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    
+    <xs:complexType name="cenaType">
+        <xs:simpleContent>
+            <xs:extension base="cenaHodnotaType">
+                <xs:attribute name="mena" type="menaEnum" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    
+</xs:schema>

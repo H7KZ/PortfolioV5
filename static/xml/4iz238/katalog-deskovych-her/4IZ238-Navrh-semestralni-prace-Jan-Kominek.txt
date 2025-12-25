@@ -1,0 +1,78 @@
+Autor: Jan Komínek
+Cvičící: Ing. et Ing. Stanislav Vojíř, Ph.D.
+Předmět: 4IZ238 XML - Teorie a praxe značkovacích jazyků
+Cvičení: Pondělí 14:30-16:00 SB 202
+
+Téma semestrální práce: Katalog deskových her
+
+------------------
+
+Stručný popis:
+
+Zvolil jsem si téma katalogizace deskových her, protože je to můj koníček a zároveň oblast, která má bohatou a zajímavou datovou strukturu.
+
+Motivací je vytvoření systému pro správu osobní sbírky her. Často řeším praktický problém: chci si s návštěvou zahrát hru, která splňuje specifická kritéria (např. vhodná pro 5 hráčů, do 45 minut, není příliš složitá), ale z hlavy si na všechny vhodné hry nevzpomenu.
+
+Proto bych chtěl navrhnout způsob, jak evidovat nejen základní údaje (název, autor), ale i specifické detaily. Mezi ně patří například herní mechaniky (např. "draftování karet", "pokládání dílků"), kategorie (rodinná, strategická), přesný rozsah hráčů (min/max), herní doba, ale třeba i soupis důležitých fyzických komponent v krabici (pro kontrolu při balení).
+
+Očekávaným výsledkem by byla datová základna, která by sloužila jako "jediný zdroj pravdy" o mé sbírce. Z těchto dat by pak bylo možné v budoucnu generovat různé přehledy – například osobní webovou prezentaci sbírky s filtry nebo tištěný inventární seznam.
+
+------------------
+
+Specifikace enumerací:
+
+1. Obtížnost (Element: <obtiznost>)
+   Popis: Slouží k filtrování her podle náročnosti
+   Povolené hodnoty:
+   - Lehká
+   - Střední
+   - Těžká
+
+2. Jednotka herní doby (Atribut: "jednotka" u elementu <herni_doba>)
+   Popis: Definuje, v jakých jednotkách jsou uvedeny číselné hodnoty min a max
+   Povolené hodnoty:
+   - min (minuty)
+   - hod (hodiny)
+
+3. Měna (Atribut: "mena" u elementu <cena>)
+   Popis: Kód měny podle ISO 4217
+   Povolené hodnoty:
+   - CZK
+   - EUR
+   - USD
+
+4. Jazyk (Atribut: "jazyk" u elementů <nazev>, <popis>)
+   Popis: Kód jazyka (ISO 639-1)
+   Povolené hodnoty:
+   - CS (čeština)
+   - EN (angličtina)
+   - DE (němčina)
+   - FR (francouzština)
+
+5. Země vydavatele (Atribut: "zeme" u elementu <vydavatel>)
+   Popis: Kód země původu vydavatelství (ISO 3166-1 alpha-2)
+   Povolené hodnoty:
+   - CZ
+   - DE
+   - US
+   - FR
+   - PL
+
+6. Typ komponenty (Atribut: "typ" u elementu <komponent>)
+   Popis: Kategorizace herního materiálu
+   Povolené hodnoty:
+   - Karty
+   - Desky
+   - Figurky
+   - Ostatní
+
+------------------
+
+Omezení hodnot:
+
+- ID hry: Integer, a unique
+- Rok vydání: Integer, rozsah 1700–2999.
+- Počet hráčů: Integer, min 1, max 99
+- Hodnocení: Decimal, rozsah 0.0 až 10.0
+- Cena: Decimal, nesmí být záporná
+- Herní doba: Decimal, aby bylo možné zapsat např. 1.5 hod

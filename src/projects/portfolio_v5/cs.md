@@ -31,9 +31,19 @@ tags:
 
 # Detaily projektu
 
-Portfolio v5 představuje nejnovější iteraci mé osobní online prezentace, pečlivě vytvořenou k prezentaci mých designérských a vývojářských dovedností. Tato verze byla kompletně navržena mnou ve Figmě, odrážející čistou, moderní estetiku se sofistikovaným tmavým motivem. Celé portfolio bylo oživeno pomocí nejmodernějších technologií, aby byl zajištěn plynulý a poutavý uživatelský zážitek.
+Portfolio v5 představuje nejnovější iteraci mé osobní online prezentace, pečlivě vytvořenou k prezentaci mých
+designérských a vývojářských dovedností. Tato verze byla kompletně navržena mnou ve Figmě, odrážející čistou, moderní
+estetiku se sofistikovaným tmavým motivem. Celé portfolio bylo oživeno pomocí nejmodernějších technologií, aby byl
+zajištěn plynulý a poutavý uživatelský zážitek.
 
-Frontend je postavený na **SvelteKitu**, využívající rychlost a flexibilitu tohoto moderního frameworku, stylovaný pomocí **TailwindCSS** pro rychlé a responzivní stylování a vylepšený o typovou bezpečnost **Typescriptu**. Bylo implementováno vlastní API pro dynamické načítání detailů projektů a blogových příspěvků ze souborů Markdown, což umožňuje snadnou správu obsahu. Kromě toho byl vyvinut kontaktní formulář s automatickou integrací webhooků pro zjednodušení procesu přijímání a odpovídání na nabídky práce. Vizuální prezentace je vylepšena ručně vytvořenými mockupy, které ukazují mou práci na aplikacích a designech na realistických obrazovkách telefonů a notebooků, což dodává profesionální nádech. Kódová základna je dobře strukturovaná a udržovatelná, odrážející osvědčené postupy ve vývoji softwaru.
+Frontend je postavený na **SvelteKitu**, využívající rychlost a flexibilitu tohoto moderního frameworku, stylovaný
+pomocí **TailwindCSS** pro rychlé a responzivní stylování a vylepšený o typovou bezpečnost **Typescriptu**. Bylo
+implementováno vlastní API pro dynamické načítání detailů projektů a blogových příspěvků ze souborů Markdown, což
+umožňuje snadnou správu obsahu. Kromě toho byl vyvinut kontaktní formulář s automatickou integrací webhooků pro
+zjednodušení procesu přijímání a odpovídání na nabídky práce. Vizuální prezentace je vylepšena ručně vytvořenými
+mockupy, které ukazují mou práci na aplikacích a designech na realistických obrazovkách telefonů a notebooků, což dodává
+profesionální nádech. Kódová základna je dobře strukturovaná a udržovatelná, odrážející osvědčené postupy ve vývoji
+softwaru.
 
 <br />
 <br />
@@ -41,19 +51,26 @@ Frontend je postavený na **SvelteKitu**, využívající rychlost a flexibilitu
 
 # Funkce & Přínosy
 
-**Kompletní vlastní design**: Konceptualizoval a navrhl celé uživatelské rozhraní portfolia od nuly pomocí Figmy, čímž zajistil jedinečnou a moderní vizuální identitu.
+**Kompletní vlastní design**: Konceptualizoval a navrhl celé uživatelské rozhraní portfolia od nuly pomocí Figmy, čímž
+zajistil jedinečnou a moderní vizuální identitu.
 
-**Odbornost v oblasti vývoje frontendu**: Vyvinul kompletní uživatelské rozhraní pomocí **SvelteKitu**, **TailwindCSS** a **Typescriptu**, což vedlo k rychlé, responzivní a typově bezpečné aplikaci.
+**Odbornost v oblasti vývoje frontendu**: Vyvinul kompletní uživatelské rozhraní pomocí **SvelteKitu**, **TailwindCSS**
+a **Typescriptu**, což vedlo k rychlé, responzivní a typově bezpečné aplikaci.
 
-**Implementace dynamického obsahu**: Navrhl vlastní API pro dynamické načítání a zobrazování detailů projektů a blogových příspěvků uložených jako soubory Markdown, což zjednodušuje aktualizace obsahu.
+**Implementace dynamického obsahu**: Navrhl vlastní API pro dynamické načítání a zobrazování detailů projektů a
+blogových příspěvků uložených jako soubory Markdown, což zjednodušuje aktualizace obsahu.
 
-**Automatizovaná integrace nabídek práce**: Implementoval kontaktní formulář s integrací webhooků, umožňující okamžitá upozornění na nové pracovní příležitosti.
+**Automatizovaná integrace nabídek práce**: Implementoval kontaktní formulář s integrací webhooků, umožňující okamžitá
+upozornění na nové pracovní příležitosti.
 
-**Vylepšená vizuální prezentace**: Vytvořil vlastní mockupy pro prezentaci práce na aplikacích a designech na různých zařízeních, což dodává portfoliu profesionální úroveň.
+**Vylepšená vizuální prezentace**: Vytvořil vlastní mockupy pro prezentaci práce na aplikacích a designech na různých
+zařízeních, což dodává portfoliu profesionální úroveň.
 
-**Čistá a moderní estetika**: Zaměřil se na minimalistický design s tmavým motivem, aby vytvořil poutavý a vizuálně přitažlivý uživatelský zážitek.
+**Čistá a moderní estetika**: Zaměřil se na minimalistický design s tmavým motivem, aby vytvořil poutavý a vizuálně
+přitažlivý uživatelský zážitek.
 
-**Vysoce kvalitní kódová základna**: Udržoval čistou, dobře organizovanou a snadno srozumitelnou kódovou základnu, dodržující moderní vývojové standardy.
+**Vysoce kvalitní kódová základna**: Udržoval čistou, dobře organizovanou a snadno srozumitelnou kódovou základnu,
+dodržující moderní vývojové standardy.
 
 <br />
 <br />
@@ -61,4 +78,5 @@ Frontend je postavený na **SvelteKitu**, využívající rychlost a flexibilitu
 
 # Technologie & Nástroje
 
-**Figma**, **SvelteKit**, **TailwindCSS**, **Typescript**, HTML, CSS, JavaScript, REST API, Markdown, Webhooky, Mockupy, **Git**
+**Figma**, **SvelteKit**, **TailwindCSS**, **Typescript**, HTML, CSS, JavaScript, REST API, Markdown, Webhooky, Mockupy,
+**Git**

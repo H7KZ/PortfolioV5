@@ -1,6 +1,5 @@
 <script lang="ts">
 	import ContactFooter from '$lib/components/ContactFooter.svelte';
-	import { _, locale } from 'svelte-i18n';
 	import type { PostData } from './+page';
 
 	let { data }: { data: PostData } = $props();

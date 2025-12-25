@@ -31,13 +31,22 @@ tags:
 
 # Detaily projektu
 
-IONT Charge je moderní webová platební brána pro veřejné nabíjecí stanice elektromobilů (EV), která umožňuje pohodlné online platby při nabíjení. Systém propojuje řidiče s nabíjecí infrastrukturou prostřednictvím bezpečného a intuitivního rozhraní a zajišťuje reálnou komunikaci mezi frontendem, backendovými službami a fyzickými nabíječkami.
+IONT Charge je moderní webová platební brána pro veřejné nabíjecí stanice elektromobilů (EV), která umožňuje pohodlné
+online platby při nabíjení. Systém propojuje řidiče s nabíjecí infrastrukturou prostřednictvím bezpečného a intuitivního
+rozhraní a zajišťuje reálnou komunikaci mezi frontendem, backendovými službami a fyzickými nabíječkami.
 
-Aplikace byla postavena na **mikroslužbové architektuře** a nasazena pomocí **Docker Swarm**. Backend je vyvíjen v **TypeScriptu s Fastify** a obsahuje robustní vrstvu **REST API**. Součástí je i integrace s **platební bránou ČSOB**, která zajišťuje bezpečné a standardům vyhovující zpracování finančních transakcí. Uživatelské rozhraní na frontendové straně, vytvořené pomocí **SvelteKit a TailwindCSS**, nabízí čistý a responzivní zážitek na všech zařízeních.
+Aplikace byla postavena na **mikroslužbové architektuře** a nasazena pomocí **Docker Swarm**. Backend je vyvíjen v \*
+\*TypeScriptu s Fastify** a obsahuje robustní vrstvu **REST API**. Součástí je i integrace s **platební bránou ČSOB**,
+která zajišťuje bezpečné a standardům vyhovující zpracování finančních transakcí. Uživatelské rozhraní na frontendové
+straně, vytvořené pomocí **SvelteKit a TailwindCSS\*\*, nabízí čistý a responzivní zážitek na všech zařízeních.
 
-Klíčovou částí projektu byla hluboká integrace s **API master serveru** od firmware týmu, která umožňuje přímou komunikaci s nabíječkami. Úzce jsem spolupracoval s vývojáři firmwaru, abych sladil chování backendu s nízkoúrovňovou komunikací s hardwarem. Vzhledem k povaze systému (práce s penězi a fyzickými zařízeními) byly v celém stacku uplatněny **bezpečnostní best practices**.
+Klíčovou částí projektu byla hluboká integrace s **API master serveru** od firmware týmu, která umožňuje přímou
+komunikaci s nabíječkami. Úzce jsem spolupracoval s vývojáři firmwaru, abych sladil chování backendu s nízkoúrovňovou
+komunikací s hardwarem. Vzhledem k povaze systému (práce s penězi a fyzickými zařízeními) byly v celém stacku uplatněny
+**bezpečnostní best practices**.
 
-Infrastruktura projektu byla rozšířena o **CI/CD pipeliny**, správu **Linux serverů** a kontejnerizované nasazení, což vedlo ke škálovatelnému a produkčně připravenému řešení pro veřejné nabíjení EV.
+Infrastruktura projektu byla rozšířena o **CI/CD pipeliny**, správu **Linux serverů** a kontejnerizované nasazení, což
+vedlo ke škálovatelnému a produkčně připravenému řešení pro veřejné nabíjení EV.
 
 <br />
 <br />
@@ -45,15 +54,20 @@ Infrastruktura projektu byla rozšířena o **CI/CD pipeliny**, správu **Linux 
 
 # Funkce & Přínosy
 
-**Integrace platební brány**: Nasazení **bezpečné platební brány ČSOB**, včetně zpracování citlivých dat v souladu s požadavky na bezpečnost.
+**Integrace platební brány**: Nasazení **bezpečné platební brány ČSOB**, včetně zpracování citlivých dat v souladu s
+požadavky na bezpečnost.
 
-**Vývoj Fullstack systému**: Vývoj backendu i frontendu pomocí **SvelteKit**, **Fastify (TypeScript)** a **MongoDB**, zajišťující plynulé rozhraní i spolehlivé API.
+**Vývoj Fullstack systému**: Vývoj backendu i frontendu pomocí **SvelteKit**, **Fastify (TypeScript)** a **MongoDB**,
+zajišťující plynulé rozhraní i spolehlivé API.
 
-**Infrastruktura & DevOps**: Nasazení pomocí **Docker Swarm**, správa **Linuxových serverů** a automatizace procesů pomocí **CI/CD nástrojů**.
+**Infrastruktura & DevOps**: Nasazení pomocí **Docker Swarm**, správa **Linuxových serverů** a automatizace procesů
+pomocí **CI/CD nástrojů**.
 
-**Spolupráce s firmware týmem**: Koordinace s týmem zajišťujícím firmware a implementace jejich **API pro master server nabíječek** do vlastního backendu.
+**Spolupráce s firmware týmem**: Koordinace s týmem zajišťujícím firmware a implementace jejich **API pro master server
+nabíječek** do vlastního backendu.
 
-**Bezpečný návrh systému**: Důraz na bezpečnost a škálovatelnost – od návrhu **REST API** až po platební procesy pro koncové uživatele.
+**Bezpečný návrh systému**: Důraz na bezpečnost a škálovatelnost – od návrhu **REST API** až po platební procesy pro
+koncové uživatele.
 
 <br />
 <br />
@@ -61,4 +75,5 @@ Infrastruktura projektu byla rozšířena o **CI/CD pipeliny**, správu **Linux 
 
 # Technologie & Nástroje
 
-**SvelteKit**, TailwindCSS, HTML, **Fastify (TypeScript)**, REST API, **MongoDB**, Docker Swarm, Linux, **CI/CD**, Bitbucket, Jira, **Git**, Bash, **ČSOB platební brána**
+**SvelteKit**, TailwindCSS, HTML, **Fastify (TypeScript)**, REST API, **MongoDB**, Docker Swarm, Linux, **CI/CD**,
+Bitbucket, Jira, **Git**, Bash, **ČSOB platební brána**

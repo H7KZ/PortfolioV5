@@ -31,13 +31,22 @@ tags:
 
 # Detaily projektu
 
-IONT Admin je lehký, lokálně hostovaný administrační panel navržený pro konfiguraci a správu EV nabíječek přímo na místě. Byl vytvořen speciálně pro **hardware založený na Raspberry Pi** a poskytuje přehledné rozhraní pro správce i uživatele, kteří tak mohou upravovat nastavení nabíječky, sledovat její stav a provádět diagnostiku. Celý systém byl navržen s důrazem na výkon, bezpečnost a jednoduchou údržbu.
+IONT Admin je lehký, lokálně hostovaný administrační panel navržený pro konfiguraci a správu EV nabíječek přímo na
+místě. Byl vytvořen speciálně pro **hardware založený na Raspberry Pi** a poskytuje přehledné rozhraní pro správce i
+uživatele, kteří tak mohou upravovat nastavení nabíječky, sledovat její stav a provádět diagnostiku. Celý systém byl
+navržen s důrazem na výkon, bezpečnost a jednoduchou údržbu.
 
-Frontend je postaven pomocí **Svelte**, kompilovaný do statického HTML kvůli kompatibilitě s nízkoenergetickou ARM architekturou. Komunikuje s **Fastify backendem**, který zpřístupňuje API pro ovládání nabíječky a propojuje se s **nízkoúrovňovým firmwarem** napsaným v C++. Součástí bylo také vytvoření **Bash skriptů**, které automatizují celé nastavení systému a jeho inicializaci na zařízeních s Raspberry Pi.
+Frontend je postaven pomocí **Svelte**, kompilovaný do statického HTML kvůli kompatibilitě s nízkoenergetickou ARM
+architekturou. Komunikuje s **Fastify backendem**, který zpřístupňuje API pro ovládání nabíječky a propojuje se s \*
+\*nízkoúrovňovým firmwarem** napsaným v C++. Součástí bylo také vytvoření **Bash skriptů\*\*, které automatizují celé
+nastavení systému a jeho inicializaci na zařízeních s Raspberry Pi.
 
-Významnou částí projektu byl vývoj **vlastního systému aktualizací**, který automaticky zajišťuje bezpečné aktualizace softwaru – včetně ověřování podpisů a použití obfuskace pro ochranu proti neoprávněným zásahům. Tento mechanismus je hluboce propojen s firmwarem nabíječky pro zajištění konzistence a spolehlivosti každé aktualizace.
+Významnou částí projektu byl vývoj **vlastního systému aktualizací**, který automaticky zajišťuje bezpečné aktualizace
+softwaru – včetně ověřování podpisů a použití obfuskace pro ochranu proti neoprávněným zásahům. Tento mechanismus je
+hluboce propojen s firmwarem nabíječky pro zajištění konzistence a spolehlivosti každé aktualizace.
 
-Projekt vyžadoval silný důraz na **systémovou bezpečnost**, **vývoj s ohledem na hardware** a úzkou **spolupráci s firmware týmem**, aby byla zajištěna stabilita i v omezeném prostředí.
+Projekt vyžadoval silný důraz na **systémovou bezpečnost**, **vývoj s ohledem na hardware** a úzkou **spolupráci s
+firmware týmem**, aby byla zajištěna stabilita i v omezeném prostředí.
 
 <br />
 <br />
@@ -45,15 +54,20 @@ Projekt vyžadoval silný důraz na **systémovou bezpečnost**, **vývoj s ohle
 
 # Funkce & Přínosy
 
-**Vestavěné admin rozhraní**: Navrhl a vytvořil jsem bezpečný, offline-first admin panel pomocí **Svelte**, kompilovaný do **HTML** pro plnou kompatibilitu s Raspberry Pi.
+**Vestavěné admin rozhraní**: Navrhl a vytvořil jsem bezpečný, offline-first admin panel pomocí **Svelte**, kompilovaný
+do **HTML** pro plnou kompatibilitu s Raspberry Pi.
 
-**Backend API vrstva**: Vyvinul jsem **Fastify server**, který propojuje frontend s firmwarem a zajišťuje ovládání, konfiguraci i monitoring nabíječky.
+**Backend API vrstva**: Vyvinul jsem **Fastify server**, který propojuje frontend s firmwarem a zajišťuje ovládání,
+konfiguraci i monitoring nabíječky.
 
-**Automatizace nasazení systému**: Napsal jsem **Bash skripty** pro kompletní provisioning systému, síťové nastavení, inicializaci prostředí i spuštění aplikace.
+**Automatizace nasazení systému**: Napsal jsem **Bash skripty** pro kompletní provisioning systému, síťové nastavení,
+inicializaci prostředí i spuštění aplikace.
 
-**Bezpečný update systém**: Implementoval jsem **automatický update mechanismus** pro software nabíječky s vestavěným **ověřením podpisů**, **obfuskací kódu** a **ochranou proti neoprávněným zásahům**.
+**Bezpečný update systém**: Implementoval jsem **automatický update mechanismus** pro software nabíječky s vestavěným \*
+\*ověřením podpisů**, **obfuskací kódu** a **ochranou proti neoprávněným zásahům\*\*.
 
-**Spolupráce s firmware týmem**: Úzce jsem spolupracoval s týmem vyvíjejícím firmware v C++, abych zajistil robustní propojení backendu s nízkoúrovňovými službami.
+**Spolupráce s firmware týmem**: Úzce jsem spolupracoval s týmem vyvíjejícím firmware v C++, abych zajistil robustní
+propojení backendu s nízkoúrovňovými službami.
 
 <br />
 <br />
@@ -61,4 +75,5 @@ Projekt vyžadoval silný důraz na **systémovou bezpečnost**, **vývoj s ohle
 
 # Technologie & Nástroje
 
-**Svelte**, HTML, **TailwindCSS**, **Fastify**, **Node.js**, Bash, **Raspberry Pi**, REST API, Linux, Obfuskace, Auto-update systém, Zabezpečení, Git, Bitbucket, Jira
+**Svelte**, HTML, **TailwindCSS**, **Fastify**, **Node.js**, Bash, **Raspberry Pi**, REST API, Linux, Obfuskace,
+Auto-update systém, Zabezpečení, Git, Bitbucket, Jira

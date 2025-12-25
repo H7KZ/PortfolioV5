@@ -31,9 +31,16 @@ tags:
 
 # Detaily projektu
 
-Portfolio v4 je mé osobní online portfolio, pečlivě navržené a vyvinuté, aby prezentovalo mé dovednosti a projekty čistým a moderním způsobem. Tato iterace představuje kompletní redesign a přebudování, zaměřující se na plynulý a poutavý uživatelský zážitek. Každý aspekt projektu, od počátečních návrhů vytvořených ve Figmě až po finální implementaci pomocí SvelteKitu a TailwindCSS, byl proveden výhradně mnou.
+Portfolio v4 je mé osobní online portfolio, pečlivě navržené a vyvinuté, aby prezentovalo mé dovednosti a projekty
+čistým a moderním způsobem. Tato iterace představuje kompletní redesign a přebudování, zaměřující se na plynulý a
+poutavý uživatelský zážitek. Každý aspekt projektu, od počátečních návrhů vytvořených ve Figmě až po finální
+implementaci pomocí SvelteKitu a TailwindCSS, byl proveden výhradně mnou.
 
-Portfolio se vyznačuje svěží bílou barevnou schématem, které přispívá k jeho čistému a profesionálnímu vzhledu. Výrazným prvkem je zahrnutí krásně ručně psaného ztvárnění mého jména, které dodává osobní a zapamatovatelný dotek. Frontend je poháněn dynamickým duem **SvelteKit** pro jeho rychlost a vývojářsky přívětivé prostředí a **TailwindCSS** pro jeho přístup k stylingu založený na utilitách, což vede k vysoce responzivnímu a vizuálně přitažlivému webu. Kódová základna je strukturována s ohledem na přehlednost a udržovatelnost, což odráží závazek k psaní čistého a efektivního kódu.
+Portfolio se vyznačuje svěží bílou barevnou schématem, které přispívá k jeho čistému a profesionálnímu vzhledu. Výrazným
+prvkem je zahrnutí krásně ručně psaného ztvárnění mého jména, které dodává osobní a zapamatovatelný dotek. Frontend je
+poháněn dynamickým duem **SvelteKit** pro jeho rychlost a vývojářsky přívětivé prostředí a **TailwindCSS** pro jeho
+přístup k stylingu založený na utilitách, což vede k vysoce responzivnímu a vizuálně přitažlivému webu. Kódová základna
+je strukturována s ohledem na přehlednost a udržovatelnost, což odráží závazek k psaní čistého a efektivního kódu.
 
 <br />
 <br />
@@ -41,17 +48,23 @@ Portfolio se vyznačuje svěží bílou barevnou schématem, které přispívá 
 
 # Funkce & Přínosy
 
-**Kompletní vlastnictví návrhu**: Plně jsem zodpovídal za proces návrhu, vytvořil jsem celou vizuální identitu a uživatelské rozhraní ve Figmě ještě před zahájením vývoje.
+**Kompletní vlastnictví návrhu**: Plně jsem zodpovídal za proces návrhu, vytvořil jsem celou vizuální identitu a
+uživatelské rozhraní ve Figmě ještě před zahájením vývoje.
 
-**Kompletní vývoj**: Sám jsem postavil celé portfolio od základu pomocí **SvelteKitu** pro rychlý a efektivní frontend a **TailwindCSS** pro rychlé a konzistentní stylování.
+**Kompletní vývoj**: Sám jsem postavil celé portfolio od základu pomocí **SvelteKitu** pro rychlý a efektivní frontend a
+**TailwindCSS** pro rychlé a konzistentní stylování.
 
-**Čisté a moderní UI/UX**: Navrhl jsem vizuálně přitažlivé a uživatelsky přívětivé rozhraní s čistým bílým motivem a moderní estetikou, zajišťující optimální zážitek ze sledování na všech zařízeních.
+**Čisté a moderní UI/UX**: Navrhl jsem vizuálně přitažlivé a uživatelsky přívětivé rozhraní s čistým bílým motivem a
+moderní estetikou, zajišťující optimální zážitek ze sledování na všech zařízeních.
 
-**Personalizovaný branding**: Zahrnul jsem jedinečný a osobní prvek v podobě krásně ručně psaného ztvárnění mého jména, čímž jsem posílil individuální branding portfolia.
+**Personalizovaný branding**: Zahrnul jsem jedinečný a osobní prvek v podobě krásně ručně psaného ztvárnění mého jména,
+čímž jsem posílil individuální branding portfolia.
 
-**Optimalizovaný výkon frontendu**: Využitím schopností **SvelteKitu** jsem zajistil, že portfolio je výkonné a poskytuje návštěvníkům plynulý zážitek z prohlížení.
+**Optimalizovaný výkon frontendu**: Využitím schopností **SvelteKitu** jsem zajistil, že portfolio je výkonné a
+poskytuje návštěvníkům plynulý zážitek z prohlížení.
 
-**Čistá a udržovatelná kódová základna**: Udržoval jsem dobře organizovanou a snadno srozumitelnou kódovou základnu, dodržoval jsem osvědčené postupy pro kvalitu kódu a budoucí údržbu.
+**Čistá a udržovatelná kódová základna**: Udržoval jsem dobře organizovanou a snadno srozumitelnou kódovou základnu,
+dodržoval jsem osvědčené postupy pro kvalitu kódu a budoucí údržbu.
 
 <br />
 <br />

@@ -1,6 +1,21 @@
 <script lang="ts">
 	import { _, json } from 'svelte-i18n';
 	import ContactFooter from '$lib/components/ContactFooter.svelte';
+
+	interface Experience {
+		company: string;
+		position: string;
+	}
+
+	interface Education {
+		school: string;
+		degree: string;
+	}
+
+	$: about = ($json('resume.about') as string[]) || [];
+	$: experiences = ($json('resume.experience') as Experience[]) || [];
+	$: educations = ($json('resume.education') as Education[]) || [];
+	$: tools = ($json('resume.tools') as string[]) || [];
 </script>
 
 <div class="flex w-full flex-col items-center justify-center">
@@ -29,9 +44,9 @@
 					{$_('resume.aboutLabel')}
 				</h2>
 				<div class="flex w-full flex-col gap-8">
-					{#each $json('resume.about') as string[] as about}
+					{#each about as paragraph}
 						<p>
-							{about}
+							{paragraph}
 						</p>
 					{/each}
 				</div>
@@ -46,7 +61,7 @@
 					{$_('resume.experienceLabel')}
 				</h2>
 				<div class="flex w-full flex-col gap-8">
-					{#each $json('resume.experience') as { company: string; position: string }[] as experience}
+					{#each experiences as experience}
 						<div class="flex w-full flex-col gap-1">
 							<p class="font-medium">
 								{experience.company}
@@ -68,7 +83,7 @@
 					{$_('resume.educationLabel')}
 				</h2>
 				<div class="flex w-full flex-col gap-8">
-					{#each $json('resume.education') as { school: string; degree: string }[] as education}
+					{#each educations as education}
 						<div class="flex w-full flex-col gap-1">
 							<p class="font-medium">
 								{education.school}
@@ -90,7 +105,7 @@
 					{$_('resume.toolsLabel')}
 				</h2>
 				<div class="flex w-full flex-wrap gap-1">
-					{#each $json('resume.tools') as string[] as tool}
+					{#each tools as tool}
 						<p class="text-neutral-500" class:text-white={tool.startsWith('!')}>
 							{tool.replace('!', '')}
 						</p>

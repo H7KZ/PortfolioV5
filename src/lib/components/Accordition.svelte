@@ -8,7 +8,7 @@
 		children: Snippet<[]>;
 	}
 
-	let { opened = false, title = '', children }: Props = $props();
+	let { title = '', children }: Props = $props();
 
 	let isOpened = $state(false);
 
@@ -21,7 +21,7 @@
 		<p class="shrink-0 text-sm text-neutral-300 italic">
 			{title}
 		</p>
-		<div class="mr-1.5 ml-2.5 h-[1px] w-full bg-neutral-700">
+		<div class="mr-1.5 ml-2.5 h-px w-full bg-neutral-700">
 			<!-- This is a line that will be displayed when the accordion is opened. -->
 		</div>
 	</button>

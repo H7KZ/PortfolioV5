@@ -31,11 +31,21 @@ tags:
 
 # Project details
 
-IONT Info is a fullstack web application designed to manage and monitor electric vehicle (EV) chargers efficiently. The platform provides a user-friendly control panel for charger administration, real-time monitoring, and performance optimization. It was built from the ground up, including infrastructure setup, microservices deployment, and frontend/backend development.
+IONT Info is a fullstack web application designed to manage and monitor electric vehicle (EV) chargers efficiently. The
+platform provides a user-friendly control panel for charger administration, real-time monitoring, and performance
+optimization. It was built from the ground up, including infrastructure setup, microservices deployment, and
+frontend/backend development.
 
-To ensure scalability and reliability, the system was deployed using **Docker Swarm** and a **microservices-based architecture**, allowing for efficient handling of multiple charging stations. The backend, developed in **Node.js with Fastify**, powers a robust API that seamlessly integrates with **Raspberry Pi-based charging hardware**. On the frontend, **SvelteKit and TailwindCSS** deliver a smooth and responsive user experience, optimized for both desktop and mobile devices.
+To ensure scalability and reliability, the system was deployed using **Docker Swarm** and a **microservices-based
+architecture**, allowing for efficient handling of multiple charging stations. The backend, developed in **Node.js with
+Fastify**, powers a robust API that seamlessly integrates with **Raspberry Pi-based charging hardware**. On the
+frontend, **SvelteKit and TailwindCSS** deliver a smooth and responsive user experience, optimized for both desktop and
+mobile devices.
 
-A key part of the project was the **close collaboration with the firmware team**, ensuring seamless communication between the control panel and the physical chargers. Additionally, **Linux server administration**, **CI/CD pipelines**, and **DevOps best practices** were implemented to streamline deployment and maintenance. This resulted in a high-performance, cloud-based solution capable of handling large-scale EV charger networks efficiently.
+A key part of the project was the **close collaboration with the firmware team**, ensuring seamless communication
+between the control panel and the physical chargers. Additionally, **Linux server administration**, **CI/CD pipelines**,
+and **DevOps best practices** were implemented to streamline deployment and maintenance. This resulted in a
+high-performance, cloud-based solution capable of handling large-scale EV charger networks efficiently.
 
 <div class="flex justify-center items-center mb-16">
     <img src="/images/projects/iont_info/phones.webp" alt={title} class="w-9/10 object-cover" />
@@ -43,15 +53,20 @@ A key part of the project was the **close collaboration with the firmware team**
 
 # Features & Contributions
 
-**Built Scalable Infrastructure**: Designed and implemented a cloud-based architecture using **Docker Swarm** and **microservices**, ensuring scalability and reliability.
+**Built Scalable Infrastructure**: Designed and implemented a cloud-based architecture using **Docker Swarm** and \*
+\*microservices\*\*, ensuring scalability and reliability.
 
-**Developed End-to-End System**: Led the fullstack development using **SvelteKit**, **Node.js**, **Fastify**, and **MongoDB**, delivering an optimized and responsive UI with **TailwindCSS**.
+**Developed End-to-End System**: Led the fullstack development using **SvelteKit**, **Node.js**, **Fastify**, and \*
+\*MongoDB**, delivering an optimized and responsive UI with **TailwindCSS\*\*.
 
-**Server and DevOps Management**: Configured **Linux-based servers**, automated deployments with **CI/CD pipelines**, and handled **server administration**.
+**Server and DevOps Management**: Configured **Linux-based servers**, automated deployments with **CI/CD pipelines**,
+and handled **server administration**.
 
-**Collaboration with Firmware Team**: Worked closely with the firmware developers to integrate backend services with **Raspberry Pi-based charging stations**.
+**Collaboration with Firmware Team**: Worked closely with the firmware developers to integrate backend services with \*
+\*Raspberry Pi-based charging stations\*\*.
 
-**Optimized System Performance**: Focused on **system architecture**, **RESTful API design**, and **cloud infrastructure management** to enhance efficiency.
+**Optimized System Performance**: Focused on **system architecture**, **RESTful API design**, and **cloud infrastructure
+management** to enhance efficiency.
 
 <br />
 <br />
@@ -59,4 +74,5 @@ A key part of the project was the **close collaboration with the firmware team**
 
 # Technologies & Tools
 
-**SvelteKit**, TailwindCSS, HTML, **Node.js**, **Fastify**, REST API, **MongoDB**, Docker Swarm, Linux, **CI/CD**, Bitbucket, Jira, **Git**, Bash, Raspberry Pi
+**SvelteKit**, TailwindCSS, HTML, **Node.js**, **Fastify**, REST API, **MongoDB**, Docker Swarm, Linux, **CI/CD**,
+Bitbucket, Jira, **Git**, Bash, Raspberry Pi

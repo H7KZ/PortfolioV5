@@ -50,9 +50,11 @@ Go to _Profile_ > _API Tokens_ > _Create Token_ > _Get Started_.
 
 Save these keys into your desired environment variables.
 
-Also copy out your global API key from Profile > API Tokens > Global API Key > View. Save this into your environment variables as well.
+Also copy out your global API key from Profile > API Tokens > Global API Key > View. Save this into your environment
+variables as well.
 
-All that it takes now to use the configuration bellow. Simply add a new DNS record to your cloudflare and traefik with cloudflare will automatically issue a new certificate
+All that it takes now to use the configuration bellow. Simply add a new DNS record to your cloudflare and traefik with
+cloudflare will automatically issue a new certificate
 
 > FIRST CERT ISSUE TAKES A FEW MINUTES TO TAKE AN EFFECT, BE PATIENT - hahaha
 

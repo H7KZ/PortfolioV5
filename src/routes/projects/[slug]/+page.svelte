@@ -3,7 +3,7 @@
 	import { goto } from '$app/navigation';
 	import ContactFooter from '$lib/components/ContactFooter.svelte';
 	import { onDestroy, onMount } from 'svelte';
-	import { _, locale } from 'svelte-i18n';
+	import { locale } from 'svelte-i18n';
 	import type { Unsubscriber } from 'svelte/store';
 	import type { ProjectData } from './+page';
 
@@ -31,18 +31,18 @@
 </svelte:head>
 
 <div class="flex w-full items-center justify-center px-8">
-	<div class="flex w-full max-w-[90rem] flex-col gap-56 pt-16 pb-32">
+	<div class="flex w-full max-w-360 flex-col gap-56 pt-16 pb-32">
 		<article class="flex min-h-screen w-full justify-center">
 			<div
 				class="
                     prose
                     prose-neutral
-                    prose-invert prose-code:!bg-neutral-800 prose-pre:!bg-neutral-800
+                    prose-invert prose-code:bg-neutral-800! prose-pre:bg-neutral-800!
 					prose-h1:font-semibold prose-h2:font-normal
 					prose-h3:font-normal prose-h4:font-normal
 					prose-h5:font-normal prose-h6:font-normal
 					prose-p:font-light prose-p:text-neutral-100
-					w-full !max-w-[67.5rem]
+					w-full max-w-270!
                 "
 			>
 				<data.content />
