@@ -3,6 +3,12 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     targetNamespace="https://jankominek.com/xml/4iz238/katalog-deskovych-her"
     elementFormDefault="qualified">
+
+    <xs:simpleType name="neprazdnyTextType">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
     
     <xs:simpleType name="obrazekSouborType">
         <xs:restriction base="xs:string">

@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:k="https://jankominek.com/xml/4iz238/katalog-deskovych-her" font-family="Arial, 'Segoe UI Emoji', Helvetica, sans-serif" language="cs">
+   <fo:layout-master-set>
+      <fo:simple-page-master master-name="A4" page-height="29.7cm" page-width="21cm" margin-top="2cm" margin-bottom="2cm" margin-left="1.5cm" margin-right="1.5cm">
+         <fo:region-body margin-top="2cm" margin-bottom="2cm"/>
+         <fo:region-before extent="1.5cm"/>
+         <fo:region-after extent="1.5cm"/>
+      </fo:simple-page-master>
+   </fo:layout-master-set>
+   <fo:page-sequence master-reference="A4">
+      <fo:static-content flow-name="xsl-region-before">
+         <fo:block text-align="right" font-size="9pt" color="gray" border-bottom="1pt solid gray" padding-bottom="2pt">
+                        Katalog deskových her - Semestrální práce 4IZ238
+                    </fo:block>
+      </fo:static-content>
+      <fo:static-content flow-name="xsl-region-after">
+         <fo:block text-align="center" font-size="9pt" border-top="1pt solid gray" padding-top="2pt">
+                        Strana <fo:page-number/>
+         </fo:block>
+      </fo:static-content>
+      <fo:flow flow-name="xsl-region-body">
+         <fo:block font-size="24pt" font-weight="bold" text-align="center" space-after="20pt" color="#4F46E5">
+                        Inventární seznam her
+                    </fo:block>
+         <fo:block font-size="10pt" space-after="20pt" text-align="justify">
+                        Tento dokument obsahuje přehled všech deskových her ve sbírce. Kliknutím na název hry přejdete na detailní kartu hry níže.
+                    </fo:block>
+         <fo:table table-layout="fixed" width="100%" border-collapse="collapse" font-size="10pt">
+            <fo:table-column column-width="10%"/>
+            <fo:table-column column-width="35%"/>
+            <fo:table-column column-width="20%"/>
+            <fo:table-column column-width="15%"/>
+            <fo:table-column column-width="12%"/>
+            <fo:table-column column-width="8%"/>
+            <fo:table-header>
+               <fo:table-row background-color="#4F46E5" color="white" font-weight="bold">
+                  <fo:table-cell padding="5pt" border="1pt solid black">
+                     <fo:block>
+                                        📸
+                                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid black">
+                     <fo:block>
+                                        Název hry
+                                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid black">
+                     <fo:block>
+                                        Autor
+                                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid black">
+                     <fo:block>
+                                        Info
+                                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid black">
+                     <fo:block>
+                                        Cena
+                                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid black">
+                     <fo:block>
+                                        ⭐⭐
+                                    </fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+            </fo:table-header>
+            <fo:table-body>
+               <fo:table-row border-bottom="1pt solid #ccc">
+                  <fo:table-cell padding="3pt" border="1pt solid #ccc" display-align="center">
+                     <fo:block text-align="center">
+                        <fo:external-graphic src="img/7wonders_duel/krabice.png" content-width="scale-to-fit" content-height="100%" width="1.2cm" scaling="uniform"/>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc">
+                     <fo:block font-weight="bold" color="#2563EB">
+                        <fo:basic-link internal-destination="game-5">7 divů světa: Duel</fo:basic-link>
+                     </fo:block>
+                     <fo:block font-size="8pt" color="gray" font-style="italic">7 Wonders Duel</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc">
+                     <fo:block font-size="9pt">Antoine Bauza, ...</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc" font-size="8pt">
+                     <fo:block>
+                            👥 2</fo:block>
+                     <fo:block>
+                    ⏱ 30-45min</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc" text-align="right">
+                     <fo:block>599 CZK</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc" text-align="center" font-weight="bold">
+                     <fo:block>9.5</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row border-bottom="1pt solid #ccc" background-color="&#xA;                    #F3F4F6&#xA;                ">
+                  <fo:table-cell padding="3pt" border="1pt solid #ccc" display-align="center">
+                     <fo:block text-align="center">
+                        <fo:external-graphic src="img/azul/krabice.png" content-width="scale-to-fit" content-height="100%" width="1.2cm" scaling="uniform"/>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc">
+                     <fo:block font-weight="bold" color="#2563EB">
+                        <fo:basic-link internal-destination="game-8">Azul</fo:basic-link>
+                     </fo:block>
+                     <fo:block font-size="8pt" color="gray" font-style="italic">Azul</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc">
+                     <fo:block font-size="9pt">Michael Kiesling</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc" font-size="8pt">
+                     <fo:block>
+                            👥 2-4</fo:block>
+                     <fo:block>
+                    ⏱ 30-45min</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc" text-align="right">
+                     <fo:block>949 CZK</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc" text-align="center" font-weight="bold">
+                     <fo:block>8.8</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row border-bottom="1pt solid #ccc">
+                  <fo:table-cell padding="3pt" border="1pt solid #ccc" display-align="center">
+                     <fo:block text-align="center">
+                        <fo:external-graphic src="img/carcassonne/krabice.png" content-width="scale-to-fit" content-height="100%" width="1.2cm" scaling="uniform"/>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc">
+                     <fo:block font-weight="bold" color="#2563EB">
+                        <fo:basic-link internal-destination="game-2">Carcassonne</fo:basic-link>
+                     </fo:block>
+                     <fo:block font-size="8pt" color="gray" font-style="italic">Carcassonne</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc">
+                     <fo:block font-size="9pt">Klaus-Jürgen Wrede</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc" font-size="8pt">
+                     <fo:block>
+                            👥 2-5</fo:block>
+                     <fo:block>
+                    ⏱ 30-45min</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc" text-align="right">
+                     <fo:block>599 CZK</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc" text-align="center" font-weight="bold">
+                     <fo:block>8.5</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row border-bottom="1pt solid #ccc" background-color="&#xA;                    #F3F4F6&#xA;                ">
+                  <fo:table-cell padding="3pt" border="1pt solid #ccc" display-align="center">
+                     <fo:block text-align="center">
+                        <fo:external-graphic src="img/dune/krabice.png" content-width="scale-to-fit" content-height="100%" width="1.2cm" scaling="uniform"/>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc">
+                     <fo:block font-weight="bold" color="#2563EB">
+                        <fo:basic-link internal-destination="game-6">Duna: Impérium</fo:basic-link>
+                     </fo:block>
+                     <fo:block font-size="8pt" color="gray" font-style="italic">Dune: Imperium</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc">
+                     <fo:block font-size="9pt">Paul Dennen</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc" font-size="8pt">
+                     <fo:block>
+                            👥 1-4</fo:block>
+                     <fo:block>
+                    ⏱ 1.5-2.5hod</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc" text-align="right">
+                     <fo:block>1 399 CZK</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc" text-align="center" font-weight="bold">
+                     <fo:block>9.0</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row border-bottom="1pt solid #ccc">
+                  <fo:table-cell padding="3pt" border="1pt solid #ccc" display-align="center">
+                     <fo:block text-align="center">
+                        <fo:external-graphic src="img/ticket/krabice.png" content-width="scale-to-fit" content-height="100%" width="1.2cm" scaling="uniform"/>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc">
+                     <fo:block font-weight="bold" color="#2563EB">
+                        <fo:basic-link internal-destination="game-4">Jízdenky, prosím! Evropa</fo:basic-link>
+                     </fo:block>
+                     <fo:block font-size="8pt" color="gray" font-style="italic">Ticket to Ride: Europe</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc">
+                     <fo:block font-size="9pt">Alan R. Moon</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc" font-size="8pt">
+                     <fo:block>
+                            👥 2-5</fo:block>
+                     <fo:block>
+                    ⏱ 45-75min</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc" text-align="right">
+                     <fo:block>1 199 CZK</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc" text-align="center" font-weight="bold">
+                     <fo:block>8.5</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row border-bottom="1pt solid #ccc" background-color="&#xA;                    #F3F4F6&#xA;                ">
+                  <fo:table-cell padding="3pt" border="1pt solid #ccc" display-align="center">
+                     <fo:block text-align="center">
+                        <fo:external-graphic src="img/codenames/krabice.png" content-width="scale-to-fit" content-height="100%" width="1.2cm" scaling="uniform"/>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc">
+                     <fo:block font-weight="bold" color="#2563EB">
+                        <fo:basic-link internal-destination="game-3">Krycí jména</fo:basic-link>
+                     </fo:block>
+                     <fo:block font-size="8pt" color="gray" font-style="italic">Codenames</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc">
+                     <fo:block font-size="9pt">Vlaada Chvátil</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc" font-size="8pt">
+                     <fo:block>
+                            👥 2-8</fo:block>
+                     <fo:block>
+                    ⏱ 15-20min</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc" text-align="right">
+                     <fo:block>499 CZK</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc" text-align="center" font-weight="bold">
+                     <fo:block>9.0</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row border-bottom="1pt solid #ccc">
+                  <fo:table-cell padding="3pt" border="1pt solid #ccc" display-align="center">
+                     <fo:block text-align="center">
+                        <fo:external-graphic src="img/wingspan/krabice.png" content-width="scale-to-fit" content-height="100%" width="1.2cm" scaling="uniform"/>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc">
+                     <fo:block font-weight="bold" color="#2563EB">
+                        <fo:basic-link internal-destination="game-7">Na křídlech</fo:basic-link>
+                     </fo:block>
+                     <fo:block font-size="8pt" color="gray" font-style="italic">Wingspan</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc">
+                     <fo:block font-size="9pt">Elizabeth Hargrave</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc" font-size="8pt">
+                     <fo:block>
+                            👥 1-5</fo:block>
+                     <fo:block>
+                    ⏱ 40-70min</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc" text-align="right">
+                     <fo:block>1 299 CZK</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc" text-align="center" font-weight="bold">
+                     <fo:block>9.2</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row border-bottom="1pt solid #ccc" background-color="&#xA;                    #F3F4F6&#xA;                ">
+                  <fo:table-cell padding="3pt" border="1pt solid #ccc" display-align="center">
+                     <fo:block text-align="center">
+                        <fo:external-graphic src="img/catan/krabice.png" content-width="scale-to-fit" content-height="100%" width="1.2cm" scaling="uniform"/>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc">
+                     <fo:block font-weight="bold" color="#2563EB">
+                        <fo:basic-link internal-destination="game-1">Osadníci z Katanu</fo:basic-link>
+                     </fo:block>
+                     <fo:block font-size="8pt" color="gray" font-style="italic">Die Siedler von Catan</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc">
+                     <fo:block font-size="9pt">Klaus Teuber</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc" font-size="8pt">
+                     <fo:block>
+                            👥 3-4</fo:block>
+                     <fo:block>
+                    ⏱ 1-1.5hod</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc" text-align="right">
+                     <fo:block>1 099 CZK</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell padding="5pt" border="1pt solid #ccc" text-align="center" font-weight="bold">
+                     <fo:block>10.0</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+            </fo:table-body>
+         </fo:table>
+         <fo:block margin-top="10pt" font-size="9pt" font-style="italic" text-align="right">
+                        Celkem her v katalogu: 8</fo:block>
+         <fo:block break-before="page" font-size="18pt" font-weight="bold" space-after="20pt" color="#4F46E5">
+                        Detailní karty her
+                    </fo:block>
+         <fo:block id="game-5" border="1pt solid #ccc" background-color="#F9FAFB" padding="10pt" margin-bottom="15pt" keep-together.within-page="always">
+            <fo:table width="100%" table-layout="fixed">
+               <fo:table-column column-width="30%"/>
+               <fo:table-column column-width="70%"/>
+               <fo:table-body>
+                  <fo:table-row>
+                     <fo:table-cell padding-right="10pt">
+                        <fo:block>
+                           <fo:external-graphic src="img/7wonders_duel/krabice.png" content-width="scale-to-fit" width="4cm"/>
+                        </fo:block>
+                     </fo:table-cell>
+                     <fo:table-cell>
+                        <fo:block font-size="14pt" font-weight="bold" color="#111827">7 divů světa: Duel</fo:block>
+                        <fo:block font-size="10pt" color="gray" margin-bottom="5pt">
+                                (7 Wonders Duel)
+                            </fo:block>
+                        <fo:block font-size="10pt" margin-bottom="5pt">
+                           <fo:inline>Autoři: </fo:inline>Antoine Bauza, Bruno Cathala</fo:block>
+                        <fo:block font-size="12pt" font-weight="bold" color="#4F46E5" margin-bottom="8pt">599 CZK <fo:inline margin-left="10pt" font-size="10pt" font-weight="normal" color="black">(Hodnocení: 9.5/10
+                                        </fo:inline>
+                           <fo:inline margin-left="10pt" font-size="10pt" font-weight="normal" color="black">, BGG: 8.1/10
+                                        )</fo:inline>
+                        </fo:block>
+                        <fo:block font-size="10pt" text-align="justify">Strategická karetní hra výhradně pro dva hráče. Hráči budují svou
+            civilizaci získáváním karet z pyramidy. Vítězství lze dosáhnout vojenskou, vědeckou nebo
+            kulturní převahou.</fo:block>
+                        <fo:block font-size="9pt" margin-top="8pt">
+                           <fo:inline font-weight="bold">Doporučený věk: </fo:inline>10+
+                            </fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Počet hráčů: </fo:inline>2</fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Doba hraní: </fo:inline>30-45min</fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Kategorie: </fo:inline>Strategická, Karetní, Pro dva</fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Mechaniky: </fo:inline>Draftování karet, Sbírání sad</fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Komponenty: </fo:inline>1ks Herní deska konfliktu, 73ks Karty věků a cechů, 12ks Karty divů světa, 31ks Mince</fo:block>
+                     </fo:table-cell>
+                  </fo:table-row>
+               </fo:table-body>
+            </fo:table>
+         </fo:block>
+         <fo:block id="game-8" border="1pt solid #ccc" background-color="#F9FAFB" padding="10pt" margin-bottom="15pt" keep-together.within-page="always">
+            <fo:table width="100%" table-layout="fixed">
+               <fo:table-column column-width="30%"/>
+               <fo:table-column column-width="70%"/>
+               <fo:table-body>
+                  <fo:table-row>
+                     <fo:table-cell padding-right="10pt">
+                        <fo:block>
+                           <fo:external-graphic src="img/azul/krabice.png" content-width="scale-to-fit" width="4cm"/>
+                        </fo:block>
+                     </fo:table-cell>
+                     <fo:table-cell>
+                        <fo:block font-size="14pt" font-weight="bold" color="#111827">Azul</fo:block>
+                        <fo:block font-size="10pt" color="gray" margin-bottom="5pt">
+                                (Azul)
+                            </fo:block>
+                        <fo:block font-size="10pt" margin-bottom="5pt">
+                           <fo:inline>Autoři: </fo:inline>Michael Kiesling</fo:block>
+                        <fo:block font-size="12pt" font-weight="bold" color="#4F46E5" margin-bottom="8pt">949 CZK <fo:inline margin-left="10pt" font-size="10pt" font-weight="normal" color="black">(Hodnocení: 8.8/10
+                                        </fo:inline>
+                           <fo:inline margin-left="10pt" font-size="10pt" font-weight="normal" color="black">, BGG: 7.8/10
+                                        )</fo:inline>
+                        </fo:block>
+                        <fo:block font-size="10pt" text-align="justify">Hráči se vžívají do rolí mistrů obkladačů, kteří mají za úkol vyzdobit
+            stěny královského paláce v Evoře. Krásná abstraktní hra s jednoduchými pravidly, ale
+            hlubokou strategií.</fo:block>
+                        <fo:block font-size="9pt" margin-top="8pt">
+                           <fo:inline font-weight="bold">Doporučený věk: </fo:inline>8+
+                            </fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Počet hráčů: </fo:inline>2-4</fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Doba hraní: </fo:inline>30-45min</fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Kategorie: </fo:inline>Rodinná, Abstraktní</fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Mechaniky: </fo:inline>Draftování, Pokládání dílků, Vytváření vzorů</fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Komponenty: </fo:inline>100ks Pryskyřicové dílky (5 barev), 4ks Herní plány hráčů, 9ks Kruhové výlohy, 1ks Plátěný sáček</fo:block>
+                     </fo:table-cell>
+                  </fo:table-row>
+               </fo:table-body>
+            </fo:table>
+         </fo:block>
+         <fo:block id="game-2" border="1pt solid #ccc" background-color="#F9FAFB" padding="10pt" margin-bottom="15pt" keep-together.within-page="always">
+            <fo:table width="100%" table-layout="fixed">
+               <fo:table-column column-width="30%"/>
+               <fo:table-column column-width="70%"/>
+               <fo:table-body>
+                  <fo:table-row>
+                     <fo:table-cell padding-right="10pt">
+                        <fo:block>
+                           <fo:external-graphic src="img/carcassonne/krabice.png" content-width="scale-to-fit" width="4cm"/>
+                        </fo:block>
+                     </fo:table-cell>
+                     <fo:table-cell>
+                        <fo:block font-size="14pt" font-weight="bold" color="#111827">Carcassonne</fo:block>
+                        <fo:block font-size="10pt" color="gray" margin-bottom="5pt">
+                                (Carcassonne)
+                            </fo:block>
+                        <fo:block font-size="10pt" margin-bottom="5pt">
+                           <fo:inline>Autoři: </fo:inline>Klaus-Jürgen Wrede</fo:block>
+                        <fo:block font-size="12pt" font-weight="bold" color="#4F46E5" margin-bottom="8pt">599 CZK <fo:inline margin-left="10pt" font-size="10pt" font-weight="normal" color="black">(Hodnocení: 8.5/10
+                                        </fo:inline>
+                           <fo:inline margin-left="10pt" font-size="10pt" font-weight="normal" color="black">, BGG: 7.4/10
+                                        )</fo:inline>
+                        </fo:block>
+                        <fo:block font-size="10pt" text-align="justify">Hráči postupně přikládají kartičky krajiny a vytvářejí tak cesty, města,
+            louky a kláštery. Obsazováním těchto útvarů svými figurkami (Meeples) získávají
+            body.</fo:block>
+                        <fo:block font-size="9pt" margin-top="8pt">
+                           <fo:inline font-weight="bold">Doporučený věk: </fo:inline>7+
+                            </fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Počet hráčů: </fo:inline>2-5</fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Doba hraní: </fo:inline>30-45min</fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Kategorie: </fo:inline>Rodinná, Pokládání dílků</fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Mechaniky: </fo:inline>Pokládání dílků (Tile Placement), Ovládání území (Area Control)</fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Komponenty: </fo:inline>72ks Čtvercové kartičky krajiny, 40ks Dřevěné figurky "Meeples", 1ks Počítadlo bodů</fo:block>
+                     </fo:table-cell>
+                  </fo:table-row>
+               </fo:table-body>
+            </fo:table>
+         </fo:block>
+         <fo:block id="game-6" border="1pt solid #ccc" background-color="#F9FAFB" padding="10pt" margin-bottom="15pt" keep-together.within-page="always">
+            <fo:table width="100%" table-layout="fixed">
+               <fo:table-column column-width="30%"/>
+               <fo:table-column column-width="70%"/>
+               <fo:table-body>
+                  <fo:table-row>
+                     <fo:table-cell padding-right="10pt">
+                        <fo:block>
+                           <fo:external-graphic src="img/dune/krabice.png" content-width="scale-to-fit" width="4cm"/>
+                        </fo:block>
+                     </fo:table-cell>
+                     <fo:table-cell>
+                        <fo:block font-size="14pt" font-weight="bold" color="#111827">Duna: Impérium</fo:block>
+                        <fo:block font-size="10pt" color="gray" margin-bottom="5pt">
+                                (Dune: Imperium)
+                            </fo:block>
+                        <fo:block font-size="10pt" margin-bottom="5pt">
+                           <fo:inline>Autoři: </fo:inline>Paul Dennen</fo:block>
+                        <fo:block font-size="12pt" font-weight="bold" color="#4F46E5" margin-bottom="8pt">1 399 CZK <fo:inline margin-left="10pt" font-size="10pt" font-weight="normal" color="black">(Hodnocení: 9.0/10
+                                        </fo:inline>
+                           <fo:inline margin-left="10pt" font-size="10pt" font-weight="normal" color="black">, BGG: 8.3/10
+                                        )</fo:inline>
+                        </fo:block>
+                        <fo:block font-size="10pt" text-align="justify">Komplexní strategická hra kombinující mechanismy deck-buildingu a
+            worker-placementu. Hráči představují vůdce velkorodů ve vesmíru Duny a bojují o kontrolu
+            nad kořením.</fo:block>
+                        <fo:block font-size="9pt" margin-top="8pt">
+                           <fo:inline font-weight="bold">Doporučený věk: </fo:inline>14+
+                            </fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Počet hráčů: </fo:inline>1-4</fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Doba hraní: </fo:inline>1.5-2.5hod</fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Kategorie: </fo:inline>Strategická, Sci-Fi, Deck-building</fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Mechaniky: </fo:inline>Umísťování dělníků, Tvorba balíčku, Ovládání území</fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Komponenty: </fo:inline>1ks Herní plán, 131ks Karty (Impéria, intrik), 82ks Agenti a suroviny</fo:block>
+                     </fo:table-cell>
+                  </fo:table-row>
+               </fo:table-body>
+            </fo:table>
+         </fo:block>
+         <fo:block id="game-4" border="1pt solid #ccc" background-color="#F9FAFB" padding="10pt" margin-bottom="15pt" keep-together.within-page="always">
+            <fo:table width="100%" table-layout="fixed">
+               <fo:table-column column-width="30%"/>
+               <fo:table-column column-width="70%"/>
+               <fo:table-body>
+                  <fo:table-row>
+                     <fo:table-cell padding-right="10pt">
+                        <fo:block>
+                           <fo:external-graphic src="img/ticket/krabice.png" content-width="scale-to-fit" width="4cm"/>
+                        </fo:block>
+                     </fo:table-cell>
+                     <fo:table-cell>
+                        <fo:block font-size="14pt" font-weight="bold" color="#111827">Jízdenky, prosím! Evropa</fo:block>
+                        <fo:block font-size="10pt" color="gray" margin-bottom="5pt">
+                                (Ticket to Ride: Europe)
+                            </fo:block>
+                        <fo:block font-size="10pt" margin-bottom="5pt">
+                           <fo:inline>Autoři: </fo:inline>Alan R. Moon</fo:block>
+                        <fo:block font-size="12pt" font-weight="bold" color="#4F46E5" margin-bottom="8pt">1 199 CZK <fo:inline margin-left="10pt" font-size="10pt" font-weight="normal" color="black">(Hodnocení: 8.5/10
+                                        </fo:inline>
+                           <fo:inline margin-left="10pt" font-size="10pt" font-weight="normal" color="black">, BGG: 7.5/10
+                                        )</fo:inline>
+                        </fo:block>
+                        <fo:block font-size="10pt" text-align="justify">Hráči sbírají karty barevných vagónů, aby mohli obsazovat železniční tratě
+            napříč Evropou. Body získávají za propojení měst určených tajnými kartami úkolů.</fo:block>
+                        <fo:block font-size="9pt" margin-top="8pt">
+                           <fo:inline font-weight="bold">Doporučený věk: </fo:inline>8+
+                            </fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Počet hráčů: </fo:inline>2-5</fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Doba hraní: </fo:inline>45-75min</fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Kategorie: </fo:inline>Rodinná, Strategická</fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Mechaniky: </fo:inline>Sbírání sad (Set Collection), Stavění sítě, Správa karet</fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Komponenty: </fo:inline>1ks Herní plán mapy Evropy, 240ks Barevné vagónky a nádraží, 156ks Herní karty</fo:block>
+                     </fo:table-cell>
+                  </fo:table-row>
+               </fo:table-body>
+            </fo:table>
+         </fo:block>
+         <fo:block id="game-3" border="1pt solid #ccc" background-color="#F9FAFB" padding="10pt" margin-bottom="15pt" keep-together.within-page="always">
+            <fo:table width="100%" table-layout="fixed">
+               <fo:table-column column-width="30%"/>
+               <fo:table-column column-width="70%"/>
+               <fo:table-body>
+                  <fo:table-row>
+                     <fo:table-cell padding-right="10pt">
+                        <fo:block>
+                           <fo:external-graphic src="img/codenames/krabice.png" content-width="scale-to-fit" width="4cm"/>
+                        </fo:block>
+                     </fo:table-cell>
+                     <fo:table-cell>
+                        <fo:block font-size="14pt" font-weight="bold" color="#111827">Krycí jména</fo:block>
+                        <fo:block font-size="10pt" color="gray" margin-bottom="5pt">
+                                (Codenames)
+                            </fo:block>
+                        <fo:block font-size="10pt" margin-bottom="5pt">
+                           <fo:inline>Autoři: </fo:inline>Vlaada Chvátil</fo:block>
+                        <fo:block font-size="12pt" font-weight="bold" color="#4F46E5" margin-bottom="8pt">499 CZK <fo:inline margin-left="10pt" font-size="10pt" font-weight="normal" color="black">(Hodnocení: 9.0/10
+                                        </fo:inline>
+                           <fo:inline margin-left="10pt" font-size="10pt" font-weight="normal" color="black">, BGG: 7.6/10
+                                        )</fo:inline>
+                        </fo:block>
+                        <fo:block font-size="10pt" text-align="justify">Týmová asociační párty hra. Dva hlavní špióni se snaží jednoslovnými
+            nápovědami navést své týmy k odhalení všech správných karet (agentů) na stole.</fo:block>
+                        <fo:block font-size="9pt" margin-top="8pt">
+                           <fo:inline font-weight="bold">Doporučený věk: </fo:inline>10+
+                            </fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Počet hráčů: </fo:inline>2-8</fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Doba hraní: </fo:inline>15-20min</fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Kategorie: </fo:inline>Párty, Slovní, Dedukční</fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Mechaniky: </fo:inline>Asociace, Týmová hra, Dedukce</fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Komponenty: </fo:inline>200ks Karty se slovy, 40ks Karty klíče, 16ks Karty agentů, 1ks Přesýpací hodiny</fo:block>
+                     </fo:table-cell>
+                  </fo:table-row>
+               </fo:table-body>
+            </fo:table>
+         </fo:block>
+         <fo:block id="game-7" border="1pt solid #ccc" background-color="#F9FAFB" padding="10pt" margin-bottom="15pt" keep-together.within-page="always">
+            <fo:table width="100%" table-layout="fixed">
+               <fo:table-column column-width="30%"/>
+               <fo:table-column column-width="70%"/>
+               <fo:table-body>
+                  <fo:table-row>
+                     <fo:table-cell padding-right="10pt">
+                        <fo:block>
+                           <fo:external-graphic src="img/wingspan/krabice.png" content-width="scale-to-fit" width="4cm"/>
+                        </fo:block>
+                     </fo:table-cell>
+                     <fo:table-cell>
+                        <fo:block font-size="14pt" font-weight="bold" color="#111827">Na křídlech</fo:block>
+                        <fo:block font-size="10pt" color="gray" margin-bottom="5pt">
+                                (Wingspan)
+                            </fo:block>
+                        <fo:block font-size="10pt" margin-bottom="5pt">
+                           <fo:inline>Autoři: </fo:inline>Elizabeth Hargrave</fo:block>
+                        <fo:block font-size="12pt" font-weight="bold" color="#4F46E5" margin-bottom="8pt">1 299 CZK <fo:inline margin-left="10pt" font-size="10pt" font-weight="normal" color="black">(Hodnocení: 9.2/10
+                                        </fo:inline>
+                           <fo:inline margin-left="10pt" font-size="10pt" font-weight="normal" color="black">, BGG: 8.1/10
+                                        )</fo:inline>
+                        </fo:block>
+                        <fo:block font-size="10pt" text-align="justify">Jste nadšení ornitologové a pozorovatelé ptactva. Snažíte se přilákat ty
+            nejzajímavější ptáky do své přírodní rezervace. Každý pták umožňuje spuštění řetězce
+            silných schopností.</fo:block>
+                        <fo:block font-size="9pt" margin-top="8pt">
+                           <fo:inline font-weight="bold">Doporučený věk: </fo:inline>10+
+                            </fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Počet hráčů: </fo:inline>1-5</fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Doba hraní: </fo:inline>40-70min</fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Kategorie: </fo:inline>Rodinná, Karetní, Přírodní</fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Mechaniky: </fo:inline>Engine Building, Sbírání sad, Správa ruky</fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Komponenty: </fo:inline>5ks Desky hráčů, 1ks Krmítko (věž na kostky), 170ks Karty ptáků, 75ks Vajíčka, 40ks Dřevěné kostky potravy</fo:block>
+                     </fo:table-cell>
+                  </fo:table-row>
+               </fo:table-body>
+            </fo:table>
+         </fo:block>
+         <fo:block id="game-1" border="1pt solid #ccc" background-color="#F9FAFB" padding="10pt" margin-bottom="15pt" keep-together.within-page="always">
+            <fo:table width="100%" table-layout="fixed">
+               <fo:table-column column-width="30%"/>
+               <fo:table-column column-width="70%"/>
+               <fo:table-body>
+                  <fo:table-row>
+                     <fo:table-cell padding-right="10pt">
+                        <fo:block>
+                           <fo:external-graphic src="img/catan/krabice.png" content-width="scale-to-fit" width="4cm"/>
+                        </fo:block>
+                     </fo:table-cell>
+                     <fo:table-cell>
+                        <fo:block font-size="14pt" font-weight="bold" color="#111827">Osadníci z Katanu</fo:block>
+                        <fo:block font-size="10pt" color="gray" margin-bottom="5pt">
+                                (Die Siedler von Catan)
+                            </fo:block>
+                        <fo:block font-size="10pt" margin-bottom="5pt">
+                           <fo:inline>Autoři: </fo:inline>Klaus Teuber</fo:block>
+                        <fo:block font-size="12pt" font-weight="bold" color="#4F46E5" margin-bottom="8pt">1 099 CZK <fo:inline margin-left="10pt" font-size="10pt" font-weight="normal" color="black">(Hodnocení: 10.0/10
+                                        </fo:inline>
+                           <fo:inline margin-left="10pt" font-size="10pt" font-weight="normal" color="black">, BGG: 7.1/10
+                                        )</fo:inline>
+                        </fo:block>
+                        <fo:block font-size="10pt" text-align="justify">Hráči se ujímají rolí osadníků na nově objeveném ostrově Katan. Budováním
+            osad, měst a cest získávají suroviny, se kterými obchodují, aby jako první dosáhli 10
+            vítězných bodů.</fo:block>
+                        <fo:block font-size="9pt" margin-top="8pt">
+                           <fo:inline font-weight="bold">Doporučený věk: </fo:inline>10+
+                            </fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Počet hráčů: </fo:inline>3-4</fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Doba hraní: </fo:inline>1-1.5hod</fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Kategorie: </fo:inline>Strategická, Rodinná, Obchodovací</fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Mechaniky: </fo:inline>Obchodování, Stavění sítě, Házení kostkou, Modulární herní plán</fo:block>
+                        <fo:block font-size="9pt" margin-top="3pt">
+                           <fo:inline font-weight="bold">Komponenty: </fo:inline>95ks Karty surovin, 25ks Karty vývoje, 6ks Hranice moře, 19ks Šestiúhelníkové díly krajiny, 96ks Herní figurky (města, vesnice, cesty)</fo:block>
+                     </fo:table-cell>
+                  </fo:table-row>
+               </fo:table-body>
+            </fo:table>
+         </fo:block>
+      </fo:flow>
+   </fo:page-sequence>
+</fo:root>
