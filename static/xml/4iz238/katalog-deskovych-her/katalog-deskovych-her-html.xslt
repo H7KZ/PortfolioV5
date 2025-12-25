@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet
-    version="2.0"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:k="https://jankominek.com/xml/4iz238/katalog-deskovych-her"
-    xmlns:f="http://jankominek.com/xml/4iz238/funkce"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    exclude-result-prefixes="k xs f">
-    
+        version="2.0"
+        xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+        xmlns:k="https://jankominek.com/xml/4iz238/katalog-deskovych-her"
+        xmlns:f="http://jankominek.com/xml/4iz238/funkce"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        exclude-result-prefixes="k xs f">
+
     <xsl:output method="html" version="5.0" encoding="UTF-8" indent="yes"/>
 
     <xsl:param name="pageTitle" select="'Katalog deskových her'"/>
@@ -16,7 +16,7 @@
     <xsl:function name="f:format-ceny">
         <xsl:param name="castka"/>
         <xsl:param name="mena"/>
-        
+
         <xsl:value-of select="format-number($castka, '# ###', 'cz_format')"/>
         <xsl:text> </xsl:text>
         <xsl:value-of select="$mena"/>
@@ -34,7 +34,9 @@
             </xsl:apply-templates>
 
             <body class="bg-gray-100 font-sans text-gray-800 flex flex-col min-h-screen">
-                <xsl:apply-templates select="." mode="main-menu"/>
+                <xsl:apply-templates select="." mode="main-menu">
+                    <xsl:with-param name="rootPath" select="''"/>
+                </xsl:apply-templates>
 
                 <main class="container mx-auto px-4 py-8 flex-grow">
                     <h1 class="text-4xl font-bold text-center text-indigo-700 mb-8">
@@ -43,7 +45,7 @@
 
                     <xsl:for-each-group select="//k:hra" group-by="k:obtiznost">
                         <xsl:sort select="current-grouping-key()"/>
-                        
+
                         <section class="mb-12">
                             <h2 class="text-2xl font-semibold text-gray-700 border-b-2 border-indigo-500 mb-6 pb-2">
                                 Obtížnost: <xsl:value-of select="current-grouping-key()"/>
@@ -64,20 +66,23 @@
     </xsl:template>
 
     <xsl:template match="k:hra" mode="detail-page">
-        <xsl:variable name="filename" select="concat('hra_', @id, '.html')"/>
+        <xsl:variable name="folderName" select="concat('hra_', @id)"/>
+        <xsl:variable name="filePath" select="concat($folderName, '/index.html')"/>
 
-        <xsl:result-document href="{$filename}">
+        <xsl:result-document href="{$filePath}">
             <html lang="cs">
                 <xsl:apply-templates select="." mode="html-head">
                     <xsl:with-param name="title" select="k:nazvy/k:nazev"/>
                 </xsl:apply-templates>
 
                 <body class="bg-gray-50 font-sans text-gray-800 flex flex-col min-h-screen">
-                    <xsl:apply-templates select="." mode="main-menu"/>
+                    <xsl:apply-templates select="." mode="main-menu">
+                        <xsl:with-param name="rootPath" select="'../'"/>
+                    </xsl:apply-templates>
 
                     <main class="container mx-auto px-4 py-8 flex-grow">
                         <nav class="text-sm text-gray-500 mb-6">
-                            <a href="index.html" class="hover:underline text-indigo-600">
+                            <a href="../index.html" class="hover:underline text-indigo-600">
                                 Katalog
                             </a>
                             <span class="mx-2">/</span>
@@ -89,12 +94,13 @@
                         <div class="bg-white rounded-lg shadow-xl overflow-hidden">
                             <div class="md:flex">
                                 <div class="md:w-1/3 bg-gray-200 p-6 flex flex-col gap-6">
-                                    
+
                                     <div class="bg-white p-2 rounded shadow-sm flex items-center justify-center">
                                         <xsl:choose>
                                             <xsl:when test="k:obrazky/k:obrazek[@hlavni = 'ano']">
-                                                <img src="{k:obrazky/k:obrazek[@hlavni='ano']}" alt="{k:nazvy/k:nazev}" class="object-contain max-h-96 w-full rounded"/>
+                                                <img src="{concat('../', k:obrazky/k:obrazek[@hlavni='ano'])}" alt="{k:nazvy/k:nazev}" class="object-contain max-h-96 w-full rounded"/>
                                             </xsl:when>
+
                                             <xsl:otherwise>
                                                 <div class="h-64 flex items-center justify-center text-gray-400 font-bold text-xl">
                                                     Bez obrázku
@@ -110,8 +116,8 @@
                                             </h3>
                                             <div class="grid grid-cols-2 gap-2">
                                                 <xsl:for-each select="k:obrazky/k:obrazek[not(@hlavni = 'ano')]">
-                                                    <a href="{.}" target="_blank" class="block bg-white p-1 rounded shadow-sm hover:shadow-md transition">
-                                                        <img src="{.}" class="h-24 w-full object-cover rounded"/>
+                                                    <a href="{concat('../', .)}" target="_blank" class="block bg-white p-1 rounded shadow-sm hover:shadow-md transition">
+                                                        <img src="{concat('../', .)}" class="h-24 w-full object-cover rounded"/>
                                                     </a>
                                                 </xsl:for-each>
                                             </div>
@@ -129,7 +135,7 @@
                                                 <xsl:value-of select="k:nazvy/k:nazev_original"/>
                                             </p>
                                         </div>
-                                        
+
                                         <div class="text-right">
                                             <span class="block text-2xl font-bold text-indigo-600">
                                                 <xsl:value-of select="f:format-ceny(k:cena, k:cena/@mena)"/>
@@ -150,42 +156,42 @@
                                         <div>
                                             <strong>Autor:</strong>
                                             <xsl:text> </xsl:text>
-                                            
+
                                             <xsl:value-of select="string-join(k:autori/k:autor, ', ')"/>
                                         </div>
-                                        
+
                                         <div>
                                             <strong>Vydavatel:</strong>
                                             <xsl:text> </xsl:text>
-                                            
+
                                             <xsl:value-of select="k:vydavatelstvi/k:vydavatel[@zeme = 'CZ']"/>
                                         </div>
-                                        
+
                                         <div>
                                             <strong>Rok vydání:</strong>
                                             <xsl:text> </xsl:text>
-                                            
+
                                             <xsl:value-of select="k:rok_vydani"/>
                                         </div>
-                                        
+
                                         <div>
                                             <strong>Věk:</strong>
                                             <xsl:text> </xsl:text>
-                                            
+
                                             <xsl:value-of select="k:doporuceny_vek"/>+
                                         </div>
-                                        
+
                                         <div>
                                             <strong>Hráči:</strong>
                                             <xsl:text> </xsl:text>
-                                            
+
                                             <xsl:value-of select="k:hraci/k:min"/><xsl:if test="k:hraci/k:min != k:hraci/k:max">-<xsl:value-of select="k:hraci/k:max"/></xsl:if>
                                         </div>
-                                        
+
                                         <div>
                                             <strong>Doba:</strong>
                                             <xsl:text> </xsl:text>
-                                            
+
                                             <xsl:value-of select="k:herni_doba/k:min"/>-<xsl:value-of select="k:herni_doba/k:max"/>
                                             <xsl:value-of select="k:herni_doba/@jednotka"/>
                                         </div>
@@ -195,7 +201,7 @@
                                         <h3 class="font-bold mb-2">
                                             Kategorie:
                                         </h3>
-                                        
+
                                         <div class="flex flex-wrap gap-2">
                                             <xsl:for-each select="k:kategorie_seznam/k:kategorie">
                                                 <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">
@@ -232,21 +238,21 @@
             <div class="p-5 flex-grow">
                 <div class="flex justify-between items-start mb-2">
                     <h3 class="text-xl font-bold text-gray-900">
-                        <a href="{concat('hra_', @id, '.html')}" class="hover:text-indigo-600 transition">
+                        <a href="{concat('hra_', @id, '/index.html')}" class="hover:text-indigo-600 transition">
                             <xsl:value-of select="k:nazvy/k:nazev"/>
                         </a>
                     </h3>
-                    
+
                     <span
-                        class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded">
+                            class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded">
                         <xsl:value-of select="k:hodnoceni/k:body[@zdroj = 'Vlastní']"/>
                     </span>
                 </div>
-                
+
                 <p class="text-sm text-gray-500 mb-3">
                     <xsl:value-of select="k:nazvy/k:nazev_original"/>
                 </p>
-                
+
                 <p class="text-gray-700 text-sm line-clamp-3 mb-4">
                     <xsl:value-of select="substring(k:popis, 1, 150)"/>...
                 </p>
@@ -255,6 +261,7 @@
                     <span class="mr-3">
                         👥 <xsl:value-of select="k:hraci/k:min"/><xsl:if test="k:hraci/k:min != k:hraci/k:max">-<xsl:value-of select="k:hraci/k:max"/></xsl:if>
                     </span>
+
                     <span>
                         ⏱ <xsl:value-of select="k:herni_doba/k:min"/>-<xsl:value-of select="k:herni_doba/k:max"/>
                         <xsl:value-of select="k:herni_doba/@jednotka"/>
@@ -262,7 +269,7 @@
                 </div>
             </div>
             <div class="bg-gray-50 px-5 py-3 border-t border-gray-200 text-right">
-                <a href="{concat('hra_', @id, '.html')}" class="text-indigo-600 hover:text-indigo-900 font-medium text-sm">
+                <a href="{concat('hra_', @id, '/index.html')}" class="text-indigo-600 hover:text-indigo-900 font-medium text-sm">
                     Detail hry →
                 </a>
             </div>
@@ -282,20 +289,22 @@
     </xsl:template>
 
     <xsl:template match="node()" mode="main-menu">
+        <xsl:param name="rootPath" select="''"/>
+
         <header class="bg-indigo-600 text-white shadow-md">
             <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-                <a href="index.html" class="text-2xl font-bold tracking-tight">
+                <a href="{concat($rootPath, 'index.html')}" class="text-2xl font-bold tracking-tight">
                     🎲 Deskovky
                 </a>
-                
+
                 <nav>
                     <ul class="flex space-x-6">
                         <li>
-                            <a href="index.html" class="hover:text-indigo-200 transition">
+                            <a href="{concat($rootPath, 'index.html')}" class="hover:text-indigo-200 transition">
                                 Domů
                             </a>
                         </li>
-                        
+
                         <li>
                             <a href="https://validator.w3.org/" target="_blank" class="hover:text-indigo-200 transition text-sm opacity-80">
                                 Validátor
