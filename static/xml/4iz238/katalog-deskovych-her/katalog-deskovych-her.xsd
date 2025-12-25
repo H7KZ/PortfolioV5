@@ -1,41 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    targetNamespace="https://jankominek.com/xml/4iz238/katalog-deskovych-her"
-    xmlns="https://jankominek.com/xml/4iz238/katalog-deskovych-her"
-    xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-    elementFormDefault="qualified">
-    
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+        targetNamespace="https://jankominek.com/xml/4iz238/katalog-deskovych-her"
+        xmlns="https://jankominek.com/xml/4iz238/katalog-deskovych-her"
+        elementFormDefault="qualified">
+
     <xs:include schemaLocation="katalog-deskovych-her-typy.xsd"/>
-    
+
     <xs:element name="katalog" type="katalogType">
         <xs:key name="hraIdKey">
             <xs:selector xpath="hra"/>
             <xs:field xpath="@id"/>
         </xs:key>
+
+        <xs:key name="hraNazevOriginalKey">
+            <xs:selector xpath="hra"/>
+            <xs:field xpath="nazvy/nazev_original"/>
+        </xs:key>
     </xs:element>
-    
+
     <xs:complexType name="katalogType">
         <xs:sequence>
             <xs:element name="hra" type="hraType" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="hraType">
         <xs:annotation>
             <xs:appinfo>
                 <sch:ns prefix="k" uri="https://jankominek.com/xml/4iz238/katalog-deskovych-her"/>
-                
+
                 <sch:pattern>
                     <sch:rule context="k:hraci">
                         <sch:assert test="k:min &lt;= k:max">
-                            Minimální počet hráčů nesmí být větší než maximální.
+                            Minimální počet hráčů (min: <sch:value-of select="k:min"/>) nesmí být větší než maximální (max: <sch:value-of select="k:max"/>).
+                        </sch:assert>
+                    </sch:rule>
+
+                    <sch:rule context="k:herni_doba">
+                        <sch:assert test="k:min &lt;= k:max">
+                            Chyba v herní době: Minimální doba (<sch:value-of select="k:min"/>) nesmí být delší než maximální (<sch:value-of select="k:max"/>).
+                        </sch:assert>
+                    </sch:rule>
+
+                    <sch:rule context="k:hodnoceni">
+                        <sch:assert test="count(k:body[@zdroj='Vlastní']) = 1">
+                            Každá hra musí mít jedno vlastní hodnocení. Nalezeno: <sch:value-of select="count(k:body[@zdroj='Vlastní'])"/>.
+                        </sch:assert>
+                    </sch:rule>
+
+                    <sch:rule context="k:obrazky">
+                        <sch:assert test="count(k:obrazek[@hlavni='ano']) = 1">
+                            Každá hra musí mít vyznačen právě jeden hlavní obrázek (hlavni="ano"). Nalezeno: <sch:value-of select="count(k:obrazek[@hlavni='ano'])"/>.
                         </sch:assert>
                     </sch:rule>
                 </sch:pattern>
             </xs:appinfo>
         </xs:annotation>
-        
+
         <xs:sequence>
             <xs:element name="nazvy" type="nazvyType"/>
             <xs:element name="obrazky" type="obrazkyType"/>
@@ -53,31 +76,31 @@
             <xs:element name="komponenty_seznam" type="komponentySeznamType"/>
             <xs:element name="cena" type="cenaType"/>
         </xs:sequence>
-        
+
         <xs:attribute name="id" type="xs:integer" use="required"/>
     </xs:complexType>
-    
+
     <xs:complexType name="nazvyType">
         <xs:sequence>
-            <xs:element name="nazev_original" type="xs:string"/>
+            <xs:element name="nazev_original" type="neprazdnyTextType"/>
             <xs:element name="nazev" type="nazevLokalizovanyType"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="nazevLokalizovanyType">
         <xs:simpleContent>
-            <xs:extension base="xs:string">
+            <xs:extension base="neprazdnyTextType">
                 <xs:attribute name="jazyk" type="jazykEnum" use="required"/>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
-    
+
     <xs:complexType name="obrazkyType">
         <xs:sequence>
             <xs:element name="obrazek" type="obrazekType" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="obrazekType">
         <xs:simpleContent>
             <xs:extension base="obrazekSouborType">
@@ -85,27 +108,27 @@
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
-    
+
     <xs:complexType name="autoriType">
         <xs:sequence>
-            <xs:element name="autor" type="xs:string" maxOccurs="unbounded"/>
+            <xs:element name="autor" type="neprazdnyTextType" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="vydavatelstviType">
         <xs:sequence>
             <xs:element name="vydavatel" type="vydavatelType" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="vydavatelType">
         <xs:simpleContent>
-            <xs:extension base="xs:string">
+            <xs:extension base="neprazdnyTextType">
                 <xs:attribute name="zeme" type="zemeEnum" use="required"/>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
-    
+
     <xs:complexType name="popisType">
         <xs:simpleContent>
             <xs:extension base="xs:string">
@@ -113,14 +136,14 @@
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
-    
+
     <xs:complexType name="rozsahType">
         <xs:sequence>
             <xs:element name="min" type="hraciPocetType"/>
             <xs:element name="max" type="hraciPocetType"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="herniDobaType">
         <xs:sequence>
             <xs:element name="min" type="dobaHodnotaType"/>
@@ -128,48 +151,48 @@
         </xs:sequence>
         <xs:attribute name="jednotka" type="jednotkaDobyEnum" use="required"/>
     </xs:complexType>
-    
+
     <xs:complexType name="kategorieSeznamType">
         <xs:sequence>
-            <xs:element name="kategorie" type="xs:string" maxOccurs="unbounded"/>
+            <xs:element name="kategorie" type="neprazdnyTextType" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="mechanikySeznamType">
         <xs:sequence>
-            <xs:element name="mechanika" type="xs:string" maxOccurs="unbounded"/>
+            <xs:element name="mechanika" type="neprazdnyTextType" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="hodnoceniType">
         <xs:sequence>
             <xs:element name="body" type="bodyType" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="bodyType">
         <xs:simpleContent>
             <xs:extension base="hodnoceniRozsahType">
-                <xs:attribute name="zdroj" type="xs:string" use="required"/>
+                <xs:attribute name="zdroj" type="neprazdnyTextType" use="required"/>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
-    
+
     <xs:complexType name="komponentySeznamType">
         <xs:sequence>
             <xs:element name="komponent" type="komponentType" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="komponentType">
         <xs:simpleContent>
-            <xs:extension base="xs:string">
+            <xs:extension base="neprazdnyTextType">
                 <xs:attribute name="typ" type="komponentEnum" use="required"/>
                 <xs:attribute name="pocet" type="xs:integer" use="required"/>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
-    
+
     <xs:complexType name="cenaType">
         <xs:simpleContent>
             <xs:extension base="cenaHodnotaType">
@@ -177,5 +200,5 @@
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
-    
+
 </xs:schema>
