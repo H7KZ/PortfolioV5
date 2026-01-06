@@ -295,7 +295,7 @@
          </fo:table>
          <fo:block margin-top="10pt" font-size="9pt" font-style="italic" text-align="right">
                         Celkem her v katalogu: 8</fo:block>
-         <fo:block break-before="page" font-size="18pt" font-weight="bold" space-after="20pt" color="#4F46E5" id="details-section">
+         <fo:block break-before="page" font-size="18pt" font-weight="bold" space-after="20pt" color="#4F46E5">
                         Detailní karty her
                     </fo:block>
          <fo:block id="game-5" border="1pt solid #ccc" background-color="#F9FAFB" padding="10pt" margin-bottom="15pt" keep-together.within-page="always">
@@ -336,7 +336,7 @@
                         <fo:block font-size="9pt" margin-top="3pt">
                            <fo:inline font-weight="bold">Mechaniky: </fo:inline>Draftování karet, Sbírání sad</fo:block>
                         <fo:block font-size="9pt" margin-top="3pt">
-                           <fo:inline font-weight="bold">Komponenty: </fo:inline>1x Herní deska konfliktu, 73x Karty věků a cechů, 12x Karty divů světa, 31x Mince</fo:block>
+                           <fo:inline font-weight="bold">Komponenty: </fo:inline>1ks Herní deska konfliktu, 73ks Karty věků a cechů, 12ks Karty divů světa, 31ks Mince</fo:block>
                      </fo:table-cell>
                   </fo:table-row>
                </fo:table-body>
@@ -380,7 +380,7 @@
                         <fo:block font-size="9pt" margin-top="3pt">
                            <fo:inline font-weight="bold">Mechaniky: </fo:inline>Draftování, Pokládání dílků, Vytváření vzorů</fo:block>
                         <fo:block font-size="9pt" margin-top="3pt">
-                           <fo:inline font-weight="bold">Komponenty: </fo:inline>100x Pryskyřicové dílky (5 barev), 4x Herní plány hráčů, 9x Kruhové výlohy, 1x Plátěný sáček</fo:block>
+                           <fo:inline font-weight="bold">Komponenty: </fo:inline>100ks Pryskyřicové dílky (5 barev), 4ks Herní plány hráčů, 9ks Kruhové výlohy, 1ks Plátěný sáček</fo:block>
                      </fo:table-cell>
                   </fo:table-row>
                </fo:table-body>
@@ -424,7 +424,7 @@
                         <fo:block font-size="9pt" margin-top="3pt">
                            <fo:inline font-weight="bold">Mechaniky: </fo:inline>Pokládání dílků (Tile Placement), Ovládání území (Area Control)</fo:block>
                         <fo:block font-size="9pt" margin-top="3pt">
-                           <fo:inline font-weight="bold">Komponenty: </fo:inline>72x Čtvercové kartičky krajiny, 40x Dřevěné figurky "Meeples", 1x Počítadlo bodů</fo:block>
+                           <fo:inline font-weight="bold">Komponenty: </fo:inline>72ks Čtvercové kartičky krajiny, 40ks Dřevěné figurky "Meeples", 1ks Počítadlo bodů</fo:block>
                      </fo:table-cell>
                   </fo:table-row>
                </fo:table-body>
@@ -468,7 +468,7 @@
                         <fo:block font-size="9pt" margin-top="3pt">
                            <fo:inline font-weight="bold">Mechaniky: </fo:inline>Umísťování dělníků, Tvorba balíčku, Ovládání území</fo:block>
                         <fo:block font-size="9pt" margin-top="3pt">
-                           <fo:inline font-weight="bold">Komponenty: </fo:inline>1x Herní plán, 131x Karty (Impéria, intrik), 82x Agenti a suroviny</fo:block>
+                           <fo:inline font-weight="bold">Komponenty: </fo:inline>1ks Herní plán, 131ks Karty (Impéria, intrik), 82ks Agenti a suroviny</fo:block>
                      </fo:table-cell>
                   </fo:table-row>
                </fo:table-body>
@@ -511,7 +511,7 @@
                         <fo:block font-size="9pt" margin-top="3pt">
                            <fo:inline font-weight="bold">Mechaniky: </fo:inline>Sbírání sad (Set Collection), Stavění sítě, Správa karet</fo:block>
                         <fo:block font-size="9pt" margin-top="3pt">
-                           <fo:inline font-weight="bold">Komponenty: </fo:inline>1x Herní plán mapy Evropy, 240x Barevné vagónky a nádraží, 156x Herní karty</fo:block>
+                           <fo:inline font-weight="bold">Komponenty: </fo:inline>1ks Herní plán mapy Evropy, 240ks Barevné vagónky a nádraží, 156ks Herní karty</fo:block>
                      </fo:table-cell>
                   </fo:table-row>
                </fo:table-body>
@@ -554,7 +554,7 @@
                         <fo:block font-size="9pt" margin-top="3pt">
                            <fo:inline font-weight="bold">Mechaniky: </fo:inline>Asociace, Týmová hra, Dedukce</fo:block>
                         <fo:block font-size="9pt" margin-top="3pt">
-                           <fo:inline font-weight="bold">Komponenty: </fo:inline>200x Karty se slovy, 40x Karty klíče, 16x Karty agentů, 1x Přesýpací hodiny</fo:block>
+                           <fo:inline font-weight="bold">Komponenty: </fo:inline>200ks Karty se slovy, 40ks Karty klíče, 16ks Karty agentů, 1ks Přesýpací hodiny</fo:block>
                      </fo:table-cell>
                   </fo:table-row>
                </fo:table-body>
@@ -598,7 +598,7 @@
                         <fo:block font-size="9pt" margin-top="3pt">
                            <fo:inline font-weight="bold">Mechaniky: </fo:inline>Engine Building, Sbírání sad, Správa ruky</fo:block>
                         <fo:block font-size="9pt" margin-top="3pt">
-                           <fo:inline font-weight="bold">Komponenty: </fo:inline>5x Desky hráčů, 1x Krmítko (věž na kostky), 170x Karty ptáků, 75x Vajíčka, 40x Dřevěné kostky potravy</fo:block>
+                           <fo:inline font-weight="bold">Komponenty: </fo:inline>5ks Desky hráčů, 1ks Krmítko (věž na kostky), 170ks Karty ptáků, 75ks Vajíčka, 40ks Dřevěné kostky potravy</fo:block>
                      </fo:table-cell>
                   </fo:table-row>
                </fo:table-body>
@@ -642,7 +642,7 @@
                         <fo:block font-size="9pt" margin-top="3pt">
                            <fo:inline font-weight="bold">Mechaniky: </fo:inline>Obchodování, Stavění sítě, Házení kostkou, Modulární herní plán</fo:block>
                         <fo:block font-size="9pt" margin-top="3pt">
-                           <fo:inline font-weight="bold">Komponenty: </fo:inline>95x Karty surovin, 25x Karty vývoje, 6x Hranice moře, 19x Šestiúhelníkové díly krajiny, 96x Herní figurky (města, vesnice, cesty)</fo:block>
+                           <fo:inline font-weight="bold">Komponenty: </fo:inline>95ks Karty surovin, 25ks Karty vývoje, 6ks Hranice moře, 19ks Šestiúhelníkové díly krajiny, 96ks Herní figurky (města, vesnice, cesty)</fo:block>
                      </fo:table-cell>
                   </fo:table-row>
                </fo:table-body>
