@@ -114,7 +114,6 @@
                             font-weight="bold"
                             space-after="20pt"
                             color="#4F46E5"
-                            id="details-section"
                     >
                         Detailní karty her
                     </fo:block>
@@ -310,7 +309,7 @@
 
                                 <xsl:for-each select="k:komponenty_seznam/k:komponent">
                                     <xsl:value-of select="@pocet"/>
-                                    <xsl:text>x </xsl:text>
+                                    <xsl:text>ks </xsl:text>
                                     <xsl:value-of select="."/>
                                     <xsl:if test="position() != last()">, </xsl:if>
                                 </xsl:for-each>
