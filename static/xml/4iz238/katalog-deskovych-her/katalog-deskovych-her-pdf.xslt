@@ -46,7 +46,29 @@
                 </fo:static-content>
 
                 <fo:flow flow-name="xsl-region-body">
-                    <fo:block font-size="24pt" font-weight="bold" text-align="center" space-after="20pt" color="#4F46E5">
+                    <fo:block
+                        break-before="page"
+                        font-size="18pt"
+                        font-weight="bold"
+                        space-after="20pt"
+                        color="#4F46E5"
+                        >
+                        Obsah katalogu her
+                    </fo:block>
+                    
+                    <fo:block>
+                        <xsl:apply-templates select="k:katalog" mode="content"/>
+                    </fo:block>
+                    
+                    <fo:block
+                            break-before="page"
+                            font-size="24pt"
+                            font-weight="bold"
+                            text-align="center"
+                            space-after="20pt"
+                            color="#4F46E5"
+                            id="inventory-list"
+                    >
                         Inventární seznam her
                     </fo:block>
 
@@ -125,6 +147,49 @@
                 </fo:flow>
             </fo:page-sequence>
         </fo:root>
+    </xsl:template>
+
+    <xsl:template match="k:katalog" mode="content">
+        <fo:table table-layout="fixed" width="100%" border-collapse="collapse" font-size="10pt">
+            <fo:table-column column-width="90%"/>
+            <fo:table-column column-width="10%"/>
+
+            <fo:table-body>
+                <fo:table-row>
+                    <fo:table-cell padding="5pt" border-bottom="1pt solid #ccc">
+                        <fo:block font-size="10pt" color="#2563EB">
+                            <fo:basic-link internal-destination="inventory-list">
+                                Inventární seznam her
+                            </fo:basic-link>
+                        </fo:block>
+                    </fo:table-cell>
+                    <fo:table-cell padding="5pt" border-bottom="1pt solid #ccc" text-align="right">
+                        <fo:block font-size="10pt" color="gray">
+                            <fo:page-number-citation ref-id="inventory-list"/>
+                        </fo:block>
+                    </fo:table-cell>
+                </fo:table-row>
+                <xsl:for-each select="k:hra">
+                    <!-- sort it by page numbers -->
+                    <xsl:sort
+
+                    <fo:table-row>
+                        <fo:table-cell padding="5pt" border-bottom="1pt solid #ccc">
+                            <fo:block font-size="10pt" margin-left="8pt" color="#2563EB">
+                                <fo:basic-link internal-destination="{concat('game-', @id)}">
+                                    <xsl:value-of select="k:nazvy/k:nazev"/>
+                                </fo:basic-link>
+                            </fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="5pt" border-bottom="1pt solid #ccc" text-align="right">
+                            <fo:block font-size="10pt" color="gray">
+                                <fo:page-number-citation ref-id="{concat('game-', @id)}"/>
+                            </fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                </xsl:for-each>
+            </fo:table-body>
+        </fo:table>
     </xsl:template>
 
     <xsl:template match="k:hra" mode="table-row">

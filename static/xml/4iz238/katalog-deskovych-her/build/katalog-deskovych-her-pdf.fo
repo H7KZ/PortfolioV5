@@ -19,7 +19,128 @@
          </fo:block>
       </fo:static-content>
       <fo:flow flow-name="xsl-region-body">
-         <fo:block font-size="24pt" font-weight="bold" text-align="center" space-after="20pt" color="#4F46E5">
+         <fo:block break-before="page" font-size="18pt" font-weight="bold" space-after="20pt" color="#4F46E5">
+                        Obsah katalogu her
+                    </fo:block>
+         <fo:block>
+            <fo:table table-layout="fixed" width="100%" border-collapse="collapse" font-size="10pt">
+               <fo:table-column column-width="90%"/>
+               <fo:table-column column-width="10%"/>
+               <fo:table-body>
+                  <fo:table-row>
+                     <fo:table-cell padding="5pt" border-bottom="1pt solid #ccc">
+                        <fo:block font-size="10pt" color="#2563EB">
+                           <fo:basic-link internal-destination="inventory-list">
+                                Inventární seznam her
+                            </fo:basic-link>
+                        </fo:block>
+                     </fo:table-cell>
+                     <fo:table-cell padding="5pt" border-bottom="1pt solid #ccc" text-align="right">
+                        <fo:block font-size="10pt" color="gray">
+                           <fo:page-number-citation ref-id="inventory-list"/>
+                        </fo:block>
+                     </fo:table-cell>
+                  </fo:table-row>
+                  <fo:table-row>
+                     <fo:table-cell padding="5pt" border-bottom="1pt solid #ccc">
+                        <fo:block font-size="10pt" margin-left="8pt" color="#2563EB">
+                           <fo:basic-link internal-destination="game-1">Osadníci z Katanu</fo:basic-link>
+                        </fo:block>
+                     </fo:table-cell>
+                     <fo:table-cell padding="5pt" border-bottom="1pt solid #ccc" text-align="right">
+                        <fo:block font-size="10pt" color="gray">
+                           <fo:page-number-citation ref-id="game-1"/>
+                        </fo:block>
+                     </fo:table-cell>
+                  </fo:table-row>
+                  <fo:table-row>
+                     <fo:table-cell padding="5pt" border-bottom="1pt solid #ccc">
+                        <fo:block font-size="10pt" margin-left="8pt" color="#2563EB">
+                           <fo:basic-link internal-destination="game-2">Carcassonne</fo:basic-link>
+                        </fo:block>
+                     </fo:table-cell>
+                     <fo:table-cell padding="5pt" border-bottom="1pt solid #ccc" text-align="right">
+                        <fo:block font-size="10pt" color="gray">
+                           <fo:page-number-citation ref-id="game-2"/>
+                        </fo:block>
+                     </fo:table-cell>
+                  </fo:table-row>
+                  <fo:table-row>
+                     <fo:table-cell padding="5pt" border-bottom="1pt solid #ccc">
+                        <fo:block font-size="10pt" margin-left="8pt" color="#2563EB">
+                           <fo:basic-link internal-destination="game-3">Krycí jména</fo:basic-link>
+                        </fo:block>
+                     </fo:table-cell>
+                     <fo:table-cell padding="5pt" border-bottom="1pt solid #ccc" text-align="right">
+                        <fo:block font-size="10pt" color="gray">
+                           <fo:page-number-citation ref-id="game-3"/>
+                        </fo:block>
+                     </fo:table-cell>
+                  </fo:table-row>
+                  <fo:table-row>
+                     <fo:table-cell padding="5pt" border-bottom="1pt solid #ccc">
+                        <fo:block font-size="10pt" margin-left="8pt" color="#2563EB">
+                           <fo:basic-link internal-destination="game-4">Jízdenky, prosím! Evropa</fo:basic-link>
+                        </fo:block>
+                     </fo:table-cell>
+                     <fo:table-cell padding="5pt" border-bottom="1pt solid #ccc" text-align="right">
+                        <fo:block font-size="10pt" color="gray">
+                           <fo:page-number-citation ref-id="game-4"/>
+                        </fo:block>
+                     </fo:table-cell>
+                  </fo:table-row>
+                  <fo:table-row>
+                     <fo:table-cell padding="5pt" border-bottom="1pt solid #ccc">
+                        <fo:block font-size="10pt" margin-left="8pt" color="#2563EB">
+                           <fo:basic-link internal-destination="game-5">7 divů světa: Duel</fo:basic-link>
+                        </fo:block>
+                     </fo:table-cell>
+                     <fo:table-cell padding="5pt" border-bottom="1pt solid #ccc" text-align="right">
+                        <fo:block font-size="10pt" color="gray">
+                           <fo:page-number-citation ref-id="game-5"/>
+                        </fo:block>
+                     </fo:table-cell>
+                  </fo:table-row>
+                  <fo:table-row>
+                     <fo:table-cell padding="5pt" border-bottom="1pt solid #ccc">
+                        <fo:block font-size="10pt" margin-left="8pt" color="#2563EB">
+                           <fo:basic-link internal-destination="game-6">Duna: Impérium</fo:basic-link>
+                        </fo:block>
+                     </fo:table-cell>
+                     <fo:table-cell padding="5pt" border-bottom="1pt solid #ccc" text-align="right">
+                        <fo:block font-size="10pt" color="gray">
+                           <fo:page-number-citation ref-id="game-6"/>
+                        </fo:block>
+                     </fo:table-cell>
+                  </fo:table-row>
+                  <fo:table-row>
+                     <fo:table-cell padding="5pt" border-bottom="1pt solid #ccc">
+                        <fo:block font-size="10pt" margin-left="8pt" color="#2563EB">
+                           <fo:basic-link internal-destination="game-7">Na křídlech</fo:basic-link>
+                        </fo:block>
+                     </fo:table-cell>
+                     <fo:table-cell padding="5pt" border-bottom="1pt solid #ccc" text-align="right">
+                        <fo:block font-size="10pt" color="gray">
+                           <fo:page-number-citation ref-id="game-7"/>
+                        </fo:block>
+                     </fo:table-cell>
+                  </fo:table-row>
+                  <fo:table-row>
+                     <fo:table-cell padding="5pt" border-bottom="1pt solid #ccc">
+                        <fo:block font-size="10pt" margin-left="8pt" color="#2563EB">
+                           <fo:basic-link internal-destination="game-8">Azul</fo:basic-link>
+                        </fo:block>
+                     </fo:table-cell>
+                     <fo:table-cell padding="5pt" border-bottom="1pt solid #ccc" text-align="right">
+                        <fo:block font-size="10pt" color="gray">
+                           <fo:page-number-citation ref-id="game-8"/>
+                        </fo:block>
+                     </fo:table-cell>
+                  </fo:table-row>
+               </fo:table-body>
+            </fo:table>
+         </fo:block>
+         <fo:block break-before="page" font-size="24pt" font-weight="bold" text-align="center" space-after="20pt" color="#4F46E5" id="inventory-list">
                         Inventární seznam her
                     </fo:block>
          <fo:block font-size="10pt" space-after="20pt" text-align="justify">
@@ -273,7 +394,7 @@
                      <fo:block font-weight="bold" color="#2563EB">
                         <fo:basic-link internal-destination="game-1">Osadníci z Katanu</fo:basic-link>
                      </fo:block>
-                     <fo:block font-size="8pt" color="gray" font-style="italic">Die Siedler von Catan</fo:block>
+                     <fo:block font-size="8pt" color="gray" font-style="italic">Carcassonne</fo:block>
                   </fo:table-cell>
                   <fo:table-cell padding="5pt" border="1pt solid #ccc">
                      <fo:block font-size="9pt">Klaus Teuber</fo:block>
@@ -618,7 +739,7 @@
                      <fo:table-cell>
                         <fo:block font-size="14pt" font-weight="bold" color="#111827">Osadníci z Katanu</fo:block>
                         <fo:block font-size="10pt" color="gray" margin-bottom="5pt">
-                                (Die Siedler von Catan)
+                                (Carcassonne)
                             </fo:block>
                         <fo:block font-size="10pt" margin-bottom="5pt">
                            <fo:inline>Autoři: </fo:inline>Klaus Teuber</fo:block>

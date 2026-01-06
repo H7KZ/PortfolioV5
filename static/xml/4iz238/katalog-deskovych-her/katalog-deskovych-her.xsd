@@ -2,6 +2,7 @@
 <xs:schema
         xmlns:xs="http://www.w3.org/2001/XMLSchema"
         xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+        xmlns:k="https://jankominek.com/xml/4iz238/katalog-deskovych-her"
         targetNamespace="https://jankominek.com/xml/4iz238/katalog-deskovych-her"
         xmlns="https://jankominek.com/xml/4iz238/katalog-deskovych-her"
         elementFormDefault="qualified">
@@ -10,13 +11,13 @@
 
     <xs:element name="katalog" type="katalogType">
         <xs:key name="hraIdKey">
-            <xs:selector xpath="hra"/>
+            <xs:selector xpath="k:hra"/>
             <xs:field xpath="@id"/>
         </xs:key>
 
         <xs:key name="hraNazevOriginalKey">
-            <xs:selector xpath="hra"/>
-            <xs:field xpath="nazvy/nazev_original"/>
+            <xs:selector xpath="k:hra"/>
+            <xs:field xpath="k:nazvy/k:nazev_original"/>
         </xs:key>
     </xs:element>
 
@@ -77,7 +78,7 @@
             <xs:element name="cena" type="cenaType"/>
         </xs:sequence>
 
-        <xs:attribute name="id" type="xs:integer" use="required"/>
+        <xs:attribute name="id" type="xs:unsignedInt" use="required"/>
     </xs:complexType>
 
     <xs:complexType name="nazvyType">
@@ -188,7 +189,7 @@
         <xs:simpleContent>
             <xs:extension base="neprazdnyTextType">
                 <xs:attribute name="typ" type="komponentEnum" use="required"/>
-                <xs:attribute name="pocet" type="xs:integer" use="required"/>
+                <xs:attribute name="pocet" type="xs:unsignedInt" use="required"/>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
