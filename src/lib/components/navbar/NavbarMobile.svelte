@@ -34,9 +34,10 @@
 						</Button>
 					</div>
 					<div class="flex items-center justify-center gap-3">
-						{#each $locales as local}
+						{#each $locales as local (local)}
+							{@const FlagComponent = circleFlagsComponents[local]}
 							<button onclick={() => locale.set(local)} class="flex cursor-pointer items-center justify-center">
-								<svelte:component this={circleFlagsComponents[local]} class="h-7 w-7" />
+								<FlagComponent class="h-7 w-7" />
 							</button>
 						{/each}
 					</div>

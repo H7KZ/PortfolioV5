@@ -13,8 +13,6 @@
 	let { autoOpen = false, width = 8, align = 'left', children, items }: Props = $props();
 
 	let isOpened = $state(false);
-
-	export { isOpened };
 </script>
 
 <div

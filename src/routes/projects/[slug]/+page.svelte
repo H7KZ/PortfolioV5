@@ -2,25 +2,16 @@
 	import { browser } from '$app/environment';
 	import { goto } from '$app/navigation';
 	import ContactFooter from '$lib/components/ContactFooter.svelte';
-	import { onDestroy, onMount } from 'svelte';
 	import { locale } from 'svelte-i18n';
-	import type { Unsubscriber } from 'svelte/store';
 	import type { ProjectData } from './+page';
 
 	let { data }: { data: ProjectData } = $props();
 
-	let subscriber: Unsubscriber | null = null;
-
-	onMount(() => {
-		subscriber = locale.subscribe(async (value) => {
-			if (value === data.locale) return;
-
-			if (browser) await goto(`/projects/${data.slug}?locale=${value}`, { invalidateAll: true });
-		});
-	});
-
-	onDestroy(() => {
-		subscriber?.();
+	$effect(() => {
+		const loc = $locale;
+		if (loc && loc !== data.locale && browser) {
+			goto(`/projects/${data.slug}?locale=${loc}`, { invalidateAll: true });
+		}
 	});
 </script>
 

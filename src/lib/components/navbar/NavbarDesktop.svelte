@@ -32,9 +32,10 @@
 				<TablerLanguage class="h-7.5 w-7.5 transition-all hover:text-neutral-400" />
 				{#snippet items()}
 					<div class="flex flex-col items-center justify-center gap-4 py-3">
-						{#each $locales as local}
+						{#each $locales as local (local)}
+							{@const FlagComponent = circleFlagsComponents[local]}
 							<button onclick={() => locale.set(local)} class="flex cursor-pointer items-center justify-center">
-								<svelte:component this={circleFlagsComponents[local]} class="h-7 w-7" />
+								<FlagComponent class="h-7 w-7" />
 							</button>
 						{/each}
 					</div>

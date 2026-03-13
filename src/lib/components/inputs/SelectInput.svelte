@@ -15,7 +15,6 @@
 		options: Option[];
 		height?: number;
 		label?: string;
-		selected?: string;
 		Icon?: Component;
 		required?: boolean;
 		disabled?: boolean;
@@ -24,30 +23,7 @@
 		placeholder?: string;
 	}
 
-	let {
-		id = crypto.randomUUID(),
-		value = $bindable(''),
-		options,
-		height,
-		label,
-		selected,
-		Icon,
-		required,
-		disabled,
-		oninput,
-		error,
-		placeholder
-	}: Props = $props();
-
-	$effect(() => {
-		if (selected) {
-			const selectedOption = options.find((opt) => opt.value === selected);
-			if (selectedOption && !selectedOption.disabled) {
-				value = selected;
-				if (oninput) oninput(value);
-			}
-		}
-	});
+	let { id = crypto.randomUUID(), value = $bindable(''), options, height, label, Icon, required, disabled, oninput, error, placeholder }: Props = $props();
 
 	let isOpened = $state(false);
 
@@ -102,7 +78,7 @@
 				style="max-height: {height}rem; overflow-y: auto;"
 				onblur={() => (isOpened = false)}
 			>
-				{#each options as option}
+				{#each options as option (option.value)}
 					<div
 						role="option"
 						tabindex="0"

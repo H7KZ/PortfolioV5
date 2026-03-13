@@ -16,8 +16,6 @@
 </script>
 
 <main class="h-full min-h-screen w-full">
-	<nav>
-		<Navbar />
-	</nav>
+	<Navbar />
 	{@render children()}
 </main>

@@ -3,7 +3,6 @@
 	import type { Snippet } from 'svelte';
 
 	interface Props {
-		opened?: boolean;
 		title?: string;
 		children: Snippet<[]>;
 	}
@@ -11,8 +10,6 @@
 	let { title = '', children }: Props = $props();
 
 	let isOpened = $state(false);
-
-	export { isOpened };
 </script>
 
 <div class="flex h-full w-full flex-col gap-6">

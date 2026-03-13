@@ -6,8 +6,6 @@
 		id?: string;
 		value: string;
 		type?: 'date' | 'time' | 'datetime-local';
-		date?: boolean;
-		time?: boolean;
 		label?: string;
 		autocomplete?: FullAutoFill;
 		placeholder?: string;
@@ -23,8 +21,6 @@
 		id = crypto.randomUUID(),
 		value = $bindable(''),
 		type = 'date',
-		date = true,
-		time = false,
 		label,
 		autocomplete,
 		placeholder,

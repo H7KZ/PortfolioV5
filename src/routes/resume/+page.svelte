@@ -12,10 +12,10 @@
 		degree: string;
 	}
 
-	$: about = ($json('resume.about') as string[]) || [];
-	$: experiences = ($json('resume.experience') as Experience[]) || [];
-	$: educations = ($json('resume.education') as Education[]) || [];
-	$: tools = ($json('resume.tools') as string[]) || [];
+	const about = $derived(($json('resume.about') as string[]) || []);
+	const experiences = $derived(($json('resume.experience') as Experience[]) || []);
+	const educations = $derived(($json('resume.education') as Education[]) || []);
+	const tools = $derived(($json('resume.tools') as string[]) || []);
 </script>
 
 <div class="flex w-full flex-col items-center justify-center">
@@ -44,7 +44,7 @@
 					{$_('resume.aboutLabel')}
 				</h2>
 				<div class="flex w-full flex-col gap-8">
-					{#each about as paragraph}
+					{#each about as paragraph, i (i)}
 						<p>
 							{paragraph}
 						</p>
@@ -61,7 +61,7 @@
 					{$_('resume.experienceLabel')}
 				</h2>
 				<div class="flex w-full flex-col gap-8">
-					{#each experiences as experience}
+					{#each experiences as experience, i (i)}
 						<div class="flex w-full flex-col gap-1">
 							<p class="font-medium">
 								{experience.company}
@@ -83,7 +83,7 @@
 					{$_('resume.educationLabel')}
 				</h2>
 				<div class="flex w-full flex-col gap-8">
-					{#each educations as education}
+					{#each educations as education, i (i)}
 						<div class="flex w-full flex-col gap-1">
 							<p class="font-medium">
 								{education.school}
@@ -105,7 +105,7 @@
 					{$_('resume.toolsLabel')}
 				</h2>
 				<div class="flex w-full flex-wrap gap-1">
-					{#each tools as tool}
+					{#each tools as tool (tool)}
 						<p class="text-neutral-500" class:text-white={tool.startsWith('!')}>
 							{tool.replace('!', '')}
 						</p>
