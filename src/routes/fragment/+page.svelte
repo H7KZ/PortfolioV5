@@ -8,7 +8,6 @@
 	});
 
 	async function handleSubmit(e: MouseEvent) {
-		console.log('Form submitted:', form);
 		e.preventDefault();
 
 		if (form.code !== '211') return;

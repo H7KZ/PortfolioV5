@@ -59,7 +59,7 @@
 		"freelance": "Freelance",
 		"prague": "Prague, CZ",
 
-		"motto": "Exceptional developer with 4+ years industry experience",
+		"motto": "Exceptional developer with 5+ years industry experience",
 
 		"jankominek": "Jan Komínek",
 
@@ -72,11 +72,11 @@
 	"resume": {
 		"jankominek": "Jan Komínek",
 		"quickSummaryLabel": "Quick summary",
-		"quickSummary": "I am a Fullstack Engineer with a strong focus on frontend development, currently working across both freelance and company projects. In my freelance role, I serve as a Senior Frontend Engineer, collaborating closely with backend teams to build technically advanced, cloud-integrated applications using VueJS, TailwindCSS, and AWS. At the same time, I contribute as a Fullstack Engineer on backend-heavy systems, leveraging Node.js, ExpressJS, AdonisJS, MongoDB, and PostgreSQL to create scalable, reliable solutions. With a background in cybersecurity and ongoing studies at the Prague University of Economics and Business, I bring a well-rounded perspective that bridges deep technical expertise with a solid understanding of business and user experience. My experience spans freelance, startup, and corporate environments, where I have consistently led and contributed to innovative, user-centric projects.",
+		"quickSummary": "I am a Senior Frontend / Fullstack Engineer with a passion for building complex applications from scratch and a reputation for rapid problem-solving. My core expertise is in Vue.js, React.js, and TypeScript, backed by robust full-stack experience — including leading development of an EV charging platform with its own payment system and Docker-based service infrastructure. With a strong foundation in Cybersecurity and currently pursuing a B.S. in Applied Computer Science at the Prague University of Economics and Business, I excel at tackling difficult technical challenges and leading projects to successful completion.",
 
 		"aboutLabel": "About",
 		"about": [
-			"I am a dedicated Fullstack Engineer based in Prague, specializing in modern frontend development while maintaining solid experience across backend technologies. Currently, I work as a freelance Senior Frontend Engineer on highly technical applications using VueJS, TailwindCSS, and AWS, closely collaborating with backend teams to deliver seamless, performant interfaces. Alongside this, I contribute as a Fullstack Engineer in a company setting, building robust systems with Node.js, ExpressJS, AdonisJS, MongoDB, and PostgreSQL.",
+			"I am a Senior Frontend / Fullstack Engineer based in Prague, specializing in Vue.js, React.js, and TypeScript while maintaining deep full-stack experience. I currently work as a freelance Senior Frontend Engineer at CORAC Engineering, building technically advanced, cloud-integrated applications, and as a Fullstack Engineer at Intedat, developing robust systems with Node.js, AdonisJS, PostgreSQL, and Redis. A recent highlight is leading the backend and DevOps architecture for Diář FISáka — a university project where I designed the containerized infrastructure, built a Node.js REST API, and implemented async background workers using BullMQ.",
 			"My academic background in Applied Computer Science at the Prague University of Economics and Business has broadened my skill set beyond pure development. I’ve gained knowledge in marketing, UX design, economics, management, and data analytics with tools like Microsoft Power BI—enabling me to approach projects from both technical and business standpoints.",
 			"Professionally, I’ve taken on roles ranging from IT Support to Frontend and Fullstack Development across diverse environments. These experiences have sharpened my problem-solving abilities and adaptability, especially in freelance and cross-functional team settings. I also bring a foundation in cybersecurity, further strengthening my focus on building secure and dependable systems.",
 			"Driven by a passion for clean code, modern frameworks, and meaningful digital experiences, I thrive in collaborative environments that value innovation, precision, and user-centered design. Whether it’s architecting a scalable backend, crafting an elegant UI, or navigating complex challenges, I’m committed to delivering practical and impactful software solutions."
@@ -84,6 +84,10 @@
 
 		"experienceLabel": "Experience",
 		"experience": [
+			{
+				"company": "Diář FISáka (VŠE Project)",
+				"position": "Lead Backend Engineer & DevOps Architect, Sep 2025 to present"
+			},
 			{
 				"company": "CORAC Engineering",
 				"position": "Senior Frontend Engineer, ongoing since April 2025"
@@ -98,7 +102,7 @@
 			},
 			{
 				"company": "Summer School of Computer Game Development",
-				"position": "Teacher & Organizer, Jul 2022/2023/2024"
+				"position": "Teacher & Organizer, Jul 2022/2023/2024/2025"
 			},
 			{
 				"company": "KMK family business",
@@ -161,7 +165,10 @@
 			"Docker Swarm",
 			"!Fastify",
 			"Nuxt.js",
-			"Microservices"
+			"Microservices",
+			"BullMQ",
+			"Traefik",
+			"!MySQL"
 		]
 	},
 
