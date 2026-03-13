@@ -80,7 +80,7 @@
 				style="max-height: {height}rem; overflow-y: auto;"
 				onblur={() => (isOpened = false)}
 			>
-				{#each options as option}
+				{#each options as option (option.value)}
 					<div
 						role="checkbox"
 						tabindex="0"

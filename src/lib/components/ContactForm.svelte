@@ -42,24 +42,24 @@
 		const validationResult = validateContactForm(form);
 
 		if (!validationResult.success) {
-			const errors = validationResult.error.errors;
-			errors.forEach((e) => {
-				const key = e.path.find((p) => Object.keys(form).includes(p.toString())) as keyof typeof form;
-				const message = $_(`contact.form.errors.${key}.${e.code}`);
+			const issues = validationResult.error.issues;
+			issues.forEach((issue) => {
+				const key = issue.path.find((p) => Object.keys(form).includes(p.toString())) as keyof typeof form;
+				const message = $_(`contact.form.errors.${key}.${issue.code}`);
 				error[key] = message;
 			});
 			return;
 		}
 
 		try {
-			await fetch('api/forms', {
+			await fetch('/api/forms', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json'
 				},
 				body: JSON.stringify(form)
 			});
-		} catch (e) {
+		} catch {
 			error.api = $_('contact.form.errors.api');
 			return;
 		}
@@ -107,7 +107,7 @@
 				label={$_('contact.form.company')}
 				placeholder={$_('contact.form.companyPlaceholder')}
 				error={error.company}
-				oninput={() => (error.email = '')}
+				oninput={() => (error.company = '')}
 			/>
 		</div>
 	</div>
@@ -154,7 +154,6 @@
 						]}
 						height={20}
 						label={$_('contact.form.projectType')}
-						selected={form.projectType}
 						error={error.projectType}
 					/>
 				</div>
@@ -272,7 +271,6 @@
 						]}
 						height={20}
 						label={$_('contact.form.hosting')}
-						selected={form.hosting}
 						error={error.hosting}
 						oninput={() => (error.hosting = '')}
 					/>
@@ -293,7 +291,6 @@
 						]}
 						height={20}
 						label={$_('contact.form.support')}
-						selected={form.support}
 						error={error.support}
 						oninput={() => (error.support = '')}
 					/>
@@ -343,7 +340,6 @@
 					]}
 					height={20}
 					label={$_('contact.form.priority')}
-					selected={form.priority}
 					error={error.priority}
 					oninput={() => (error.priority = '')}
 				/>

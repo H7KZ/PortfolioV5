@@ -68,7 +68,7 @@
 				<h3 class="w-full max-w-[28.75rem] min-w-[17rem] text-5xl">
 					{$_('home.explore')}
 				</h3>
-				{#each projects as project}
+				{#each projects as project (project.slug)}
 					<a href={`/projects/${project.slug}?locale=${$locale}`} class="group">
 						<div class="flex w-full max-w-[28.75rem] min-w-[17rem] flex-col gap-0.5">
 							<img src={project.thumbnail} alt={project.title} class="w-full rounded-lg" />
@@ -79,8 +79,8 @@
 							</div>
 
 							<div class="flex items-center gap-2">
-								{#each project.tags as tag}
-									<p class="text-sm text-neutral-400">{@html tag}</p>
+								{#each project.tags as tag (tag)}
+									<p class="text-sm text-neutral-400">{tag}</p>
 									<p class="text-sm text-neutral-400 last:hidden">/</p>
 								{/each}
 							</div>

@@ -19,6 +19,7 @@
 				<div class="mt-6 hidden items-center gap-4 lg:flex">
 					<LongArrow class="h-10" />
 					<a href="#calendar" class="text-sm">
+						<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 						{@html $_('contact.orBookACall')}
 					</a>
 				</div>

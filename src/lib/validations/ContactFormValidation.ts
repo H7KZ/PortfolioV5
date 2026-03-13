@@ -2,10 +2,10 @@ import type ContactFormInterface from '$lib/interfaces/ContactFormInterface';
 import { z } from 'zod';
 
 export const ContactFormValidationSchema = z.object({
-	fullName: z.string().nonempty(),
-	email: z.string().email().nonempty(),
+	fullName: z.string().min(1),
+	email: z.string().email().min(1),
 	company: z.string(),
-	message: z.string().nonempty(),
+	message: z.string().min(1),
 	budget: z.number().min(1000),
 	projectType: z.string(),
 	features: z.array(z.string()),
@@ -16,7 +16,7 @@ export const ContactFormValidationSchema = z.object({
 	support: z.string(),
 	legals: z.array(z.string()),
 	deadline: z.date().nullable(),
-	priority: z.string().nonempty()
+	priority: z.string().min(1)
 });
 
 export function validateContactForm(form: ContactFormInterface) {

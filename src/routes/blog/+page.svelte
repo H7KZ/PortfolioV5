@@ -20,7 +20,7 @@
 	<div class="w-full max-w-[90rem] pt-16 pb-32">
 		<div class="mb-64 flex w-full flex-col gap-8">
 			<div class="flex flex-wrap justify-center gap-6">
-				{#each posts as post}
+				{#each posts as post (post.slug)}
 					<a href={`/blog/${post.slug}`} class="group rounded-xl bg-neutral-900 px-4 py-4">
 						<div class="flex w-full max-w-[28.75rem] min-w-[17rem] flex-col gap-2">
 							{#if post.thumbnail}
@@ -31,13 +31,13 @@
 
 							<div class="flex w-full items-center justify-between gap-1 pt-2">
 								<div class="flex items-center gap-2">
-									{#each post.tags as tag}
-										<p class="text-sm text-neutral-400">{@html tag}</p>
+									{#each post.tags as tag (tag)}
+										<p class="text-sm text-neutral-400">{tag}</p>
 										<p class="text-sm text-neutral-400 last:hidden">/</p>
 									{/each}
 								</div>
 								<p class="font-robotomono text-sm text-neutral-400">
-									{new Date(post.date).getUTCDate()}/{new Date(post.date).getUTCMonth()}
+									{new Date(post.date).getUTCDate()}/{new Date(post.date).getUTCMonth() + 1}
 									/{new Date(post.date).getUTCFullYear()}
 								</p>
 							</div>
