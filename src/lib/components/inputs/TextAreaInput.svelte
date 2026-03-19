@@ -32,6 +32,8 @@
 		oninput,
 		error
 	}: Props = $props();
+
+	let errorId = `${id}-error`;
 </script>
 
 <div class="flex w-full flex-col gap-0.5">
@@ -52,11 +54,13 @@
 		{autocomplete}
 		{placeholder}
 		{required}
+		aria-required={required ? 'true' : undefined}
+		aria-describedby={error ? errorId : undefined}
 		{readonly}
 		{disabled}
 		{oninput}
 	></textarea>
-	<p class="mt-0.5 h-4 text-xs text-red-400">
+	<p id={errorId} class="mt-0.5 h-4 text-xs text-red-400" aria-live="polite">
 		{error}
 	</p>
 </div>

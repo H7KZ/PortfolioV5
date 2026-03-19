@@ -6,9 +6,18 @@
 </script>
 
 <svelte:head>
-	<title>{data.meta.title}</title>
+	<title>{data.meta.title} — Jan Komínek</title>
+	<meta name="description" content={data.meta.tags?.join(', ')} />
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={data.meta.title} />
+	<meta property="og:description" content={data.meta.tags?.join(', ')} />
+	<meta property="og:url" content={`https://jankominek.com/blog/${data.slug}`} />
+	{#if data.meta.thumbnail}
+		<meta property="og:image" content={data.meta.thumbnail} />
+		<meta name="twitter:image" content={data.meta.thumbnail} />
+	{/if}
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content={data.meta.title} />
 </svelte:head>
 
 <div class="flex w-full items-center justify-center px-8">

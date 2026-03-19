@@ -32,6 +32,7 @@
 		error
 	}: Props = $props();
 
+	let errorId = `${id}-error`;
 	let inputElement: HTMLInputElement;
 
 	function onInputFocus() {
@@ -76,7 +77,7 @@
 			</div>
 		{/if}
 	</div>
-	<p class="mt-0.5 h-4 text-xs text-red-400">
+	<p id={errorId} class="mt-0.5 h-4 text-xs text-red-400" aria-live="polite">
 		{error}
 	</p>
 </div>

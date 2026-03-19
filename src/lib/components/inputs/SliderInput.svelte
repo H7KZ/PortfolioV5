@@ -32,6 +32,8 @@
 		oninput,
 		error
 	}: Props = $props();
+
+	let errorId = `${id}-error`;
 </script>
 
 <div class="flex w-full flex-col gap-0.5">
@@ -48,6 +50,8 @@
 		{max}
 		{step}
 		{required}
+		aria-required={required ? 'true' : undefined}
+		aria-describedby={error ? errorId : undefined}
 		{readonly}
 		{disabled}
 		{oninput}
@@ -57,7 +61,7 @@
 		<p class="text-sm text-white">{valueLabel ? valueLabel(value) : value}</p>
 		<p class="text-xs text-neutral-400">{maxLabel}</p>
 	</div>
-	<p class="mt-1 h-4 text-xs text-red-400">
+	<p id={errorId} class="mt-1 h-4 text-xs text-red-400" aria-live="polite">
 		{error}
 	</p>
 </div>

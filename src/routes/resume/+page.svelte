@@ -18,14 +18,22 @@
 	const tools = $derived(($json('resume.tools') as string[]) || []);
 </script>
 
+<svelte:head>
+	<title>Resumé — Jan Komínek</title>
+	<meta name="description" content="Resumé of Jan Komínek — Freelance Senior Frontend Engineer based in Prague. Vue.js, TypeScript, Node.js, Docker. Available for part-time B2B contracts." />
+	<meta property="og:title" content="Resumé — Jan Komínek" />
+	<meta property="og:description" content="Resumé of Jan Komínek — Freelance Senior Frontend Engineer. Vue.js, TypeScript, Node.js." />
+	<meta property="og:url" content="https://jankominek.com/resume" />
+</svelte:head>
+
 <div class="flex w-full flex-col items-center justify-center">
 	<div class="flex w-full max-w-[90rem] flex-col gap-32 px-8 pt-16 pb-32 min-[90rem]:px-2">
 		<div class="flex w-full justify-between gap-20">
-			<img src="/images/resume_profile.webp" alt="Resumé profile" class="hidden h-full lg:block lg:w-80 xl:w-md" />
+			<img src="/images/resume_profile.webp" alt="Jan Komínek, portrait photo" class="hidden h-full lg:block lg:w-80 xl:w-md" />
 			<div class="flex w-full flex-col gap-12">
-				<h2 class="xs:text-6xl text-5xl font-normal">
+				<h1 class="xs:text-6xl text-5xl font-normal">
 					{$_('resume.jankominek')}
-				</h2>
+				</h1>
 				<div class="flex w-full flex-col gap-1">
 					<p class="text-sm text-neutral-500">
 						{$_('resume.quickSummaryLabel')}

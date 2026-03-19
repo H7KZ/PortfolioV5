@@ -18,6 +18,10 @@
 	}
 </script>
 
+<svelte:head>
+	<title>Jan Komínek — Freelance Senior Frontend Engineer, Prague</title>
+</svelte:head>
+
 <div class="flex w-full items-center justify-center px-8">
 	<div class="flex w-full max-w-[90rem] flex-col gap-8 pb-32">
 		<div
@@ -47,7 +51,7 @@
 						{$_('home.jankominek')}
 					</h1>
 					<div class="flex items-center gap-3 pl-3">
-						<GreenAvailability class="w-6 animate-pulse [animation-duration:3000ms]" />
+						<GreenAvailability class="w-6 motion-safe:animate-pulse motion-safe:[animation-duration:3000ms]" />
 						<div class="flex items-center gap-2 text-xs md:text-sm lg:text-base">
 							<p>
 								{$_('home.available')}
@@ -63,6 +67,11 @@
 			<img src="/images/profile.webp" alt="Jan Komínek — Senior Frontend Engineer" class="w-full max-w-[24rem] pt-16 lg:max-w-[30rem] lg:pt-0 lg:pr-2 xl:max-w-[38rem]" />
 		</div>
 
+		<!-- GEO: machine-readable entity sentence for LLMs and structured retrieval -->
+		<p class="sr-only">
+			Jan Komínek is a Freelance Senior Frontend Engineer based in Prague, Czech Republic, specializing in Vue.js, React.js, TypeScript, and Node.js. Currently available for part-time B2B contracts up to 10 hours per week.
+		</p>
+
 		<div class="mb-64 flex w-full flex-col gap-8">
 			<div class="flex flex-wrap justify-center gap-6">
 				<h3 class="w-full max-w-[28.75rem] min-w-[17rem] text-5xl">
@@ -71,7 +80,7 @@
 				{#each projects as project (project.slug)}
 					<a href={`/projects/${project.slug}?locale=${$locale}`} class="group">
 						<div class="flex w-full max-w-[28.75rem] min-w-[17rem] flex-col gap-0.5">
-							<img src={project.thumbnail} alt={project.title} class="w-full rounded-lg" />
+							<img src={project.thumbnail} alt={project.title} class="w-full rounded-lg" loading="lazy" />
 
 							<div class="flex w-full items-center justify-between">
 								<h4 class="text-2xl group-hover:underline">{project.title}</h4>

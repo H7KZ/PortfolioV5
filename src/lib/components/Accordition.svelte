@@ -13,7 +13,7 @@
 </script>
 
 <div class="flex h-full w-full flex-col gap-6">
-	<button type="button" onclick={() => (isOpened = !isOpened)} class="flex cursor-pointer items-center gap-4">
+	<button type="button" aria-expanded={isOpened} onclick={() => (isOpened = !isOpened)} class="flex cursor-pointer items-center gap-4">
 		<IconamoonArrowUp class="h-5 w-5 shrink-0 rotate-90 text-neutral-400 transition-all {isOpened ? 'rotate-180' : ''}" />
 		<p class="shrink-0 text-sm text-neutral-300 italic">
 			{title}

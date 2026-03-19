@@ -5,6 +5,7 @@
 	interface Props {
 		id?: string;
 		value: string;
+		type?: 'text' | 'email' | 'password' | 'search' | 'tel' | 'url';
 		label?: string;
 		autocomplete?: FullAutoFill;
 		placeholder?: string;
@@ -19,6 +20,7 @@
 	let {
 		id = crypto.randomUUID(),
 		value = $bindable(''),
+		type = 'text',
 		label,
 		autocomplete,
 		placeholder,
@@ -29,6 +31,8 @@
 		oninput,
 		error
 	}: Props = $props();
+
+	let errorId = `${id}-error`;
 </script>
 
 <div class="flex w-full flex-col gap-0.5">
@@ -39,13 +43,15 @@
 	<div class="relative w-full">
 		<input
 			{id}
-			type="text"
+			{type}
 			class="h-10 w-full rounded-md border-[1.5px] border-neutral-500 bg-[#ffffff03] p-2 pl-3.5 text-base text-white placeholder:text-neutral-500"
 			class:pl-11.5={Icon}
 			bind:value
 			{autocomplete}
 			{placeholder}
 			{required}
+			aria-required={required ? 'true' : undefined}
+			aria-describedby={error ? errorId : undefined}
 			{readonly}
 			{disabled}
 			{oninput}
@@ -56,7 +62,7 @@
 			</div>
 		{/if}
 	</div>
-	<p class="mt-0.5 h-4 text-xs text-red-400">
+	<p id={errorId} class="mt-0.5 h-4 text-xs text-red-400" aria-live="polite">
 		{error}
 	</p>
 </div>

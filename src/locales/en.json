@@ -319,6 +319,7 @@
 			},
 
 			"send": "Send",
+			"sending": "Sending…",
 
 			"errors": {
 				"fullName": {

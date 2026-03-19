@@ -10,4 +10,5 @@
 	<p class="text-neutral-400">
 		{$_(`errors.${page.status}`) || page.error?.message}
 	</p>
+	<a href="/" class="mt-4 rounded-full border border-white px-6 py-2 text-sm transition-all hover:bg-white/10">← Back to home</a>
 </div>

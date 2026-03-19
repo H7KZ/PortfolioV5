@@ -60,7 +60,7 @@
 					{$_('footer.email')}
 				</a>
 				<p>–</p>
-				<a href="https://www.linkedin.com/in/jan-kominek" class="hover:underline">
+				<a href="https://www.linkedin.com/in/jan-kominek" target="_blank" rel="noopener noreferrer" class="hover:underline">
 					{$_('footer.linkedin')}
 				</a>
 				<p>–</p>

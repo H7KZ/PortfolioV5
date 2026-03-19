@@ -23,8 +23,7 @@
 	onblur={() => autoOpen && (isOpened = false)}
 	use:clickOutside={() => (isOpened = false)}
 	use:tapOutside={() => (isOpened = false)}
-	role="menu"
-	tabindex="0"
+	onkeydown={(e) => e.key === 'Escape' && (isOpened = false)}
 >
 	<button type="button" onclick={() => (isOpened = !isOpened)} class="flex cursor-pointer items-center justify-center gap-2">
 		{@render children()}

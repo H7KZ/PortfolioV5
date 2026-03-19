@@ -16,13 +16,20 @@
 </script>
 
 <svelte:head>
-	<title>{data.meta.title}</title>
+	<title>{data.meta.title} — Jan Komínek</title>
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={data.meta.title} />
+	<meta property="og:description" content={data.meta.tags?.join(', ')} />
+	<meta property="og:url" content={`https://jankominek.com/projects/${data.slug}`} />
+	<meta property="og:image" content={data.meta.thumbnail} />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content={data.meta.title} />
+	<meta name="twitter:image" content={data.meta.thumbnail} />
 </svelte:head>
 
 <div class="flex w-full items-center justify-center px-8">
 	<div class="flex w-full max-w-360 flex-col gap-56 pt-16 pb-32">
+		<a href="/" class="text-sm text-neutral-400 hover:text-white transition-colors">← Back to projects</a>
 		<article class="flex min-h-screen w-full justify-center">
 			<div
 				class="

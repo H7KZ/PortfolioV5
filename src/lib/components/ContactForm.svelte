@@ -35,9 +35,12 @@
 	});
 
 	let success = $state('');
+	let loading = $state(false);
 
 	async function handleSubmit(e: MouseEvent) {
 		e.preventDefault();
+
+		if (loading) return;
 
 		const validationResult = validateContactForm(form);
 
@@ -51,17 +54,21 @@
 			return;
 		}
 
+		loading = true;
 		try {
-			await fetch('/api/forms', {
+			const response = await fetch('/api/forms', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json'
 				},
 				body: JSON.stringify(form)
 			});
+			if (!response.ok) throw new Error('Server error');
 		} catch {
 			error.api = $_('contact.form.errors.api');
 			return;
+		} finally {
+			loading = false;
 		}
 
 		success = $_('contact.form.success');
@@ -93,6 +100,8 @@
 				oninput={() => (error.fullName = '')}
 			/>
 			<TextInput
+				type="email"
+				autocomplete="email"
 				bind:value={form.email}
 				label={$_('contact.form.email')}
 				placeholder={$_('contact.form.emailPlaceholder')}
@@ -347,11 +356,15 @@
 		</div>
 	</div>
 	<div class="mt-4 flex w-full flex-col items-end gap-4">
-		<BoldButton Icon={MynaUiSend} type="submit" onclick={handleSubmit}>
-			{$_('contact.form.send')}
+		<BoldButton Icon={MynaUiSend} type="submit" onclick={handleSubmit} disabled={loading}>
+			{loading ? $_('contact.form.sending') : $_('contact.form.send')}
 		</BoldButton>
-		<p class="h-4 text-sm" class:text-red-400={error.api} class:text-green-400={success}>
-			{error.api || success}
-		</p>
+		<div class="flex h-4 items-center gap-2 text-sm">
+			{#if error.api}
+				<p class="text-red-400">{error.api} — <a href="mailto:contact@jankominek.com" class="underline">contact@jankominek.com</a></p>
+			{:else if success}
+				<p class="text-green-400">{success}</p>
+			{/if}
+		</div>
 	</div>
 </form>

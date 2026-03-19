@@ -28,6 +28,7 @@
 	let { id = crypto.randomUUID(), value = $bindable([]), options, height, label, Icon, required, disabled, oninput, error, placeholder }: Props = $props();
 
 	let isOpened = $state(false);
+	let errorId = `${id}-error`;
 
 	function onSelect(optionValue: string) {
 		if (disabled) return;
@@ -104,7 +105,7 @@
 			</div>
 		{/if}
 	</div>
-	<p class="mt-0.5 h-4 text-xs text-red-400">
+	<p id={errorId} class="mt-0.5 h-4 text-xs text-red-400" aria-live="polite">
 		{error}
 	</p>
 </div>

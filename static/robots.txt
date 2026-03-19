@@ -1,2 +1,4 @@
 User-agent: *
 Disallow:
+
+Sitemap: https://jankominek.com/sitemap.xml
