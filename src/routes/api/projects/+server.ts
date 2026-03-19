@@ -1,6 +1,8 @@
 import type { Project } from '$lib/types';
 import { json, type RequestHandler } from '@sveltejs/kit';
 
+const ALLOWED_LOCALES = ['en', 'cs'];
+
 export const GET: RequestHandler = async ({ url }) => {
 	const localeParam = url.searchParams.get('locale') ?? 'en';
 
@@ -8,7 +10,8 @@ export const GET: RequestHandler = async ({ url }) => {
 
 	if (!match) match = localeParam.match(/^[a-z]+/i);
 
-	const locale = match ? match[0].toLowerCase() : 'en';
+	const parsedLocale = match ? match[0].toLowerCase() : 'en';
+	const locale = ALLOWED_LOCALES.includes(parsedLocale) ? parsedLocale : 'en';
 
 	let projects: Project[] = [];
 
