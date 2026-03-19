@@ -1,5 +1,6 @@
 ---
 date: '2024-12-25'
+order: 8
 title: Disenchantment
 thumbnail: /images/projects/disenchantment/thumbnail.webp
 tags:

@@ -8,7 +8,7 @@
 	import MynaUiSend from '$lib/icons/MynaUISend.svelte';
 	import TablerCalendarWeek from '$lib/icons/TablerCalendarWeek.svelte';
 	import { _ } from 'svelte-i18n';
-	import Accordition from '$lib/components/Accordition.svelte';
+	import Accordition from '$lib/components/Accordion.svelte';
 	import MultiSelectInput from '$lib/components/inputs/MultiSelectInput.svelte';
 	import { getInitialContactForm } from '$lib/interfaces/ContactFormInterface';
 	import { validateContactForm } from '$lib/validations/ContactFormValidation';

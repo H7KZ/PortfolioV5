@@ -1,5 +1,6 @@
 ---
 date: '2025-02-31'
+order: 9
 title: Portfolio v5
 thumbnail: /images/projects/portfolio_v5/thumbnail.webp
 tags:

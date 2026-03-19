@@ -19,13 +19,13 @@
 </script>
 
 <svelte:head>
-	<title>Resumé — Jan Komínek</title>
+	<title>Resumé — Jan Komínek, Senior Frontend Engineer</title>
 	<meta
 		name="description"
-		content="Resumé of Jan Komínek — Freelance Senior Frontend Engineer based in Prague. Vue.js, TypeScript, Node.js, Docker. Available for part-time B2B contracts."
+		content="Resumé of Jan Komínek — Senior Frontend / Fullstack Engineer based in Prague. Vue.js, React.js, TypeScript, Node.js, Docker. Available for part-time B2B contracts."
 	/>
-	<meta property="og:title" content="Resumé — Jan Komínek" />
-	<meta property="og:description" content="Resumé of Jan Komínek — Freelance Senior Frontend Engineer. Vue.js, TypeScript, Node.js." />
+	<meta property="og:title" content="Resumé — Jan Komínek, Senior Frontend Engineer" />
+	<meta property="og:description" content="Resumé of Jan Komínek — Senior Frontend / Fullstack Engineer. Vue.js, React.js, TypeScript, Node.js." />
 	<meta property="og:url" content="https://jankominek.com/resume" />
 </svelte:head>
 
@@ -45,6 +45,13 @@
 						{$_('resume.quickSummary')}
 					</p>
 				</div>
+				<a
+					href="/files/Jan_Kominek_Resume.pdf"
+					download
+					class="flex w-fit items-center gap-2 rounded-full border border-neutral-700 px-5 py-2.5 text-sm transition-colors hover:border-neutral-400 hover:text-white"
+				>
+					{$_('resume.download')}
+				</a>
 			</div>
 		</div>
 	</div>

@@ -20,6 +20,17 @@ const CSP = [
 ].join('; ');
 
 export const handle: Handle = async ({ event, resolve }) => {
+	// 301 redirect for old misspelled URL that may be indexed by search engines
+	if (event.url.pathname === '/projects/disenchament') {
+		return new Response(null, {
+			status: 301,
+			headers: {
+				Location: '/projects/disenchantment' + event.url.search,
+				'Cache-Control': 'public, max-age=31536000'
+			}
+		});
+	}
+
 	const response = await resolve(event);
 
 	response.headers.set('Content-Security-Policy', CSP);

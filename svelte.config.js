@@ -10,7 +10,14 @@ const config = {
 	preprocess: [vitePreprocess(), mdsvex(mdsvexConfig)],
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter(),
+		prerender: {
+			handleHttpError: ({ path, message }) => {
+				// Ignore missing static assets (e.g. PDF files not yet in the repo)
+				if (path.startsWith('/files/')) return;
+				throw new Error(message);
+			}
+		}
 	}
 };
 

@@ -7,13 +7,16 @@
 </script>
 
 <svelte:head>
-	<title>Contact — Jan Komínek</title>
+	<title>Contact — Jan Komínek, Senior Frontend Engineer</title>
 	<meta
 		name="description"
-		content="Get in touch with Jan Komínek — Freelance Senior Frontend Engineer. Book a 30-min call or fill out the project form for part-time B2B contracts."
+		content="Get in touch with Jan Komínek — Senior Frontend / Fullstack Engineer. Book a 30-min call or fill out the project form for part-time B2B contracts."
 	/>
-	<meta property="og:title" content="Contact — Jan Komínek" />
-	<meta property="og:description" content="Book a call or fill out the project form to work with Jan Komínek on a part-time B2B basis." />
+	<meta property="og:title" content="Contact — Jan Komínek, Senior Frontend Engineer" />
+	<meta
+		property="og:description"
+		content="Book a call or fill out the project form to work with Jan Komínek, Senior Frontend Engineer, on a part-time B2B basis."
+	/>
 	<meta property="og:url" content="https://jankominek.com/contact" />
 </svelte:head>
 

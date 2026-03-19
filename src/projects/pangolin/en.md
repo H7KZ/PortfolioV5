@@ -1,5 +1,6 @@
 ---
 date: '2023-12-25'
+order: 6
 title: Pangolin
 thumbnail: /images/projects/pangolin/thumbnail.webp
 tags:

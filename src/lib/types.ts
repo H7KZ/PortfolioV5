@@ -4,6 +4,7 @@ export type Project = {
 	title: string;
 	thumbnail: string;
 	tags: string[];
+	order?: number;
 };
 
 export type Post = {

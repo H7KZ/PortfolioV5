@@ -21,13 +21,13 @@
 </script>
 
 <svelte:head>
-	<title>Blog — Jan Komínek</title>
+	<title>Blog — Jan Komínek, Software Engineer</title>
 	<meta
 		name="description"
-		content="Blog by Jan Komínek — Senior Frontend Engineer. Articles on web development, DevOps, Traefik, Docker, and system architecture."
+		content="Blog by Jan Komínek — Senior Frontend / Fullstack Engineer. Articles on web development, DevOps, Traefik, Docker, and system architecture."
 	/>
-	<meta property="og:title" content="Blog — Jan Komínek" />
-	<meta property="og:description" content="Articles on web development, DevOps, and system architecture by Jan Komínek." />
+	<meta property="og:title" content="Blog — Jan Komínek, Software Engineer" />
+	<meta property="og:description" content="Articles on web development, DevOps, and system architecture by Jan Komínek, Software Engineer." />
 	<meta property="og:url" content="https://jankominek.com/blog" />
 </svelte:head>
 

@@ -1,5 +1,6 @@
 ---
 date: '2024-09-25'
+order: 10
 title: Portfolio v4
 thumbnail: /images/projects/portfolio_v4/thumbnail.webp
 tags:

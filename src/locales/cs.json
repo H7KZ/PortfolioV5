@@ -126,6 +126,8 @@
 			}
 		],
 
+		"download": "Stáhnout životopis",
+
 		"toolsLabel": "Nástroje a technologie",
 		"tools": [
 			"!VueJS",

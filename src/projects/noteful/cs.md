@@ -1,5 +1,6 @@
 ---
 date: '2024-11-25'
+order: 7
 title: Noteful
 thumbnail: /images/projects/noteful/thumbnail.webp
 tags:

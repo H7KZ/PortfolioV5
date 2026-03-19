@@ -1,5 +1,6 @@
 ---
 date: '2025-11-18'
+order: 2
 title: Scorecard
 thumbnail: /images/projects/corac_scorecard/thumbnail.webp
 tags:

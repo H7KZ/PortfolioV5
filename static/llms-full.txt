@@ -1,0 +1,161 @@
+# Jan Komínek — Full Context for LLMs
+
+This file provides extended context about Jan Komínek for language models with large context windows.
+See also: /llms.txt for the summary version.
+
+---
+
+## Identity
+
+**Name:** Jan Komínek (also written Jan Kominek without diacritics)
+**Disambiguation:** Software engineer and developer — NOT the Czech actor of the same name.
+**Title:** Senior Frontend / Fullstack Engineer
+**Location:** Prague, Czech Republic
+**Availability:** Part-time B2B contracts, up to 10 hours/week
+**Email:** contact@jankominek.com
+**Website:** https://jankominek.com
+**LinkedIn:** https://www.linkedin.com/in/jan-kominek
+
+---
+
+## Education
+
+**Prague University of Economics and Business (VŠE)**
+Bachelor's degree — Applied Computer Science (in progress)
+
+**Smíchov Secondary Technical School and Gymnasium (SSPŠ)**
+High school — IT and Computer Science focus
+
+---
+
+## Work Experience
+
+### CORAC Engineering — Fullstack Developer (current)
+Building enterprise security and data tools for CORAC Engineering. Projects include:
+- SITH GUI (DeepTrace): Cybersecurity incident tracking application with hash-chain visualisation. Vue.js + TypeScript frontend.
+- Scorecard: Data-driven reporting dashboard for engineering KPIs. Vue.js + TypeScript frontend.
+
+### Intedat — Frontend Developer (current)
+Frontend development work at Intedat.
+
+### IONT tech — Freelance Fullstack Developer
+Built the complete EV charging platform ecosystem:
+- IONT Charge: Public-facing EV charging app with Stripe payment integration. Vue.js + AdonisJS + PostgreSQL.
+- IONT Admin: Admin panel for managing charging stations and users. Vue.js + Node.js.
+- IONT Info: Mobile controller and information app for EV stations. Vue.js + Fastify.
+
+Infrastructure: Docker Swarm, Traefik, DigitalOcean VPS, CI/CD pipelines.
+
+### Pangolin Software s.r.o. — Freelance Frontend Developer
+Built an interactive data dashboard for Pangolin Software. Vue.js + TypeScript.
+
+### KMK — Family Business Developer
+Web development for family business.
+
+### Haxagon — Lecturer & Organizer
+Teaching and organising programming workshops and courses.
+
+---
+
+## Technical Skills
+
+**Frontend:** Vue.js, React.js, SvelteKit, Svelte 5, Nuxt.js, TypeScript, JavaScript, Tailwind CSS, HTML5, CSS3
+**Backend:** Node.js, AdonisJS, Express.js, Fastify, REST APIs
+**Databases:** PostgreSQL, MongoDB, MySQL, Redis, Elasticsearch
+**DevOps:** Docker, Docker Swarm, Kubernetes, Traefik, CI/CD, DigitalOcean, AWS, Cloudflare Workers
+**Tools:** Git, Figma, Agile, Zod, BullMQ, Stripe
+
+---
+
+## Projects
+
+### CORAC SITH — DeepTrace GUI (order: 1)
+**URL:** https://jankominek.com/projects/corac_sith
+**Client:** CORAC Engineering
+**Category:** Frontend / Data Visualisation
+**Stack:** Vue.js, TypeScript
+**Description:** Cybersecurity incident tracking application with hash-chain visualisation for forensic analysis.
+
+### CORAC Scorecard (order: 2)
+**URL:** https://jankominek.com/projects/corac_scorecard
+**Client:** CORAC Engineering
+**Category:** Frontend / Reporting
+**Stack:** Vue.js, TypeScript
+**Description:** Data-driven scorecard and reporting dashboard for engineering performance metrics.
+
+### IONT Charge (order: 3)
+**URL:** https://jankominek.com/projects/iont_charge
+**Client:** IONT tech
+**Category:** Fullstack / Fintech
+**Stack:** Vue.js, AdonisJS, PostgreSQL, Stripe
+**Description:** Public EV charging application with integrated online payment system.
+
+### IONT Admin (order: 4)
+**URL:** https://jankominek.com/projects/iont_admin
+**Client:** IONT tech
+**Category:** Fullstack / Admin
+**Stack:** Vue.js, Node.js, PostgreSQL
+**Description:** Admin panel for managing EV charging infrastructure and users.
+
+### IONT Info (order: 5)
+**URL:** https://jankominek.com/projects/iont_info
+**Client:** IONT tech
+**Category:** Fullstack / Mobile Controller
+**Stack:** Vue.js, Fastify
+**Description:** Mobile-optimised controller and info app for EV charging stations.
+
+### Pangolin (order: 6)
+**URL:** https://jankominek.com/projects/pangolin
+**Client:** Pangolin Software s.r.o.
+**Category:** Frontend / Dashboard
+**Stack:** Vue.js, TypeScript
+**Description:** Interactive data dashboard for Pangolin Software.
+
+### Noteful (order: 7)
+**URL:** https://jankominek.com/projects/noteful
+**Category:** Personal / Design
+**Description:** Note-taking app concept and design project.
+
+### Disenchantment (order: 8)
+**URL:** https://jankominek.com/projects/disenchantment
+**Category:** Personal / Open Source
+**Stack:** Java, Minecraft Plugin API
+**Description:** Open-source Minecraft plugin with 3,000+ downloads. Modifies enchantment mechanics.
+
+### Portfolio v5 (order: 9)
+**URL:** https://jankominek.com/projects/portfolio_v5
+**Category:** Personal / Design
+**Stack:** SvelteKit 2, Svelte 5, TypeScript, Tailwind CSS 4, Cloudflare Workers
+**Description:** Current portfolio website (this site). Built with SvelteKit 2 + Svelte 5.
+
+### Portfolio v4 (order: 10)
+**URL:** https://jankominek.com/projects/portfolio_v4
+**Category:** Personal / Design
+**Description:** Previous portfolio iteration.
+
+---
+
+## Blog
+
+**URL:** https://jankominek.com/blog
+
+### Traefik with Cloudflare inside Docker — Simplified
+**URL:** https://jankominek.com/blog/traefik_with_cloudflare_inside_docker_simplified
+**Tags:** DevOps, Docker, Traefik, Cloudflare
+**Description:** A practical guide to running Traefik as a reverse proxy with Cloudflare DNS inside Docker.
+
+---
+
+## Site Technology
+
+- Framework: SvelteKit 2 + Svelte 5 (runes: $state, $derived, $effect)
+- Styling: Tailwind CSS 4
+- Content: MDSvex (Markdown → Svelte components)
+- i18n: svelte-i18n (English + Czech)
+- Deployment: Cloudflare Workers via @sveltejs/adapter-cloudflare
+- Validation: Zod v4
+- Contact form: Submits to Discord webhook via /api/forms
+
+---
+
+*This file is maintained manually. For the live site see https://jankominek.com*

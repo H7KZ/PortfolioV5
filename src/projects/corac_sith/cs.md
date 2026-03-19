@@ -1,5 +1,6 @@
 ---
 date: '2025-11-19'
+order: 1
 title: SITH GUI (DeepTrace)
 thumbnail: /images/projects/corac_sith/thumbnail.webp
 tags:

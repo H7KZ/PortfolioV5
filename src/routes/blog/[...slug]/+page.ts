@@ -2,6 +2,16 @@ import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
 import type { Post } from '$lib/types';
 
+export const prerender = true;
+
+export async function entries() {
+	const modules = import.meta.glob('/src/posts/**/*.md');
+	return Object.keys(modules)
+		.map((path) => path.replace('/src/posts/', '').replace('.md', ''))
+		.filter((slug) => !slug.split('/').some((part) => part.startsWith('_')))
+		.map((slug) => ({ slug }));
+}
+
 export interface PostData {
 	slug: string;
 	meta: Post;

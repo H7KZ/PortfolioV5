@@ -28,7 +28,7 @@
 </svelte:head>
 
 <div class="flex w-full items-center justify-center px-8">
-	<div class="flex w-full max-w-360 flex-col gap-56 pt-16 pb-32">
+	<div class="flex w-full max-w-360 flex-col gap-8 pt-16 pb-32">
 		<a href="/" class="text-sm text-neutral-400 transition-colors hover:text-white">← Back to projects</a>
 		<article class="flex min-h-screen w-full justify-center">
 			<div

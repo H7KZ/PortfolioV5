@@ -36,7 +36,7 @@ export const GET: RequestHandler = async ({ url }) => {
 		}
 	}
 
-	projects = projects.sort((first, second) => new Date(second.date).getTime() - new Date(first.date).getTime());
+	projects = projects.sort((a, b) => (a.order ?? 99) - (b.order ?? 99));
 
 	return json(projects);
 };

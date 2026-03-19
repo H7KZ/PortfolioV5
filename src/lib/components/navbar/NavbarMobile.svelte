@@ -57,7 +57,14 @@
 					<div class="flex items-center justify-center gap-3">
 						{#each $locales as local (local)}
 							{@const FlagComponent = circleFlagsComponents[local]}
-							<button onclick={() => { locale.set(local); dropdownOpen = false; }} class="flex cursor-pointer items-center justify-center" aria-label={`Switch to ${local}`}>
+							<button
+								onclick={() => {
+									locale.set(local);
+									dropdownOpen = false;
+								}}
+								class="flex cursor-pointer items-center justify-center"
+								aria-label={`Switch to ${local}`}
+							>
 								<FlagComponent class="h-7 w-7" />
 							</button>
 						{/each}

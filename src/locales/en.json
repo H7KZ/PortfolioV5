@@ -126,6 +126,8 @@
 			}
 		],
 
+		"download": "Download Resume",
+
 		"toolsLabel": "Tools & Technologies",
 		"tools": [
 			"!VueJS",
