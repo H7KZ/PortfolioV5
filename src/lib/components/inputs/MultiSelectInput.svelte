@@ -28,7 +28,7 @@
 	let { id = crypto.randomUUID(), value = $bindable([]), options, height, label, Icon, required, disabled, oninput, error, placeholder }: Props = $props();
 
 	let isOpened = $state(false);
-	let errorId = `${id}-error`;
+	let errorId = $derived(`${id}-error`);
 
 	function onSelect(optionValue: string) {
 		if (disabled) return;

@@ -33,7 +33,7 @@
 		error
 	}: Props = $props();
 
-	let errorId = `${id}-error`;
+	let errorId = $derived(`${id}-error`);
 </script>
 
 <div class="flex w-full flex-col gap-0.5">
@@ -50,7 +50,6 @@
 		{max}
 		{step}
 		{required}
-		aria-required={required ? 'true' : undefined}
 		aria-describedby={error ? errorId : undefined}
 		{readonly}
 		{disabled}

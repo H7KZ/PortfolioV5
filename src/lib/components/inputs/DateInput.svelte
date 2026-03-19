@@ -32,7 +32,7 @@
 		error
 	}: Props = $props();
 
-	let errorId = `${id}-error`;
+	let errorId = $derived(`${id}-error`);
 	let inputElement: HTMLInputElement;
 
 	function onInputFocus() {

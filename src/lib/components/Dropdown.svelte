@@ -17,6 +17,7 @@
 
 <div
 	class="relative"
+	role="presentation"
 	onmouseover={() => autoOpen && (isOpened = true)}
 	onmouseleave={() => autoOpen && (isOpened = false)}
 	onfocus={() => autoOpen && (isOpened = true)}
