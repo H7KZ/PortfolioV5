@@ -6,6 +6,8 @@
 	import circleFlagsComponents from '$lib/utils/circleFlagsComponents';
 	import HugeIconsMenu from '$lib/icons/HugeIconsMenu.svelte';
 	import Logo from '$lib/icons/Logo.svelte';
+
+	let dropdownOpen = $state(false);
 </script>
 
 <div class="flex w-full items-center justify-center px-8 pt-10 pb-2">
@@ -14,7 +16,7 @@
 			<Logo class="h-10 w-10 sm:h-12 sm:w-12" />
 		</a>
 
-		<Dropdown width={11} align="right">
+		<Dropdown width={11} align="right" bind:isOpened={dropdownOpen}>
 			<HugeIconsMenu class="h-7 w-7 transition-all hover:text-neutral-400" />
 			{#snippet items()}
 				<div class="flex flex-col items-center justify-center gap-10 px-4 pt-4 pb-6">
@@ -24,6 +26,7 @@
 							aria-current={page.url.pathname === '/resume' ? 'page' : undefined}
 							class="xs:text-base text-base hover:underline"
 							class:underline={page.url.pathname === '/resume'}
+							onclick={() => (dropdownOpen = false)}
 						>
 							{$_('navbar.resume')}
 						</a>
@@ -32,6 +35,7 @@
 							target="_blank"
 							rel="noopener noreferrer"
 							class="xs:text-base text-sm hover:underline"
+							onclick={() => (dropdownOpen = false)}
 						>
 							{$_('navbar.linkedin')}
 						</a>
@@ -40,10 +44,11 @@
 							aria-current={page.url.pathname === '/blog' ? 'page' : undefined}
 							class="xs:text-base text-base hover:underline"
 							class:underline={page.url.pathname === '/blog'}
+							onclick={() => (dropdownOpen = false)}
 						>
 							{$_('navbar.blog')}
 						</a>
-						<Button link="/contact">
+						<Button link="/contact" onclick={() => (dropdownOpen = false)}>
 							<p class="xs:text-base text-sm">
 								{$_('navbar.hire')}
 							</p>
@@ -52,7 +57,7 @@
 					<div class="flex items-center justify-center gap-3">
 						{#each $locales as local (local)}
 							{@const FlagComponent = circleFlagsComponents[local]}
-							<button onclick={() => locale.set(local)} class="flex cursor-pointer items-center justify-center" aria-label={`Switch to ${local}`}>
+							<button onclick={() => { locale.set(local); dropdownOpen = false; }} class="flex cursor-pointer items-center justify-center" aria-label={`Switch to ${local}`}>
 								<FlagComponent class="h-7 w-7" />
 							</button>
 						{/each}

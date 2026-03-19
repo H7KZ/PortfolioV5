@@ -6,13 +6,12 @@
 		autoOpen?: boolean;
 		width?: number;
 		align?: 'left' | 'center' | 'right';
+		isOpened?: boolean;
 		items?: Snippet<[]>;
 		children: Snippet<[]>;
 	}
 
-	let { autoOpen = false, width = 8, align = 'left', children, items }: Props = $props();
-
-	let isOpened = $state(false);
+	let { autoOpen = false, width = 8, align = 'left', isOpened = $bindable(false), children, items }: Props = $props();
 </script>
 
 <div
