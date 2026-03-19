@@ -35,25 +35,29 @@
                 <sch:pattern>
                     <sch:rule context="k:hraci">
                         <sch:assert test="k:min &lt;= k:max">
-                            Minimální počet hráčů (min: <sch:value-of select="k:min"/>) nesmí být větší než maximální (max: <sch:value-of select="k:max"/>).
+                            Minimální počet hráčů (min:<sch:value-of select="k:min"/>) nesmí být větší než maximální
+                            (max:<sch:value-of select="k:max"/>).
                         </sch:assert>
                     </sch:rule>
 
                     <sch:rule context="k:herni_doba">
                         <sch:assert test="k:min &lt;= k:max">
-                            Chyba v herní době: Minimální doba (<sch:value-of select="k:min"/>) nesmí být delší než maximální (<sch:value-of select="k:max"/>).
+                            Chyba v herní době: Minimální doba (<sch:value-of select="k:min"/>) nesmí být delší než
+                            maximální (<sch:value-of select="k:max"/>).
                         </sch:assert>
                     </sch:rule>
 
                     <sch:rule context="k:hodnoceni">
                         <sch:assert test="count(k:body[@zdroj='Vlastní']) = 1">
-                            Každá hra musí mít jedno vlastní hodnocení. Nalezeno: <sch:value-of select="count(k:body[@zdroj='Vlastní'])"/>.
+                            Každá hra musí mít jedno vlastní hodnocení. Nalezeno:<sch:value-of
+                                select="count(k:body[@zdroj='Vlastní'])"/>.
                         </sch:assert>
                     </sch:rule>
 
                     <sch:rule context="k:obrazky">
                         <sch:assert test="count(k:obrazek[@hlavni='ano']) = 1">
-                            Každá hra musí mít vyznačen právě jeden hlavní obrázek (hlavni="ano"). Nalezeno: <sch:value-of select="count(k:obrazek[@hlavni='ano'])"/>.
+                            Každá hra musí mít vyznačen právě jeden hlavní obrázek (hlavni="ano"). Nalezeno:
+                            <sch:value-of select="count(k:obrazek[@hlavni='ano'])"/>.
                         </sch:assert>
                     </sch:rule>
                 </sch:pattern>

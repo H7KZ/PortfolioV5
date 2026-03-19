@@ -37,7 +37,8 @@ aesthetic with a sophisticated dark theme. The entire portfolio has been brought
 to ensure a seamless and engaging user experience.
 
 The frontend is built with **SvelteKit**, leveraging the speed and flexibility of this modern framework, styled with \*
-\*TailwindCSS** for rapid and responsive styling, and enhanced with the type safety of **Typescript\*\*. A custom API has
+\*TailwindCSS** for rapid and responsive styling, and enhanced with the type safety of **Typescript\*\*. A custom API
+has
 been implemented to dynamically load project details and blog posts from markdown files, allowing for easy content
 management. Furthermore, a contact form with automatic webhook integration has been developed to streamline the process
 of receiving and responding to job offers. The visual presentation is enhanced through hand-created mockups, showcasing

@@ -29,7 +29,7 @@
 
 <div class="flex w-full items-center justify-center px-8">
 	<div class="flex w-full max-w-360 flex-col gap-56 pt-16 pb-32">
-		<a href="/" class="text-sm text-neutral-400 hover:text-white transition-colors">← Back to projects</a>
+		<a href="/" class="text-sm text-neutral-400 transition-colors hover:text-white">← Back to projects</a>
 		<article class="flex min-h-screen w-full justify-center">
 			<div
 				class="

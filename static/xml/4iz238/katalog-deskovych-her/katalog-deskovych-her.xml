@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <katalog
-    xmlns="https://jankominek.com/xml/4iz238/katalog-deskovych-her"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="https://jankominek.com/xml/4iz238/katalog-deskovych-her katalog-deskovych-her.xsd">
+        xmlns="https://jankominek.com/xml/4iz238/katalog-deskovych-her"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://jankominek.com/xml/4iz238/katalog-deskovych-her katalog-deskovych-her.xsd">
 
     <hra id="1">
         <nazvy>
@@ -23,7 +23,8 @@
         <rok_vydani>1995</rok_vydani>
         <popis jazyk="CS">Hráči se ujímají rolí osadníků na nově objeveném ostrově Katan. Budováním
             osad, měst a cest získávají suroviny, se kterými obchodují, aby jako první dosáhli 10
-            vítězných bodů.</popis>
+            vítězných bodů.
+        </popis>
 
         <obtiznost>Střední</obtiznost>
         <doporuceny_vek>10</doporuceny_vek>
@@ -85,7 +86,8 @@
         <rok_vydani>2000</rok_vydani>
         <popis jazyk="CS">Hráči postupně přikládají kartičky krajiny a vytvářejí tak cesty, města,
             louky a kláštery. Obsazováním těchto útvarů svými figurkami (Meeples) získávají
-            body.</popis>
+            body.
+        </popis>
 
         <obtiznost>Lehká</obtiznost>
         <doporuceny_vek>7</doporuceny_vek>
@@ -140,7 +142,8 @@
         </vydavatelstvi>
         <rok_vydani>2015</rok_vydani>
         <popis jazyk="CS">Týmová asociační párty hra. Dva hlavní špióni se snaží jednoslovnými
-            nápovědami navést své týmy k odhalení všech správných karet (agentů) na stole.</popis>
+            nápovědami navést své týmy k odhalení všech správných karet (agentů) na stole.
+        </popis>
 
         <obtiznost>Lehká</obtiznost>
         <doporuceny_vek>10</doporuceny_vek>
@@ -199,7 +202,8 @@
         </vydavatelstvi>
         <rok_vydani>2005</rok_vydani>
         <popis jazyk="CS">Hráči sbírají karty barevných vagónů, aby mohli obsazovat železniční tratě
-            napříč Evropou. Body získávají za propojení měst určených tajnými kartami úkolů.</popis>
+            napříč Evropou. Body získávají za propojení měst určených tajnými kartami úkolů.
+        </popis>
 
         <obtiznost>Lehká</obtiznost>
         <doporuceny_vek>8</doporuceny_vek>
@@ -259,7 +263,8 @@
         <rok_vydani>2015</rok_vydani>
         <popis jazyk="CS">Strategická karetní hra výhradně pro dva hráče. Hráči budují svou
             civilizaci získáváním karet z pyramidy. Vítězství lze dosáhnout vojenskou, vědeckou nebo
-            kulturní převahou.</popis>
+            kulturní převahou.
+        </popis>
 
         <obtiznost>Střední</obtiznost>
         <doporuceny_vek>10</doporuceny_vek>
@@ -318,7 +323,8 @@
         <rok_vydani>2020</rok_vydani>
         <popis jazyk="CS">Komplexní strategická hra kombinující mechanismy deck-buildingu a
             worker-placementu. Hráči představují vůdce velkorodů ve vesmíru Duny a bojují o kontrolu
-            nad kořením.</popis>
+            nad kořením.
+        </popis>
 
         <obtiznost>Těžká</obtiznost>
         <doporuceny_vek>14</doporuceny_vek>
@@ -377,7 +383,8 @@
         <rok_vydani>2019</rok_vydani>
         <popis jazyk="CS">Jste nadšení ornitologové a pozorovatelé ptactva. Snažíte se přilákat ty
             nejzajímavější ptáky do své přírodní rezervace. Každý pták umožňuje spuštění řetězce
-            silných schopností.</popis>
+            silných schopností.
+        </popis>
 
         <obtiznost>Střední</obtiznost>
         <doporuceny_vek>10</doporuceny_vek>
@@ -438,7 +445,8 @@
         <rok_vydani>2017</rok_vydani>
         <popis jazyk="CS">Hráči se vžívají do rolí mistrů obkladačů, kteří mají za úkol vyzdobit
             stěny královského paláce v Evoře. Krásná abstraktní hra s jednoduchými pravidly, ale
-            hlubokou strategií.</popis>
+            hlubokou strategií.
+        </popis>
 
         <obtiznost>Lehká</obtiznost>
         <doporuceny_vek>8</doporuceny_vek>

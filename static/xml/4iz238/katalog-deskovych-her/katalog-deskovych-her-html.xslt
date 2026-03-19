@@ -17,7 +17,7 @@
         <xsl:param name="mena"/>
 
         <xsl:value-of select="format-number($castka, '# ###', 'cz_format')"/>
-        <xsl:text> </xsl:text>
+        <xsl:text></xsl:text>
         <xsl:value-of select="$mena"/>
     </xsl:function>
 
@@ -47,7 +47,8 @@
 
                         <section class="mb-12">
                             <h2 class="text-2xl font-semibold text-gray-700 border-b-2 border-indigo-500 mb-6 pb-2">
-                                Obtížnost: <xsl:value-of select="current-grouping-key()"/>
+                                Obtížnost:
+                                <xsl:value-of select="current-grouping-key()"/>
                             </h2>
 
                             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -95,7 +96,8 @@
                                 <div class="md:w-1/3 bg-gray-200 p-6 flex flex-col gap-6">
 
                                     <div class="bg-white p-2 rounded shadow-sm flex items-center justify-center">
-                                        <img src="{concat('../', k:obrazky/k:obrazek[@hlavni='ano'])}" alt="{k:nazvy/k:nazev}" class="object-contain max-h-96 w-full rounded"/>
+                                        <img src="{concat('../', k:obrazky/k:obrazek[@hlavni='ano'])}"
+                                             alt="{k:nazvy/k:nazev}" class="object-contain max-h-96 w-full rounded"/>
                                     </div>
 
                                     <xsl:if test="k:obrazky/k:obrazek[not(@hlavni = 'ano')]">
@@ -105,8 +107,10 @@
                                             </h2>
                                             <div class="grid grid-cols-2 gap-2">
                                                 <xsl:for-each select="k:obrazky/k:obrazek[not(@hlavni = 'ano')]">
-                                                    <a href="{concat('../', .)}" target="_blank" class="block bg-white p-1 rounded shadow-sm hover:shadow-md transition">
-                                                        <img src="{concat('../', .)}" alt="{k:nazvy/k:nazev}" class="h-24 w-full object-cover rounded"/>
+                                                    <a href="{concat('../', .)}" target="_blank"
+                                                       class="block bg-white p-1 rounded shadow-sm hover:shadow-md transition">
+                                                        <img src="{concat('../', .)}" alt="{k:nazvy/k:nazev}"
+                                                             class="h-24 w-full object-cover rounded"/>
                                                     </a>
                                                 </xsl:for-each>
                                             </div>
@@ -130,11 +134,12 @@
                                                 <xsl:value-of select="f:format-ceny(k:cena, k:cena/@mena)"/>
                                             </span>
                                             <span class="text-sm text-gray-500">
-                                                Hodnocení: <xsl:value-of select="k:hodnoceni/k:body[@zdroj = 'Vlastní']"/>/10
+                                                Hodnocení:<xsl:value-of
+                                                    select="k:hodnoceni/k:body[@zdroj = 'Vlastní']"/>/10
                                             </span>
                                             <xsl:for-each select="k:hodnoceni/k:body[@zdroj != 'Vlastní']">
                                                 <span class="block text-sm text-gray-400">
-                                                    (<xsl:value-of select="@zdroj"/>: <xsl:value-of select="."/>/10)
+                                                    (<xsl:value-of select="@zdroj"/>:<xsl:value-of select="."/>/10)
                                                 </span>
                                             </xsl:for-each>
                                         </div>
@@ -149,39 +154,40 @@
                                     <div class="grid grid-cols-2 gap-4 mb-6 bg-indigo-50 p-4 rounded-lg">
                                         <div>
                                             <strong>Autor:</strong>
-                                            <xsl:text> </xsl:text>
+                                            <xsl:text></xsl:text>
 
                                             <xsl:value-of select="string-join(k:autori/k:autor, ', ')"/>
                                         </div>
 
                                         <div>
                                             <strong>Vydavatel:</strong>
-                                            <xsl:text> </xsl:text>
+                                            <xsl:text></xsl:text>
 
                                             <xsl:value-of select="k:vydavatelstvi/k:vydavatel[@zeme = 'CZ']"/>
                                         </div>
 
                                         <div>
                                             <strong>Rok vydání:</strong>
-                                            <xsl:text> </xsl:text>
+                                            <xsl:text></xsl:text>
 
                                             <xsl:value-of select="k:rok_vydani"/>
                                         </div>
 
                                         <div>
                                             <strong>Věk:</strong>
-                                            <xsl:text> </xsl:text>
+                                            <xsl:text></xsl:text>
 
                                             <xsl:value-of select="k:doporuceny_vek"/>+
                                         </div>
 
                                         <div>
                                             <strong>Hráči:</strong>
-                                            <xsl:text> </xsl:text>
+                                            <xsl:text></xsl:text>
 
                                             <xsl:choose>
                                                 <xsl:when test="k:hraci/k:min != k:hraci/k:max">
-                                                    <xsl:value-of select="k:hraci/k:min"/>-<xsl:value-of select="k:hraci/k:max"/>
+                                                    <xsl:value-of select="k:hraci/k:min"/>-
+                                                    <xsl:value-of select="k:hraci/k:max"/>
                                                 </xsl:when>
 
                                                 <xsl:otherwise>
@@ -192,9 +198,10 @@
 
                                         <div>
                                             <strong>Doba:</strong>
-                                            <xsl:text> </xsl:text>
+                                            <xsl:text></xsl:text>
 
-                                            <xsl:value-of select="k:herni_doba/k:min"/>-<xsl:value-of select="k:herni_doba/k:max"/>
+                                            <xsl:value-of select="k:herni_doba/k:min"/>-
+                                            <xsl:value-of select="k:herni_doba/k:max"/>
                                             <xsl:value-of select="k:herni_doba/@jednotka"/>
                                         </div>
                                     </div>
@@ -235,7 +242,9 @@
                                             <xsl:for-each select="k:komponenty_seznam/k:komponent">
                                                 <li>
                                                     <xsl:value-of select="."/>
-                                                    (<xsl:value-of select="@pocet"/> ks, <xsl:value-of select="@typ"/>)
+                                                    (
+                                                    <xsl:value-of select="@pocet"/>
+                                                    ks,<xsl:value-of select="@typ"/>)
                                                 </li>
                                             </xsl:for-each>
                                         </ul>
@@ -279,23 +288,27 @@
                     <span class="mr-3">
                         <xsl:choose>
                             <xsl:when test="k:hraci/k:min != k:hraci/k:max">
-                                👥 <xsl:value-of select="k:hraci/k:min"/>-<xsl:value-of select="k:hraci/k:max"/>
+                                👥<xsl:value-of select="k:hraci/k:min"/>-
+                                <xsl:value-of select="k:hraci/k:max"/>
                             </xsl:when>
 
                             <xsl:otherwise>
-                                👥 <xsl:value-of select="k:hraci/k:min"/>
+                                👥
+                                <xsl:value-of select="k:hraci/k:min"/>
                             </xsl:otherwise>
                         </xsl:choose>
                     </span>
 
                     <span>
-                        ⏱ <xsl:value-of select="k:herni_doba/k:min"/>-<xsl:value-of select="k:herni_doba/k:max"/>
+                        ⏱<xsl:value-of select="k:herni_doba/k:min"/>-
+                        <xsl:value-of select="k:herni_doba/k:max"/>
                         <xsl:value-of select="k:herni_doba/@jednotka"/>
                     </span>
                 </div>
             </div>
             <div class="bg-gray-50 px-5 py-3 border-t border-gray-200 text-right">
-                <a href="{concat('hra_', @id, '/index.html')}" class="text-indigo-600 hover:text-indigo-900 font-medium text-sm">
+                <a href="{concat('hra_', @id, '/index.html')}"
+                   class="text-indigo-600 hover:text-indigo-900 font-medium text-sm">
                     Detail hry →
                 </a>
             </div>
@@ -310,7 +323,9 @@
             <title>
                 <xsl:value-of select="$title"/>
             </title>
-            <script src="https://cdn.tailwindcss.com"><xsl:text/></script>
+            <script src="https://cdn.tailwindcss.com">
+                <xsl:text/>
+            </script>
         </head>
     </xsl:template>
 
@@ -332,7 +347,8 @@
                         </li>
 
                         <li>
-                            <a href="https://validator.w3.org/" target="_blank" class="hover:text-indigo-200 transition text-sm opacity-80">
+                            <a href="https://validator.w3.org/" target="_blank"
+                               class="hover:text-indigo-200 transition text-sm opacity-80">
                                 Validátor
                             </a>
                         </li>
@@ -349,7 +365,8 @@
                     © 2025 Katalog deskových her. Semestrální práce 4IZ238.
                 </p>
                 <p>
-                    Počet her v katalogu: <xsl:value-of select="count(/k:katalog/k:hra)"/>
+                    Počet her v katalogu:
+                    <xsl:value-of select="count(/k:katalog/k:hra)"/>
                 </p>
             </div>
         </footer>

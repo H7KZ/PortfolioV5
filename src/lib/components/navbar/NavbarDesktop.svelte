@@ -23,12 +23,7 @@
 			>
 				{$_('navbar.resume')}
 			</a>
-			<a
-				href="https://www.linkedin.com/in/jan-kominek"
-				target="_blank"
-				rel="noopener noreferrer"
-				class="text-base hover:underline lg:text-lg"
-			>
+			<a href="https://www.linkedin.com/in/jan-kominek" target="_blank" rel="noopener noreferrer" class="text-base hover:underline lg:text-lg">
 				{$_('navbar.linkedin')}
 			</a>
 			<a

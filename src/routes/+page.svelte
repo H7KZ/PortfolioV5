@@ -64,12 +64,17 @@
 					</div>
 				</div>
 			</div>
-			<img src="/images/profile.webp" alt="Jan Komínek — Senior Frontend Engineer" class="w-full max-w-[24rem] pt-16 lg:max-w-[30rem] lg:pt-0 lg:pr-2 xl:max-w-[38rem]" />
+			<img
+				src="/images/profile.webp"
+				alt="Jan Komínek — Senior Frontend Engineer"
+				class="w-full max-w-[24rem] pt-16 lg:max-w-[30rem] lg:pt-0 lg:pr-2 xl:max-w-[38rem]"
+			/>
 		</div>
 
 		<!-- GEO: machine-readable entity sentence for LLMs and structured retrieval -->
 		<p class="sr-only">
-			Jan Komínek is a Freelance Senior Frontend Engineer based in Prague, Czech Republic, specializing in Vue.js, React.js, TypeScript, and Node.js. Currently available for part-time B2B contracts up to 10 hours per week.
+			Jan Komínek is a Freelance Senior Frontend Engineer based in Prague, Czech Republic, specializing in Vue.js, React.js, TypeScript, and Node.js.
+			Currently available for part-time B2B contracts up to 10 hours per week.
 		</p>
 
 		<div class="mb-64 flex w-full flex-col gap-8">

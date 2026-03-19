@@ -41,25 +41,26 @@
 
                 <fo:static-content flow-name="xsl-region-after">
                     <fo:block text-align="center" font-size="9pt" border-top="1pt solid gray" padding-top="2pt">
-                        Strana <fo:page-number/>
+                        Strana
+                        <fo:page-number/>
                     </fo:block>
                 </fo:static-content>
 
                 <fo:flow flow-name="xsl-region-body">
                     <fo:block
-                        break-before="page"
-                        font-size="18pt"
-                        font-weight="bold"
-                        space-after="20pt"
-                        color="#4F46E5"
-                        >
+                            break-before="page"
+                            font-size="18pt"
+                            font-weight="bold"
+                            space-after="20pt"
+                            color="#4F46E5"
+                    >
                         Obsah katalogu her
                     </fo:block>
-                    
+
                     <fo:block>
                         <xsl:apply-templates select="k:katalog" mode="content"/>
                     </fo:block>
-                    
+
                     <fo:block
                             break-before="page"
                             font-size="24pt"
@@ -73,7 +74,8 @@
                     </fo:block>
 
                     <fo:block font-size="10pt" space-after="20pt" text-align="justify">
-                        Tento dokument obsahuje přehled všech deskových her ve sbírce. Kliknutím na název hry přejdete na detailní kartu hry níže.
+                        Tento dokument obsahuje přehled všech deskových her ve sbírce. Kliknutím na název hry přejdete
+                        na detailní kartu hry níže.
                     </fo:block>
 
                     <fo:table table-layout="fixed" width="100%" border-collapse="collapse" font-size="10pt">
@@ -127,7 +129,8 @@
                     </fo:table>
 
                     <fo:block margin-top="10pt" font-size="9pt" font-style="italic" text-align="right">
-                        Celkem her v katalogu: <xsl:value-of select="count(/k:katalog/k:hra)"/>
+                        Celkem her v katalogu:
+                        <xsl:value-of select="count(/k:katalog/k:hra)"/>
                     </fo:block>
 
                     <fo:block
@@ -235,16 +238,19 @@
                 <fo:block>
                     <xsl:choose>
                         <xsl:when test="k:hraci/k:min != k:hraci/k:max">
-                            👥 <xsl:value-of select="k:hraci/k:min"/>-<xsl:value-of select="k:hraci/k:max"/>
+                            👥<xsl:value-of select="k:hraci/k:min"/>-
+                            <xsl:value-of select="k:hraci/k:max"/>
                         </xsl:when>
 
                         <xsl:otherwise>
-                            👥 <xsl:value-of select="k:hraci/k:min"/>
+                            👥
+                            <xsl:value-of select="k:hraci/k:min"/>
                         </xsl:otherwise>
                     </xsl:choose>
                 </fo:block>
                 <fo:block>
-                    ⏱ <xsl:value-of select="k:herni_doba/k:min"/>-<xsl:value-of select="k:herni_doba/k:max"/>
+                    ⏱<xsl:value-of select="k:herni_doba/k:min"/>-
+                    <xsl:value-of select="k:herni_doba/k:max"/>
                     <xsl:value-of select="k:herni_doba/@jednotka"/>
                 </fo:block>
             </fo:table-cell>
@@ -252,7 +258,7 @@
             <fo:table-cell padding="5pt" border="1pt solid #ccc" text-align="right">
                 <fo:block>
                     <xsl:value-of select="format-number(k:cena, '# ###', 'cz_format')"/>
-                    <xsl:text> </xsl:text>
+                    <xsl:text></xsl:text>
                     <xsl:value-of select="k:cena/@mena"/>
                 </fo:block>
             </fo:table-cell>
@@ -282,7 +288,8 @@
                     <fo:table-row>
                         <fo:table-cell padding-right="10pt">
                             <fo:block>
-                                <fo:external-graphic src="{k:obrazky/k:obrazek[@hlavni='ano']}" content-width="scale-to-fit" width="4cm"/>
+                                <fo:external-graphic src="{k:obrazky/k:obrazek[@hlavni='ano']}"
+                                                     content-width="scale-to-fit" width="4cm"/>
                             </fo:block>
                         </fo:table-cell>
 
@@ -296,24 +303,25 @@
                             </fo:block>
 
                             <fo:block font-size="10pt" margin-bottom="5pt">
-                                <fo:inline>Autoři: </fo:inline>
+                                <fo:inline>Autoři:</fo:inline>
                                 <xsl:for-each select="k:autori/k:autor">
                                     <xsl:value-of select="."/>
-                                    <xsl:if test="position() != last()">, </xsl:if>
+                                    <xsl:if test="position() != last()">,</xsl:if>
                                 </xsl:for-each>
                             </fo:block>
 
                             <fo:block font-size="12pt" font-weight="bold" color="#4F46E5" margin-bottom="8pt">
                                 <xsl:value-of select="format-number(k:cena, '# ###', 'cz_format')"/>
-                                <xsl:text> </xsl:text>
+                                <xsl:text></xsl:text>
                                 <xsl:value-of select="k:cena/@mena"/>
-                                <xsl:text> </xsl:text>
+                                <xsl:text></xsl:text>
                                 <xsl:for-each select="k:hodnoceni/k:body">
                                     <xsl:sort select="@zdroj = 'Vlastní'" data-type="number" order="descending"/>
                                     <fo:inline margin-left="10pt" font-size="10pt" font-weight="normal" color="black">
-                                        <xsl:if test="position() = 1">(Hodnocení: </xsl:if>
-                                        <xsl:if test="position() > 1">, </xsl:if>
-                                        <xsl:if test="@zdroj != 'Vlastní'"><xsl:value-of select="@zdroj"/>: </xsl:if>
+                                        <xsl:if test="position() = 1">(Hodnocení:</xsl:if>
+                                        <xsl:if test="position() > 1">,</xsl:if>
+                                        <xsl:if test="@zdroj != 'Vlastní'"><xsl:value-of select="@zdroj"/>:
+                                        </xsl:if>
                                         <xsl:value-of select="."/>/10
                                         <xsl:if test="position() = last()">)</xsl:if>
                                     </fo:inline>
@@ -325,17 +333,18 @@
                             </fo:block>
 
                             <fo:block font-size="9pt" margin-top="8pt">
-                                <fo:inline font-weight="bold">Doporučený věk: </fo:inline>
+                                <fo:inline font-weight="bold">Doporučený věk:</fo:inline>
 
                                 <xsl:value-of select="k:doporuceny_vek"/>+
                             </fo:block>
 
                             <fo:block font-size="9pt" margin-top="3pt">
-                                <fo:inline font-weight="bold">Počet hráčů: </fo:inline>
+                                <fo:inline font-weight="bold">Počet hráčů:</fo:inline>
 
                                 <xsl:choose>
                                     <xsl:when test="k:hraci/k:min != k:hraci/k:max">
-                                        <xsl:value-of select="k:hraci/k:min"/>-<xsl:value-of select="k:hraci/k:max"/>
+                                        <xsl:value-of select="k:hraci/k:min"/>-
+                                        <xsl:value-of select="k:hraci/k:max"/>
                                     </xsl:when>
 
                                     <xsl:otherwise>
@@ -345,38 +354,39 @@
                             </fo:block>
 
                             <fo:block font-size="9pt" margin-top="3pt">
-                                <fo:inline font-weight="bold">Doba hraní: </fo:inline>
+                                <fo:inline font-weight="bold">Doba hraní:</fo:inline>
 
-                                <xsl:value-of select="k:herni_doba/k:min"/>-<xsl:value-of select="k:herni_doba/k:max"/>
+                                <xsl:value-of select="k:herni_doba/k:min"/>-
+                                <xsl:value-of select="k:herni_doba/k:max"/>
                                 <xsl:value-of select="k:herni_doba/@jednotka"/>
                             </fo:block>
 
                             <fo:block font-size="9pt" margin-top="3pt">
-                                <fo:inline font-weight="bold">Kategorie: </fo:inline>
+                                <fo:inline font-weight="bold">Kategorie:</fo:inline>
 
                                 <xsl:for-each select="k:kategorie_seznam/k:kategorie">
                                     <xsl:value-of select="."/>
-                                    <xsl:if test="position() != last()">, </xsl:if>
+                                    <xsl:if test="position() != last()">,</xsl:if>
                                 </xsl:for-each>
                             </fo:block>
 
                             <fo:block font-size="9pt" margin-top="3pt">
-                                <fo:inline font-weight="bold">Mechaniky: </fo:inline>
+                                <fo:inline font-weight="bold">Mechaniky:</fo:inline>
 
                                 <xsl:for-each select="k:mechaniky_seznam/k:mechanika">
                                     <xsl:value-of select="."/>
-                                    <xsl:if test="position() != last()">, </xsl:if>
+                                    <xsl:if test="position() != last()">,</xsl:if>
                                 </xsl:for-each>
                             </fo:block>
 
                             <fo:block font-size="9pt" margin-top="3pt">
-                                <fo:inline font-weight="bold">Komponenty: </fo:inline>
+                                <fo:inline font-weight="bold">Komponenty:</fo:inline>
 
                                 <xsl:for-each select="k:komponenty_seznam/k:komponent">
                                     <xsl:value-of select="@pocet"/>
-                                    <xsl:text>ks </xsl:text>
+                                    <xsl:text>ks</xsl:text>
                                     <xsl:value-of select="."/>
-                                    <xsl:if test="position() != last()">, </xsl:if>
+                                    <xsl:if test="position() != last()">,</xsl:if>
                                 </xsl:for-each>
                             </fo:block>
                         </fo:table-cell>

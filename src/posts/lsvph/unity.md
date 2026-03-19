@@ -11,7 +11,8 @@ tags:
 # Vstup do herního světa: Tvoříme v Unity 🚀
 
 > Vítejte v Unity! V předchozím kurzu jste se naučili jazyk C#. Teď je čas tento jazyk použít k tomu, abychom
-> rozpohybovali objekty a vytvořili naši první jednoduchou 3D hru. Unity je jako obrovské digitální hřiště a C# je jazyk,
+> rozpohybovali objekty a vytvořili naši první jednoduchou 3D hru. Unity je jako obrovské digitální hřiště a C# je
+> jazyk,
 > kterým dáváte hračkám pravidla
 
 > **Cíl:** Pochopit, jak funguje Unity editor, naučit se základní stavební kameny každé hry a na konci si vytvořit a

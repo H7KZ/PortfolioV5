@@ -22,7 +22,10 @@
 
 <svelte:head>
 	<title>Blog — Jan Komínek</title>
-	<meta name="description" content="Blog by Jan Komínek — Senior Frontend Engineer. Articles on web development, DevOps, Traefik, Docker, and system architecture." />
+	<meta
+		name="description"
+		content="Blog by Jan Komínek — Senior Frontend Engineer. Articles on web development, DevOps, Traefik, Docker, and system architecture."
+	/>
 	<meta property="og:title" content="Blog — Jan Komínek" />
 	<meta property="og:description" content="Articles on web development, DevOps, and system architecture by Jan Komínek." />
 	<meta property="og:url" content="https://jankominek.com/blog" />
