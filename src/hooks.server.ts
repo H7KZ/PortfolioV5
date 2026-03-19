@@ -11,7 +11,7 @@ const CSP = [
 	"font-src 'self' https://fonts.gstatic.com",
 	"img-src 'self' data: https:",
 	"connect-src 'self' https://app.cal.com https://cal.com",
-	"frame-src https://app.cal.com https://cal.com",
+	'frame-src https://app.cal.com https://cal.com',
 	"object-src 'none'",
 	"base-uri 'self'",
 	"form-action 'self'",
@@ -29,10 +29,7 @@ export const handle: Handle = async ({ event, resolve }) => {
 	// Explicitly disable the broken legacy XSS auditor (0 = disabled)
 	response.headers.set('X-XSS-Protection', '0');
 	response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');
-	response.headers.set(
-		'Permissions-Policy',
-		'camera=(), microphone=(), geolocation=(), interest-cohort=()'
-	);
+	response.headers.set('Permissions-Policy', 'camera=(), microphone=(), geolocation=(), interest-cohort=()');
 	response.headers.set('Cross-Origin-Opener-Policy', 'same-origin');
 	response.headers.set('Cross-Origin-Resource-Policy', 'same-origin');
 
