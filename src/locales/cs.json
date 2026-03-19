@@ -55,15 +55,15 @@
 	},
 
 	"home": {
-		"fullstack": "Fullstack Engineer",
+		"fullstack": "Senior Frontend Engineer",
 		"freelance": "Freelance",
 		"prague": "Praha, CZ",
 
-		"motto": "Výjimečný vývojář s více než 5 lety zkušeností v oboru",
+		"motto": "Dostupný pro part-time B2B kontrakty · 3+ let senior zkušeností",
 
 		"jankominek": "Jan Komínek",
 
-		"available": "Dostupný pro práci",
+		"available": "Dostupný pro Part-Time B2B",
 		"bookACall": "Rezervujte si hovor",
 
 		"explore": "Prozkoumejte mé portfolio"
@@ -128,9 +128,9 @@
 
 		"toolsLabel": "Nástroje a technologie",
 		"tools": [
-			"SvelteKit",
 			"!VueJS",
 			"ReactJS",
+			"SvelteKit",
 			"!TailwindCSS",
 			"!TypeScript",
 			"!Node.js",
@@ -170,7 +170,7 @@
 
 	"contact": {
 		"fillForm": "Vyplňte formulář",
-		"fillFormDescription": "Máte na mysli nějaký projekt? Vyplňte formulář a já se vám brzy ozvu!",
+		"fillFormDescription": "Hledáte seniora na flexibilní part-time B2B spolupráci? Vyplňte formulář a brzy se vám ozvu.",
 
 		"orBookACall": "Nebo si <u>Zarezervujte hovor</u>",
 

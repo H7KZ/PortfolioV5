@@ -64,7 +64,7 @@
 					{$_('footer.linkedin')}
 				</a>
 				<p>–</p>
-				<a href="https://www.jankominek.com" class="hover:underline">
+				<a href="/contact" class="hover:underline">
 					{$_('footer.form')}
 				</a>
 				<p>–</p>

@@ -6,22 +6,72 @@
 >
   <url>
     <loc>https://jankominek.com/</loc>
-    <lastmod>2025-04-16T17:56:24+00:00</lastmod>
+    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>https://jankominek.com/resume</loc>
-    <lastmod>2025-04-16T17:56:24+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://jankominek.com/blog</loc>
-    <lastmod>2025-04-16T17:56:24+00:00</lastmod>
+    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://jankominek.com/contact</loc>
-    <lastmod>2025-04-16T17:56:24+00:00</lastmod>
+    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://jankominek.com/blog</loc>
+    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://jankominek.com/projects/corac_scorecard</loc>
+    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://jankominek.com/projects/corac_sith</loc>
+    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://jankominek.com/projects/iont_admin</loc>
+    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://jankominek.com/projects/iont_charge</loc>
+    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://jankominek.com/projects/iont_info</loc>
+    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://jankominek.com/projects/noteful</loc>
+    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://jankominek.com/projects/pangolin</loc>
+    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://jankominek.com/projects/disenchantment</loc>
+    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://jankominek.com/projects/portfolio_v4</loc>
+    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://jankominek.com/projects/portfolio_v5</loc>
+    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
+    <priority>0.50</priority>
   </url>
 </urlset>

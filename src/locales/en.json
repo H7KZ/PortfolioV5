@@ -55,15 +55,15 @@
 	},
 
 	"home": {
-		"fullstack": "Fullstack Engineer",
+		"fullstack": "Senior Frontend Engineer",
 		"freelance": "Freelance",
 		"prague": "Prague, CZ",
 
-		"motto": "Exceptional developer with 5+ years industry experience",
+		"motto": "Open to part-time B2B contracts · 3+ years senior-level experience",
 
 		"jankominek": "Jan Komínek",
 
-		"available": "Available For Work",
+		"available": "Open to Part-Time B2B",
 		"bookACall": "Book a Call",
 
 		"explore": "Explore my portfolio"
@@ -98,7 +98,7 @@
 			},
 			{
 				"company": "Summer School of Computer Game Development",
-				"position": "Teacher & Organizer, Jul 2022/2023/2024/2025"
+				"position": "Lecturer & Organizer, Jul 2022/2023/2024/2025"
 			},
 			{
 				"company": "KMK family business",
@@ -106,7 +106,7 @@
 			},
 			{
 				"company": "Precismo",
-				"position": "Fullstack Web Developer, Jan 2023 to Nov 2023"
+				"position": "Fullstack Developer, Jan 2023 to Nov 2023"
 			},
 			{
 				"company": "Haxagon",
@@ -128,9 +128,9 @@
 
 		"toolsLabel": "Tools & Technologies",
 		"tools": [
-			"SvelteKit",
 			"!VueJS",
 			"ReactJS",
+			"SvelteKit",
 			"!TailwindCSS",
 			"!TypeScript",
 			"!Node.js",
@@ -170,7 +170,7 @@
 
 	"contact": {
 		"fillForm": "Fill out Form",
-		"fillFormDescription": "Got a project in mind? Fill out the form, and I’ll get back to you soon!",
+		"fillFormDescription": "Looking for a senior dev on a flexible part-time B2B basis? Fill out the form and I’ll get back to you soon.",
 
 		"orBookACall": "Or <u>Book a Call</u>",
 
