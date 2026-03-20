@@ -3,6 +3,7 @@
 	import GreenAvailability from '$lib/icons/GreenAvailability.svelte';
 	import type { Project } from '$lib/types';
 	import { _, locale } from 'svelte-i18n';
+	import { trackEvent } from '$lib/utils/analytics';
 
 	let projects: Project[] = $state([]);
 
@@ -20,6 +21,8 @@
 
 <svelte:head>
 	<title>Jan Komínek — Freelance Senior Frontend Engineer, Prague</title>
+	<!-- Preload LCP image — prevents bandwidth competition during initial load -->
+	<link rel="preload" as="image" href="/images/profile.webp" type="image/webp" fetchpriority="high" />
 </svelte:head>
 
 <div class="flex w-full items-center justify-center px-8">
@@ -57,7 +60,7 @@
 								{$_('home.available')}
 							</p>
 							<p>–</p>
-							<a href="/contact#calendar" class="underline transition-all hover:text-neutral-400">
+							<a href="/contact#calendar" class="underline transition-all hover:text-neutral-400" onclick={() => trackEvent('cta_click', { cta_name: 'book_a_call' })}>
 								{$_('home.bookACall')}
 							</a>
 						</div>
@@ -68,6 +71,10 @@
 				src="/images/profile.webp"
 				alt="Jan Komínek — Senior Frontend Engineer"
 				class="w-full max-w-[24rem] pt-16 lg:max-w-[30rem] lg:pt-0 lg:pr-2 xl:max-w-[38rem]"
+				width="1439"
+				height="1439"
+				fetchpriority="high"
+				decoding="async"
 			/>
 		</div>
 
@@ -83,7 +90,7 @@
 					{$_('home.explore')}
 				</h3>
 				{#each projects as project (project.slug)}
-					<a href={`/projects/${project.slug}?locale=${$locale}`} class="group">
+					<a href={`/projects/${project.slug}?locale=${$locale}`} class="group" onclick={() => trackEvent('project_view', { project_name: project.slug })}>
 						<div class="flex w-full max-w-[28.75rem] min-w-[17rem] flex-col gap-0.5">
 							<img src={project.thumbnail} alt={project.title} class="w-full rounded-lg" loading="lazy" />
 

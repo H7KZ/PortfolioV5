@@ -2,7 +2,10 @@
 	import '../app.css';
 	import Navbar from '$lib/components/navbar/Navbar.svelte';
 	import { onMount } from 'svelte';
+	import { afterNavigate } from '$app/navigation';
+	import { page } from '$app/stores';
 	import { locale } from 'svelte-i18n';
+	import { trackPageView } from '$lib/utils/analytics';
 
 	let { children } = $props();
 
@@ -12,6 +15,10 @@
 		});
 
 		locale.set(localStorage.getItem('locale') || 'en');
+	});
+
+	afterNavigate(() => {
+		trackPageView($page.url.href, document.title);
 	});
 </script>
 

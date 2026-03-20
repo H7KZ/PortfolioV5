@@ -18,6 +18,8 @@ declare global {
 	interface Window {
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		Cal: any;
+		gtag: (...args: unknown[]) => void;
+		dataLayer: unknown[];
 	}
 }
 

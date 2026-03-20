@@ -12,6 +12,7 @@
 	import MultiSelectInput from '$lib/components/inputs/MultiSelectInput.svelte';
 	import { getInitialContactForm } from '$lib/interfaces/ContactFormInterface';
 	import { validateContactForm } from '$lib/validations/ContactFormValidation';
+	import { trackEvent } from '$lib/utils/analytics';
 
 	let form = $state(getInitialContactForm());
 
@@ -71,6 +72,7 @@
 			loading = false;
 		}
 
+		trackEvent('form_submit', { form_name: 'contact' });
 		success = $_('contact.form.success');
 
 		error = Object.keys(error).reduce(
