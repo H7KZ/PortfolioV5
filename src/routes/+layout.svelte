@@ -2,7 +2,7 @@
 	import '../app.css';
 	import Navbar from '$lib/components/navbar/Navbar.svelte';
 	import { onMount } from 'svelte';
-	import { afterNavigate } from '$app/navigation';
+	import { afterNavigate, onNavigate } from '$app/navigation';
 	import { page } from '$app/stores';
 	import { locale } from 'svelte-i18n';
 	import { trackPageView } from '$lib/utils/analytics';
@@ -19,6 +19,22 @@
 
 	afterNavigate(() => {
 		trackPageView($page.url.href, document.title);
+	});
+
+	// View Transitions API — crossfade between pages.
+	// Returns a promise so SvelteKit waits for the first render of the new page
+	// before ending the transition. Falls back gracefully in unsupported browsers.
+	onNavigate((navigation) => {
+		if (!document.startViewTransition) return;
+		// Skip transition for hash-only changes (same-page anchor scrolling)
+		if (navigation.to?.url.pathname === navigation.from?.url.pathname) return;
+
+		return new Promise((resolve) => {
+			document.startViewTransition(async () => {
+				resolve();
+				await navigation.complete;
+			});
+		});
 	});
 </script>
 

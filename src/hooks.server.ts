@@ -36,11 +36,7 @@ export const handle: Handle = async ({ event, resolve }) => {
 
 	// Long-lived cache for immutable static assets (images, fonts, favicons)
 	const { pathname } = event.url;
-	if (
-		pathname.startsWith('/images/') ||
-		pathname.startsWith('/fonts/') ||
-		pathname.startsWith('/favicon/')
-	) {
+	if (pathname.startsWith('/images/') || pathname.startsWith('/fonts/') || pathname.startsWith('/favicon/')) {
 		response.headers.set('Cache-Control', 'public, max-age=31536000, immutable');
 	}
 

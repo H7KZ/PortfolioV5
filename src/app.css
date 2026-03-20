@@ -98,3 +98,50 @@
 		scroll-behavior: smooth;
 	}
 }
+
+/* ===== View Transitions ===== */
+/* Old page fades out, new page fades in with a short gap so they don't overlap */
+@media (prefers-reduced-motion: no-preference) {
+	::view-transition-old(root) {
+		animation: 150ms ease both vt-fade-out;
+	}
+	::view-transition-new(root) {
+		animation: 200ms ease 80ms both vt-fade-in;
+	}
+}
+@keyframes vt-fade-out {
+	to {
+		opacity: 0;
+	}
+}
+@keyframes vt-fade-in {
+	from {
+		opacity: 0;
+	}
+}
+
+/* ===== Hero entrance ===== */
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+}
+
+/* ===== Accordion smooth expand / collapse ===== */
+/* Uses the grid-template-rows trick — the only reliable way to animate height: auto */
+.accordion-body {
+	display: grid;
+	grid-template-rows: 0fr;
+	transition: grid-template-rows 280ms ease;
+}
+.accordion-body.is-open {
+	grid-template-rows: 1fr;
+}
+.accordion-body-inner {
+	overflow: hidden;
+	opacity: 0;
+	transition: opacity 250ms ease 30ms;
+}
+.accordion-body.is-open .accordion-body-inner {
+	opacity: 1;
+}

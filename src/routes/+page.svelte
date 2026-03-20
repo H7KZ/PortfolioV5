@@ -28,7 +28,7 @@
 <div class="flex w-full items-center justify-center px-8">
 	<div class="flex w-full max-w-[90rem] flex-col gap-8 pb-32">
 		<div
-			class="flex h-full min-h-[calc(100vh-88px)] w-full flex-col-reverse items-center justify-center gap-20 sm:min-h-[calc(100vh-96px)] lg:min-h-[calc(100vh-104px)] lg:flex-row lg:justify-between lg:gap-2"
+			class="flex h-full min-h-[calc(100vh-88px)] w-full flex-col-reverse items-center justify-center gap-20 motion-safe:animate-[fade-in_0.6s_ease_both] sm:min-h-[calc(100vh-96px)] lg:min-h-[calc(100vh-104px)] lg:flex-row lg:justify-between lg:gap-2"
 		>
 			<div class="flex shrink-0 flex-col-reverse justify-center gap-8 pb-16 lg:h-full lg:w-auto lg:flex-col lg:gap-48 lg:pb-0">
 				<div class="flex flex-col gap-1">
@@ -60,7 +60,11 @@
 								{$_('home.available')}
 							</p>
 							<p>–</p>
-							<a href="/contact#calendar" class="underline transition-all hover:text-neutral-400" onclick={() => trackEvent('cta_click', { cta_name: 'book_a_call' })}>
+							<a
+								href="/contact#calendar"
+								class="underline transition-all hover:text-neutral-400"
+								onclick={() => trackEvent('cta_click', { cta_name: 'book_a_call' })}
+							>
 								{$_('home.bookACall')}
 							</a>
 						</div>
@@ -90,8 +94,14 @@
 					{$_('home.explore')}
 				</h3>
 				{#each projects as project (project.slug)}
-					<a href={`/projects/${project.slug}?locale=${$locale}`} class="group" onclick={() => trackEvent('project_view', { project_name: project.slug })}>
-						<div class="flex w-full max-w-[28.75rem] min-w-[17rem] flex-col gap-0.5">
+					<a
+						href={`/projects/${project.slug}?locale=${$locale}`}
+						class="group"
+						onclick={() => trackEvent('project_view', { project_name: project.slug })}
+					>
+						<div
+							class="flex w-full max-w-[28.75rem] min-w-[17rem] flex-col gap-0.5 motion-safe:transition-transform motion-safe:duration-200 motion-safe:group-hover:-translate-y-1"
+						>
 							<img src={project.thumbnail} alt={project.title} class="w-full rounded-lg" loading="lazy" />
 
 							<div class="flex w-full items-center justify-between">

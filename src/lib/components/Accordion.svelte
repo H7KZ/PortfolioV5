@@ -23,7 +23,9 @@
 		</div>
 	</button>
 
-	<div class="w-full" class:h-0={!isOpened} class:opacity-0={!isOpened} class:overflow-hidden={!isOpened} class:h-full={isOpened}>
-		{@render children()}
+	<div class="accordion-body w-full" class:is-open={isOpened}>
+		<div class="accordion-body-inner">
+			{@render children()}
+		</div>
 	</div>
 </div>

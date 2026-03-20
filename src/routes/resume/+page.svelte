@@ -33,7 +33,15 @@
 <div class="flex w-full flex-col items-center justify-center">
 	<div class="flex w-full max-w-[90rem] flex-col gap-32 px-8 pt-16 pb-32 min-[90rem]:px-2">
 		<div class="flex w-full justify-between gap-20">
-			<img src="/images/resume_profile.webp" alt="Jan Komínek, portrait" class="hidden h-full lg:block lg:w-80 xl:w-md" width="532" height="576" loading="lazy" decoding="async" />
+			<img
+				src="/images/resume_profile.webp"
+				alt="Jan Komínek, portrait"
+				class="hidden h-full lg:block lg:w-80 xl:w-md"
+				width="532"
+				height="576"
+				loading="lazy"
+				decoding="async"
+			/>
 			<div class="flex w-full flex-col gap-12">
 				<h1 class="xs:text-6xl text-5xl font-normal">
 					{$_('resume.jankominek')}
