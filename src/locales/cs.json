@@ -48,6 +48,7 @@
 	},
 
 	"navbar": {
+		"work": "Práce",
 		"resume": "Životopis",
 		"linkedin": "LinkedIn",
 		"blog": "Blog",

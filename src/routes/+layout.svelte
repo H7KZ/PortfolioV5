@@ -21,12 +21,8 @@
 		trackPageView($page.url.href, document.title);
 	});
 
-	// View Transitions API — crossfade between pages.
-	// Returns a promise so SvelteKit waits for the first render of the new page
-	// before ending the transition. Falls back gracefully in unsupported browsers.
 	onNavigate((navigation) => {
 		if (!document.startViewTransition) return;
-		// Skip transition for hash-only changes (same-page anchor scrolling)
 		if (navigation.to?.url.pathname === navigation.from?.url.pathname) return;
 
 		return new Promise((resolve) => {
@@ -44,7 +40,10 @@
 >
 	Skip to main content
 </a>
-<div class="flex h-full min-h-screen w-full flex-col">
+
+<div class="grid-bg"></div>
+
+<div class="relative z-[1] flex h-full min-h-screen w-full flex-col">
 	<header>
 		<Navbar />
 	</header>

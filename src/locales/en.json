@@ -48,6 +48,7 @@
 	},
 
 	"navbar": {
+		"work": "Work",
 		"resume": "Resumé",
 		"linkedin": "LinkedIn",
 		"blog": "Blog",

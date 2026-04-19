@@ -91,7 +91,7 @@
 </script>
 
 <form class="flex w-full flex-col gap-3">
-	<div class="flex w-full flex-col gap-3 xl:flex-row xl:gap-8">
+	<div class="flex w-full flex-col gap-3">
 		<div class="flex w-full flex-col gap-3 sm:flex-row sm:gap-8">
 			<TextInput
 				bind:value={form.fullName}
