@@ -1,5 +1,6 @@
 <script lang="ts">
 	import ContactFooter from '$lib/components/ContactFooter.svelte';
+	import { _ } from 'svelte-i18n';
 	import { trackEvent } from '$lib/utils/analytics';
 </script>
 
@@ -17,11 +18,11 @@
 		<img src="/images/resume_profile.webp" alt="Jan Komínek, portrait" width="532" height="576" loading="lazy" decoding="async" />
 	</div>
 	<div>
-		<div class="mono-label">◆ Resumé · 2026</div>
+		<div class="mono-label">{$_('resume.label')}</div>
 		<h1 class="resume-name serif">Jan Komínek<span style="color:var(--fg-3)">.</span></h1>
-		<p class="resume-title mono">Senior Frontend / Fullstack Engineer — 4+ yrs — Prague, CZ</p>
+		<p class="resume-title mono">{$_('resume.subtitle')}</p>
 		<p class="resume-bio">
-			I build complex web applications from scratch — fast. Vue, React, TypeScript, deep backend experience in Node, PostgreSQL, Redis, Docker. I've led an EV charging platform with its own payment system and built zero-trust data-lineage tooling.
+			{$_('resume.bio')}
 		</p>
 		<div class="resume-actions">
 			<a
@@ -30,10 +31,10 @@
 				class="btn-primary"
 				onclick={() => trackEvent('file_download', { file_name: 'resume_pdf' })}
 			>
-				Download PDF
+				{$_('resume.download')}
 				<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v13M5 10l7 7 7-7M3 21h18" /></svg>
 			</a>
-			<a href="/contact" class="btn-secondary">Hire me →</a>
+			<a href="/contact" class="btn-secondary">{$_('resume.hireBtn')}</a>
 		</div>
 	</div>
 </div>
@@ -42,24 +43,24 @@
 <div class="section" style="margin-bottom: 100px;">
 	<div class="impact-band">
 		<div class="impact-item">
-			<div class="impact-label">◆ Industry experience</div>
+			<div class="impact-label">{$_('resume.impact1Label')}</div>
 			<div class="impact-value serif">4+ <span style="color:var(--fg-4); font-size: 20px; font-family: var(--font-mono)">yrs</span></div>
-			<div class="impact-sub mono">Senior level since 2024</div>
+			<div class="impact-sub mono">{$_('resume.impact1Sub')}</div>
 		</div>
 		<div class="impact-item">
-			<div class="impact-label">◆ Companies worked with</div>
+			<div class="impact-label">{$_('resume.impact2Label')}</div>
 			<div class="impact-value serif">7</div>
-			<div class="impact-sub mono">From startups to enterprise</div>
+			<div class="impact-sub mono">{$_('resume.impact2Sub')}</div>
 		</div>
 		<div class="impact-item">
-			<div class="impact-label">◆ Primary stack</div>
+			<div class="impact-label">{$_('resume.impact3Label')}</div>
 			<div class="impact-value mono" style="font-size: 18px;">TS + Vue + Node</div>
-			<div class="impact-sub mono">Also React / Svelte / Nuxt</div>
+			<div class="impact-sub mono">{$_('resume.impact3Sub')}</div>
 		</div>
 		<div class="impact-item">
-			<div class="impact-label">◆ Status</div>
+			<div class="impact-label">{$_('resume.impact4Label')}</div>
 			<div class="impact-value mono" style="font-size: 18px; color: var(--accent);">◆ Available</div>
-			<div class="impact-sub mono">Part-time B2B · ≤10h/wk</div>
+			<div class="impact-sub mono">{$_('resume.impact4Sub')}</div>
 		</div>
 	</div>
 </div>
@@ -67,10 +68,10 @@
 <!-- ===== EXPERIENCE ===== -->
 <section class="section">
 	<div class="section-head">
-		<div class="section-label">◆ Experience</div>
+		<div class="section-label">{$_('resume.experienceLabel')}</div>
 		<div>
-			<h2 class="serif section-h2">Where I've been shipping.</h2>
-			<p class="section-p">Ordered newest to oldest. Concurrent roles noted. Current engagements marked in green.</p>
+			<h2 class="serif section-h2">{$_('resume.expH2')}</h2>
+			<p class="section-p">{$_('resume.expP')}</p>
 		</div>
 	</div>
 
@@ -181,9 +182,9 @@
 <!-- ===== EDUCATION ===== -->
 <section class="section">
 	<div class="section-head">
-		<div class="section-label">◆ Education</div>
+		<div class="section-label">{$_('resume.educationLabel')}</div>
 		<div>
-			<h2 class="serif section-h2">Formal training.</h2>
+			<h2 class="serif section-h2">{$_('resume.eduH2')}</h2>
 		</div>
 	</div>
 
@@ -210,16 +211,16 @@
 <!-- ===== SKILLS ===== -->
 <section class="section">
 	<div class="section-head">
-		<div class="section-label">◆ Tools &amp; Technologies</div>
+		<div class="section-label">{$_('resume.toolsLabel')}</div>
 		<div>
-			<h2 class="serif section-h2">Stack.</h2>
-			<p class="section-p">Dot marks primary daily tools.</p>
+			<h2 class="serif section-h2">{$_('resume.skillsH2')}</h2>
+			<p class="section-p">{$_('resume.skillsP')}</p>
 		</div>
 	</div>
 
 	<div class="skills-grid">
 		<div class="skill-group">
-			<h4 class="mono">Languages &amp; Frameworks</h4>
+			<h4 class="mono">{$_('resume.skillGroup1')}</h4>
 			<div class="skill-list">
 				<span class="skill primary">TypeScript</span>
 				<span class="skill primary">Vue.js</span>
@@ -233,7 +234,7 @@
 			</div>
 		</div>
 		<div class="skill-group">
-			<h4 class="mono">Data &amp; Storage</h4>
+			<h4 class="mono">{$_('resume.skillGroup2')}</h4>
 			<div class="skill-list">
 				<span class="skill primary">PostgreSQL</span>
 				<span class="skill primary">MongoDB</span>
@@ -246,7 +247,7 @@
 			</div>
 		</div>
 		<div class="skill-group">
-			<h4 class="mono">Infra &amp; DevOps</h4>
+			<h4 class="mono">{$_('resume.skillGroup3')}</h4>
 			<div class="skill-list">
 				<span class="skill primary">Docker</span>
 				<span class="skill primary">CI/CD</span>
@@ -260,7 +261,7 @@
 			</div>
 		</div>
 		<div class="skill-group">
-			<h4 class="mono">Craft &amp; Tools</h4>
+			<h4 class="mono">{$_('resume.skillGroup4')}</h4>
 			<div class="skill-list">
 				<span class="skill primary">Git</span>
 				<span class="skill primary">Figma</span>

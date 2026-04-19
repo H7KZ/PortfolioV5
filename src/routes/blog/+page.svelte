@@ -1,5 +1,6 @@
 <script lang="ts">
 	import ContactFooter from '$lib/components/ContactFooter.svelte';
+	import { _ } from 'svelte-i18n';
 	import type { Post } from '$lib/types';
 
 	let posts: Post[] = $state([]);
@@ -35,8 +36,8 @@
 <div class="blog-wrap">
 	<div class="blog-header">
 		<div>
-			<div class="mono-label">◆ Writing</div>
-			<h1 class="serif blog-h1">Blog.</h1>
+			<div class="mono-label">{$_('blog.writingLabel')}</div>
+			<h1 class="serif blog-h1">{$_("blog.h1")}</h1>
 		</div>
 	</div>
 
@@ -59,20 +60,20 @@
 
 		<!-- Upcoming drafts -->
 		<div class="blog-row draft">
-			<div class="blog-date mono">Coming</div>
+			<div class="blog-date mono">{$_("blog.coming")}</div>
 			<div class="blog-content">
 				<h2 class="serif blog-title">Building a client-side hash-chain verifier in 200 lines of TS.</h2>
 			</div>
 			<div class="blog-tags mono"><span>EN</span><span class="tag-sep">/</span><span>CRYPTO</span><span class="tag-sep">/</span><span>VUE</span></div>
-			<div class="blog-read-time mono">Draft</div>
+			<div class="blog-read-time mono">{$_('blog.draft')}</div>
 		</div>
 		<div class="blog-row draft">
-			<div class="blog-date mono">Coming</div>
+			<div class="blog-date mono">{$_('blog.coming')}</div>
 			<div class="blog-content">
 				<h2 class="serif blog-title">Docker Swarm in production — 18 months of lessons from an EV platform.</h2>
 			</div>
 			<div class="blog-tags mono"><span>EN</span><span class="tag-sep">/</span><span>DOCKER</span><span class="tag-sep">/</span><span>INFRA</span></div>
-			<div class="blog-read-time mono">Draft</div>
+			<div class="blog-read-time mono">{$_('blog.draft')}</div>
 		</div>
 	</div>
 

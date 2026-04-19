@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { _ } from 'svelte-i18n';
 	import ContactForm from '$lib/components/ContactForm.svelte';
 	import CalendarCallPicker from '$lib/components/CalendarCallPicker.svelte';
 </script>
@@ -14,15 +15,15 @@
 <div class="contact-grid">
 	<!-- ===== LEFT COL ===== -->
 	<div class="contact-intro">
-		<div class="mono-label">◆ Hire me</div>
-		<h1 class="serif contact-h1">Let's work together.</h1>
-		<p class="contact-p">Available for part-time B2B engagements, up to ~10 hours per week. I reply within 24 hours on weekdays.</p>
+		<div class="mono-label">{$_('contact.hireLabel')}</div>
+		<h1 class="serif contact-h1">{$_('contact.h1')}</h1>
+		<p class="contact-p">{$_('contact.intro')}</p>
 
 		<div class="contact-options">
 			<a href="mailto:contact@jankominek.com" class="contact-option">
 				<div class="option-icon mono">@</div>
 				<div class="option-info">
-					<span class="option-name">Email direct</span>
+					<span class="option-name">{$_('contact.emailDirect')}</span>
 					<span class="option-desc mono">contact@jankominek.com</span>
 				</div>
 				<div class="option-arrow">→</div>
@@ -31,23 +32,23 @@
 				<div class="option-icon mono">in</div>
 				<div class="option-info">
 					<span class="option-name">LinkedIn</span>
-					<span class="option-desc mono">500+ connections · 5 recs</span>
+					<span class="option-desc mono">{$_('contact.linkedinSub')}</span>
 				</div>
 				<div class="option-arrow">→</div>
 			</a>
 			<a href="#calendar" class="contact-option">
 				<div class="option-icon mono">📅</div>
 				<div class="option-info">
-					<span class="option-name">Book a 30-min call</span>
-					<span class="option-desc mono">Free discovery chat</span>
+					<span class="option-name">{$_('contact.bookCall')}</span>
+					<span class="option-desc mono">{$_('contact.freeChat')}</span>
 				</div>
 				<div class="option-arrow">→</div>
 			</a>
 		</div>
 
 		<div class="what-to-include">
-			<div class="mono-label" style="color: var(--accent)">◆ WHAT TO INCLUDE</div>
-			<p>Briefly: the problem, expected scale, current team &amp; stack, timeline, and budget range. The more concrete, the faster I can say "yes, and here's how" or "not the right fit — try X".</p>
+			<div class="mono-label" style="color: var(--accent)">{$_('contact.whatToInclude')}</div>
+			<p>{$_('contact.whatToIncludeText')}</p>
 		</div>
 	</div>
 
@@ -55,15 +56,15 @@
 	<div>
 		<div class="form-card">
 			<div class="form-head">
-				<h3 class="serif form-title">Project brief</h3>
-				<div class="mono-label">01 / 02</div>
+				<h3 class="serif form-title">{$_('contact.projectBrief')}</h3>
+				<div class="mono-label">{$_('contact.formStep')}</div>
 			</div>
 			<ContactForm />
 		</div>
 
 		<div class="book-card" id="calendar">
-			<div class="mono-label">◆ Prefer to skip the form?</div>
-			<p class="book-desc">Grab 30 minutes. We'll chat through your project and see if it's a fit.</p>
+			<div class="mono-label">{$_('contact.skipForm')}</div>
+			<p class="book-desc">{$_('contact.skipFormDesc')}</p>
 			<CalendarCallPicker />
 		</div>
 	</div>

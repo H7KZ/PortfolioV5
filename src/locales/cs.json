@@ -59,19 +59,84 @@
 		"fullstack": "Senior Frontend Engineer",
 		"freelance": "Freelance",
 		"prague": "Praha, CZ",
-
 		"motto": "Dostupný pro part-time B2B kontrakty · 3+ let senior zkušeností",
-
 		"jankominek": "Jan Komínek",
-
 		"available": "Dostupný pro Part-Time B2B",
 		"bookACall": "Rezervujte si hovor",
+		"explore": "Prozkoumejte mé portfolio",
 
-		"explore": "Prozkoumejte mé portfolio"
+		"valueProp": "Buduju <strong>komplexní webové aplikace od nuly — rychle.</strong> Vue, React, TypeScript, Node. Platformy pro nabíjení elektromobilů, nástroje pro datovou provenanci a infrastruktura, která to vše drží pohromadě.",
+		"startProject": "Zahájit projekt",
+		"viewResume": "Zobrazit životopis",
+		"yearsLabel": "Let praxe",
+		"projectsLabel": "Realizovaných projektů",
+		"clientsLabel": "Klientů",
+		"recsLabel": "Doporučení LinkedIn",
+		"upToLabel": "do 10 h/týden",
+
+		"nowLabel": "Nyní",
+		"nowTitle": "Buduji DeepTrace ve CORAC Engineering",
+		"nowDesc": "Platforma pro datovou provenanci a integritu pro Earth Observation data — D3.js vizualizace lineage, klientská verifikace hash-chain, zero-trust auth s AWS Cognito.",
+		"nowDate": "Dub. 2025 — nyní",
+		"nowMeta": "Vzdáleně · Freelance",
+
+		"workLabel": "Vybrané projekty",
+		"workH2": "Postaveno end-to-end. Nasazeno. Ve výrobě.",
+		"workP": "Každý projekt níže jsem dodal — infrastruktura, backend i UI.",
+		"viewProject": "Zobrazit projekt",
+		"readCaseStudy": "Přečíst případovou studii",
+
+		"servicesLabel": "Jak pracuji s klienty",
+		"servicesH2": "Senirorní zodpovědnost. Bez nutnosti vedení za ruku.",
+		"servicesP": "Part-time B2B spolupráce. Přebírám plnou zodpovědnost za svěřenou oblast — architektura, kód, dodání, nasazení.",
+		"service1Num": "01 · GREENFIELD",
+		"service1Title": "Spustit nový produkt od nuly",
+		"service1Desc": "Máte nápad a termín. Nastavím repozitář, vyberu stack, navrhnu datovou vrstvu, dodám MVP a nasadím do produkce. Platforma pro nabíjení EV šla od nuly k veřejnému spuštění za 5 měsíců.",
+		"service2Num": "02 · ZÁCHRANA",
+		"service2Title": "Opravit co nefunguje — rychle",
+		"service2Desc": "Nestabilní nasazení, zastaralý kód, chybějící CI, nikdo neví jak to funguje. Diagnostikuji, stabilizuji, zdokumentuji a nastavím pipelines, aby váš tým mohl zase hýbat.",
+		"service3Num": "03 · ŠKÁLOVÁNÍ",
+		"service3Title": "Růst platformy spolu s týmem",
+		"service3Desc": "Průběžný frakcionální senior engineer. Code review, architektonická rozhodnutí, mentoring juniorů, vlastnictví částí, které nikdo jiný nechce. Aktuálně takto pracuji pro CORAC Engineering a Intedat.",
+
+		"testimonialsLabel": "Co říkají klienti",
+		"testimonialsH2": "Skutečná zpětná vazba od skutečných kolegů a manažerů.",
+		"testimonialsP": "Přímo z doporučení na LinkedIn — bez úprav."
+	},
+
+	"blog": {
+		"writingLabel": "◆ Psaní",
+		"h1": "Blog.",
+		"coming": "Připravujeme",
+		"draft": "Koncept"
 	},
 
 	"resume": {
 		"jankominek": "Jan Komínek",
+		"label": "◆ Životopis · 2026",
+		"subtitle": "Senior Frontend / Fullstack Engineer — 4+ let — Praha, CZ",
+		"bio": "Buduju komplexní webové aplikace od nuly — rychle. Vue, React, TypeScript, hluboká backend zkušenost v Node, PostgreSQL, Redis, Docker. Vedl jsem platformu pro nabíjení EV s vlastním platebním systémem a postavil zero-trust nástroje pro datovou provenanci.",
+		"hireBtn": "Najměte mě →",
+
+		"impact1Label": "◆ Praxe v oboru",
+		"impact1Sub": "Senior úroveň od 2024",
+		"impact2Label": "◆ Spolupracované firmy",
+		"impact2Sub": "Od startupů po enterprise",
+		"impact3Label": "◆ Primární stack",
+		"impact3Sub": "Také React / Svelte / Nuxt",
+		"impact4Label": "◆ Status",
+		"impact4Sub": "Part-time B2B · ≤10 h/týden",
+
+		"expH2": "Kde jsem budoval.",
+		"expP": "Seřazeno od nejnovějšího. Souběžné role označeny. Aktuální spolupráce označeny zeleně.",
+		"eduH2": "Formální vzdělání.",
+		"skillsH2": "Stack.",
+		"skillsP": "Tečka označuje primárně používané nástroje.",
+		"skillGroup1": "Jazyky & Frameworky",
+		"skillGroup2": "Data & Úložiště",
+		"skillGroup3": "Infra & DevOps",
+		"skillGroup4": "Dovednosti & Nástroje",
+
 		"quickSummaryLabel": "Rychlý přehled",
 		"quickSummary": "Jsem Senior Frontend / Fullstack Engineer s vášní pro budování komplexních aplikací od nuly a pověstí pro rychlé řešení problémů. Moje klíčová odbornost spočívá ve Vue.js, React.js a TypeScriptu, podpořená robustními full-stack zkušenostmi — včetně vedení vývoje platformy pro nabíjení elektromobilů s vlastním platebním systémem a infrastrukturou postavenou na Dockeru. Se silným základem v kybernetické bezpečnosti a aktuálním studiem bakalářského oboru Aplikovaná informatika na Vysoké škole ekonomické v Praze vynikám v řešení náročných technických výzev a úspěšném vedení projektů.",
 
@@ -172,6 +237,20 @@
 	},
 
 	"contact": {
+		"hireLabel": "◆ Najměte mě",
+		"h1": "Pojďme spolupracovat.",
+		"intro": "Dostupný pro part-time B2B spolupráce, až ~10 hodin týdně. Odpovídám do 24 hodin ve všední dny.",
+		"emailDirect": "Přímý email",
+		"linkedinSub": "500+ spojení · 5 doporučení",
+		"bookCall": "Rezervovat 30-min hovor",
+		"freeChat": "Bezplatný úvodní hovor",
+		"whatToInclude": "◆ CO NAPSAT",
+		"whatToIncludeText": "Stručně: problém, očekávaný rozsah, aktuální tým a stack, termín a rozpočet. Čím konkrétnější, tím rychleji mohu říci \u201eano, takhle to uděláme\u201c nebo \u201etoho není pro mě — zkuste X\u201c.",
+		"projectBrief": "Brief projektu",
+		"formStep": "01 / 02",
+		"skipForm": "◆ Chcete přeskočit formulář?",
+		"skipFormDesc": "Rezervujte 30 minut. Probereme váš projekt a uvidíme, zda se hodíme.",
+
 		"fillForm": "Vyplňte formulář",
 		"fillFormDescription": "Hledáte seniora na flexibilní part-time B2B spolupráci? Vyplňte formulář a brzy se vám ozvu.",
 

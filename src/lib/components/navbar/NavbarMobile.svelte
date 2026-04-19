@@ -30,9 +30,9 @@
 
 	{#if menuOpen}
 		<div class="mobile-menu">
-			<a href="/" class:active={page.url.pathname === '/'} onclick={() => (menuOpen = false)}>Work</a>
-			<a href="/resume" class:active={page.url.pathname === '/resume'} onclick={() => (menuOpen = false)}>Resumé</a>
-			<a href="/blog" class:active={page.url.pathname.startsWith('/blog')} onclick={() => (menuOpen = false)}>Blog</a>
+			<a href="/" class:active={page.url.pathname === '/'} onclick={() => (menuOpen = false)}>{$_('navbar.work')}</a>
+			<a href="/resume" class:active={page.url.pathname === '/resume'} onclick={() => (menuOpen = false)}>{$_('navbar.resume')}</a>
+			<a href="/blog" class:active={page.url.pathname.startsWith('/blog')} onclick={() => (menuOpen = false)}>{$_('navbar.blog')}</a>
 			<div class="menu-divider"></div>
 			<button
 				class="lang-toggle"

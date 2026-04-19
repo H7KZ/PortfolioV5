@@ -28,7 +28,7 @@
 			desc: string;
 			chips?: string[];
 			badge?: string;
-			cta: string;
+			ctaKey: 'viewProject' | 'readCaseStudy';
 		}
 	> = {
 		corac_sith: {
@@ -38,7 +38,7 @@
 			role: 'SENIOR FRONTEND',
 			desc: 'Client-side hash-chain verification, D3.js supply-chain graphs, and zero-trust auth for a sensitive EO data pipeline. 1yr+ ongoing, sole frontend engineer.',
 			chips: ['Vue 3', 'D3.js', 'AWS Cognito', 'Vite', 'pnpm', 'Shadcn'],
-			cta: 'Read case study'
+			ctaKey: 'readCaseStudy'
 		},
 		iont_charge: {
 			size: 'wide',
@@ -46,14 +46,14 @@
 			role: 'FULLSTACK',
 			desc: 'Public EV-charger payment gateway. ČSOB integration, Docker Swarm, Fastify + MongoDB.',
 			chips: ['SvelteKit', 'Fastify', 'Docker Swarm', 'MongoDB'],
-			cta: 'Read case study'
+			ctaKey: 'readCaseStudy'
 		},
 		corac_scorecard: {
 			size: 'narrow',
 			company: 'CORAC',
 			role: 'FRONTEND',
 			desc: 'Cyber audit tool. NIS2 compliance, PDF export.',
-			cta: 'View project'
+			ctaKey: 'viewProject'
 		},
 		iont_admin: {
 			size: 'wide',
@@ -61,14 +61,14 @@
 			role: 'FULLSTACK',
 			desc: 'Charger control panel with real-time firmware updates and station diagnostics.',
 			chips: ['SvelteKit', 'Fastify', 'Redis', 'WebSockets'],
-			cta: 'View project'
+			ctaKey: 'viewProject'
 		},
 		iont_info: {
 			size: 'narrow',
 			company: 'IONT',
 			role: 'FULLSTACK',
 			desc: 'Public-facing EV charger info app.',
-			cta: 'View project'
+			ctaKey: 'viewProject'
 		},
 		pangolin: {
 			size: 'default',
@@ -76,7 +76,7 @@
 			role: 'FRONTEND',
 			desc: 'Interactive analytics dashboard with complex data viz.',
 			chips: ['React', 'Chart.js'],
-			cta: 'View project'
+			ctaKey: 'viewProject'
 		},
 		noteful: {
 			size: 'default',
@@ -84,7 +84,7 @@
 			role: 'FULLSTACK',
 			desc: 'Note-taking app with tag hierarchies & real-time sync.',
 			chips: ['Vue', 'Node'],
-			cta: 'View project'
+			ctaKey: 'viewProject'
 		},
 		disenchantment: {
 			size: 'default',
@@ -92,29 +92,14 @@
 			role: 'JAVA',
 			desc: 'Desktop utility app. Java + JavaFX.',
 			chips: ['JavaFX'],
-			cta: 'View project'
+			ctaKey: 'viewProject'
 		}
 	};
 
-	const services = [
-		{
-			num: '01 · GREENFIELD',
-			title: 'Ship a new product from zero',
-			desc: 'You have an idea and a deadline. I set up the repo, pick the stack, design the data layer, ship the MVP, and deploy it to production. EV-charging platform went from 0 to public launch in 5 months.',
-			chips: ['Architecture', 'Full-stack', 'DevOps']
-		},
-		{
-			num: '02 · RESCUE',
-			title: 'Fix what\'s broken — fast',
-			desc: 'Flaky deploys, rotting codebase, missing CI, nobody knows how it works. I diagnose, stabilize, document, and set up the pipelines so your team can move again.',
-			chips: ['Refactor', 'CI / CD', 'Docker']
-		},
-		{
-			num: '03 · SCALE',
-			title: 'Grow the platform alongside the team',
-			desc: 'Ongoing fractional senior engineer. Code review, architecture decisions, mentoring juniors, owning the parts nobody else wants. Currently doing this for CORAC Engineering & Intedat.',
-			chips: ['Mentoring', 'Code review', 'System design']
-		}
+	const serviceChips = [
+		['Architecture', 'Full-stack', 'DevOps'],
+		['Refactor', 'CI / CD', 'Docker'],
+		['Mentoring', 'Code review', 'System design']
 	];
 
 	const testimonials = [
@@ -162,46 +147,43 @@
 <!-- ===== HERO ===== -->
 <div class="hero-wrap">
 	<div class="hero-meta mono">
-		<span style="color: var(--fg)">Senior Frontend / Fullstack Engineer</span>
+		<span style="color: var(--fg)">{$_('home.fullstack')}</span>
 		<span class="sep">/</span>
-		<span>Freelance</span>
+		<span>{$_('home.freelance')}</span>
 		<span class="sep">/</span>
-		<span>Prague, CZ</span>
+		<span>{$_('home.prague')}</span>
 	</div>
 
 	<h1 class="hero-name">Jan<br /><em>Komínek.</em></h1>
 
-	<p class="hero-value-prop">
-		I build <strong>complex web applications from scratch — fast.</strong>
-		Vue, React, TypeScript, Node. EV charging platforms, data-lineage tooling, and the infrastructure that holds it all together.
-	</p>
+	<p class="hero-value-prop">{@html $_('home.valueProp')}</p>
 
 	<div class="hero-cta-row">
 		<a href="/contact" class="btn-primary" onclick={() => trackEvent('cta_click', { cta_name: 'start_project' })}>
-			<span>Start a project</span>
+			<span>{$_('home.startProject')}</span>
 			<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
 		</a>
 		<a href="/resume" class="btn-secondary">
-			<span>View resumé</span>
+			<span>{$_('home.viewResume')}</span>
 		</a>
 	</div>
 
 	<div class="hero-stats">
 		<div class="stat">
 			<div class="stat-num serif">4<span style="color:var(--fg-4)">+</span></div>
-			<div class="stat-label mono">Years industry</div>
+			<div class="stat-label mono">{$_('home.yearsLabel')}</div>
 		</div>
 		<div class="stat">
 			<div class="stat-num serif">12</div>
-			<div class="stat-label mono">Shipped projects</div>
+			<div class="stat-label mono">{$_('home.projectsLabel')}</div>
 		</div>
 		<div class="stat">
 			<div class="stat-num serif">7</div>
-			<div class="stat-label mono">Client companies</div>
+			<div class="stat-label mono">{$_('home.clientsLabel')}</div>
 		</div>
 		<div class="stat">
 			<div class="stat-num serif">5<span style="color:var(--fg-4)">★</span></div>
-			<div class="stat-label mono">LinkedIn recs</div>
+			<div class="stat-label mono">{$_('home.recsLabel')}</div>
 		</div>
 	</div>
 
@@ -209,8 +191,8 @@
 		<img src="/images/profile.webp" alt="Jan Komínek — Senior Frontend Engineer" width="340" height="440" fetchpriority="high" decoding="async" />
 		<div class="status-badge">
 			<span class="dot"></span>
-			<span style="color:var(--fg)">Open to Part-Time B2B</span>
-			<span style="color:var(--fg-4); margin-left:auto">up to 10 h/wk</span>
+			<span style="color:var(--fg)">{$_('home.available')}</span>
+			<span style="color:var(--fg-4); margin-left:auto">{$_('home.upToLabel')}</span>
 		</div>
 	</div>
 </div>
@@ -219,15 +201,15 @@
 <div class="section" style="margin-bottom: 96px;">
 	<div class="now-card">
 		<div>
-			<div class="now-label">◆ Now</div>
+			<div class="now-label">◆ {$_('home.nowLabel')}</div>
 		</div>
 		<div>
-			<h3 class="serif now-title">Building DeepTrace at CORAC Engineering</h3>
-			<p class="now-desc">Data-provenance &amp; integrity platform for Earth Observation data — D3.js lineage viz, client-side hash-chain verification, zero-trust auth with AWS Cognito.</p>
+			<h3 class="serif now-title">{$_('home.nowTitle')}</h3>
+			<p class="now-desc">{$_('home.nowDesc')}</p>
 		</div>
 		<div class="now-meta mono">
-			<div>Apr 2025 — present</div>
-			<div style="color:var(--fg-3); margin-top:4px;">Remote · Freelance</div>
+			<div>{$_('home.nowDate')}</div>
+			<div style="color:var(--fg-3); margin-top:4px;">{$_('home.nowMeta')}</div>
 		</div>
 	</div>
 </div>
@@ -235,10 +217,10 @@
 <!-- ===== PROJECTS BENTO ===== -->
 <section class="section">
 	<div class="section-head">
-		<div class="section-label">◆ Selected Work — {projects.length}</div>
+		<div class="section-label">◆ {$_('home.workLabel')} — {projects.length}</div>
 		<div>
-			<h2 class="serif section-h2">Built end-to-end. Deployed. In production.</h2>
-			<p class="section-p">Every project below I shipped — infrastructure, backend, and UI.</p>
+			<h2 class="serif section-h2">{$_('home.workH2')}</h2>
+			<p class="section-p">{$_('home.workP')}</p>
 		</div>
 	</div>
 
@@ -275,7 +257,7 @@
 							</div>
 						{/if}
 						<div class="project-footer">
-							<span>{cfg.cta}</span>
+							<span>{$_('home.' + cfg.ctaKey)}</span>
 							<span class="arrow">→</span>
 						</div>
 					</div>
@@ -288,36 +270,48 @@
 <!-- ===== SERVICES ===== -->
 <section class="section">
 	<div class="section-head">
-		<div class="section-label">◆ How I work with clients</div>
+		<div class="section-label">◆ {$_('home.servicesLabel')}</div>
 		<div>
-			<h2 class="serif section-h2">Senior ownership. No hand-holding required.</h2>
-			<p class="section-p">Part-time B2B engagements. I take full responsibility for the area I own — architecture, code, delivery, deployment.</p>
+			<h2 class="serif section-h2">{$_('home.servicesH2')}</h2>
+			<p class="section-p">{$_('home.servicesP')}</p>
 		</div>
 	</div>
 
 	<div class="services-grid">
-		{#each services as svc}
-			<div class="service">
-				<div class="service-num mono">{svc.num}</div>
-				<h3 class="service-title serif">{svc.title}</h3>
-				<p class="service-desc">{svc.desc}</p>
-				<div class="service-chips">
-					{#each svc.chips as chip (chip)}
-						<span class="chip">{chip}</span>
-					{/each}
-				</div>
+		<div class="service">
+			<div class="service-num mono">{$_('home.service1Num')}</div>
+			<h3 class="service-title serif">{$_('home.service1Title')}</h3>
+			<p class="service-desc">{$_('home.service1Desc')}</p>
+			<div class="service-chips">
+				{#each serviceChips[0] as chip (chip)}<span class="chip">{chip}</span>{/each}
 			</div>
-		{/each}
+		</div>
+		<div class="service">
+			<div class="service-num mono">{$_('home.service2Num')}</div>
+			<h3 class="service-title serif">{$_('home.service2Title')}</h3>
+			<p class="service-desc">{$_('home.service2Desc')}</p>
+			<div class="service-chips">
+				{#each serviceChips[1] as chip (chip)}<span class="chip">{chip}</span>{/each}
+			</div>
+		</div>
+		<div class="service">
+			<div class="service-num mono">{$_('home.service3Num')}</div>
+			<h3 class="service-title serif">{$_('home.service3Title')}</h3>
+			<p class="service-desc">{$_('home.service3Desc')}</p>
+			<div class="service-chips">
+				{#each serviceChips[2] as chip (chip)}<span class="chip">{chip}</span>{/each}
+			</div>
+		</div>
 	</div>
 </section>
 
 <!-- ===== TESTIMONIALS ===== -->
 <section class="section">
 	<div class="section-head">
-		<div class="section-label">◆ Recommendations — 05</div>
+		<div class="section-label">◆ {$_('home.testimonialsLabel')}</div>
 		<div>
-			<h2 class="serif section-h2">What people who've worked with me say.</h2>
-			<p class="section-p">All five verified on LinkedIn. Clients, managers, and peers from Precismo, HAXAGON, and CORAC.</p>
+			<h2 class="serif section-h2">{$_('home.testimonialsH2')}</h2>
+			<p class="section-p">{$_('home.testimonialsP')}</p>
 		</div>
 	</div>
 
@@ -416,7 +410,7 @@
 		margin: 0 0 32px;
 		grid-column: 1;
 	}
-	.hero-value-prop strong {
+	.hero-value-prop :global(strong) {
 		color: var(--fg);
 		font-weight: 500;
 	}
@@ -455,7 +449,7 @@
 		grid-column: 2;
 		grid-row: 1 / 6;
 		position: relative;
-		width: 300px;
+		width: 320px;
 		height: 390px;
 		border-radius: 180px 180px 12px 12px;
 		overflow: hidden;

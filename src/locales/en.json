@@ -59,28 +59,93 @@
 		"fullstack": "Senior Frontend Engineer",
 		"freelance": "Freelance",
 		"prague": "Prague, CZ",
-
 		"motto": "Open to part-time B2B contracts · 3+ years senior-level experience",
-
 		"jankominek": "Jan Komínek",
-
 		"available": "Open to Part-Time B2B",
 		"bookACall": "Book a Call",
+		"explore": "Explore my portfolio",
 
-		"explore": "Explore my portfolio"
+		"valueProp": "I build <strong>complex web applications from scratch — fast.</strong> Vue, React, TypeScript, Node. EV charging platforms, data-lineage tooling, and the infrastructure that holds it all together.",
+		"startProject": "Start a project",
+		"viewResume": "View resumé",
+		"yearsLabel": "Years industry",
+		"projectsLabel": "Shipped projects",
+		"clientsLabel": "Client companies",
+		"recsLabel": "LinkedIn recs",
+		"upToLabel": "up to 10 h/wk",
+
+		"nowLabel": "Now",
+		"nowTitle": "Building DeepTrace at CORAC Engineering",
+		"nowDesc": "Data-provenance & integrity platform for Earth Observation data — D3.js lineage viz, client-side hash-chain verification, zero-trust auth with AWS Cognito.",
+		"nowDate": "Apr 2025 — present",
+		"nowMeta": "Remote · Freelance",
+
+		"workLabel": "Selected Work",
+		"workH2": "Built end-to-end. Deployed. In production.",
+		"workP": "Every project below I shipped — infrastructure, backend, and UI.",
+		"viewProject": "View project",
+		"readCaseStudy": "Read case study",
+
+		"servicesLabel": "How I work with clients",
+		"servicesH2": "Senior ownership. No hand-holding required.",
+		"servicesP": "Part-time B2B engagements. I take full responsibility for the area I own — architecture, code, delivery, deployment.",
+		"service1Num": "01 · GREENFIELD",
+		"service1Title": "Ship a new product from zero",
+		"service1Desc": "You have an idea and a deadline. I set up the repo, pick the stack, design the data layer, ship the MVP, and deploy it to production. EV-charging platform went from 0 to public launch in 5 months.",
+		"service2Num": "02 · RESCUE",
+		"service2Title": "Fix what's broken — fast",
+		"service2Desc": "Flaky deploys, rotting codebase, missing CI, nobody knows how it works. I diagnose, stabilize, document, and set up the pipelines so your team can move again.",
+		"service3Num": "03 · SCALE",
+		"service3Title": "Grow the platform alongside the team",
+		"service3Desc": "Ongoing fractional senior engineer. Code review, architecture decisions, mentoring juniors, owning the parts nobody else wants. Currently doing this for CORAC Engineering & Intedat.",
+
+		"testimonialsLabel": "What clients say",
+		"testimonialsH2": "Real feedback from real teammates and managers.",
+		"testimonialsP": "Pulled directly from LinkedIn recommendations — unedited."
+	},
+
+	"blog": {
+		"writingLabel": "◆ Writing",
+		"h1": "Blog.",
+		"coming": "Coming",
+		"draft": "Draft"
 	},
 
 	"resume": {
 		"jankominek": "Jan Komínek",
+		"label": "◆ Resumé · 2026",
+		"subtitle": "Senior Frontend / Fullstack Engineer — 4+ yrs — Prague, CZ",
+		"bio": "I build complex web applications from scratch — fast. Vue, React, TypeScript, deep backend experience in Node, PostgreSQL, Redis, Docker. I've led an EV charging platform with its own payment system and built zero-trust data-lineage tooling.",
+		"hireBtn": "Hire me →",
+
+		"impact1Label": "◆ Industry experience",
+		"impact1Sub": "Senior level since 2024",
+		"impact2Label": "◆ Companies worked with",
+		"impact2Sub": "From startups to enterprise",
+		"impact3Label": "◆ Primary stack",
+		"impact3Sub": "Also React / Svelte / Nuxt",
+		"impact4Label": "◆ Status",
+		"impact4Sub": "Part-time B2B · ≤10h/wk",
+
+		"expH2": "Where I've been shipping.",
+		"expP": "Ordered newest to oldest. Concurrent roles noted. Current engagements marked in green.",
+		"eduH2": "Formal training.",
+		"skillsH2": "Stack.",
+		"skillsP": "Dot marks primary daily tools.",
+		"skillGroup1": "Languages & Frameworks",
+		"skillGroup2": "Data & Storage",
+		"skillGroup3": "Infra & DevOps",
+		"skillGroup4": "Craft & Tools",
+
 		"quickSummaryLabel": "Quick summary",
 		"quickSummary": "I am a Senior Frontend / Fullstack Engineer with a passion for building complex applications from scratch and a reputation for rapid problem-solving. My core expertise is in Vue.js, React.js, and TypeScript, backed by robust full-stack experience — including leading development of an EV charging platform with its own payment system and Docker-based service infrastructure. With a strong foundation in Cybersecurity and currently pursuing a B.S. in Applied Computer Science at the Prague University of Economics and Business, I excel at tackling difficult technical challenges and leading projects to successful completion.",
 
 		"aboutLabel": "About",
 		"about": [
 			"I am a Senior Frontend / Fullstack Engineer based in Prague, specializing in Vue.js, React.js, and TypeScript while maintaining deep full-stack experience. I currently work as a freelance Senior Frontend Engineer at CORAC Engineering, building technically advanced, cloud-integrated applications, and as a Fullstack Engineer at Intedat, developing robust systems with Node.js, AdonisJS, PostgreSQL, and Redis. A recent highlight is leading the backend and DevOps architecture for Diář FISáka — a university project where I designed the containerized infrastructure, built a Node.js REST API, and implemented async background workers using BullMQ.",
-			"My academic background in Applied Computer Science at the Prague University of Economics and Business has broadened my skill set beyond pure development. I’ve gained knowledge in marketing, UX design, economics, management, and data analytics with tools like Microsoft Power BI—enabling me to approach projects from both technical and business standpoints.",
-			"Professionally, I’ve taken on roles ranging from IT Support to Frontend and Fullstack Development across diverse environments. These experiences have sharpened my problem-solving abilities and adaptability, especially in freelance and cross-functional team settings. I also bring a foundation in cybersecurity, further strengthening my focus on building secure and dependable systems.",
-			"Driven by a passion for clean code, modern frameworks, and meaningful digital experiences, I thrive in collaborative environments that value innovation, precision, and user-centered design. Whether it’s architecting a scalable backend, crafting an elegant UI, or navigating complex challenges, I’m committed to delivering practical and impactful software solutions."
+			"My academic background in Applied Computer Science at the Prague University of Economics and Business has broadened my skill set beyond pure development. I've gained knowledge in marketing, UX design, economics, management, and data analytics with tools like Microsoft Power BI—enabling me to approach projects from both technical and business standpoints.",
+			"Professionally, I've taken on roles ranging from IT Support to Frontend and Fullstack Development across diverse environments. These experiences have sharpened my problem-solving abilities and adaptability, especially in freelance and cross-functional team settings. I also bring a foundation in cybersecurity, further strengthening my focus on building secure and dependable systems.",
+			"Driven by a passion for clean code, modern frameworks, and meaningful digital experiences, I thrive in collaborative environments that value innovation, precision, and user-centered design. Whether it's architecting a scalable backend, crafting an elegant UI, or navigating complex challenges, I'm committed to delivering practical and impactful software solutions."
 		],
 
 		"experienceLabel": "Experience",
@@ -172,8 +237,22 @@
 	},
 
 	"contact": {
+		"hireLabel": "◆ Hire me",
+		"h1": "Let's work together.",
+		"intro": "Available for part-time B2B engagements, up to ~10 hours per week. I reply within 24 hours on weekdays.",
+		"emailDirect": "Email direct",
+		"linkedinSub": "500+ connections · 5 recs",
+		"bookCall": "Book a 30-min call",
+		"freeChat": "Free discovery chat",
+		"whatToInclude": "◆ WHAT TO INCLUDE",
+		"whatToIncludeText": "Briefly: the problem, expected scale, current team & stack, timeline, and budget range. The more concrete, the faster I can say \"yes, and here's how\" or \"not the right fit — try X\".",
+		"projectBrief": "Project brief",
+		"formStep": "01 / 02",
+		"skipForm": "◆ Prefer to skip the form?",
+		"skipFormDesc": "Grab 30 minutes. We'll chat through your project and see if it's a fit.",
+
 		"fillForm": "Fill out Form",
-		"fillFormDescription": "Looking for a senior dev on a flexible part-time B2B basis? Fill out the form and I’ll get back to you soon.",
+		"fillFormDescription": "Looking for a senior dev on a flexible part-time B2B basis? Fill out the form and I'll get back to you soon.",
 
 		"orBookACall": "Or <u>Book a Call</u>",
 
@@ -407,7 +486,7 @@
 		},
 
 		"bookACall": "Book a Call",
-		"bookACallDescription": "Want to skip the back-and-forth? Let’s chat! Book a call, and we’ll go over your needs.",
+		"bookACallDescription": "Want to skip the back-and-forth? Let's chat! Book a call, and we'll go over your needs.",
 
 		"calendar": {
 			"jankominek": "Jan Komínek",
