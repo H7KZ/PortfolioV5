@@ -325,9 +325,8 @@
 			</div>
 		</div>
 	</Accordition>
-	<div class="flex w-full justify-end gap-3 xl:flex-row xl:gap-8">
-		<div class="hidden w-full xl:block xl:max-w-1/2"></div>
-		<div class="flex w-full flex-col gap-3 sm:flex-row xl:max-w-1/2 xl:gap-8">
+	<div class="flex w-full gap-3 xl:flex-row xl:gap-8">
+		<div class="flex w-full flex-col gap-3 sm:flex-row xl:gap-8">
 			<div class="w-full xl:w-52 xl:shrink-0">
 				<DateInput
 					bind:value={form.deadline}
