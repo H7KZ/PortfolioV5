@@ -3,7 +3,7 @@ import { z } from 'zod';
 
 export const ContactFormValidationSchema = z.object({
 	fullName: z.string().trim().min(1).max(100),
-	email: z.string().trim().email().min(1).max(254),
+	email: z.email().trim().min(1).max(254),
 	company: z.string().trim().max(100),
 	message: z.string().trim().min(1).max(5000),
 	budget: z.number().min(1000).max(25000),

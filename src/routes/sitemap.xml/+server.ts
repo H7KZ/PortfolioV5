@@ -29,8 +29,7 @@ export const GET: RequestHandler = async () => {
 	const postModules = import.meta.glob('/src/posts/**/*.md');
 	const postSlugs = Object.keys(postModules)
 		.map((p) => {
-			const parts = p.replace('/src/posts/', '').replace('.md', '');
-			return parts;
+			return p.replace('/src/posts/', '').replace('.md', '');
 		})
 		.filter((s) => !s.split('/').some((part) => part.startsWith('_')));
 

@@ -71,7 +71,6 @@
 		"yearsLabel": "Years industry",
 		"projectsLabel": "Shipped projects",
 		"clientsLabel": "Client companies",
-		"recsLabel": "LinkedIn recs",
 		"upToLabel": "up to 10 h/wk",
 
 		"nowLabel": "Now",
@@ -101,7 +100,26 @@
 
 		"testimonialsLabel": "What clients say",
 		"testimonialsH2": "Real feedback from real teammates and managers.",
-		"testimonialsP": "Pulled directly from LinkedIn recommendations — unedited."
+		"testimonialsP": "Pulled directly from LinkedIn recommendations — unedited.",
+
+		"projectCoraSithBadge": "◆ Flagship",
+		"projectCoraSithDesc": "Client-side hash-chain verification, D3.js supply-chain graphs, and zero-trust auth for a sensitive EO data pipeline. 1yr+ ongoing, sole frontend engineer.",
+		"projectIontChargeDesc": "Public EV-charger payment gateway. ČSOB integration, Docker Swarm, Fastify + MongoDB.",
+		"projectCoraScorecardDesc": "Cyber audit tool. NIS2 compliance, PDF export.",
+		"projectIontAdminDesc": "Charger control panel with real-time firmware updates and station diagnostics.",
+		"projectIontInfoDesc": "Public-facing EV charger info app.",
+		"projectPangolinDesc": "Interactive analytics dashboard with complex data viz.",
+		"projectNotefulDesc": "Note-taking app with tag hierarchies & real-time sync.",
+		"projectDisenchantmentDesc": "A minecraft plugin that enhances the vanilla enchanting system.",
+
+		"testimonial1Quote": "\"His problem-solving skills and experienced approach shined through. He is excellent at explaining tools and procedures to less experienced team members. Anyone would be lucky to have him.\"",
+		"testimonial1Role": "Software Engineering · Same team, 2 projects",
+		"testimonial2Quote": "\"Jan's ability to tackle complex technical solutions and successfully overcome challenges was truly remarkable. He displayed not only technical expertise but also management skills — breaking work into smaller items so multiple team members could contribute seamlessly.\"",
+		"testimonial2Role": "Senior Backend Developer · Direct manager, Precismo",
+		"testimonial3Quote": "\"Happy to recommend him for his amazing problem-solving skills and fast learning pace. He quickly picked up on new technology he hadn't used before and very quickly excelled at it.\"",
+		"testimonial3Role": "Full-stack Developer · HAXAGON",
+		"testimonial4Quote": "\"A versatile asset to any team. He consistently demonstrated his ability to turn project requirements into successful web applications. I wholeheartedly recommend Jan for his strong technical skills and commitment to delivering results.\"",
+		"testimonial4Role": "Founder & CTO · PRECISMO"
 	},
 
 	"blog": {
@@ -233,7 +251,72 @@
 			"BullMQ",
 			"Traefik",
 			"!MySQL"
-		]
+		],
+
+		"exp1Dates": "APR 2025 — PRESENT",
+		"exp1Duration": "1 yr+",
+		"exp1Role": "Senior Frontend Engineer",
+		"exp1Company": "CORAC ENGINEERING · FREELANCE · REMOTE",
+		"exp1Desc": "Building DeepTrace — a data provenance and integrity platform for Earth Observation data. Sole frontend engineer.",
+		"exp1Hi1": "Architected interactive D3.js lineage visualization for complex supply-chain graphs",
+		"exp1Hi2": "Implemented client-side hash-chain verification following zero-trust architecture",
+		"exp1Hi3": "Integrated AWS Cognito (OAuth) for secure client-side-only authentication",
+
+		"exp2Dates": "SEP 2024 — PRESENT",
+		"exp2Duration": "1 yr 8 mos",
+		"exp2Role": "Fullstack Engineer",
+		"exp2Company": "INTEDAT · FREELANCE · REMOTE",
+		"exp2Desc": "Developing and maintaining a fullstack data platform focused on scalability, search performance, and reliable infrastructure.",
+		"exp2Hi1": "End-to-end feature delivery — Nuxt on the frontend, AdonisJS on the backend",
+		"exp2Hi2": "Elasticsearch-powered search across large datasets",
+		"exp2Hi3": "CI/CD + DigitalOcean Linux infrastructure for production deployments",
+
+		"exp3Dates": "JUL 2022 — PRESENT",
+		"exp3Duration": "Yearly · 4 editions",
+		"exp3Role": "Lecturer & Organizer",
+		"exp3Company": "SMÍCHOVSKÁ SPŠ · SUMMER SCHOOL · ON-SITE",
+		"exp3Desc": "Solo-taught \"Intro and Basics of 2D Graphics\" for 50 students (8th & 9th grade). Consistently top-rated teacher across all four years (2022–2025).",
+
+		"exp4Dates": "AUG 2023 — SEP 2024",
+		"exp4Duration": "1 yr 2 mos",
+		"exp4Role": "Fullstack Engineer",
+		"exp4Company": "IONT TECH · FREELANCE · REMOTE",
+		"exp4Desc": "Led full-stack development of a web platform managing electric vehicle chargers — from infrastructure setup to payment integration.",
+		"exp4Hi1": "Built public-facing charging app with online payment and remote charger authorization",
+		"exp4Hi2": "Designed + deployed infrastructure from scratch on IaaS — Docker Swarm microservices",
+		"exp4Hi3": "Developed auto-updating firmware delivery system with the hardware team",
+
+		"exp5Dates": "JAN 2023 — NOV 2023",
+		"exp5Duration": "11 mos",
+		"exp5Role": "Fullstack Developer",
+		"exp5Company": "PRECISMO · FREELANCE · HYBRID",
+		"exp5Desc": "Fullstack developer on a cross-functional Agile team building an internal customer portal. Collaborated with 6 devs and 1 PM in Scrum.",
+
+		"exp6Dates": "OCT 2022 — JUL 2023",
+		"exp6Duration": "10 mos",
+		"exp6Role": "Frontend Developer",
+		"exp6Company": "HAXAGON · PART-TIME · REMOTE",
+		"exp6Desc": "Frontend on a cybersecurity e-learning platform. Introduced improved dev processes for code quality and delivery flow.",
+
+		"exp7Dates": "JUN 2020 — FEB 2024",
+		"exp7Duration": "3 yrs 9 mos",
+		"exp7Role": "IT Support",
+		"exp7Company": "KMK FAMILY BUSINESS · FREELANCE",
+		"exp7Desc": "Hands-on IT support: Windows workstations, network printers, IoT devices, local network infrastructure, and safety training.",
+
+		"edu1Dates": "SEP 2024 — JUL 2027",
+		"edu1Duration": "Bachelor's, ongoing · Grade 2",
+		"edu1Role": "Applied Computer Science",
+		"edu1Org": "PRAGUE UNIVERSITY OF ECONOMICS AND BUSINESS (VŠE)",
+		"edu1Desc": "B.S. focused on bridging software engineering and business strategy. System design, machine learning, cloud computing, data analytics alongside business fundamentals.",
+		"edu1Hi1": "Leading backend + DevOps architecture for Diář FISáka — team of 4 developers on Hetzner VPS",
+		"edu1Hi2": "Completed certifications: Building AI, Elements of AI, Data Science in Python, Joining Data in SQL",
+
+		"edu2Dates": "SEP 2020 — MAY 2024",
+		"edu2Duration": "High School Diploma",
+		"edu2Role": "Cyber / Computer Forensics & Counterterrorism",
+		"edu2Org": "SMICHOV SECONDARY TECHNICAL SCHOOL",
+		"edu2Desc": "Graduated with full marks in technical subjects. Network security, forensics, system admin. Final thesis: full-stack e-commerce store built from scratch, covering DevOps and CI/CD."
 	},
 
 	"contact": {

@@ -49,8 +49,7 @@
 			const issues = validationResult.error.issues;
 			issues.forEach((issue) => {
 				const key = issue.path.find((p) => Object.keys(form).includes(p.toString())) as keyof typeof form;
-				const message = $_(`contact.form.errors.${key}.${issue.code}`);
-				error[key] = message;
+				error[key] = $_(`contact.form.errors.${key}.${issue.code}`);
 			});
 			return;
 		}

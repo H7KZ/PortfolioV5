@@ -6,212 +6,85 @@
 
 <svelte:head>
 	<title>Contact — Jan Komínek, Senior Frontend Engineer</title>
-	<meta name="description" content="Get in touch with Jan Komínek — Senior Frontend / Fullstack Engineer. Book a 30-min call or fill out the project form for part-time B2B contracts." />
+	<meta
+		name="description"
+		content="Get in touch with Jan Komínek — Senior Frontend / Fullstack Engineer. Book a 30-min call or fill out the project form for part-time B2B contracts."
+	/>
 	<meta property="og:title" content="Contact — Jan Komínek, Senior Frontend Engineer" />
-	<meta property="og:description" content="Book a call or fill out the project form to work with Jan Komínek, Senior Frontend Engineer, on a part-time B2B basis." />
+	<meta
+		property="og:description"
+		content="Book a call or fill out the project form to work with Jan Komínek, Senior Frontend Engineer, on a part-time B2B basis."
+	/>
 	<meta property="og:url" content="https://jankominek.com/contact" />
 </svelte:head>
 
-<div class="contact-grid">
-	<!-- ===== LEFT COL ===== -->
-	<div class="contact-intro">
-		<div class="mono-label">{$_('contact.hireLabel')}</div>
-		<h1 class="serif contact-h1">{$_('contact.h1')}</h1>
-		<p class="contact-p">{$_('contact.intro')}</p>
+<div
+	class="mx-auto grid max-w-(--max) grid-cols-2 gap-16 px-8 pt-10 pb-30 max-[900px]:grid-cols-1 max-[900px]:gap-12 max-[900px]:px-5 max-[900px]:pt-7 max-[900px]:pb-20"
+>
+	<!-- LEFT COL -->
+	<div>
+		<div class="mono mb-3.5 text-[11px] tracking-widest text-(--fg-4) uppercase">{$_('contact.hireLabel')}</div>
+		<h1 class="serif mt-0 mb-5 text-[clamp(32px,5vw,56px)] leading-none tracking-[-0.025em]">{$_('contact.h1')}</h1>
+		<p class="m-0 max-w-115 text-[17px] leading-[1.55] text-(--fg-2)">{$_('contact.intro')}</p>
 
-		<div class="contact-options">
-			<a href="mailto:contact@jankominek.com" class="contact-option">
-				<div class="option-icon mono">@</div>
-				<div class="option-info">
-					<span class="option-name">{$_('contact.emailDirect')}</span>
-					<span class="option-desc mono">contact@jankominek.com</span>
+		<div class="mt-9 flex flex-col gap-2.5">
+			<a
+				href="mailto:contact@jankominek.com"
+				class="group grid grid-cols-[auto_1fr_auto] items-center gap-4.5 rounded-(--radius) border border-(--line) bg-(--bg-2) px-5.5 py-4.5 text-(--fg) no-underline transition-[border-color,transform] duration-200 hover:translate-x-1 hover:border-(--fg-5)"
+			>
+				<div class="mono grid h-9 w-9 place-items-center rounded-lg border border-(--line) bg-(--bg-3) text-[12px] text-(--fg-3)">@</div>
+				<div class="flex flex-col gap-0.5">
+					<span class="text-[14px] font-medium">{$_('contact.emailDirect')}</span>
+					<span class="mono text-[11px] text-(--fg-4)">contact@jankominek.com</span>
 				</div>
-				<div class="option-arrow">→</div>
+				<div class="text-(--fg-4) transition-colors duration-200 group-hover:text-(--accent)">→</div>
 			</a>
-			<a href="https://www.linkedin.com/in/jan-kominek" target="_blank" rel="noopener noreferrer" class="contact-option">
-				<div class="option-icon mono">in</div>
-				<div class="option-info">
-					<span class="option-name">LinkedIn</span>
-					<span class="option-desc mono">{$_('contact.linkedinSub')}</span>
+			<a
+				href="https://www.linkedin.com/in/jan-kominek"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="group grid grid-cols-[auto_1fr_auto] items-center gap-4.5 rounded-(--radius) border border-(--line) bg-(--bg-2) px-5.5 py-4.5 text-(--fg) no-underline transition-[border-color,transform] duration-200 hover:translate-x-1 hover:border-(--fg-5)"
+			>
+				<div class="mono grid h-9 w-9 place-items-center rounded-lg border border-(--line) bg-(--bg-3) text-[12px] text-(--fg-3)">in</div>
+				<div class="flex flex-col gap-0.5">
+					<span class="text-[14px] font-medium">LinkedIn</span>
+					<span class="mono text-[11px] text-(--fg-4)">{$_('contact.linkedinSub')}</span>
 				</div>
-				<div class="option-arrow">→</div>
+				<div class="text-(--fg-4) transition-colors duration-200 group-hover:text-(--accent)">→</div>
 			</a>
-			<a href="#calendar" class="contact-option">
-				<div class="option-icon mono">📅</div>
-				<div class="option-info">
-					<span class="option-name">{$_('contact.bookCall')}</span>
-					<span class="option-desc mono">{$_('contact.freeChat')}</span>
+			<a
+				href="#calendar"
+				class="group grid grid-cols-[auto_1fr_auto] items-center gap-4.5 rounded-(--radius) border border-(--line) bg-(--bg-2) px-5.5 py-4.5 text-(--fg) no-underline transition-[border-color,transform] duration-200 hover:translate-x-1 hover:border-(--fg-5)"
+			>
+				<div class="mono grid h-9 w-9 place-items-center rounded-lg border border-(--line) bg-(--bg-3) text-[12px] text-(--fg-3)">📅</div>
+				<div class="flex flex-col gap-0.5">
+					<span class="text-[14px] font-medium">{$_('contact.bookCall')}</span>
+					<span class="mono text-[11px] text-(--fg-4)">{$_('contact.freeChat')}</span>
 				</div>
-				<div class="option-arrow">→</div>
+				<div class="text-(--fg-4) transition-colors duration-200 group-hover:text-(--accent)">→</div>
 			</a>
 		</div>
 
-		<div class="what-to-include">
-			<div class="mono-label" style="color: var(--accent)">{$_('contact.whatToInclude')}</div>
-			<p>{$_('contact.whatToIncludeText')}</p>
+		<div class="mt-10 rounded-(--radius) border border-dashed border-(--line-2) px-5.5 py-4.5 text-[13px] leading-[1.6] text-(--fg-3)">
+			<div class="mono mb-3.5 text-[11px] tracking-widest text-(--accent) uppercase">{$_('contact.whatToInclude')}</div>
+			<p class="m-0">{$_('contact.whatToIncludeText')}</p>
 		</div>
 	</div>
 
-	<!-- ===== RIGHT COL ===== -->
+	<!-- RIGHT COL -->
 	<div>
-		<div class="form-card">
-			<div class="form-head">
-				<h3 class="serif form-title">{$_('contact.projectBrief')}</h3>
-				<div class="mono-label">{$_('contact.formStep')}</div>
+		<div class="mb-5 rounded-lg border border-(--line) bg-(--bg-2) p-7">
+			<div class="mb-6 flex items-end justify-between border-b border-(--line) pb-4.5">
+				<h3 class="serif m-0 text-[20px] font-normal">{$_('contact.projectBrief')}</h3>
+				<div class="mono text-[11px] tracking-widest text-(--fg-4) uppercase">{$_('contact.formStep')}</div>
 			</div>
 			<ContactForm />
 		</div>
 
-		<div class="book-card" id="calendar">
-			<div class="mono-label">{$_('contact.skipForm')}</div>
-			<p class="book-desc">{$_('contact.skipFormDesc')}</p>
+		<div class="rounded-lg border border-(--line) bg-(--bg-2) p-7" id="calendar">
+			<div class="mono mb-3.5 text-[11px] tracking-widest text-(--fg-4) uppercase">{$_('contact.skipForm')}</div>
+			<p class="mt-0 mb-5 text-[14px] leading-[1.55] text-(--fg-2)">{$_('contact.skipFormDesc')}</p>
 			<CalendarCallPicker />
 		</div>
 	</div>
 </div>
-
-<style>
-	.contact-grid {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 64px;
-		max-width: var(--max);
-		margin: 0 auto;
-		padding: 40px 32px 120px;
-	}
-	@media (max-width: 900px) {
-		.contact-grid {
-			grid-template-columns: 1fr;
-			gap: 48px;
-			padding: 28px 20px 80px;
-		}
-	}
-
-	.mono-label {
-		font-family: var(--font-mono);
-		font-size: 11px;
-		color: var(--fg-4);
-		letter-spacing: 0.1em;
-		text-transform: uppercase;
-		margin-bottom: 14px;
-	}
-	.contact-h1 {
-		font-size: clamp(32px, 5vw, 56px);
-		letter-spacing: -0.025em;
-		margin: 0 0 20px;
-		line-height: 1;
-	}
-	.contact-p {
-		font-size: 17px;
-		line-height: 1.55;
-		color: var(--fg-2);
-		max-width: 460px;
-		margin: 0;
-	}
-
-	.contact-options {
-		margin-top: 36px;
-		display: flex;
-		flex-direction: column;
-		gap: 10px;
-	}
-	.contact-option {
-		display: grid;
-		grid-template-columns: auto 1fr auto;
-		gap: 18px;
-		padding: 18px 22px;
-		border: 1px solid var(--line);
-		border-radius: var(--radius);
-		background: var(--bg-2);
-		text-decoration: none;
-		color: var(--fg);
-		transition:
-			border-color 200ms,
-			transform 200ms;
-		align-items: center;
-	}
-	.contact-option:hover {
-		border-color: var(--fg-5);
-		transform: translateX(4px);
-	}
-	.option-icon {
-		width: 36px;
-		height: 36px;
-		border-radius: 8px;
-		background: var(--bg-3);
-		border: 1px solid var(--line);
-		display: grid;
-		place-items: center;
-		font-size: 12px;
-		color: var(--fg-3);
-	}
-	.option-info {
-		display: flex;
-		flex-direction: column;
-		gap: 2px;
-	}
-	.option-name {
-		font-size: 14px;
-		font-weight: 500;
-	}
-	.option-desc {
-		font-size: 11px;
-		color: var(--fg-4);
-	}
-	.option-arrow {
-		color: var(--fg-4);
-		transition: color 200ms;
-	}
-	.contact-option:hover .option-arrow {
-		color: var(--accent);
-	}
-
-	.what-to-include {
-		margin-top: 40px;
-		padding: 18px 22px;
-		border: 1px dashed var(--line-2);
-		border-radius: var(--radius);
-		font-size: 13px;
-		color: var(--fg-3);
-		line-height: 1.6;
-	}
-	.what-to-include p {
-		margin: 0;
-	}
-
-	/* ===== Form card ===== */
-	.form-card {
-		background: var(--bg-2);
-		border: 1px solid var(--line);
-		border-radius: var(--radius-lg);
-		padding: 28px;
-		margin-bottom: 20px;
-	}
-	.form-head {
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-end;
-		margin-bottom: 24px;
-		padding-bottom: 18px;
-		border-bottom: 1px solid var(--line);
-	}
-	.form-title {
-		margin: 0;
-		font-weight: 400;
-		font-size: 20px;
-	}
-
-	/* ===== Book card ===== */
-	.book-card {
-		background: var(--bg-2);
-		border: 1px solid var(--line);
-		border-radius: var(--radius-lg);
-		padding: 28px;
-	}
-	.book-desc {
-		font-size: 14px;
-		color: var(--fg-2);
-		margin: 0 0 20px;
-		line-height: 1.55;
-	}
-</style>
