@@ -72,25 +72,11 @@
 			<div class="mono text-[12px] tracking-[0.04em] text-(--fg-4)">{$_('blog.coming')}</div>
 			<div>
 				<h2 class="serif m-0 text-[20px] leading-[1.3] font-light tracking-[-0.01em]">
-					Building a client-side hash-chain verifier in 200 lines of TS.
+					Building a Raspberry Pi departure board — displays, PIR motion sensors, and Rust — from scratch.
 				</h2>
 			</div>
 			<div class="mono flex gap-1 text-[11px] whitespace-nowrap text-(--fg-4)">
-				<span>EN</span><span class="text-(--fg-5)">/</span><span>CRYPTO</span><span class="text-(--fg-5)">/</span><span>VUE</span>
-			</div>
-			<div class="mono text-[11px] tracking-[0.04em] whitespace-nowrap text-(--fg-4)">{$_('blog.draft')}</div>
-		</div>
-		<div
-			class="grid cursor-default grid-cols-[120px_1fr_auto_auto] items-center gap-7 border-t border-(--line) py-6 text-(--fg) opacity-45 last:border-b last:border-(--line) max-md:grid-cols-1 max-md:gap-1.5 max-md:py-4.5"
-		>
-			<div class="mono text-[12px] tracking-[0.04em] text-(--fg-4)">{$_('blog.coming')}</div>
-			<div>
-				<h2 class="serif m-0 text-[20px] leading-[1.3] font-light tracking-[-0.01em]">
-					Docker Swarm in production — 18 months of lessons from an EV platform.
-				</h2>
-			</div>
-			<div class="mono flex gap-1 text-[11px] whitespace-nowrap text-(--fg-4)">
-				<span>EN</span><span class="text-(--fg-5)">/</span><span>DOCKER</span><span class="text-(--fg-5)">/</span><span>INFRA</span>
+				<span>EN</span><span class="text-(--fg-5)">/</span><span>RUST</span><span class="text-(--fg-5)">/</span><span>EMBEDDED</span>
 			</div>
 			<div class="mono text-[11px] tracking-[0.04em] whitespace-nowrap text-(--fg-4)">{$_('blog.draft')}</div>
 		</div>

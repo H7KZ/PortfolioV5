@@ -9,6 +9,36 @@
 
 	let { children } = $props();
 
+	const jsonLd =
+		`<script type="application/ld+json">${JSON.stringify({
+			'@context': 'https://schema.org',
+			'@type': 'Person',
+			name: 'Jan Komínek',
+			alternateName: 'Jan Kominek',
+			url: 'https://jankominek.com',
+			email: 'contact@jankominek.com',
+			jobTitle: 'Senior Frontend / Fullstack Engineer',
+			description:
+				'Senior Frontend and Fullstack Engineer based in Prague, Czech Republic. Specialising in Vue.js, React.js, TypeScript, Node.js, and Docker. Available for part-time B2B contracts up to 10 hours per week.',
+			address: { '@type': 'PostalAddress', addressLocality: 'Prague', addressCountry: 'CZ' },
+			sameAs: ['https://www.linkedin.com/in/jan-kominek'],
+			knowsAbout: [
+				'Vue.js',
+				'React.js',
+				'TypeScript',
+				'Node.js',
+				'SvelteKit',
+				'Docker',
+				'Docker Swarm',
+				'PostgreSQL',
+				'Redis',
+				'Rust',
+				'CI/CD',
+				'Microservices',
+				'System Architecture'
+			]
+		})}</` + `script>`;
+
 	onMount(() => {
 		locale.subscribe((l) => {
 			localStorage.setItem('locale', l || window.navigator.language || 'en');
@@ -33,6 +63,12 @@
 		});
 	});
 </script>
+
+<svelte:head>
+	<!-- eslint-disable svelte/no-at-html-tags -->
+	{@html jsonLd}
+	<!-- eslint-enable svelte/no-at-html-tags -->
+</svelte:head>
 
 <a
 	href="#main-content"

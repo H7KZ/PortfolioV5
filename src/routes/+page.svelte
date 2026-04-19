@@ -311,24 +311,45 @@
 	</div>
 
 	<div class="grid grid-cols-3 gap-3.5 max-md:grid-cols-1">
-		<div class="rounded-(--radius) border border-(--line) bg-(--bg-2) p-6">
-			<div class="mono mb-7 text-[11px] tracking-widest text-(--fg-4)">{$_('home.service1Num')}</div>
+		<div
+			class="group relative overflow-hidden rounded-(--radius) border border-(--line) bg-(--bg-2) p-6 transition-[border-color,transform] duration-200 hover:-translate-y-0.5 hover:border-(--fg-5)"
+		>
+			<div class="pointer-events-none absolute inset-x-0 top-0 h-24 bg-linear-to-b from-(--accent)/[0.05] to-transparent"></div>
+			<div
+				class="mono mb-5 inline-flex rounded-full border border-(--accent)/20 bg-(--accent)/[0.06] px-3 py-1 text-[11px] tracking-widest text-(--accent)"
+			>
+				{$_('home.service1Num')}
+			</div>
 			<h3 class="serif m-0 mb-2.5 text-[22px]">{$_('home.service1Title')}</h3>
 			<p class="m-0 text-[14px] leading-[1.55] text-(--fg-3)">{$_('home.service1Desc')}</p>
 			<div class="mt-4.5 flex flex-wrap gap-1.5">
 				{#each serviceChips[0] as chip (chip)}<span class="chip">{chip}</span>{/each}
 			</div>
 		</div>
-		<div class="rounded-(--radius) border border-(--line) bg-(--bg-2) p-6">
-			<div class="mono mb-7 text-[11px] tracking-widest text-(--fg-4)">{$_('home.service2Num')}</div>
+		<div
+			class="group relative overflow-hidden rounded-(--radius) border border-(--line) bg-(--bg-2) p-6 transition-[border-color,transform] duration-200 hover:-translate-y-0.5 hover:border-(--fg-5)"
+		>
+			<div class="pointer-events-none absolute inset-x-0 top-0 h-24 bg-linear-to-b from-(--accent)/[0.05] to-transparent"></div>
+			<div
+				class="mono mb-5 inline-flex rounded-full border border-(--accent)/20 bg-(--accent)/[0.06] px-3 py-1 text-[11px] tracking-widest text-(--accent)"
+			>
+				{$_('home.service2Num')}
+			</div>
 			<h3 class="serif m-0 mb-2.5 text-[22px]">{$_('home.service2Title')}</h3>
 			<p class="m-0 text-[14px] leading-[1.55] text-(--fg-3)">{$_('home.service2Desc')}</p>
 			<div class="mt-4.5 flex flex-wrap gap-1.5">
 				{#each serviceChips[1] as chip (chip)}<span class="chip">{chip}</span>{/each}
 			</div>
 		</div>
-		<div class="rounded-(--radius) border border-(--line) bg-(--bg-2) p-6">
-			<div class="mono mb-7 text-[11px] tracking-widest text-(--fg-4)">{$_('home.service3Num')}</div>
+		<div
+			class="group relative overflow-hidden rounded-(--radius) border border-(--line) bg-(--bg-2) p-6 transition-[border-color,transform] duration-200 hover:-translate-y-0.5 hover:border-(--fg-5)"
+		>
+			<div class="pointer-events-none absolute inset-x-0 top-0 h-24 bg-linear-to-b from-(--accent)/[0.05] to-transparent"></div>
+			<div
+				class="mono mb-5 inline-flex rounded-full border border-(--accent)/20 bg-(--accent)/[0.06] px-3 py-1 text-[11px] tracking-widest text-(--accent)"
+			>
+				{$_('home.service3Num')}
+			</div>
 			<h3 class="serif m-0 mb-2.5 text-[22px]">{$_('home.service3Title')}</h3>
 			<p class="m-0 text-[14px] leading-[1.55] text-(--fg-3)">{$_('home.service3Desc')}</p>
 			<div class="mt-4.5 flex flex-wrap gap-1.5">
@@ -352,11 +373,12 @@
 
 	<div class="grid grid-cols-2 gap-3.5 max-md:grid-cols-1">
 		{#each testimonials as t (t.name)}
-			<div class="flex flex-col gap-5 rounded-(--radius) border border-(--line) bg-(--bg-2) p-6">
-				<blockquote class="serif m-0 text-[15px] leading-[1.65] font-light tracking-[-0.005em] text-(--fg-2)">
+			<div class="relative flex flex-col overflow-hidden rounded-(--radius) border border-(--line) bg-(--bg-2) p-6">
+				<div class="pointer-events-none absolute -top-2 right-4 font-serif text-[96px] leading-none text-(--accent) opacity-[0.08] select-none">"</div>
+				<blockquote class="serif relative z-[1] m-0 flex-1 pb-5 text-[15px] leading-[1.65] font-light tracking-[-0.005em] text-(--fg-2)">
 					{$_('home.' + t.quoteKey)}
 				</blockquote>
-				<div class="mt-auto flex items-center gap-3">
+				<div class="flex items-center gap-3 border-t border-(--line) pt-4">
 					<div
 						class="serif grid h-10 w-10 shrink-0 place-items-center rounded-full border border-(--line-2) bg-linear-to-br from-[#3a3a3a] to-[#1a1a1a] text-[13px] text-(--fg-3)"
 					>
